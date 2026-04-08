@@ -1,0 +1,213 @@
+ĐẠI HỌC BÁCH KHOA HÀ NỘI
+TRƯỜNG CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG
+
+
+
+ĐỀ XUẤT BÀI TẬP LỚN
+ĐỀ TÀI:
+Nghiên cứu ứng dụng kỹ thuật GraphRAG trong phân tích và lập luận từ dữ liệu bệnh án điện tử
+
+Nhóm
+6
+Sinh viên thực hiện
+Trần Duy Mẫn
+20252638M
+Phan Trọng Cường
+20252639M
+Nguyễn Đức An
+20252098M
+
+
+
+1. Giới thiệu bài toán và vấn đề nghiên cứu.
+1.1. Bối cảnh
+Bệnh án điện tử EHR là nguồn dữ liệu y tế phong phú và có giá trị cao trong nghiên cứu lâm sàng, chứa đựng thông tin đa dạng như nhân khẩu học của bệnh nhân, chẩn đoán, đơn thuốc, kết quả xét nghiệm, ghi chú của bác sĩ và lịch sử khám chữa bệnh. Trong thực tế, phần lớn bệnh án tồn tại dưới dạng tài liệu PDF, vừa có cấu trúc biểu mẫu và bảng biểu, vừa chứa các đoạn văn tự do từ ghi chú lâm sàng. Điều này tạo ra thách thức lớn cho các hệ thống xử lý ngôn ngữ tự nhiên NLP vốn được thiết kế chủ yếu để làm việc với văn bản thuần túy.
+Bệnh án điện tử đồng thời chứa một lượng lớn Thông tin Định danh Cá nhân PII hay còn gọi là Thông tin Y tế được Bảo hộ PHI. Các thông tin này bao gồm tên bệnh nhân, ngày sinh, số an sinh xã hội, địa chỉ, số điện thoại và các thông tin định danh khác. Việc sử dụng bệnh án trong nghiên cứu, huấn luyện mô hình AI và chia sẻ dữ liệu đòi hỏi phải trải qua quá trình khử danh tính, tức là tự động phát hiện và che giấu hoặc xóa bỏ toàn bộ thông tin PHI trước khi dữ liệu được sử dụng rộng rãi. Đây là yêu cầu bắt buộc theo các quy định pháp lý hiện hành như đạo luật HIPAA của Hoa Kỳ và GDPR của Châu Âu.
+1.2. Thách thức
+Bài toán phát hiện và khử danh tính trên bệnh án dạng PDF đối mặt với nhiều thách thức đặc thù mà các phương pháp NLP truyền thống chưa thể xử lý triệt để:
+Sự đa dạng về bố cục tài liệu: Một bệnh án có thể đồng thời chứa đoạn văn tự do như Patient Summary hay Doctor Notes, biểu mẫu cấu trúc key-value như Patient Demographics và Patient Vitals, cùng với bảng biểu nhiều cột như Past Hospital Visits, Current Medications hay Medical Tests. Mỗi loại cấu trúc này đặt ra một yêu cầu riêng biệt về cách phân tích và nhận dạng thực thể.
+Chất lượng OCR kém trên các tài liệu thực tế: Các tài liệu dạng scan thường gặp phải hiện tượng lem mực, màn hình bẩn, vết đục lỗ, hoặc nhiễu gợn sóng. Những yếu tố này khiến văn bản được trích xuất bởi công nghệ OCR dễ bị lỗi chính tả, mất ký tự hoặc tách sai từ. Các mô hình NER chuẩn được huấn luyện trên văn bản sạch sẽ bị suy giảm hiệu năng đáng kể khi gặp phải đầu vào nhiễu như vậy.
+Ngữ cảnh phức tạp và quan hệ giữa các thực thể: Tên người có thể đóng vai trò là bệnh nhân, bác sĩ, hoặc người liên hệ. Việc phân biệt chính xác các vai trò này đòi hỏi hệ thống phải hiểu ngữ cảnh ở phạm vi rộng hơn cấp độ câu. Hơn nữa, các thực thể PHI không tồn tại độc lập. Một bệnh nhân sẽ có ngày sinh, được điều trị bởi một bác sĩ cụ thể, tại một bệnh viện nhất định và vào một ngày cụ thể. Việc mô hình hóa được các quan hệ này sẽ giúp phát hiện những PHI dễ bị bỏ sót mà các phương pháp NER cục bộ không thể nhận ra.
+Yêu cầu lập luận nhiều bước: Một số thực thể PHI chỉ có thể được xác định thông qua quá trình suy luận chuỗi. Ví dụ, một chuỗi số xuất hiện gần một node Patient với quan hệ hasSSN trong đồ thị tri thức sẽ có xác suất rất cao là số an sinh xã hội. Đây là dạng suy luận mà NER truyền thống, vốn chỉ hoạt động ở cấp độ token hoặc câu, không thể thực hiện được.
+1.3. Động lực ứng dụng GraphRAG
+GraphRAG hay Graph Retrieval-Augmented Generation là kỹ thuật kết hợp giữa đồ thị tri thức và mô hình ngôn ngữ lớn LLM. Kỹ thuật này được Edge và các cộng sự đề xuất vào năm 2024 với mục tiêu vượt qua những giới hạn của RAG truyền thống trong các bài toán đòi hỏi tổng hợp thông tin toàn cục từ tài liệu dài.
+Phương pháp GraphRAG tiến hành xây dựng đồ thị thực thể-quan hệ từ văn bản, áp dụng thuật toán phát hiện cộng đồng để nhóm các thực thể có liên quan lại với nhau, sau đó sinh tóm tắt ngữ nghĩa cho từng cộng đồng. Khi nhận được truy vấn, hệ thống sẽ thực hiện song song việc Local Search trong vùng lân cận đồ thị và Global Search bằng cách lập luận qua các bản tóm tắt cộng đồng. Cơ chế này cho phép hệ thống trả lời các câu hỏi phức tạp đòi hỏi sự tổng hợp thông tin từ nhiều phần khác nhau của tài liệu.
+Trong bài toán phân tích bệnh án điện tử, GraphRAG mang lại những ưu điểm nổi bật:
+Khả năng biểu diễn rõ ràng các mối quan hệ y tế giữa bệnh nhân, bác sĩ, bệnh viện và ngày điều trị.
+Hỗ trợ lập luận toàn cục để phát hiện các PHI nằm ẩn trong những ngữ cảnh phức tạp.
+Cho phép trả lời các câu hỏi lâm sàng chuyên sâu thông qua kỹ thuật duyệt đồ thị kết hợp với khả năng sinh văn bản của LLM.
+Dựa trên những cơ sở đó, đề tài này đề xuất ứng dụng GraphRAG để giải quyết ba mục tiêu cốt lõi: xây dựng đồ thị tri thức từ nội dung bệnh án điện tử dạng PDF; phát hiện và phân loại các thực thể PHI dựa trên đồ thị tri thức kết hợp với lập luận ngữ nghĩa; và cuối cùng là trả lời các câu hỏi lâm sàng phức tạp dựa trên đồ thị quan hệ của các thực thể y tế có trong bệnh án.
+
+2. Giới thiệu tập dữ liệu
+2.1. Tổng quan về PDF De-Identification Dataset
+Bộ dữ liệu PDF De-Identification Dataset hay PDF-DeID được phát triển bởi John Snow Labs. Bộ dữ liệu này bao gồm các tài liệu PDF bệnh án y tế được sinh tổng hợp hoàn toàn bằng thư viện Faker và API Gemini của Google, đảm bảo không chứa bất kỳ dữ liệu thực nào của bệnh nhân. Mục tiêu của bộ dữ liệu là phục vụ việc huấn luyện, benchmark và đánh giá các mô hình OCR cũng như NLP trong tác vụ phát hiện và khử danh tính PHI trên tài liệu y tế thực tế. 
+
+Nguồn dữ liệu được công bố rộng rãi trên kho lưu trữ mã nguồn GitHub của John Snow Labs: 
+JohnSnowLabs/pdf-deid-dataset: Synthetic dataset for PDF obfuscation and de-identification..
+2.2. Các loại thực thể PHI trong dataset
+Tập dữ liệu chứa 10 loại thực thể PHI mô phỏng thực tế lâm sàng, bao gồm:
+Tên bệnh nhân: Patient Name
+Ngày sinh bệnh nhân: Patient Date of Birth hay DOB
+Tuổi bệnh nhân: Patient Age
+Số an sinh xã hội: Patient SSN
+Mã số bệnh viện: Hospital ID
+Tên bác sĩ phụ trách: Doctor Name
+Mã số bác sĩ: Doctor ID
+Tên cơ sở y tế: Hospital Name
+Số điện thoại liên hệ: Hospital Contact
+Các ngày khác như ngày khám, ngày nhập viện: Other Dates
+2.3. Cấu trúc tài liệu
+Mỗi tài liệu PDF trong tập dữ liệu mô phỏng một bệnh án hoàn chỉnh với 11 phần có định dạng khác nhau:
+Văn bản tĩnh: Bao gồm phần Header và Footer.
+Văn bản tự do: Bao gồm Patient Summary và Doctor Notes. Đây là nơi các thực thể PHI được nhúng vào những ngữ cảnh phức tạp nhất.
+Biểu mẫu: Bao gồm Patient Demographics, Patient Lifestyle, Patient Vitals và Doctor Information. Các phần này có cấu trúc key-value và đôi khi kéo dài qua nhiều dòng.
+Bảng biểu: Bao gồm Past Hospital Visits, Current Medications và Medical Tests. Chúng có thể xuất hiện kèm theo hoặc không kèm theo đường viền tùy thuộc vào từng tài liệu.
+2.4. Phân chia theo mức độ khó
+Dataset được chia thành ba mức độ, tổng cộng 50 tài liệu PDF:
+Mức Easy (30 file): Bố cục sạch, định dạng nhất quán, không có nhiễu. Trung bình 41 thực thể PHI mỗi file. Phân phối nhãn: DATE chiếm 50%, NAME chiếm 15%, HOSPITAL/ORG chiếm 15%, PHONE chiếm 7.5%, AGE chiếm 5%, IDNUM chiếm 7.5%.
+Mức Medium (10 file): Bố cục đa dạng hơn, thêm nhiễu nhẹ bao gồm ink bleed, dirty screen effects và subtle background textures. Trung bình 52 thực thể PHI mỗi file. Phân phối nhãn: DATE chiếm 38.8%, NAME chiếm 24.5%, ADDRESS chiếm 20.4%, PHONE chiếm 4.1%, AGE chiếm 4.1%, IDNUM chiếm 8.1%.
+Mức Hard (10 file): Thông tin dày đặc trên một dòng, nhiều loại nhiễu phức tạp bao gồm punch holes (bên trái), binder clips (bên phải), noise texturisation và moire patterns – thách thức lớn nhất cho hệ thống OCR. Trung bình 46 thực thể PHI mỗi file. Phân phối nhãn: DATE chiếm 43.9%, NAME chiếm 22%, ADDRESS chiếm 12.2%, PHONE chiếm 7.3%, AGE chiếm 4.9%, IDNUM chiếm 9.8%.
+2.5. Tài nguyên đi kèm
+Tập dữ liệu cung cấp ba loại tài nguyên hỗ trợ:
+Tệp ground truth định dạng JSON: Bao gồm các tệp pdf_deid_gts_easy.json, pdf_deid_gts_medium.json và pdf_deid_gts_hard.json, chứa thông tin về vị trí tọa độ và nhãn của từng thực thể PHI.
+Tệp predicted mapping JSON: Chứa kết quả dự đoán kèm theo các chỉ số đo lường precision và recall cho từng tệp.
+Notebook hướng dẫn: Bao gồm ba notebook hướng dẫn sử dụng thư viện JSL Visual NLP là Pretrained Pipeline, NLP Metrics và Zero-Shot Metrics để làm tài liệu tham khảo trong quá trình triển khai mã nguồn.
+
+2.6. Phân chia tập train/validation/test cho đề tài
+
+Tập dữ liệu
+Số lượng
+Chi tiết
+Mục đích
+Training
+32 tệp
+24 tệp Easy, 8 tệp Medium
+Huấn luyện mô hình NER và xây dựng chỉ mục GraphRAG index
+Validation
+8 tệp
+6 tệp Easy, 2 tệp Medium
+Điều chỉnh siêu tham số (hyperparameter tuning) và kỹ thuật dừng sớm (early stopping)
+Test
+10 tệp
+10 tệp Hard
+Giữ độc lập hoàn toàn để đánh giá hiệu năng cuối cùng
+
+
+
+
+
+
+
+
+3. Kết quả trên tập dữ liệu
+Kết quả baseline chính thức được công bố bởi John Snow Labs, sử dụng pipeline Visual NLP + Healthcare NLP với các mô hình pretrained chuyên biệt cho tác vụ de-identification y tế. Pipeline này gồm ba thành phần: Spark OCR/Visual NLP trích xuất văn bản từ PDF kết hợp thông tin vị trí bounding box; Healthcare NLP DeIdentification Model thực hiện NER nhận dạng PHI; và Obfuscation Module thay thế PHI bằng dữ liệu tổng hợp cùng cấu trúc.
+
+Kết quả đạt được:
+
+Difficulty Level
+Precision
+Recall	
+F1-Score	
+Total Files
+Easy
+0.9851
+0.9799
+0.9825
+30
+Medium
+0.9800
+0.9575
+0.9686
+40
+Zero Shot Medium
+0.9861
+1
+0.993
+10
+Hard	
+0.9561
+0.9290
+0.9424
+50
+
+
+
+4. Phương pháp đề xuất
+4.1 Tổng quan kiến trúc
+Phương pháp đề xuất là pipeline MedGraphRAG gồm bốn giai đoạn nối tiếp: (1) Trích xuất và ẩn danh hóa văn bản từ PDF, (2) Trích xuất thực thể y tế và quan hệ, (3) Xây dựng và làm giàu đồ thị tri thức, và (4) Lập luận và hỏi đáp dựa trên GraphRAG. 
+Toàn bộ kiến trúc được triển khai trên nền tảng kết hợp Neo4j (đồ thị tri thức), PostgreSQL (dữ liệu cấu trúc) và MinIO (lưu trữ tài liệu gốc).
+ 
+4.2 Giai đoạn 1 — Trích xuất và ẩn danh hóa tài liệu PDF
+Phân tích bố cục tài liệu và OCR: Tài liệu PDF đầu vào được chuyển đổi sang ảnh với độ phân giải 300 DPI, sau đó được xử lý bởi mô hình LayoutLMv3 — kiến trúc Transformer đa phương thức kết hợp đặc trưng văn bản, hình ảnh và vị trí không gian. LayoutLMv3 được huấn luyện trước trên tập DocBank và PubLayNet, cho phép hiểu cả nội dung chữ lẫn cấu trúc bố cục của tài liệu.
+ 
+Token hóa tài liệu áp dụng chiến lược sliding window với độ dài tối đa 512 token và overlap 128 token để xử lý tài liệu dài mà không mất ngữ cảnh. Vị trí không gian của mỗi từ được mã hóa thành vector 4 chiều (x_min, y_min, x_max, y_max) chuẩn hóa về khoảng [0, 1000].
+ 
+Mô hình ẩn danh hóa NER: Đầu ra của LayoutLMv3 được đưa vào lớp phân loại NER theo định dạng BIO (Begin-Inside-Outside) để nhận dạng 10 loại thực thể PII. Mô hình được fine-tune trên tập Easy (30 tài liệu) với kỹ thuật học có giám sát đầy đủ, sau đó đánh giá trên tập Medium (10 tài liệu) và Hard (10 tài liệu).
+ 
+Hàm mất mát được sử dụng là Cross-Entropy Loss có trọng số theo tần suất nhãn, nhằm xử lý sự mất cân bằng nghiêm trọng giữa các lớp — trong đó nhãn nền (không phải thực thể) chiếm đại đa số các token. Trọng số của mỗi lớp được tính tỉ lệ nghịch với số lần xuất hiện của nó trong tập huấn luyện, khiến mô hình phải chú ý nhiều hơn đến các thực thể PII hiếm gặp thay vì dễ dàng thiên về lớp đa số.
+ 
+Chiến lược huấn luyện và đường học: Mô hình được tối ưu bằng thuật toán AdamW với learning rate ban đầu ở mức rất nhỏ (2e-5) kết hợp weight decay để kiểm soát độ phức tạp của mô hình. Lịch điều chỉnh learning rate sử dụng chiến lược tăng dần (linear warmup) trong 10% số bước đầu để ổn định quá trình khởi động, sau đó giảm tuyến tính về gần bằng 0 ở cuối quá trình huấn luyện. Kích thước batch là 8 mẫu, huấn luyện tối đa 30 epoch.
+ 
+Việc dừng sớm (early stopping) được áp dụng dựa trên F1-Score trên tập validation (Medium). Huấn luyện kết thúc khi F1-Score trên tập validation không cải thiện sau 5 epoch liên tiếp (patience = 5). Điểm kết thúc học này được lựa chọn vì hai lý do có cơ sở rõ ràng: thứ nhất, tại đây mô hình đã hội tụ — giá trị hàm mất mát trên tập validation ngừng giảm và các trọng số mô hình không còn thay đổi đáng kể, chứng tỏ mô hình đã học được biểu diễn ổn định từ dữ liệu; thứ hai, nếu tiếp tục huấn luyện vượt quá điểm này, khoảng cách giữa mất mát trên tập huấn luyện và tập validation sẽ ngày càng doãng rộng — dấu hiệu điển hình của overfitting, khi mô hình bắt đầu ghi nhớ dữ liệu thay vì học tổng quát. Checkpoint tốt nhất được lưu lại và sử dụng cho tất cả các thí nghiệm tiếp theo.
+ 
+Các siêu tham số cố định của LayoutLMv3: 12 lớp Transformer, 12 attention heads, hidden size 768, intermediate size 3072, tổng cộng 125 triệu tham số.
+ 
+Hậu xử lý và ẩn danh hóa: Sau khi phát hiện, mỗi thực thể PII được thay thế bằng placeholder có cấu trúc [TYPE_ID] (ví dụ: [NAME_001], [DATE_002]) để tài liệu ẩn danh vẫn có thể đọc được và duy trì cấu trúc ngữ nghĩa. Ánh xạ ngược (reverse mapping) được lưu trong PostgreSQL với mã hóa đối xứng AES-256.
+ 
+4.3 Giai đoạn 2 — Trích xuất thực thể y tế và quan hệ
+ 
+Trích xuất thực thể: Sử dụng mô hình LLaMA-3.1-8B với prompt có cấu trúc (structured prompting) để nhận dạng các loại thực thể: Diagnoses (chẩn đoán), Medications (thuốc), Symptoms (triệu chứng), Procedures (thủ thuật), Lab Tests (xét nghiệm), Vital Signs (chỉ số sinh tồn), Dates (ngày tháng lâm sàng) và Department (khoa điều trị).
+ 
+Trích xuất quan hệ: Áp dụng kỹ thuật in-context learning với 5-shot examples để phát hiện 12 loại quan hệ: HAS_DIAGNOSIS, PRESCRIBED, EXHIBITS_SYMPTOM, UNDERWENT, HAS_RESULT, MEASURED_AT, TREATED_BY, ADMITTED_TO, CONTRAINDICATES, INTERACTS_WITH, CAUSED_BY, FOLLOWS_UP.
+ 
+Mỗi đoạn văn bản (chunk) có kích thước 256 token với overlap 64 token được xử lý độc lập, kết quả được gộp và loại trùng bằng thuật toán so khớp mờ (fuzzy matching) với ngưỡng similarity 0.85.
+ 
+4.4 Giai đoạn 3 — Xây dựng đồ thị tri thức với Neo4j
+Đồ thị tri thức được xây dựng trong Neo4j với schema rõ ràng. Mỗi thực thể trở thành một node với nhãn tương ứng. Mỗi quan hệ trở thành một edge có hướng với thuộc tính confidence score. Ngoài ra, mỗi node và edge được gắn với embedding vector 384 chiều (dùng all-MiniLM-L6-v2) lưu trong Neo4j Vector Index để hỗ trợ tìm kiếm ngữ nghĩa.
+ 
+Đồ thị được làm giàu bằng hai nguồn bên ngoài: (i) UMLS Metathesaurus — chuẩn hóa tên thực thể và thêm quan hệ phân cấp (IS_A, PART_OF); (ii) DrugBank — bổ sung thông tin tương tác thuốc (INTERACTS_WITH) và chống chỉ định.
+ 
+4.5 Giai đoạn 4 — GraphRAG cho lập luận và hỏi đáp
+Phân loại câu hỏi: Câu hỏi đầu vào được phân loại thành hai loại: câu hỏi cục bộ (local query — liên quan đến một bệnh nhân hoặc thực thể cụ thể) và câu hỏi toàn cục (global query — so sánh, thống kê, xu hướng trên nhiều bệnh nhân). Bộ phân loại là RoBERTa-base fine-tune với 4-class classification (local/global/hybrid/aggregation).
+ 
+Retrieval chiến lược hỗn hợp: Với câu hỏi cục bộ, hệ thống thực hiện tìm kiếm vector kết hợp Cypher query để lấy k=10 node liên quan nhất cùng với subgraph lân cận bậc 2. Với câu hỏi toàn cục, hệ thống sử dụng tóm tắt cộng đồng ở nhiều cấp độ phân giải (map-reduce summarization). Chiến lược hỗn hợp kết hợp cả hai phương pháp với trọng số học được.
+ 
+Sinh câu trả lời: Context đồ thị được chuyển đổi thành văn bản có cấu trúc và nối vào prompt của LLaMA-3.1-8B với hướng dẫn lập luận chuỗi suy nghĩ (chain-of-thought). Câu trả lời được sinh ra kèm theo nguồn trích dẫn từ các node/edge trong đồ thị để đảm bảo khả năng kiểm chứng.
+ 
+Kiểm soát ảo giác (hallucination): Câu trả lời được kiểm tra tính nhất quán với đồ thị bằng cách trích xuất các tuyên bố thực thể (factual claims) và xác minh từng tuyên bố qua Cypher query. Tuyên bố không có bằng chứng trong đồ thị sẽ bị gắn cờ hoặc loại bỏ.
+
+5. Kế hoạch thực hiện
+Tuần 1 — Nghiên cứu lý thuyết nền tảng
+
+Cường: Đọc paper LayoutLMv3, tìm hiểu bài toán NER và Visual Document Understanding, khảo sát các nghiên cứu de-identification y tế (i2b2 2014, Yang et al. 2022).
+Mẫn: Đọc paper GraphRAG (Edge et al. 2024), MedGraphRAG, Think-on-Graph, nắm vững khái niệm knowledge graph, RAG truyền thống và sự khác biệt so với GraphRAG.
+An: Tìm hiểu Neo4j (Cypher, schema design, Vector Index, GDS plugin), đọc tài liệu kiến trúc, nắm các khái niệm embedding và semantic search.
+
+Tuần 2 — Khảo sát dữ liệu & dựng môi trường
+Cường: Phân tích chi tiết tập PDF Deid Dataset — đọc toàn bộ ground truth JSON, thống kê phân bố 10 loại PII theo từng mức Easy/Medium/Hard, quan sát mẫu PDF để hiểu bố cục, xác định thách thức OCR ở mức Hard.
+Mẫn: Tìm hiểu LangChain, Ollama, cách chạy LLaMA-3.1-8B local với quantization INT4, thử nghiệm các kiểu prompt (zero-shot, few-shot, structured) để trích xuất thực thể y tế từ đoạn văn bản mẫu.
+An: Dựng Docker Compose với Neo4j + PostgreSQL + MinIO, thiết kế schema đồ thị tri thức y tế (các loại node và edge theo 8 thực thể và 12 quan hệ đã định nghĩa), cài đặt sentence-transformers và thử nghiệm tạo embedding.
+
+Tuần 3 — Xây dựng pipeline de-identification
+Cường: Fine-tune LayoutLMv3 trên tập Easy (30 tài liệu), thiết lập toàn bộ chiến lược huấn luyện — AdamW, linear warmup, early stopping theo F1 trên tập validation, theo dõi đường học và lưu checkpoint tốt nhất.
+Mẫn: Hỗ trợ Cường tiền xử lý dữ liệu — chuyển PDF sang ảnh 300 DPI, tích hợp OCR, chuẩn bị dữ liệu huấn luyện theo định dạng BIO, viết script đánh giá Precision/Recall/F1 theo từng loại PII.
+An: Xây dựng module lưu trữ — nạp PDF gốc vào MinIO, lưu ánh xạ PII placeholder vào PostgreSQL với mã hóa AES-256, viết API nội bộ để các module khác truy vấn.
+
+Tuần 4 — Xây dựng pipeline trích xuất thực thể & đồ thị
+
+Cường: Đánh giá mô hình de-identification trên tập Medium và Hard, phân tích lỗi, viết module hậu xử lý thay thế PII bằng placeholder [TYPE_ID], so sánh kết quả với baseline John Snow Labs Visual NLP.
+Mẫn: Xây dựng pipeline trích xuất thực thể y tế và quan hệ từ văn bản đã ẩn danh hóa bằng LLaMA-3.1-8B, hoàn thiện các prompt template cho 8 loại thực thể và 12 loại quan hệ, triển khai chunking (256 token, overlap 64) và fuzzy matching để loại trùng.
+An: Viết module nạp kết quả trích xuất của Mẫn vào Neo4j (node + edge + confidence score + embedding vector), tích hợp UMLS Metathesaurus để chuẩn hóa tên thực thể, tích hợp DrugBank để bổ sung quan hệ tương tác thuốc.
+
+Tuần 5 — Xây dựng hệ thống GraphRAG QA
+
+Cường: Chạy phát hiện cộng đồng Leiden trên đồ thị Neo4j, tạo tóm tắt cộng đồng bằng LLaMA-3.1-8B (200-300 từ mỗi cộng đồng) phục vụ global query, kiểm tra chất lượng đồ thị tổng thể.
+Mẫn: Xây dựng module GraphRAG QA hoàn chỉnh — bộ phân loại câu hỏi local/global bằng RoBERTa, hybrid retrieval kết hợp vector search và Cypher query, sinh câu trả lời với chain-of-thought, cơ chế kiểm soát hallucination bằng xác minh tuyên bố qua đồ thị.
+An: Đóng gói toàn bộ pipeline qua FastAPI, kết nối các module từ đầu đến cuối (PDF vào → câu trả lời ra), soạn bộ 100 câu hỏi lâm sàng thử nghiệm ở cả hai dạng local query và global query.
+
+Tuần 6 — Thí nghiệm, đánh giá & hoàn thiện báo cáo
+
+Cường: Chạy toàn bộ thí nghiệm bài toán 1 (de-identification) trên 3 mức độ, tổng hợp kết quả, phân tích so sánh với baseline, viết phần thực nghiệm và kết quả trong báo cáo.
+Mẫn: Chạy đánh giá hệ thống QA trên bộ 100 câu hỏi — đo ROUGE-L, BERTScore, Faithfulness Score, phân tích trường hợp thất bại, viết phần phân tích kết quả GraphRAG trong báo cáo.
+An: Tổng hợp toàn bộ báo cáo cuối — hoàn thiện phần thiết lập thí nghiệm, kết luận, tài liệu tham khảo, chuẩn bị slide trình bày và demo hệ thống.
+

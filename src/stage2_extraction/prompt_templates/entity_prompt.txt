@@ -1,0 +1,24 @@
+You are a medical NER system. Extract all medical entities from the following clinical text.
+
+Entity types to extract:
+- Diagnosis: Disease names, conditions, syndromes
+- Medication: Drug names, prescriptions, dosages
+- Symptom: Signs, symptoms reported by patient or observed
+- Procedure: Surgical procedures, therapeutic interventions
+- LabTest: Laboratory tests, imaging studies, diagnostic tests
+- VitalSign: Blood pressure, heart rate, temperature, SpO2, etc.
+- ClinicalDate: Admission dates, discharge dates, follow-up dates
+- Department: Hospital departments, wards, units
+
+Rules:
+1. Extract ONLY entities that are explicitly mentioned in the text.
+2. Do NOT infer or hallucinate entities.
+3. Assign a confidence score between 0.0 and 1.0 for each entity.
+4. Return ONLY a valid JSON array — no other text.
+
+Clinical text:
+"""
+{chunk_text}
+"""
+
+Extracted entities (JSON array):
