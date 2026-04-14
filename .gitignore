@@ -1,0 +1,17 @@
+*.txt
+dataset
+dataset_paper
+dataset_test
+test*
+.dockerignore
+app.sh
+
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ignore special files or folds
+.DS_Store

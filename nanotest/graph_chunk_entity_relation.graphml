@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="description" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d3" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;THE PATIENT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The patient is a 76-year-old male with a complex medical history including coronary artery disease, congestive heart failure, type 2 diabetes, and Alzheimer's dementia. He was recently hospitalized after a left femoral-at bypass graft and has experienced multiple complications."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;VASCULAR SURGERY TEAM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Vascular Surgery Team is the medical team involved in the patient's care, responsible for initially planning to admit the patient to the hospital."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;REHABILITATION FACILITY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Rehabilitation Facility is where the patient was initially discharged after hospitalization and subsequently experienced complications necessitating readmission."&lt;SEP&gt;"The facility where the patient is discharged to continue recovery and rehabilitation after initial inpatient care."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;EMERGENCY DEPARTMENT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Emergency Department is where the patient was taken after experiencing low blood pressure and other symptoms, for further evaluation and treatment."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;CORONARY ARTERY DISEASE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Coronary Artery Disease is a condition affecting the patient, involving diffuse 3-vessel disease and requiring multiple stents."&lt;SEP&gt;"The medical condition affecting the patient's heart, leading to interventions such as stent placements."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CONGESTIVE HEART FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Congestive Heart Failure developed in the patient due to aggressive fluid resuscitation, managed with diuretics during hospitalization."&lt;SEP&gt;"Congestive Heart Failure is a chronic condition where the heart does not pump blood as well as it should."&lt;SEP&gt;"Congestive Heart Failure is a medical condition affecting the patient, characterized by an ejection fraction of 15% to 20%."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8&lt;SEP&gt;chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;TYPE 2 DIABETES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Type 2 Diabetes is a chronic medical condition affecting the patient, associated with neuropathy."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;ALZHEIMER'S DEMENTIA&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Alzheimer's Dementia is a progressive neurological disorder affecting the patient, impacting memory and cognitive function."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;HOSPITALIZATION FOR LEFT FEMORAL-AT BYPASS GRAFT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"This event refers to the patient's hospitalization for undergoing a left femoral-at bypass graft, which is part of their severe peripheral vascular disease treatment."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;RIGHT PEDAL CELLULITIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Right Pedal Cellulitis is a recent infection in the patient's foot, part of their medical history of chronic nonhealing foot ulcers."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;VASCULAR INTENSIVE CARE UNIT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Vascular Intensive Care Unit is a specialized hospital unit where the patient was initially admitted for treatment of cardiovascular issues."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;MEDICAL INTENSIVE CARE UNIT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Medical Intensive Care Unit is another hospital unit where the patient boarded and experienced a sudden cardiorespiratory arrest."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;CARDIAC CATHETERIZATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cardiac Catheterization is a medical procedure considered for the patient but ultimately not pursued due to the patient's DNR status and family's wishes."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;GENTAMICIN&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An antibiotic that the patient was taken off on the third day of hospitalization."&lt;SEP&gt;"Gentamicin is an antibiotic that was part of the patient's treatment regimen for a presumed gram-negative urosepsis."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;PIPERACILLIN/TAZOBACTAM&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Piperacillin/Tazobactam is another antibiotic which was administered to the patient for broad-spectrum infection coverage."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;FLUCONAZOLE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An antifungal medication administered to the patient in response to yeast growth observed in urine cultures."&lt;SEP&gt;"Fluconazole is an antifungal medication added to the patient's regimen following the growth of yeast in the urine culture."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;TROPONIN&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Troponin is a heart muscle protein whose elevated levels in the patient indicated a non-Q-wave myocardial infarction."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;ECHOCARDIOGRAM&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Echocardiogram is a diagnostic procedure used to evaluate the patient's heart function and structure, revealing various conditions including pericardial effusion."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;MYOCARDIAL INFARCTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Myocardial Infarction, specifically a non-Q-wave type, was suspected in the patient due to elevated troponin levels and symptoms of chest pain."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;RESUSCITATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Resuscitation involved emergency medical actions taken to revive the patient after a cardiorespiratory arrest, including cardioversion and medication administration."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;RENAL FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Renal Failure was part of the patient's initial diagnoses on admission, likely contributing to his overall critical condition."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;HOSPITAL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The healthcare facility where the patient received treatment, involving multiple therapeutic interventions and diagnostic procedures."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;PATIENT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The individual receiving medical treatment for various conditions, including cardiorespiratory arrest, myocardial infarction, and renal failure."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;ACUTE RENAL FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medical condition causing the patient's kidneys to fail temporarily, resolved with fluid resuscitation."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;INTRAVENOUS FLUIDS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The treatment method used to hydrate the patient aggressively during the hospital stay."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PULMONARY EVENT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The occurrence of wheezing and mild hypoxia in the patient, likely secondary to cardiac asthma and fluid overload."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;CLOSTRIDIUM DIFFICILE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A bacterial infection the patient was tested for and found negative."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;MODIFIED BARIUM SWALLOWING STUDY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A diagnostic test the patient underwent, which indicated difficulty in swallowing, leading to diet modifications."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PROMOD SHAKES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A nutritional supplement given to the patient as part of dietary management for malnutrition."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PULMONARY ARTERY WEDGE MONITORING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A procedure conducted to monitor the patient's pulmonary condition."&lt;SEP&gt;"Pulmonary Artery Wedge Monitoring is a medical procedure used to measure pressure in the pulmonary artery, often for diagnosing cardiac conditions."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;NUTRITIONAL SUPPLEMENTATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The process of improving the patient’s nutritional status through dietary adjustments and supplements."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;VENOUS CATHETERIZATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medical procedure performed to facilitate treatments and nutritional support."&lt;SEP&gt;"Venous Catheterization is a medical procedure involving the insertion of a catheter into a vein for diagnostic or therapeutic purposes."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;ENTERAL INFUSION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The administration of concentrated nutritional substances directly into the gastrointestinal tract of the patient."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;ELECTRIC COUNTERSHOCK OF HEART&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A procedure used as part of the patient's treatment in addressing heart conditions."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PACKED RED BLOOD CELLS TRANSFUSION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medical intervention to maintain the patient's hematocrit level due to coronary artery disease."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;EPTIFIBATIDE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medication previously taken by the patient which was associated with a history of gastrointestinal bleed."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;ENDOTRACHEAL TUBE INSERTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medical procedure the patient underwent during their hospitalization."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;MEDQUIST36&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Medquist36 appears to be an organization involved in administering or dictating medical procedures and documentation."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;CARDIAC ARREST&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cardiac Arrest refers to a sudden cessation of heart function, which is a critical medical emergency."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;CONTINUOUS INVASIVE MECHANICAL VENTILATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Continuous Invasive Mechanical Ventilation is a life-support treatment that helps patients breathe when they are unable to do so on their own."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;INSERTION OF ENDOTRACHEAL TUBE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Insertion of Endotracheal Tube is a medical procedure where a tube is placed into a patient's trachea to maintain an open airway or administer drugs."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;ENTERAL INFUSION OF CONCENTRATED NUTRITIONAL SUBSTANCES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Enteral Infusion of Concentrated Nutritional Substances is the delivery of nutrition directly into the stomach or intestine, bypassing oral intake."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;OTHER ELECTRIC COUNTERSHOCK OF HEART&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Other Electric Countershock of Heart is a medical intervention, such as defibrillation, used to treat life-threatening cardiac arrhythmias."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;OTHER PRIMARY CARDIOMYOPATHIES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Other Primary Cardiomyopathies encompass various heart muscle diseases that affect the heart's ability to pump blood effectively."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;SUBENDOCARDIAL INFARCTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Subendocardial Infarction, or non-ST elevation myocardial infarction, is a type of heart attack affecting the inner layer of the heart wall."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;ACUTE KIDNEY FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Acute Kidney Failure is a condition where the kidneys suddenly become unable to filter waste products from the blood."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;UNSPECIFIED SEPTICEMIA&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Unspecified Septicemia is a potentially life-threatening condition caused by the presence of bacteria or other pathogens in the blood."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;UNSPECIFIED PROTEIN-CALORIE MALNUTRITION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Unspecified Protein-Calorie Malnutrition refers to a deficiency in essential nutrients due to inadequate intake or absorption."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;OTHER SHOCK WITHOUT MENTION OF TRAUMA&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Other Shock Without Mention of Trauma includes types of shock, such as distributive or cardiogenic shock, not related to physical trauma."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;CELLULITIS AND ABSCESS OF LEG, EXCEPT FOOT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cellulitis and Abscess of Leg, Except Foot refers to a bacterial skin infection and abscess formation in the leg area, excluding the foot."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</node>
+<node id="&quot;DNR STATUS&quot;">
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+  <data key="d1">"The decision to forego Cardiac Catheterization was influenced by the patient's Do Not Resuscitate (DNR) status and family discussions."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;YEAST&quot;">
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+  <data key="d1">"Fluconazole was administered as a response to the growth of yeast in the patient's urine culture, indicating an antifungal need."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;VASCULAR SURGERY TEAM&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Vascular Surgery Team is involved in the direct care of the patient, planning his admission and conducting initial physical examinations."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;REHABILITATION FACILITY&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The patient was discharged to the Rehabilitation Facility after the initial hospital stay, where complications arose leading to his readmission."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;EMERGENCY DEPARTMENT&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient was treated in the Emergency Department when he presented with symptoms such as low blood pressure, necessitating medical intervention."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;CORONARY ARTERY DISEASE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Coronary Artery Disease is one of the significant chronic conditions affecting the patient's cardiovascular health."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;CONGESTIVE HEART FAILURE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Congestive Heart Failure contributes to the patient's overall cardiac health challenges and management needs."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;TYPE 2 DIABETES&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Type 2 Diabetes impacts the patient's health, requiring ongoing management and contributing to neuropathy."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;ALZHEIMER'S DEMENTIA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Alzheimer's Dementia affects the patient's cognitive functions, complicating their overall care needs."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;HOSPITALIZATION FOR LEFT FEMORAL-AT BYPASS GRAFT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The patient underwent this surgical procedure due to severe peripheral vascular disease, a significant event in their medical history."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;RIGHT PEDAL CELLULITIS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Right Pedal Cellulitis reflects ongoing issues with chronic foot infections and nonhealing ulcers affecting the patient."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;REHABILITATION FACILITY&quot;" target="&quot;PATIENT&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient was discharged to a rehabilitation facility for continued care and recovery following hospital treatment."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;REHABILITATION FACILITY&quot;" target="&quot;HOSPITAL&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The hospital and rehabilitation facility are coordinated entities in the patient's continuum of care, transitioning the patient for ongoing treatment."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;CORONARY ARTERY DISEASE&quot;" target="&quot;PATIENT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The patient suffers from coronary artery disease, which required procedures like stenting during their hospital stay."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;CONGESTIVE HEART FAILURE&quot;" target="&quot;MEDQUIST36&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Medquist36 documents medical conditions including Congestive Heart Failure as part of procedural records."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;VASCULAR INTENSIVE CARE UNIT&quot;" target="&quot;MEDICAL INTENSIVE CARE UNIT&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient transitioned from the Vascular Intensive Care Unit to the Medical Intensive Care Unit, where significant medical events occurred."</data>
+  <data key="d6">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</edge>
+<edge source="&quot;CARDIAC CATHETERIZATION&quot;" target="&quot;DNR STATUS&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The decision to forego Cardiac Catheterization was influenced by the patient's Do Not Resuscitate (DNR) status and family discussions."</data>
+  <data key="d6">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</edge>
+<edge source="&quot;GENTAMICIN&quot;" target="&quot;PIPERACILLIN/TAZOBACTAM&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Both Gentamicin and Piperacillin/Tazobactam were used together initially as part of the patient's antibiotic treatment plan for infection coverage."</data>
+  <data key="d6">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</edge>
+<edge source="&quot;FLUCONAZOLE&quot;" target="&quot;YEAST&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Fluconazole was administered as a response to the growth of yeast in the patient's urine culture, indicating an antifungal need."</data>
+  <data key="d6">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</edge>
+<edge source="&quot;HOSPITAL&quot;" target="&quot;PATIENT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The hospital provided the patient with comprehensive medical care, addressing multiple health issues including heart and kidney conditions."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;ACUTE RENAL FAILURE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient experienced acute renal failure during the hospital stay, which was subsequently resolved with medical intervention."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;PULMONARY ARTERY WEDGE MONITORING&quot;" target="&quot;MEDQUIST36&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Medquist36 is likely responsible for documenting or facilitating the Pulmonary Artery Wedge Monitoring procedure."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;CARDIAC ARREST&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Medquist36 is involved in documenting medical conditions like Cardiac Arrest through procedural notes."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+</graph></graphml>
