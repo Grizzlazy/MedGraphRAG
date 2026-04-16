@@ -1,0 +1,730 @@
+{
+  "1": {
+    "report_string": "# The Patient Critical Care Community\n\nThis community revolves around 'The Patient', a 76-year-old male with multiple comorbidities, receiving treatment at a primary hospital and emergency department. The network includes relationships to a rehabilitation facility, vascular surgery team, and infectious disease service, reflecting a high-acuity medical case. Significant connections exist between the patient and life-threatening diagnoses such as sepsis and myocardial infarction, as well as critical interventions including mechanical ventilation and bypass grafts.\n\n## Patient Profile and Comorbidities\n\nThe central entity of this community is 'The Patient' (ID 22), a 76-year-old male with a complex profile involving coronary artery disease, congestive heart failure, type 2 diabetes, hypertension, and peripheral vascular disease [Data: Entities (22)]. His admission was precipitated by a medical crisis requiring resuscitation and management of urosepsis and renal failure [Data: Relationships (1, 8, 14)]. The patient's history includes prior cardiac risk factors and a baseline creatinine indicating renal stress [Data: Entities (4), Relationships (4)]. The extensive list of diagnoses and conditions attached to this individual underscores the complexity of his care requirements [Data: Entities (0, 2, 5, 8)].\n\n## Hospitalization Infrastructure and Emergency Care\n\nCare delivery occurs primarily within a hospital setting (ID 10) and the emergency department (ID 7) where initial presentation and triage took place [Data: Entities (10), Relationships (8), Relationships (7)]. The patient presented to the emergency department upon deterioration before being admitted to the hospital [Data: Relationships (1)], highlighting the severity of the acute crisis. The hospital serves as the central node connecting the patient to specific departments and subsequent discharge pathways [Data: Relationships (13), Relationships (12)].\n\n## Critical Diagnostic Events\n\nThe patient experienced several major medical events that defined the severity of his case, including acute kidney failure (Entity 0) and cardiorespiratory arrest (Entity 5) [Data: Entities (0, 5), Relationships (0), Relationships (5)]. These events are listed among his primary discharge diagnoses, indicating that they were resolved only through intensive intervention [Data: Relationships (10, 22)]. Additional cardiac events include myocardial infarction and non-Q-wave myocardial infarction [Data: Relationships (22), Relationships (23)]. Gram-negative urosepsis is presumed to have been the precipitating cause of admission [Data: Relationships (10), Relationships (5)].\n\n## Surgical and Procedural Interventions\n\nThe patient underwent multiple critical procedures to manage his vascular and cardiac conditions, including a left femoral-femoral bypass graft (Entity 13) [Data: Relationships (17)]. Prior interventions involved stent placement in the proximal left circumflex artery and right coronary artery [Data: Entities (19), Entities (21)]. Venous catheterization was performed for monitoring or access [Data: Entities (24), Relationships (31)]. Mechanical ventilation was conducted for over 96 hours, indicating critical failure support [Data: Entities (15), Relationships (19)].\n\n## Medication Management and Therapies\n\nPrescribed medications were adjusted to manage specific conditions and infections, including the use of fluconazole for yeast growth and levofloxacin during treatment [Data: Relationships (9), Relationships (18)]. Amiodarone was prescribed on discharge for rhythm management, while regular insulin was continued for diabetes [Data: Entities (3), Relationships (3), Relationships (27)]. Ipratropium nebulizers were also utilized for wheezing symptoms [Data: Entities (12), Relationships (16)]. Some antibiotics were discontinued during the course of care [Data: Entities (14)].\n\n## Discharge and Rehabilitation Pathway\n\nFollowing hospitalization, the patient's discharge status was planned either to home (Entity 9) or to a rehabilitation facility (Entity 20) [Data: Entities (9), Entities (20), Relationships (11), Relationships (28)]. The discharge event serves as the transition point from acute care to continued recovery [Data: Entities (6), Relationships (6)]. The rehabilitation facility is designated as the location for post-hospital care and continues recovery efforts [Data: Entities (20), Relationships (28)]. This pathway reflects a managed transition to lower-acuity environments after the acute phase [Data: Relationships (12), Relationships (14)]",
+    "report_json": {
+      "title": "The Patient Critical Care Community",
+      "summary": "This community revolves around 'The Patient', a 76-year-old male with multiple comorbidities, receiving treatment at a primary hospital and emergency department. The network includes relationships to a rehabilitation facility, vascular surgery team, and infectious disease service, reflecting a high-acuity medical case. Significant connections exist between the patient and life-threatening diagnoses such as sepsis and myocardial infarction, as well as critical interventions including mechanical ventilation and bypass grafts.",
+      "rating": 8.5,
+      "rating_explanation": "The impact severity rating is high due to the critical life-threatening conditions diagnosed, including cardiorespiratory arrest and sepsis, requiring intensive medical and surgical interventions.",
+      "findings": [
+        {
+          "summary": "Patient Profile and Comorbidities",
+          "explanation": "The central entity of this community is 'The Patient' (ID 22), a 76-year-old male with a complex profile involving coronary artery disease, congestive heart failure, type 2 diabetes, hypertension, and peripheral vascular disease [Data: Entities (22)]. His admission was precipitated by a medical crisis requiring resuscitation and management of urosepsis and renal failure [Data: Relationships (1, 8, 14)]. The patient's history includes prior cardiac risk factors and a baseline creatinine indicating renal stress [Data: Entities (4), Relationships (4)]. The extensive list of diagnoses and conditions attached to this individual underscores the complexity of his care requirements [Data: Entities (0, 2, 5, 8)]."
+        },
+        {
+          "summary": "Hospitalization Infrastructure and Emergency Care",
+          "explanation": "Care delivery occurs primarily within a hospital setting (ID 10) and the emergency department (ID 7) where initial presentation and triage took place [Data: Entities (10), Relationships (8), Relationships (7)]. The patient presented to the emergency department upon deterioration before being admitted to the hospital [Data: Relationships (1)], highlighting the severity of the acute crisis. The hospital serves as the central node connecting the patient to specific departments and subsequent discharge pathways [Data: Relationships (13), Relationships (12)]."
+        },
+        {
+          "summary": "Critical Diagnostic Events",
+          "explanation": "The patient experienced several major medical events that defined the severity of his case, including acute kidney failure (Entity 0) and cardiorespiratory arrest (Entity 5) [Data: Entities (0, 5), Relationships (0), Relationships (5)]. These events are listed among his primary discharge diagnoses, indicating that they were resolved only through intensive intervention [Data: Relationships (10, 22)]. Additional cardiac events include myocardial infarction and non-Q-wave myocardial infarction [Data: Relationships (22), Relationships (23)]. Gram-negative urosepsis is presumed to have been the precipitating cause of admission [Data: Relationships (10), Relationships (5)]."
+        },
+        {
+          "summary": "Surgical and Procedural Interventions",
+          "explanation": "The patient underwent multiple critical procedures to manage his vascular and cardiac conditions, including a left femoral-femoral bypass graft (Entity 13) [Data: Relationships (17)]. Prior interventions involved stent placement in the proximal left circumflex artery and right coronary artery [Data: Entities (19), Entities (21)]. Venous catheterization was performed for monitoring or access [Data: Entities (24), Relationships (31)]. Mechanical ventilation was conducted for over 96 hours, indicating critical failure support [Data: Entities (15), Relationships (19)]."
+        },
+        {
+          "summary": "Medication Management and Therapies",
+          "explanation": "Prescribed medications were adjusted to manage specific conditions and infections, including the use of fluconazole for yeast growth and levofloxacin during treatment [Data: Relationships (9), Relationships (18)]. Amiodarone was prescribed on discharge for rhythm management, while regular insulin was continued for diabetes [Data: Entities (3), Relationships (3), Relationships (27)]. Ipratropium nebulizers were also utilized for wheezing symptoms [Data: Entities (12), Relationships (16)]. Some antibiotics were discontinued during the course of care [Data: Entities (14)]."
+        },
+        {
+          "summary": "Discharge and Rehabilitation Pathway",
+          "explanation": "Following hospitalization, the patient's discharge status was planned either to home (Entity 9) or to a rehabilitation facility (Entity 20) [Data: Entities (9), Entities (20), Relationships (11), Relationships (28)]. The discharge event serves as the transition point from acute care to continued recovery [Data: Entities (6), Relationships (6)]. The rehabilitation facility is designated as the location for post-hospital care and continues recovery efforts [Data: Entities (20), Relationships (28)]. This pathway reflects a managed transition to lower-acuity environments after the acute phase [Data: Relationships (12), Relationships (14)]"
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 1",
+    "edges": [
+      [
+        "\"THE PATIENT\"",
+        "\"VENOUS CATHETERIZATION\""
+      ],
+      [
+        "\"INFECTIOUS DISEASE SERVICE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"IPRATROPIUM NEBULIZERS\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"MECHANICAL VENTILATION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"EMERGENCY DEPARTMENT\"",
+        "\"HOSPITAL\""
+      ],
+      [
+        "\"MYOCARDIAL INFARCTION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"ALZHEIMER'S DEMENTIA\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"THE PATIENT\"",
+        "\"VASCULAR SURGERY TEAM\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"GRAM-NEGATIVE UROSEPSIS\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"DISCHARGE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"CARDIORESPIRATORY ARREST\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"ACUTE KIDNEY FAILURE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"LEVOFLOXACIN\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITALIZATION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"REGULAR INSULIN\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"RIGHT CORONARY ARTERY STENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"EMERGENCY DEPARTMENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITAL\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"PROXIMAL LEFT CIRCUMFLEX STENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"LEFT FEMORAL-FEMORAL BYPASS GRAFT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"AMIODARONE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"FLUCONAZOLE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"REHABILITATION FACILITY\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"PULMONARY ARTERY WEDGE MONITORING\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"PRESENTATION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITAL\"",
+        "\"REHABILITATION FACILITY\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"VENOUS CATHETERIZATION\""
+      ],
+      [
+        "\"NON-Q-WAVE MYOCARDIAL INFARCTION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"CARDIAC RISK FACTORS\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"ADMISSION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOME\"",
+        "\"THE PATIENT\""
+      ]
+    ],
+    "nodes": [
+      "\"ALZHEIMER'S DEMENTIA\"",
+      "\"ACUTE KIDNEY FAILURE\"",
+      "\"MYOCARDIAL INFARCTION\"",
+      "\"NON-Q-WAVE MYOCARDIAL INFARCTION\"",
+      "\"PRESENTATION\"",
+      "\"HOSPITAL\"",
+      "\"PROXIMAL LEFT CIRCUMFLEX STENT\"",
+      "\"LEFT FEMORAL-FEMORAL BYPASS GRAFT\"",
+      "\"GRAM-NEGATIVE UROSEPSIS\"",
+      "\"AMIODARONE\"",
+      "\"EMERGENCY DEPARTMENT\"",
+      "\"DISCHARGE\"",
+      "\"HOME\"",
+      "\"THE PATIENT\"",
+      "\"CARDIORESPIRATORY ARREST\"",
+      "\"VENOUS CATHETERIZATION\"",
+      "\"VASCULAR SURGERY TEAM\"",
+      "\"LEVOFLOXACIN\"",
+      "\"RIGHT CORONARY ARTERY STENT\"",
+      "\"CARDIAC RISK FACTORS\"",
+      "\"HOSPITALIZATION\"",
+      "\"ADMISSION\"",
+      "\"REHABILITATION FACILITY\"",
+      "\"MECHANICAL VENTILATION\"",
+      "\"IPRATROPIUM NEBULIZERS\""
+    ],
+    "chunk_ids": [
+      "chunk-d5608bdb3aa5a25b6c0f796f152462c2",
+      "chunk-87d9cef9bf2900e79467061ad5003a41",
+      "chunk-01a8df0641b60633d561ef3970a93bd8",
+      "chunk-ed4025798a84b701fca6f5fd1e1780dd"
+    ],
+    "occurrence": 1.0
+  },
+  "4": {
+    "report_string": "# THE PATIENT: Multi-Comorbidity Hospitalization Case Community\n\nThis medical community is centered around a 76-year-old male patient (THE PATIENT) hospitalized with multiple severe comorbidities including coronary artery disease, coronary artery bypass graft complications, congestive heart failure, type 2 diabetes, hypertension, and peripheral vascular disease. The patient experienced life-threatening events including sepsis, renal failure, cardiorespiratory arrest, and myocardial infarction, requiring extensive medical interventions from multiple specialized services including the Infectious Disease Service and Vascular Surgery Team. The community reflects the complex medical care pathway from emergency department presentation through hospitalization to rehabilitation facility discharge.\n\n## Patient demographics and comorbidities define the medical case complexity\n\nThe patient's age and chronic conditions place them at elevated clinical risk throughout the hospitalization period. This is further reflected in the documentation created by Medquist36, which dictated the medical record and implied a direct relationship regarding the documentation of The Patient's care [Data: Relationships (18)].\n\n## Critical acute kidney failure and cardiovascular events as primary complications\n\nThese critical events underscore the severity of the patient's clinical presentation. Non-Q-wave myocardial infarction was also diagnosed during the hospital stay, with elevated troponins indicating myocardial damage [Data: Relationships (14), (20)].\n\n## Multi-specialty medical team involvement across the hospitalization pathway\n\nAdditionally, the patient had prior interventional procedures including prostximal left circumflex stent placement and right coronary artery stent placement for coronary artery disease management [Data: Entities (17), (18); Relationships (23), (27)].\n\n## Vascular surgery and critical procedures performed during hospitalization\n\nThe procedure documentation is tied to Medquist36, which dictated the record for the venous catheterization procedure, indicating standardized medical documentation protocols for critical care procedures [Data: Relationships (19), (29)].\n\n## Infectious complications and antibiotic medication management\n\nThis antibiotic regimen change reflects the complexity of managing multiple infectious conditions simultaneously in an immunocompromised patient with vascular disease [Data: Relationships (0), (9), (16), (8), (12)].\n\n## Respiratory support and wheezing management during hospitalization\n\nThese respiratory interventions were necessary given the patient's concurrent cardiac and lung dysfunction. The presentation to the emergency department showed deterioration requiring immediate care including respiratory support [Data: Relationships (7), (16), (12), (17)]\n\n## Diabetes management and glycemic control strategies\n\nGiven the patient's baseline conditions including hypertension and diabetes, glycemic control was essential for preventing further complications during recovery [Data: Entities (19)].\n\n## Hospital care pathway from ED through discharge to rehabilitation\n\nThe patient resided at home with his wife before admission and was discharged back toward that location. The rehabilitation facility served as the designated discharge status location for continued recovery after acute hospital care [Data: Relationships (10), (26); Entities (8)]\n\n## Cardiac risk factors and baseline clinical status\n\nAmiodarone was prescribed on discharge at 400 mg b.i.d. for cardiac rhythm management, reflecting the need to continue managing the patient's cardiovascular conditions post-hospitalization [Data: Entities (3); Relationships (3)]",
+    "report_json": {
+      "title": "THE PATIENT: Multi-Comorbidity Hospitalization Case Community",
+      "summary": "This medical community is centered around a 76-year-old male patient (THE PATIENT) hospitalized with multiple severe comorbidities including coronary artery disease, coronary artery bypass graft complications, congestive heart failure, type 2 diabetes, hypertension, and peripheral vascular disease. The patient experienced life-threatening events including sepsis, renal failure, cardiorespiratory arrest, and myocardial infarction, requiring extensive medical interventions from multiple specialized services including the Infectious Disease Service and Vascular Surgery Team. The community reflects the complex medical care pathway from emergency department presentation through hospitalization to rehabilitation facility discharge.",
+      "rating": 7.5,
+      "rating_explanation": "The impact severity rating is elevated due to the patient's critical medical condition involving multiple life-threatening events, severe comorbidities, and intensive medical interventions required for recovery.",
+      "findings": [
+        {
+          "summary": "Patient demographics and comorbidities define the medical case complexity",
+          "explanation": "The patient's age and chronic conditions place them at elevated clinical risk throughout the hospitalization period. This is further reflected in the documentation created by Medquist36, which dictated the medical record and implied a direct relationship regarding the documentation of The Patient's care [Data: Relationships (18)]."
+        },
+        {
+          "summary": "Critical acute kidney failure and cardiovascular events as primary complications",
+          "explanation": "These critical events underscore the severity of the patient's clinical presentation. Non-Q-wave myocardial infarction was also diagnosed during the hospital stay, with elevated troponins indicating myocardial damage [Data: Relationships (14), (20)]."
+        },
+        {
+          "summary": "Multi-specialty medical team involvement across the hospitalization pathway",
+          "explanation": "Additionally, the patient had prior interventional procedures including prostximal left circumflex stent placement and right coronary artery stent placement for coronary artery disease management [Data: Entities (17), (18); Relationships (23), (27)]."
+        },
+        {
+          "summary": "Vascular surgery and critical procedures performed during hospitalization",
+          "explanation": "The procedure documentation is tied to Medquist36, which dictated the record for the venous catheterization procedure, indicating standardized medical documentation protocols for critical care procedures [Data: Relationships (19), (29)]."
+        },
+        {
+          "summary": "Infectious complications and antibiotic medication management",
+          "explanation": "This antibiotic regimen change reflects the complexity of managing multiple infectious conditions simultaneously in an immunocompromised patient with vascular disease [Data: Relationships (0), (9), (16), (8), (12)]."
+        },
+        {
+          "summary": "Respiratory support and wheezing management during hospitalization",
+          "explanation": "These respiratory interventions were necessary given the patient's concurrent cardiac and lung dysfunction. The presentation to the emergency department showed deterioration requiring immediate care including respiratory support [Data: Relationships (7), (16), (12), (17)]"
+        },
+        {
+          "summary": "Diabetes management and glycemic control strategies",
+          "explanation": "Given the patient's baseline conditions including hypertension and diabetes, glycemic control was essential for preventing further complications during recovery [Data: Entities (19)]."
+        },
+        {
+          "summary": "Hospital care pathway from ED through discharge to rehabilitation",
+          "explanation": "The patient resided at home with his wife before admission and was discharged back toward that location. The rehabilitation facility served as the designated discharge status location for continued recovery after acute hospital care [Data: Relationships (10), (26); Entities (8)]"
+        },
+        {
+          "summary": "Cardiac risk factors and baseline clinical status",
+          "explanation": "Amiodarone was prescribed on discharge at 400 mg b.i.d. for cardiac rhythm management, reflecting the need to continue managing the patient's cardiovascular conditions post-hospitalization [Data: Entities (3); Relationships (3)]"
+        }
+      ]
+    },
+    "level": 1,
+    "title": "Cluster 4",
+    "edges": [
+      [
+        "\"THE PATIENT\"",
+        "\"VENOUS CATHETERIZATION\""
+      ],
+      [
+        "\"INFECTIOUS DISEASE SERVICE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"IPRATROPIUM NEBULIZERS\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"MECHANICAL VENTILATION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"MYOCARDIAL INFARCTION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"ALZHEIMER'S DEMENTIA\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"THE PATIENT\"",
+        "\"VASCULAR SURGERY TEAM\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"GRAM-NEGATIVE UROSEPSIS\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"DISCHARGE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"CARDIORESPIRATORY ARREST\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"ACUTE KIDNEY FAILURE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"LEVOFLOXACIN\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITALIZATION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"REGULAR INSULIN\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"RIGHT CORONARY ARTERY STENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"EMERGENCY DEPARTMENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITAL\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"PROXIMAL LEFT CIRCUMFLEX STENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"LEFT FEMORAL-FEMORAL BYPASS GRAFT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"AMIODARONE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"FLUCONAZOLE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"REHABILITATION FACILITY\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"PULMONARY ARTERY WEDGE MONITORING\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"PRESENTATION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"VENOUS CATHETERIZATION\""
+      ],
+      [
+        "\"NON-Q-WAVE MYOCARDIAL INFARCTION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"CARDIAC RISK FACTORS\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"ADMISSION\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOME\"",
+        "\"THE PATIENT\""
+      ]
+    ],
+    "nodes": [
+      "\"ALZHEIMER'S DEMENTIA\"",
+      "\"ACUTE KIDNEY FAILURE\"",
+      "\"MYOCARDIAL INFARCTION\"",
+      "\"NON-Q-WAVE MYOCARDIAL INFARCTION\"",
+      "\"PRESENTATION\"",
+      "\"MECHANICAL VENTILATION\"",
+      "\"LEFT FEMORAL-FEMORAL BYPASS GRAFT\"",
+      "\"GRAM-NEGATIVE UROSEPSIS\"",
+      "\"AMIODARONE\"",
+      "\"DISCHARGE\"",
+      "\"HOME\"",
+      "\"THE PATIENT\"",
+      "\"CARDIORESPIRATORY ARREST\"",
+      "\"VENOUS CATHETERIZATION\"",
+      "\"VASCULAR SURGERY TEAM\"",
+      "\"LEVOFLOXACIN\"",
+      "\"RIGHT CORONARY ARTERY STENT\"",
+      "\"CARDIAC RISK FACTORS\"",
+      "\"HOSPITALIZATION\"",
+      "\"ADMISSION\"",
+      "\"PROXIMAL LEFT CIRCUMFLEX STENT\"",
+      "\"IPRATROPIUM NEBULIZERS\""
+    ],
+    "chunk_ids": [
+      "chunk-d5608bdb3aa5a25b6c0f796f152462c2",
+      "chunk-87d9cef9bf2900e79467061ad5003a41",
+      "chunk-01a8df0641b60633d561ef3970a93bd8",
+      "chunk-ed4025798a84b701fca6f5fd1e1780dd"
+    ],
+    "occurrence": 1.0
+  },
+  "5": {
+    "report_string": "# Hospital, Emergency Department, and Rehabilitation Care Community\n\nThe community is structured around a patient care continuum involving three primary medical organizations: a Hospital, an Emergency Department, and a Rehabilitation Facility. The Emergency Department functions as an internal department of the Hospital, serving as the initial point of contact and treatment upon patient presentation. Following initial care and deterioration management, the patient is transferred to the Rehabilitation Facility for continued recovery, illustrating a coordinated multi-facility discharge plan. The relationships highlight a hierarchical and procedural flow of medical care responsibility.\n\n## Hospital as the primary treatment center\n\nThe Hospital serves as the central organization where the patient was admitted, received treatment, underwent diagnosis, and received fluids and laboratory evaluations. It is the main entity connecting the patient to the broader healthcare network. [Data: Entities (1); Relationships (3)]\n\n## Emergency Department functionality\n\nThe Emergency Department acts as a sub-unit of the Hospital where the patient initially presented for care upon deterioration. This department provided immediate medical intervention including the administration of fluids and Dopamine. [Data: Entities (0); Relationships (0), (1)]\n\n## Rehabilitation Facility for post-acute care\n\nThe Rehabilitation Facility is designated as the organization to which the patient was discharged after initial treatment. This entity represents the endpoint of the acute care phase and the beginning of the recovery phase. [Data: Entities (2); Relationships (4)]\n\n## Patient discharge transfer pathway\n\nThere is a direct care transfer relationship where the Hospital connects to the Rehabilitation Facility, indicating the movement of a patient for continued recovery. This relationship underscores the coordination between acute and chronic care facilities. [Data: Relationships (2)]\n\n## Emergency Department-Hospital structural link\n\nThe Emergency Department is structurally a part of the Hospital where initial triage and presentation occur. This internal relationship indicates a hierarchical structure within the medical facility. [Data: Relationships (0)]\n\n## Patient deterioration triggering admission\n\nThe patient was specifically admitted to the Hospital after presenting at the Emergency Department with deterioration and needing immediate care. This event highlights the urgency and specific reasons for facility utilization. [Data: Relationships (1), (3)]\n\n## Rehabilitation as designated discharge status\n\nThe Rehabilitation Facility is explicitly noted as the discharge destination status in the medical record or plan. This clarifies the post-hospitalization trajectory for the patient. [Data: Relationships (4)]",
+    "report_json": {
+      "title": "Hospital, Emergency Department, and Rehabilitation Care Community",
+      "summary": "The community is structured around a patient care continuum involving three primary medical organizations: a Hospital, an Emergency Department, and a Rehabilitation Facility. The Emergency Department functions as an internal department of the Hospital, serving as the initial point of contact and treatment upon patient presentation. Following initial care and deterioration management, the patient is transferred to the Rehabilitation Facility for continued recovery, illustrating a coordinated multi-facility discharge plan. The relationships highlight a hierarchical and procedural flow of medical care responsibility.",
+      "rating": 4.0,
+      "rating_explanation": "The impact severity is moderate due to the critical nature of the medical environment and potential risks associated with patient deterioration requiring transfer between multiple facilities.",
+      "findings": [
+        {
+          "summary": "Hospital as the primary treatment center",
+          "explanation": "The Hospital serves as the central organization where the patient was admitted, received treatment, underwent diagnosis, and received fluids and laboratory evaluations. It is the main entity connecting the patient to the broader healthcare network. [Data: Entities (1); Relationships (3)]"
+        },
+        {
+          "summary": "Emergency Department functionality",
+          "explanation": "The Emergency Department acts as a sub-unit of the Hospital where the patient initially presented for care upon deterioration. This department provided immediate medical intervention including the administration of fluids and Dopamine. [Data: Entities (0); Relationships (0), (1)]"
+        },
+        {
+          "summary": "Rehabilitation Facility for post-acute care",
+          "explanation": "The Rehabilitation Facility is designated as the organization to which the patient was discharged after initial treatment. This entity represents the endpoint of the acute care phase and the beginning of the recovery phase. [Data: Entities (2); Relationships (4)]"
+        },
+        {
+          "summary": "Patient discharge transfer pathway",
+          "explanation": "There is a direct care transfer relationship where the Hospital connects to the Rehabilitation Facility, indicating the movement of a patient for continued recovery. This relationship underscores the coordination between acute and chronic care facilities. [Data: Relationships (2)]"
+        },
+        {
+          "summary": "Emergency Department-Hospital structural link",
+          "explanation": "The Emergency Department is structurally a part of the Hospital where initial triage and presentation occur. This internal relationship indicates a hierarchical structure within the medical facility. [Data: Relationships (0)]"
+        },
+        {
+          "summary": "Patient deterioration triggering admission",
+          "explanation": "The patient was specifically admitted to the Hospital after presenting at the Emergency Department with deterioration and needing immediate care. This event highlights the urgency and specific reasons for facility utilization. [Data: Relationships (1), (3)]"
+        },
+        {
+          "summary": "Rehabilitation as designated discharge status",
+          "explanation": "The Rehabilitation Facility is explicitly noted as the discharge destination status in the medical record or plan. This clarifies the post-hospitalization trajectory for the patient. [Data: Relationships (4)]"
+        }
+      ]
+    },
+    "level": 1,
+    "title": "Cluster 5",
+    "edges": [
+      [
+        "\"REHABILITATION FACILITY\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"EMERGENCY DEPARTMENT\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITAL\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"HOSPITAL\"",
+        "\"REHABILITATION FACILITY\""
+      ],
+      [
+        "\"EMERGENCY DEPARTMENT\"",
+        "\"HOSPITAL\""
+      ]
+    ],
+    "nodes": [
+      "\"HOSPITAL\"",
+      "\"EMERGENCY DEPARTMENT\"",
+      "\"REHABILITATION FACILITY\""
+    ],
+    "chunk_ids": [
+      "chunk-87d9cef9bf2900e79467061ad5003a41",
+      "chunk-01a8df0641b60633d561ef3970a93bd8"
+    ],
+    "occurrence": 0.5
+  },
+  "2": {
+    "report_string": "# Infectious Disease Service and Clinical Care Community\n\nThe community centers on the Infectious Disease Service providing specialized medical consultation alongside the administration of Fluconazole medication for patient care. These entities are connected through relationships involving patient management, coordination with Medquist36 for discharge summaries, and specific directives regarding antibiotic and antifungal medication usage.\n\n## Specialized Role of Infectious Disease Service\n\nThe Infectious Disease Service acts as a specialized medical organization responsible for consultation on antibiotic therapy and management of infection-related symptoms. This department guides antibiotic regimens and is consulted to determine medication discontinuation based on culture results [Data: Entities (1)]. Furthermore, the service manages antibiotic therapy specifically for the patient, as evidenced by the management relationship [Data: Relationships (3)].\n\n## Fluconazole Medication Function\n\nFluconazole is identified as an antifungal medication technology used specifically when yeast growth is observed on a urine culture. It is administered directly to the patient in the context of the clinical management [Data: Entities (0)]. The initiation of this medication for the patient indicates a response to specific fungal infections detected during diagnostic processes [Data: Relationships (1)].\n\n## Medication Oversight by Service\n\nThere is a direct oversight relationship where the Infectious Disease Service directs the use and discontinuation of Fluconazole for the patient. This indicates that the specialized medical team retains authoritative control over the administration of the medication technology [Data: Relationships (0)].\n\n## Patient Management Connection\n\nThe Infectious Disease Service is the primary entity managing the patient's antibiotic therapy and medication changes. The patient is linked to the service through guidance on antibiotic regimens, highlighting the service's central role in the treatment ecosystem [Data: Relationships (3)].\n\n## Medication and Patient Link\n\nThe connection between Fluconazole and the patient shows that the patient was started on the medication due to specific clinical findings. This direct link underscores the personalized treatment plan involving the antifungal agent [Data: Relationships (1)].\n\n## Discharge Coordination with Medquist36\n\nThe Infectious Disease Service coordinates care with Medquist36, who dictated the discharge summary. This relationship shows the integration of clinical services with administrative or documentation processes to finalize the patient's care plan [Data: Relationships (2)].\n\n## Clinical Care Structure\n\nThe overall structure of the community facilitates a specialized medical workflow involving infection control and antifungal treatment. The connections between the specialized service, the medication technology, the patient, and the discharge coordinator create a cohesive treatment loop [Data: Entities (0, 1), Relationships (0, 1, 2, 3)].",
+    "report_json": {
+      "title": "Infectious Disease Service and Clinical Care Community",
+      "summary": "The community centers on the Infectious Disease Service providing specialized medical consultation alongside the administration of Fluconazole medication for patient care. These entities are connected through relationships involving patient management, coordination with Medquist36 for discharge summaries, and specific directives regarding antibiotic and antifungal medication usage.",
+      "rating": 3.0,
+      "rating_explanation": "The impact severity rating is moderate, reflecting the critical nature of the medical data and specialized service interactions rather than malicious threat factors.",
+      "findings": [
+        {
+          "summary": "Specialized Role of Infectious Disease Service",
+          "explanation": "The Infectious Disease Service acts as a specialized medical organization responsible for consultation on antibiotic therapy and management of infection-related symptoms. This department guides antibiotic regimens and is consulted to determine medication discontinuation based on culture results [Data: Entities (1)]. Furthermore, the service manages antibiotic therapy specifically for the patient, as evidenced by the management relationship [Data: Relationships (3)]."
+        },
+        {
+          "summary": "Fluconazole Medication Function",
+          "explanation": "Fluconazole is identified as an antifungal medication technology used specifically when yeast growth is observed on a urine culture. It is administered directly to the patient in the context of the clinical management [Data: Entities (0)]. The initiation of this medication for the patient indicates a response to specific fungal infections detected during diagnostic processes [Data: Relationships (1)]."
+        },
+        {
+          "summary": "Medication Oversight by Service",
+          "explanation": "There is a direct oversight relationship where the Infectious Disease Service directs the use and discontinuation of Fluconazole for the patient. This indicates that the specialized medical team retains authoritative control over the administration of the medication technology [Data: Relationships (0)]."
+        },
+        {
+          "summary": "Patient Management Connection",
+          "explanation": "The Infectious Disease Service is the primary entity managing the patient's antibiotic therapy and medication changes. The patient is linked to the service through guidance on antibiotic regimens, highlighting the service's central role in the treatment ecosystem [Data: Relationships (3)]."
+        },
+        {
+          "summary": "Medication and Patient Link",
+          "explanation": "The connection between Fluconazole and the patient shows that the patient was started on the medication due to specific clinical findings. This direct link underscores the personalized treatment plan involving the antifungal agent [Data: Relationships (1)]."
+        },
+        {
+          "summary": "Discharge Coordination with Medquist36",
+          "explanation": "The Infectious Disease Service coordinates care with Medquist36, who dictated the discharge summary. This relationship shows the integration of clinical services with administrative or documentation processes to finalize the patient's care plan [Data: Relationships (2)]."
+        },
+        {
+          "summary": "Clinical Care Structure",
+          "explanation": "The overall structure of the community facilitates a specialized medical workflow involving infection control and antifungal treatment. The connections between the specialized service, the medication technology, the patient, and the discharge coordinator create a cohesive treatment loop [Data: Entities (0, 1), Relationships (0, 1, 2, 3)]."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 2",
+    "edges": [
+      [
+        "\"FLUCONAZOLE\"",
+        "\"INFECTIOUS DISEASE SERVICE\""
+      ],
+      [
+        "\"INFECTIOUS DISEASE SERVICE\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"INFECTIOUS DISEASE SERVICE\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"FLUCONAZOLE\"",
+        "\"THE PATIENT\""
+      ]
+    ],
+    "nodes": [
+      "\"INFECTIOUS DISEASE SERVICE\"",
+      "\"FLUCONAZOLE\""
+    ],
+    "chunk_ids": [
+      "chunk-d5608bdb3aa5a25b6c0f796f152462c2",
+      "chunk-87d9cef9bf2900e79467061ad5003a41"
+    ],
+    "occurrence": 0.5
+  },
+  "0": {
+    "report_string": "# Medquist36 Critical Care and Documentation Network\n\nThe community revolves around MEDQUIST36 (ID: 7), a medical doctor who documented extensive medical records for a patient (referred to as THE PATIENT in relationships) suffering from multiple severe conditions. The entities are interconnected through a network of critical care events, including cardiac arrests, infections, and intensive interventions, all orchestrated under the coordination of Medquist36 and supported by specialized services such as the Infectious Disease Service. The structure indicates a high-acuity clinical case where various medical events, diagnoses, and procedures are linked to a single documentation entity, highlighting the complexity of the patient's care.\n\n## Central Documentation Role of MEDQUIST36\n\nMEDQUIST36 serves as the primary link connecting the patient and various medical events and diagnoses throughout the network. This physician dictated records for the majority of the conditions and procedures listed, establishing a comprehensive audit trail of the patient's clinical state [Data: Entities (7), Relationships (13, 11, 16, 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 15)]. The high number of relationships originating from or terminating at MEDQUIST36 shows their significant responsibility in managing the documentation of these complex medical interactions [Data: Relationships (13, 11, 16, 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 15)].\n\n## Presence of Critical Life-Threatening Conditions\n\nThe patient experienced severe physiological events that significantly elevate the impact severity of this community. Specific conditions documented include Cardiac Arrest, Acute Kidney Failure, and Unspecified Septicemia, which represent immediate risks to patient survival [Data: Entities (1, 0, 14)]. The documentation of these events suggests a complex medical crisis involving multiple organ systems, requiring urgent and specialized attention [Data: Entities (1), Relationships (1), Relationships (0), Relationships (14)].\n\n## Specialized Care Coordination\n\nMedical care appears to be coordinated with specialized services, specifically the Infectious Disease Service, implying a need for expert intervention regarding infection control and management [Data: Relationships (6)]. This connection highlights that the treatment plan was not limited to standard interventions but involved consultative services essential for managing conditions like Unspecified Septicemia and Cellulitis [Data: Relationships (6), Entities (14), Entities (2)].\n\n## Intensive Care Interventions Required\n\nThe documentation records indicate the necessity for intensive medical support, including continuous invasive mechanical ventilation and electrical stimulation of the heart [Data: Entities (4), Entities (8)]. These procedures, combined with endotracheal tube insertion, point to a patient who required significant respiratory and hemodynamic support during their hospitalization [Data: Entities (4), Entities (8), Entities (7), Relationships (4), Relationships (8), Relationships (7)].\n\n## Multisystem Compromise Evident\n\nThe patient suffered from conditions affecting multiple body systems simultaneously, including renal, cardiac, and infectious pathways [Data: Entities (0), Entities (1), Entities (2), Entities (3), Entities (14)]. The co-occurrence of Congestive Heart Failure with Cardiomyopathies and Shock without trauma illustrates a scenario of multisystem organ dysfunction and high clinical urgency [Data: Entities (3), Entities (9), Entities (10)].\n\n## Nutritional Support and Monitoring\n\nDespite the acute nature of the illness, the patient required nutritional support via enteral infusion of concentrated nutritional substances and specific monitoring such as Pulmonary Artery Wedge Monitoring [Data: Entities (5), Entities (11)]. This suggests prolonged treatment duration and the need to maintain physiological stability alongside aggressive treatment of the primary life-threatening conditions [Data: Entities (5), Entities (11), Relationships (5), Relationships (11)]",
+    "report_json": {
+      "title": "Medquist36 Critical Care and Documentation Network",
+      "summary": "The community revolves around MEDQUIST36 (ID: 7), a medical doctor who documented extensive medical records for a patient (referred to as THE PATIENT in relationships) suffering from multiple severe conditions. The entities are interconnected through a network of critical care events, including cardiac arrests, infections, and intensive interventions, all orchestrated under the coordination of Medquist36 and supported by specialized services such as the Infectious Disease Service. The structure indicates a high-acuity clinical case where various medical events, diagnoses, and procedures are linked to a single documentation entity, highlighting the complexity of the patient's care.",
+      "rating": 8.5,
+      "rating_explanation": "The impact severity rating is high because the entities represent a concentration of life-threatening clinical events and intensive care procedures indicative of a critical patient condition.",
+      "findings": [
+        {
+          "summary": "Central Documentation Role of MEDQUIST36",
+          "explanation": "MEDQUIST36 serves as the primary link connecting the patient and various medical events and diagnoses throughout the network. This physician dictated records for the majority of the conditions and procedures listed, establishing a comprehensive audit trail of the patient's clinical state [Data: Entities (7), Relationships (13, 11, 16, 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 15)]. The high number of relationships originating from or terminating at MEDQUIST36 shows their significant responsibility in managing the documentation of these complex medical interactions [Data: Relationships (13, 11, 16, 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 15)]."
+        },
+        {
+          "summary": "Presence of Critical Life-Threatening Conditions",
+          "explanation": "The patient experienced severe physiological events that significantly elevate the impact severity of this community. Specific conditions documented include Cardiac Arrest, Acute Kidney Failure, and Unspecified Septicemia, which represent immediate risks to patient survival [Data: Entities (1, 0, 14)]. The documentation of these events suggests a complex medical crisis involving multiple organ systems, requiring urgent and specialized attention [Data: Entities (1), Relationships (1), Relationships (0), Relationships (14)]."
+        },
+        {
+          "summary": "Specialized Care Coordination",
+          "explanation": "Medical care appears to be coordinated with specialized services, specifically the Infectious Disease Service, implying a need for expert intervention regarding infection control and management [Data: Relationships (6)]. This connection highlights that the treatment plan was not limited to standard interventions but involved consultative services essential for managing conditions like Unspecified Septicemia and Cellulitis [Data: Relationships (6), Entities (14), Entities (2)]."
+        },
+        {
+          "summary": "Intensive Care Interventions Required",
+          "explanation": "The documentation records indicate the necessity for intensive medical support, including continuous invasive mechanical ventilation and electrical stimulation of the heart [Data: Entities (4), Entities (8)]. These procedures, combined with endotracheal tube insertion, point to a patient who required significant respiratory and hemodynamic support during their hospitalization [Data: Entities (4), Entities (8), Entities (7), Relationships (4), Relationships (8), Relationships (7)]."
+        },
+        {
+          "summary": "Multisystem Compromise Evident",
+          "explanation": "The patient suffered from conditions affecting multiple body systems simultaneously, including renal, cardiac, and infectious pathways [Data: Entities (0), Entities (1), Entities (2), Entities (3), Entities (14)]. The co-occurrence of Congestive Heart Failure with Cardiomyopathies and Shock without trauma illustrates a scenario of multisystem organ dysfunction and high clinical urgency [Data: Entities (3), Entities (9), Entities (10)]."
+        },
+        {
+          "summary": "Nutritional Support and Monitoring",
+          "explanation": "Despite the acute nature of the illness, the patient required nutritional support via enteral infusion of concentrated nutritional substances and specific monitoring such as Pulmonary Artery Wedge Monitoring [Data: Entities (5), Entities (11)]. This suggests prolonged treatment duration and the need to maintain physiological stability alongside aggressive treatment of the primary life-threatening conditions [Data: Entities (5), Entities (11), Relationships (5), Relationships (11)]"
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 0",
+    "edges": [
+      [
+        "\"CONGESTIVE HEART FAILURE, UNSPECIFIED\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"INFECTIOUS DISEASE SERVICE\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"PULMONARY ARTERY WEDGE MONITORING\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"SUBENDOCARDIAL INFARCTION, INITIAL EPISODE OF CARE\""
+      ],
+      [
+        "\"ACUTE KIDNEY FAILURE, UNSPECIFIED\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"PULMONARY ARTERY WEDGE MONITORING\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"UNSPECIFIED SEPTICEMIA\""
+      ],
+      [
+        "\"CARDIAC ARREST\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"CELLULITIS AND ABSCESS OF LEG, EXCEPT FOOT\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"THE PATIENT\""
+      ],
+      [
+        "\"INSERTION OF ENDOTRACHEAL TUBE\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"ENTERAL INFUSION OF CONCENTRATED NUTRITIONAL SUBSTANCES\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"CONTINUOUS INVASIVE MECHANICAL VENTILATION\"",
+        "\"MEDQUIST36\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"OTHER ELECTRIC COUNTERSHOCK OF HEART\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"OTHER PRIMARY CARDIOMYOPATHIES\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"UNSPECIFIED PROTEIN-CALORIE MALNUTRITION\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"VENOUS CATHETERIZATION\""
+      ],
+      [
+        "\"MEDQUIST36\"",
+        "\"OTHER SHOCK WITHOUT MENTION OF TRAUMA\""
+      ]
+    ],
+    "nodes": [
+      "\"OTHER PRIMARY CARDIOMYOPATHIES\"",
+      "\"MEDQUIST36\"",
+      "\"SUBENDOCARDIAL INFARCTION, INITIAL EPISODE OF CARE\"",
+      "\"ACUTE KIDNEY FAILURE, UNSPECIFIED\"",
+      "\"CARDIAC ARREST\"",
+      "\"ENTERAL INFUSION OF CONCENTRATED NUTRITIONAL SUBSTANCES\"",
+      "\"CONGESTIVE HEART FAILURE, UNSPECIFIED\"",
+      "\"UNSPECIFIED PROTEIN-CALORIE MALNUTRITION\"",
+      "\"OTHER SHOCK WITHOUT MENTION OF TRAUMA\"",
+      "\"CONTINUOUS INVASIVE MECHANICAL VENTILATION\"",
+      "\"CELLULITIS AND ABSCESS OF LEG, EXCEPT FOOT\"",
+      "\"UNSPECIFIED SEPTICEMIA\"",
+      "\"OTHER ELECTRIC COUNTERSHOCK OF HEART\"",
+      "\"PULMONARY ARTERY WEDGE MONITORING\"",
+      "\"INSERTION OF ENDOTRACHEAL TUBE\""
+    ],
+    "chunk_ids": [
+      "chunk-87d9cef9bf2900e79467061ad5003a41",
+      "chunk-ed4025798a84b701fca6f5fd1e1780dd"
+    ],
+    "occurrence": 0.5
+  },
+  "3": {
+    "report_string": "# Regular Insulin and Type 2 Diabetes Management Community\n\nThe community is structured around the clinical treatment of Type 2 Diabetes using Regular Insulin. The primary entities are 'Regular Insulin' and 'Type 2 Diabetes', which are linked through prescribing relationships. A secondary relationship connects Regular Insulin to 'The Patient' in the context of discharge management. These connections outline a specific medical regimen and its administrative context without further complications.\n\n## Regular Insulin Entity Classification\n\nRegular Insulin is identified as a 'TECHNOLOGY' entity within the dataset, with a degree of 2. This classification suggests it is a tool or intervention within the healthcare process rather than a biological specimen or condition itself. The assignment of a technology type to the medication indicates its functional role in the treatment plan described in the records. [Data: Entities (0)]\n\n## Type 2 Diabetes Entity Classification\n\nType 2 Diabetes is listed as an entity of 'UNKNOWN' type within the community structure, indicating a variation in taxonomic classification for conditions in this dataset. Regular Insulin was prescribed to manage the patient's specific Type 2 Diabetes condition as noted in the entity description. This entity serves as the condition target for the technology intervention. [Data: Entities (1)]\n\n## Patient Management on Discharge Relation\n\nA critical relationship links Regular Insulin to 'THE PATIENT' with a rank score of 31. The description states, 'The Patient was managed with Regular Insulin for type 2 diabetes on discharge.' This confirms the temporal boundary of the treatment data associated with the medication's usage. This relationship indicates the specific point of care delivery recorded in this context. [Data: Relationships (0)]\n\n## Condition Management Prescription Link\n\nRegular Insulin is linked directly to Type 2 Diabetes via a relationship labeled with a rank of 3. The description for this link specifies that 'Regular Insulin was prescribed to manage the patient's Type 2 Diabetes condition.' This highlights the therapeutic intent behind the use of the insulin technology. The lower rank score might suggest the nature of this relationship is standard definition versus the procedural relationship to the patient. [Data: Relationships (1)]\n\n## Entity Degree Distribution\n\nThe degree attribute varies between the key entities in the community, with Regular Insulin holding a degree of 2 and Type 2 Diabetes holding a degree of 1. This metric may reflect the complexity or frequency of connections associated with each entity within the dataset schema. Regular Insulin appears to have a slightly higher degree value compared to the condition entity. [Data: Entities (0, 1)]",
+    "report_json": {
+      "title": "Regular Insulin and Type 2 Diabetes Management Community",
+      "summary": "The community is structured around the clinical treatment of Type 2 Diabetes using Regular Insulin. The primary entities are 'Regular Insulin' and 'Type 2 Diabetes', which are linked through prescribing relationships. A secondary relationship connects Regular Insulin to 'The Patient' in the context of discharge management. These connections outline a specific medical regimen and its administrative context without further complications.",
+      "rating": 2.0,
+      "rating_explanation": "The impact severity rating is low as the information pertains to routine medical management protocols without evidence of adverse events or high-risk claims.",
+      "findings": [
+        {
+          "summary": "Regular Insulin Entity Classification",
+          "explanation": "Regular Insulin is identified as a 'TECHNOLOGY' entity within the dataset, with a degree of 2. This classification suggests it is a tool or intervention within the healthcare process rather than a biological specimen or condition itself. The assignment of a technology type to the medication indicates its functional role in the treatment plan described in the records. [Data: Entities (0)]"
+        },
+        {
+          "summary": "Type 2 Diabetes Entity Classification",
+          "explanation": "Type 2 Diabetes is listed as an entity of 'UNKNOWN' type within the community structure, indicating a variation in taxonomic classification for conditions in this dataset. Regular Insulin was prescribed to manage the patient's specific Type 2 Diabetes condition as noted in the entity description. This entity serves as the condition target for the technology intervention. [Data: Entities (1)]"
+        },
+        {
+          "summary": "Patient Management on Discharge Relation",
+          "explanation": "A critical relationship links Regular Insulin to 'THE PATIENT' with a rank score of 31. The description states, 'The Patient was managed with Regular Insulin for type 2 diabetes on discharge.' This confirms the temporal boundary of the treatment data associated with the medication's usage. This relationship indicates the specific point of care delivery recorded in this context. [Data: Relationships (0)]"
+        },
+        {
+          "summary": "Condition Management Prescription Link",
+          "explanation": "Regular Insulin is linked directly to Type 2 Diabetes via a relationship labeled with a rank of 3. The description for this link specifies that 'Regular Insulin was prescribed to manage the patient's Type 2 Diabetes condition.' This highlights the therapeutic intent behind the use of the insulin technology. The lower rank score might suggest the nature of this relationship is standard definition versus the procedural relationship to the patient. [Data: Relationships (1)]"
+        },
+        {
+          "summary": "Entity Degree Distribution",
+          "explanation": "The degree attribute varies between the key entities in the community, with Regular Insulin holding a degree of 2 and Type 2 Diabetes holding a degree of 1. This metric may reflect the complexity or frequency of connections associated with each entity within the dataset schema. Regular Insulin appears to have a slightly higher degree value compared to the condition entity. [Data: Entities (0, 1)]"
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 3",
+    "edges": [
+      [
+        "\"REGULAR INSULIN\"",
+        "\"TYPE 2 DIABETES\""
+      ],
+      [
+        "\"REGULAR INSULIN\"",
+        "\"THE PATIENT\""
+      ]
+    ],
+    "nodes": [
+      "\"TYPE 2 DIABETES\"",
+      "\"REGULAR INSULIN\""
+    ],
+    "chunk_ids": [
+      "chunk-87d9cef9bf2900e79467061ad5003a41"
+    ],
+    "occurrence": 0.25
+  }
+}

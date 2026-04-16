@@ -34,11 +34,11 @@ Each category should be addressed only if relevant to the content of the medical
 
 def call_openai_api(chunk):
     client = OpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_API_BASE_URL")
+        api_key=os.getenv("OPENAI_API_KEY", "ollama"),
+        base_url=os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1"),
     )
     response = client.chat.completions.create(
-        model="gpt-4-1106-preview",
+        model=os.getenv("LLM_MODEL", "qwen2.5:7b-instruct"),
         messages=[
             {"role": "system", "content": sum_prompt},
             {"role": "user", "content": f" {chunk}"},
@@ -51,7 +51,7 @@ def call_openai_api(chunk):
     return response.choices[0].message.content
 
 def split_into_chunks(text, tokens=500):
-    encoding = tiktoken.encoding_for_model('gpt-4-1106-preview')
+    encoding = tiktoken.encoding_for_model('gpt-4o')
     words = encoding.encode(text)
     chunks = []
     for i in range(0, len(words), tokens):

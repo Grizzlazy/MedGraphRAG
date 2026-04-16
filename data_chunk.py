@@ -1,45 +1,48 @@
-from langchain.output_parsers.openai_tools import JsonOutputToolsParser
-from langchain_community.chat_models import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables import RunnableLambda
-from langchain.chains import create_extraction_chain
-from typing import Optional, List
-from langchain.chains import create_extraction_chain_pydantic
-from langchain_core.pydantic_v1 import BaseModel
-from langchain import hub
+import json
+from typing import List
 import os
-from dataloader import load_high
 from agentic_chunker import AgenticChunker
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
 
-# Pydantic data class
-class Sentences(BaseModel):
-    sentences: List[str]
-
-
-def get_propositions(text, runnable, extraction_chain):
+def get_propositions(text, runnable):
     runnable_output = runnable.invoke({
     	"input": text
     }).content
-    
-    propositions = extraction_chain.run(runnable_output)[0].sentences
-    return propositions
+
+    try:
+        extracted = json.loads(runnable_output)
+        sentences = extracted.get("sentences", [])
+        return [s for s in sentences if isinstance(s, str) and s.strip()]
+    except Exception:
+        return [line.strip("- ").strip() for line in runnable_output.splitlines() if line.strip()]
 
 def run_chunk(essay):
 
-    obj = hub.pull("wfh/proposal-indexing")
-    llm = ChatOpenAI(model='gpt-4-1106-preview', openai_api_key = os.getenv("OPENAI_API_KEY"))
-
+    obj = ChatPromptTemplate.from_messages(
+        [
+            (
+                "system",
+                "Extract atomic propositions from the input text. "
+                "Return strict JSON in this format only: "
+                "{{\"sentences\": [\"...\", \"...\"]}}.",
+            ),
+            ("user", "{input}"),
+        ]
+    )
+    llm = ChatOpenAI(
+        model=os.getenv("LLM_MODEL", "qwen3.5:9b"),
+        openai_api_key=os.getenv("OPENAI_API_KEY", "ollama"),
+        openai_api_base=os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1"),
+    )
     runnable = obj | llm
-
-    # Extraction
-    extraction_chain = create_extraction_chain_pydantic(pydantic_schema=Sentences, llm=llm)
 
     paragraphs = essay.split("\n\n")
 
     essay_propositions = []
 
     for i, para in enumerate(paragraphs):
-        propositions = get_propositions(para, runnable, extraction_chain)
+        propositions = get_propositions(para, runnable)
         
         essay_propositions.extend(propositions)
         print (f"Done with {i}")

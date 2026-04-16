@@ -3,17 +3,32 @@ from getpass import getpass
 from camel.storages import Neo4jGraph
 from camel.agents import KnowledgeGraphAgent
 from camel.loaders import UnstructuredIO
+from camel.models import ModelFactory
+from camel.types import ModelPlatformType
 from dataloader import load_high
 import argparse
 from data_chunk import run_chunk
 from utils import *
 
 
+def _build_kg_agent() -> KnowledgeGraphAgent:
+    """Build KnowledgeGraphAgent backed by the local Ollama/Qwen model."""
+    llm_model = os.getenv("LLM_MODEL", "qwen2.5:7b-instruct")
+    base_url = os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1")
+    model = ModelFactory.create(
+        model_platform=ModelPlatformType.OLLAMA,
+        model_type=llm_model,
+        model_config_dict={"temperature": 0.0, "max_tokens": 4096},
+        url=base_url,
+    )
+    return KnowledgeGraphAgent(model=model)
+
+
 def creat_metagraph(args, content, gid, n4j):
 
     # Set instance
     uio = UnstructuredIO()
-    kg_agent = KnowledgeGraphAgent()
+    kg_agent = _build_kg_agent()
     whole_chunk = content
 
     if args.grained_chunk == True:

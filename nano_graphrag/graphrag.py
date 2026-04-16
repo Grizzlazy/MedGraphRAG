@@ -6,7 +6,14 @@ from functools import partial
 from typing import Type, cast
 
 
-from ._llm import gpt_4o_complete, gpt_4o_mini_complete, openai_embedding
+from ._llm import (
+    qwen_complete,
+    qwen_mini_complete,
+    build_local_embedding_func,
+    gpt_4o_complete,
+    gpt_4o_mini_complete,
+    openai_embedding,
+)
 from ._op import (
     chunking_by_token_size,
     extract_entities,
@@ -67,15 +74,15 @@ class GraphRAG:
     )
 
     # text embedding
-    embedding_func: EmbeddingFunc = field(default_factory=lambda: openai_embedding)
+    embedding_func: EmbeddingFunc = field(default_factory=build_local_embedding_func)
     embedding_batch_num: int = 32
     embedding_func_max_async: int = 16
 
     # LLM
-    best_model_func: callable = gpt_4o_complete
+    best_model_func: callable = qwen_complete
     best_model_max_token_size: int = 32768
     best_model_max_async: int = 16
-    cheap_model_func: callable = gpt_4o_mini_complete
+    cheap_model_func: callable = qwen_mini_complete
     cheap_model_max_token_size: int = 32768
     cheap_model_max_async: int = 16
 

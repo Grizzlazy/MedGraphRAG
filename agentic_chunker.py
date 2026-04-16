@@ -1,11 +1,9 @@
 from langchain_core.prompts import ChatPromptTemplate
 import uuid
-from langchain.chat_models import ChatOpenAI
 import os
-from typing import Optional
-from langchain_core.pydantic_v1 import BaseModel
-from langchain.chains import create_extraction_chain_pydantic
+import re
 from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
@@ -19,12 +17,17 @@ class AgenticChunker:
         self.print_logging = True
 
         if openai_api_key is None:
-            openai_api_key = os.getenv("OPENAI_API_KEY")
+            openai_api_key = os.getenv("OPENAI_API_KEY", "ollama")
 
-        if openai_api_key is None:
-            raise ValueError("API key is not provided and not found in environment variables")
+        llm_model = os.getenv("LLM_CHEAP_MODEL", os.getenv("LLM_MODEL", "qwen2.5:7b-instruct"))
+        llm_base_url = os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1")
 
-        self.llm = ChatOpenAI(model='gpt-4-1106-preview', openai_api_key=openai_api_key, temperature=0)
+        self.llm = ChatOpenAI(
+            model=llm_model,
+            openai_api_key=openai_api_key,
+            openai_api_base=llm_base_url,
+            temperature=0,
+        )
 
     def add_propositions(self, propositions):
         for proposition in propositions:
@@ -43,8 +46,8 @@ class AgenticChunker:
 
         chunk_id = self._find_relevant_chunk(proposition)
 
-        # If a chunk was found then add the proposition to it
-        if chunk_id:
+        # If a valid existing chunk was found then add the proposition to it
+        if chunk_id and chunk_id in self.chunks:
             if self.print_logging:
                 print (f"Chunk Found ({self.chunks[chunk_id]['chunk_id']}), adding to: {self.chunks[chunk_id]['title']}")
             self.add_proposition_to_chunk(chunk_id, proposition)
@@ -286,20 +289,15 @@ class AgenticChunker:
             "current_chunk_outline": current_chunk_outline
         }).content
 
-        # Pydantic data class
-        class ChunkID(BaseModel):
-            """Extracting the chunk id"""
-            chunk_id: Optional[str]
-            
-        # Extraction to catch-all LLM responses. This is a bandaid
-        extraction_chain = create_extraction_chain_pydantic(pydantic_schema=ChunkID, llm=self.llm)
-        extraction_found = extraction_chain.run(chunk_found)
-        if extraction_found:
-            chunk_found = extraction_found[0].chunk_id
+        # Extract chunk id without deprecated extraction chain.
+        valid_ids = set(self.chunks.keys())
+        match = re.search(rf"\b([a-zA-Z0-9]{{{self.id_truncate_limit}}})\b", chunk_found or "")
+        candidate = match.group(1) if match else None
+        chunk_found = candidate if candidate in valid_ids else None
 
         # If you got a response that isn't the chunk id limit, chances are it's a bad response or it found nothing
         # So return nothing
-        if len(chunk_found) != self.id_truncate_limit:
+        if chunk_found is None or len(chunk_found) != self.id_truncate_limit:
             return None
 
         return chunk_found

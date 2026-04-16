@@ -29,15 +29,25 @@ Recognizing that accessing and processing all the data mentioned may be challeng
 ### 1. Prepare the environment, Neo4j and LLM
 
 1. conda env create -f medgraphrag.yml
-2. prepare neo4j and LLM (using ChatGPT here for an example), you need to export:
+2. prepare neo4j and LLM using ollama, you need to setup .env:
 
-export OPENAI_API_KEY = your OPENAI_API_KEY
+```
+NEO4J_URL=bolt://localhost:7688
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=medgraphrag2026
 
-export NEO4J_URL= your NEO4J_URL
+# Ollama local server
+OPENAI_API_BASE_URL=http://localhost:11434/v1
+OPENAI_API_KEY=ollama
 
-export NEO4J_USERNAME= your NEO4J_USERNAME
+# LLM model
+LLM_MODEL=qwen3.5:9b
+LLM_CHEAP_MODEL=qwen3.5:9b
 
-export NEO4J_PASSWORD= your NEO4J_PASSWORD
+# Embedding model
+EMBEDDING_MODEL=nomic-embed-text
+EMBEDDING_DIM=768
+```
 
 ### 2. Construct the graph (use "mimic_ex" dataset as an example)
 

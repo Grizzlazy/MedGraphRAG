@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="description" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d3" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;THE PATIENT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A 76-year-old male with comorbidities including coronary artery disease, congestive heart failure, type 2 diabetes, hypertension, and peripheral vascular disease, who was hospitalized for a femoral-at bypass graft complication."&lt;SEP&gt;"The individual subject of the hospital record presenting with sepsis, renal failure, and cardiac complications."&lt;SEP&gt;"The individual subject of the medical record who presented with hypotension, acute renal failure, and urosepsis, undergoing resuscitation and medication management."&lt;SEP&gt;"The patient is the subject of the medical record, described as experiencing acute renal failure, myocardial infarction, respiratory distress, and malnutrition prior to discharge."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;HOSPITAL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The medical facility where the patient was hospitalized, received treatment, presented to the emergency department, and underwent diagnosis."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;EMERGENCY DEPARTMENT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The department within the hospital where the patient presented for care, received fluids, dopamine, and laboratory evaluations."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;REHABILITATION FACILITY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The medical care center to which the patient was discharged after initial hospital treatment."&lt;SEP&gt;"The organization specified as the discharge destination status, indicating the plan for post-hospital care."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;HOME&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"The residential location where the patient lived with his wife before admission and the day prior."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;VASCULAR SURGERY TEAM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The specialized group of physicians who conducted the physical examination and planned the hospital admission."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;HOSPITALIZATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The period during which the patient was admitted to the hospital for treatment and monitoring of his condition."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;ADMISSION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The event marking the patient's arrival at the hospital for sepsis and acute medical issues."&lt;SEP&gt;"The event marking the patient's arrival at the hospital with initial symptoms of sepsis and renal failure."&lt;SEP&gt;"The specific event marking the patient's entry into the hospital due to his medical crisis."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;PRESENTATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The episode where the patient presented again to the emergency department with symptoms and vital signs."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;DISCHARGE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The event marking the patient's transfer from the hospital to the rehabilitation facility."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;WIFE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Wife is the patient's spouse, with whom the patient lived at home prior to hospital admission."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;COLONOSCOPY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Colonoscopy is a gastrointestinal diagnostic procedure performed in the patient's past, during which diverticulosis was found."&lt;SEP&gt;"This diagnostic procedure was performed on the patient to find diverticulosis."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;STENT IMPLANTATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Stent Implantation refers to the surgeries performed on the patient's heart vessels, including circumflex and anterior descending artery stents."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;BLOOD CULTURES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A diagnostic procedure event where blood was drawn to test for infection, resulting in negative findings."&lt;SEP&gt;"Blood cultures are laboratory tests drawn on admission to identify potential bloodstream infections."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;URINE CULTURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A diagnostic procedure event detecting growth of yeast after initial pending results."&lt;SEP&gt;"Urine Culture is a diagnostic test taken on admission that ultimately grew yeast."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;SPUTUM CULTURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A diagnostic procedure event showing initial pending results with subsequent yeast growth."&lt;SEP&gt;"Sputum Culture is a diagnostic test taken on admission which also grew yeasts."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;PHYSICAL EXAMINATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Physical Examination is the clinical assessment performed on the patient's vital signs, heart, lungs, and abdomen upon presentation."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;LABORATORY EVALUATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Laboratory Evaluation encompasses the initial assessment of blood counts, chemistries, and other lab values upon presentation."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;RADIOLOGY REVIEW&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Radiology Review refers to the imaging analysis conducted on the patient, though specific findings are truncated in the text."</data>
+  <data key="d2">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</node>
+<node id="&quot;VASCULAR INTENSIVE CARE UNIT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A specialized hospital department where the patient was initially admitted for hypotension and decreased urine output."&lt;SEP&gt;"A specialized unit where the patient was initially admitted for cardiovascular and septic instability."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;MEDICAL INTENSIVE CARE UNIT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A critical care unit where the patient boarded for stabilization before arrest and subsequent recovery."&lt;SEP&gt;"A critical care unit where the patient experienced a cardiorespiratory arrest and received resuscitation measures."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;GENERAL MEDICINE SERVICE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A hospital service to which the patient was transferred for continued treatment of heart failure and volume overload."&lt;SEP&gt;"A hospital service where the patient was transferred to for continued care following stabilization of volume overload."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;INFECTIOUS DISEASE SERVICE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A department providing consultation on antibiotic therapy and management of infection-related symptoms like cellulitis and urosepsis."&lt;SEP&gt;"A specialized medical organization consulted to manage antibiotic regimens and determine medication discontinuation based on culture results."&lt;SEP&gt;"A specialized service that managed antibiotic therapy and infection control for the patient."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;CARDIORESPIRATORY ARREST&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A critical life-threatening event occurring in the ICU where the patient stopped breathing and circulation."&lt;SEP&gt;"A critical medical event listed among the patient's discharge diagnoses involving stoppage of heart and breathing."&lt;SEP&gt;"A critical medical event where the patient's heart stopped, requiring epinephrine and cardioversion."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;TRANSFER TO GENERAL MEDICINE SERVICE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The event where the patient was moved from the intensive care unit to general medicine upon volume overload resolution."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;DISCHARGE TO REHABILITATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The event occurring upon the patient's leaving the hospital service to enter a rehabilitation program."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;PATIENT'S FAMILY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The patient's family unit who discussed prognosis and resuscitation decisions with the medical team."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;REHABILITATION&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A care setting or service where the patient was discharged to for recovery after hospital discharge."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;FLUID RESUSCITATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medical intervention involving aggressive hydration with intravenous fluids to treat volume deficits."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;DIURESIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The process of using medications like furosemide to remove excess fluid from the patient's system."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;CHEST PAIN&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A symptomatic event reported by the patient involving substernal pain relieved by nitroglycerin."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;ACUTE RENAL FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medical event characterized by decreased urine output associated with hypotension and sepsis."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;MYOCARDIAL INFARCTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A cardiac event involving a non-q-wave infarction indicated by elevated troponins."&lt;SEP&gt;"A cardiac event involving non-Q-wave myocardial infarction, listed as a diagnosis for the patient."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;CONGESTIVE HEART FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A heart condition event that developed by day four requiring diuretic therapy."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;CELLULITIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An infectious event in the right lower extremity prior to admission requiring empiric antibiotic coverage."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;CHEST X-RAY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An imaging event demonstrating pulmonary artery prominence and absence of consolidation."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;ABDOMINAL CT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An imaging event showing vascular calcifications, renal cysts, and diverticulosis."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;ELECTROCARDIOGRAM&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A diagnostic event showing sinus rhythm and nonspecfic wave changes in leads."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;ECHOCARDIOGRAM&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An imaging event demonstrating pericardial effusion and reduced ejection fraction."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;CARDIOVERSION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A therapeutic electrical procedure event performed to restore sinus rhythm."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;CARDIAC CATHETERIZATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An invasive procedure event considered for the patient but not pursued due to DNR status."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;TRANSFER TO REHABILITATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An administrative event marking the patient's discharge from the hospital for further recovery."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;INTUBATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An airway management event performed to protect the airway following arrest."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;PRESSORS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A treatment event involving vasopressor maintenance to sustain blood pressure."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2</data>
+</node>
+<node id="&quot;HEPARIN&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An anticoagulation treatment event initiated due to elevated troponins."&lt;SEP&gt;"Heparin 5000 units subcutaneously b.i.d. was prescribed on discharge for anticoagulation purposes."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;AMIODARONE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A medication treatment event started to manage cardiac rhythm disturbances."&lt;SEP&gt;"Amiodarone was prescribed on discharge at 400 mg b.i.d. for cardiac rhythm management."</data>
+  <data key="d2">chunk-d5608bdb3aa5a25b6c0f796f152462c2&lt;SEP&gt;chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;MEDQUIST36&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Medquist36 is a medical doctor who dictated the medical procedure record.")#("entity"&lt;SEP&gt;"The physician or staff member who dictated the discharge summary."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;VENOUS CATHETERIZATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A procedural event involving the insertion of a venous catheter for monitoring or access purposes."&lt;SEP&gt;"Venous catheterization is a medical procedure not elsewhere classified involving catheter insertion into a vein."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;MECHANICAL VENTILATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The event of continuous invasive mechanical ventilation for 96 consecutive hours or more performed on the patient."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;LEVOFLOXACIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Levofloxacin is an antibiotic medication that was discontinued during the patient's treatment."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;METRONIDAZOLE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Metronidazole is an antibiotic medication that was discontinued during the patient's treatment."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;FLUCONAZOLE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Fluconazole is an antifungal medication administered to the patient given yeast growth on urine culture."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;GENTAMICIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Gentamicin was discontinued on hospital day three as part of the patient's antibiotic adjustment."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;VANCOMYCIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Vancomycin was discontinued on an unspecified hospital day during the patient's treatment."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PIPERACILLIN/TAZOBACTAM&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Piperacillin/Tazobactam was discontinued on an unspecified day during the patient's hospitalization."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;METOPROLOL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Metoprolol 50 mg b.i.d. was prescribed on discharge for blood pressure and heart rate control."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;CAPTOPRIL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Captopril 6.25 mg t.i.d. was prescribed on discharge for heart failure management."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;ASPIRIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Aspirin 325 mg q.d. was prescribed on discharge for cardiovascular protection."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PANTOPRAZOLE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Pantoprazole 40 mg q.d. was prescribed on discharge for gastrointestinal protection."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;MULTIVITAMIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Multivitamin was prescribed for nutritional supplementation to support wound healing."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;ZINC SULFATE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Zinc sulfate 220 mg q.d. was prescribed on discharge for improved wound healing."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;VITAMIN C&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Vitamin C 500 mg q.d. was prescribed on discharge for improved wound healing and immune support."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;IPRATROPIUM NEBULIZERS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Ipratropium nebulizers were prescribed for wheezing management on an as-needed basis."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;ACETAMINOPHEN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Acetaminophen was prescribed for pain management on discharge."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;MICONAZOLE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Miconazole 2% powder was prescribed for fungal infection management to groin."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;SANTYL LOTION&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Santyl lotion was prescribed for heel care and wound management."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;REGULAR INSULIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Regular insulin sliding-scale was prescribed for type 2 diabetes management."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 3}]</data>
+</node>
+<node id="&quot;EPTIFIBATIDE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Eptifibatide was associated with the patient's history of gastrointestinal bleed."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;PROMOD SHAKES&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Promod shakes were provided for nutritional supplementation during the patient's hospitalization."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;GRAM-NEGATIVE UROSEPSIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"This medical event was presumed to be the precipitating cause of the patient's admission before further testing."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;CLOSTRIDIUM DIFFICILE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Clostridium difficile infection was tested for and found negative on the patient during hospitalization."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;NON-Q-WAVE MYOCARDIAL INFARCTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"This cardiac event was diagnosed in the patient and listed among their discharge diagnoses."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;ACUTE KIDNEY FAILURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Acute kidney failure was a major medical event experienced by the patient that resolved following fluid resuscitation."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;PROXIMAL LEFT CIRCUMFLEX STENT&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"This stent was placed in the proximal left circumflex artery during prior cardiac intervention."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;RIGHT CORONARY ARTERY STENT&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"This stent was placed in the right coronary artery during prior cardiac intervention."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;LEFT FEMORAL-FEMORAL BYPASS GRAFT&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"This vascular procedure was performed on the patient for treating severe peripheral vascular disease."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;MODIFIED BARIUM SWALLOWING STUDY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"This diagnostic event was performed on the patient after extubation to assess swallowing ability."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;HOSPITAL DAY THREE&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Hospital day three marks a key temporal point for medication discontinuation during the patient's admission."&lt;SEP&gt;"This temporal location within the hospital timeline marks when gentamicin was discontinued and renal testing occurred."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;HOSPITAL DAY FIVE&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Hospital day five marks a key temporal point for medication discontinuation during the patient's admission."&lt;SEP&gt;"This temporal location within the hospital timeline marks when fluconazole was discontinued."</data>
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</node>
+<node id="&quot;CONTINUOUS INVASIVE MECHANICAL VENTILATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Continuous invasive mechanical ventilation for 96 consecutive hours or more indicates a prolonged respiratory support event."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;INSERTION OF ENDOTRACHEAL TUBE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Insertion of endotracheal tube is a procedure involving securing airway access."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;ENTERAL INFUSION OF CONCENTRATED NUTRITIONAL SUBSTANCES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Enteral infusion of concentrated nutritional substances represents a nutritional support event."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;OTHER ELECTRIC COUNTERSHOCK OF HEART&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Other electric countershock of heart is a therapeutic event involving electrical stimulation of the heart."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;PULMONARY ARTERY WEDGE MONITORING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Pulmonary artery wedge monitoring is a diagnostic event involving pressure measurement in the pulmonary artery."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;OTHER PRIMARY CARDIOMYOPATHIES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Other primary cardiomyopathies represents a specific heart muscle condition identified in the record."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;SUBENDOCARDIAL INFARCTION, INITIAL EPISODE OF CARE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Subendocardial infarction indicates a specific type of heart attack occurring in the initial episode of care."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CONGESTIVE HEART FAILURE, UNSPECIFIED&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Congestive heart failure, unspecified is a condition event identified in the patient's care record."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;ACUTE KIDNEY FAILURE, UNSPECIFIED&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Acute kidney failure, unspecified is a renal condition event recorded during the medical procedure."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;UNSPECIFIED SEPTICEMIA&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Unspecified septicemia indicates a bloodstream infection event."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;UNSPECIFIED PROTEIN-CALORIE MALNUTRITION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Unspecified protein-calorie malnutrition represents a nutritional status event."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CARDIAC ARREST&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cardiac arrest is a critical clinical event involving the stopping of the heart."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;OTHER SHOCK WITHOUT MENTION OF TRAUMA&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Other shock without mention of trauma is a hemodynamic stabilization event."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CELLULITIS AND ABSCESS OF LEG, EXCEPT FOOT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cellulitis and abscess of leg, except foot refers to a localized infection event in the leg."</data>
+  <data key="d2">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CARDIAC RISK FACTORS&quot;">
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d1">"The Patient had a history of cardiac risk factors including baseline creatinine of 1.4 to 1.6."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;ALZHEIMER'S DEMENTIA&quot;">
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d1">"Alzheimer's Dementia was one of the patient's diagnosed conditions at discharge."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 1}, {"level": 1, "cluster": 4}]</data>
+</node>
+<node id="&quot;TYPE 2 DIABETES&quot;">
+  <data key="d2">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+  <data key="d1">"Regular Insulin was prescribed to manage the patient's Type 2 Diabetes condition."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 3}]</data>
+</node>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;HOSPITAL&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The patient was admitted to and treated within this hospital for multiple conditions and procedures."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;EMERGENCY DEPARTMENT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The patient presented to the emergency department upon deterioration and received immediate care."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;REHABILITATION FACILITY&quot;">
+  <data key="d4">27.0</data>
+  <data key="d5">"Rehabilitation Facility is the designated discharge status location for The Patient."&lt;SEP&gt;"The Patient was discharged to Rehabilitation Facility for continued care."&lt;SEP&gt;"The patient was discharged from the hospital to this facility for continued recovery."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41&lt;SEP&gt;chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;HOME&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient resided at this location before and after hospitalization periods."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;VASCULAR SURGERY TEAM&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The vascular surgery team examined the patient and planned the admission."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;HOSPITALIZATION&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The patient underwent the process and state of hospitalization related to his condition."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;ADMISSION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The patient was admitted to the hospital as a specific event in his care timeline."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;PRESENTATION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The patient experienced a return presentation to the emergency department for acute issues."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;DISCHARGE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient was discharged from the hospital as a distinct event in his care course."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;MEDQUIST36&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 dictating the medical record implies a direct relationship regarding the documentation of The Patient's care."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;INFECTIOUS DISEASE SERVICE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient was managed with antibiotics and medication changes specifically guided by The Infectious Disease Service."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;VENOUS CATHETERIZATION&quot;">
+  <data key="d4">16.0</data>
+  <data key="d5">"The Patient underwent Venous Catheterization as part of the procedures performed."&lt;SEP&gt;"Venous Catheterization was a procedure performed on The Patient, documented in the procedure list."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;MECHANICAL VENTILATION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient underwent Mechanical Ventilation for an extended period during hospitalization."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;CARDIORESPIRATORY ARREST&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Cardiorespiratory Arrest is listed as a diagnosis indicating an event that occurred involving The Patient."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;MYOCARDIAL INFARCTION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Myocardial Infarction is a diagnosis indicating an acute event involving The Patient."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;LEVOFLOXACIN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient was treated with Levofloxacin as part of the antibiotic regimen before discontinuation."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;FLUCONAZOLE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient was started on Fluconazole due to yeast growth on urine culture."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;AMIODARONE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient was prescribed Amiodarone on discharge for ongoing cardiac condition management."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;ACUTE KIDNEY FAILURE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient experienced Acute Kidney Failure which was listed as a primary discharge diagnosis."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;NON-Q-WAVE MYOCARDIAL INFARCTION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient suffered a Non-Q-Wave Myocardial Infarction as confirmed in discharge diagnoses."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;GRAM-NEGATIVE UROSEPSIS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient was presumed to have Gram-Negative Urosepsis precipitating admission before it was re-evaluated."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;PROXIMAL LEFT CIRCUMFLEX STENT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient had prior stent placement in proximal left circumflex artery for coronary artery disease."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;RIGHT CORONARY ARTERY STENT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient had prior stent placement in right coronary artery for cardiovascular management."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;LEFT FEMORAL-FEMORAL BYPASS GRAFT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient underwent surgery for Left Femoral-Femoral Bypass Graft treatment."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;IPRATROPIUM NEBULIZERS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient received Ipratropium Nebulizers for wheezing symptom management."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;REGULAR INSULIN&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient was managed with Regular Insulin for type 2 diabetes on discharge."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;PULMONARY ARTERY WEDGE MONITORING&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Patient received Pulmonary Artery Wedge Monitoring for cardiac assessment."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;CARDIAC RISK FACTORS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Patient had a history of cardiac risk factors including baseline creatinine of 1.4 to 1.6."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;THE PATIENT&quot;" target="&quot;ALZHEIMER'S DEMENTIA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Alzheimer's Dementia was one of the patient's diagnosed conditions at discharge."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;HOSPITAL&quot;" target="&quot;EMERGENCY DEPARTMENT&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The emergency department is a part of the hospital where initial triage and presentation occur."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;HOSPITAL&quot;" target="&quot;REHABILITATION FACILITY&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The patient was moved from the hospital to this facility for rehabilitation, indicating a care transfer."</data>
+  <data key="d6">chunk-01a8df0641b60633d561ef3970a93bd8</data>
+</edge>
+<edge source="&quot;INFECTIOUS DISEASE SERVICE&quot;" target="&quot;MEDQUIST36&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Medquist36 dictated the discharge summary while coordinating care with the Infectious Disease Service."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;INFECTIOUS DISEASE SERVICE&quot;" target="&quot;FLUCONAZOLE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Infectious Disease Service directed the use and discontinuation of Fluconazole."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;VENOUS CATHETERIZATION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 dictated the record for the Venous catheterization procedure."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;CONTINUOUS INVASIVE MECHANICAL VENTILATION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 dictated the record for the continuous invasive mechanical ventilation event."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;INSERTION OF ENDOTRACHEAL TUBE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 dictated the record for the Insertion of endotracheal tube procedure."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;ENTERAL INFUSION OF CONCENTRATED NUTRITIONAL SUBSTANCES&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 dictated the record for the enteral infusion of concentrated nutritional substances."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;OTHER ELECTRIC COUNTERSHOCK OF HEART&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Medquist36 dictated the record for the electric countershock of heart."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;PULMONARY ARTERY WEDGE MONITORING&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Medquist36 dictated the record for the pulmonary artery wedge monitoring."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;OTHER PRIMARY CARDIOMYOPATHIES&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Other primary cardiomyopathies."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;SUBENDOCARDIAL INFARCTION, INITIAL EPISODE OF CARE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Subendocardial infarction.</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;CONGESTIVE HEART FAILURE, UNSPECIFIED&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Congestive heart failure."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;ACUTE KIDNEY FAILURE, UNSPECIFIED&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Acute kidney failure."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;UNSPECIFIED SEPTICEMIA&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Unspecified septicemia."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;UNSPECIFIED PROTEIN-CALORIE MALNUTRITION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Unspecified protein-calorie malnutrition."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;CARDIAC ARREST&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the Cardiac arrest event."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;OTHER SHOCK WITHOUT MENTION OF TRAUMA&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Other shock without mention of trauma."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;CELLULITIS AND ABSCESS OF LEG, EXCEPT FOOT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Medquist36 documented the diagnosis of Cellulitis and abscess of leg."</data>
+  <data key="d6">chunk-ed4025798a84b701fca6f5fd1e1780dd</data>
+</edge>
+<edge source="&quot;REGULAR INSULIN&quot;" target="&quot;TYPE 2 DIABETES&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Regular Insulin was prescribed to manage the patient's Type 2 Diabetes condition."</data>
+  <data key="d6">chunk-87d9cef9bf2900e79467061ad5003a41</data>
+</edge>
+</graph></graphml>

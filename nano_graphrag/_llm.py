@@ -2,7 +2,7 @@ import numpy as np
 import os
 from openai import AsyncOpenAI
 
-from ._utils import compute_args_hash, wrap_embedding_func_with_attrs
+from ._utils import compute_args_hash, wrap_embedding_func_with_attrs, EmbeddingFunc
 from .base import BaseKVStorage
 
 
@@ -10,8 +10,8 @@ async def openai_complete_if_cache(
     model, prompt, system_prompt=None, history_messages=[], **kwargs
 ) -> str:
     openai_async_client = AsyncOpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_API_BASE_URL")
+        api_key=os.getenv("OPENAI_API_KEY", "ollama"),
+        base_url=os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1"),
     )
     hashing_kv: BaseKVStorage = kwargs.pop("hashing_kv", None)
     messages = []
@@ -36,6 +36,56 @@ async def openai_complete_if_cache(
     return response.choices[0].message.content
 
 
+async def qwen_complete(
+    prompt, system_prompt=None, history_messages=[], **kwargs
+) -> str:
+    model = os.getenv("LLM_MODEL", "qwen2.5:7b-instruct")
+    return await openai_complete_if_cache(
+        model,
+        prompt,
+        system_prompt=system_prompt,
+        history_messages=history_messages,
+        **kwargs,
+    )
+
+
+async def qwen_mini_complete(
+    prompt, system_prompt=None, history_messages=[], **kwargs
+) -> str:
+    model = os.getenv("LLM_CHEAP_MODEL", os.getenv("LLM_MODEL", "qwen2.5:7b-instruct"))
+    return await openai_complete_if_cache(
+        model,
+        prompt,
+        system_prompt=system_prompt,
+        history_messages=history_messages,
+        **kwargs,
+    )
+
+
+def build_local_embedding_func() -> EmbeddingFunc:
+    """Build embedding function using local model specified in env vars."""
+    embedding_dim = int(os.getenv("EMBEDDING_DIM", "768"))
+    max_token_size = int(os.getenv("EMBEDDING_MAX_TOKENS", "8192"))
+
+    async def _embed(texts: list[str]) -> np.ndarray:
+        client = AsyncOpenAI(
+            api_key=os.getenv("OPENAI_API_KEY", "ollama"),
+            base_url=os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1"),
+        )
+        model = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
+        response = await client.embeddings.create(
+            model=model, input=texts, encoding_format="float"
+        )
+        return np.array([dp.embedding for dp in response.data])
+
+    return EmbeddingFunc(
+        embedding_dim=embedding_dim,
+        max_token_size=max_token_size,
+        func=_embed,
+    )
+
+
+# Kept for backward compatibility
 async def gpt_4o_complete(
     prompt, system_prompt=None, history_messages=[], **kwargs
 ) -> str:
@@ -64,7 +114,7 @@ async def gpt_4o_mini_complete(
 async def openai_embedding(texts: list[str]) -> np.ndarray:
     openai_async_client = AsyncOpenAI(
         api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_API_BASE_URL")
+        base_url=os.getenv("OPENAI_API_BASE_URL"),
     )
     response = await openai_async_client.embeddings.create(
         model="text-embedding-3-small", input=texts, encoding_format="float"

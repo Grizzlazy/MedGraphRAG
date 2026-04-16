@@ -18,14 +18,28 @@ Modify the response to the question using the provided references. Include preci
 # Add your own OpenAI API key
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
-def get_embedding(text, mod = "text-embedding-3-small"):
+def _sanitize_embedding_text(text):
+    # Ensure payload is always valid UTF-8 JSON string for embedding API.
+    if text is None:
+        return ""
+    cleaned = str(text).replace("\x00", " ").strip()
+    cleaned = cleaned.encode("utf-8", "ignore").decode("utf-8")
+    return cleaned[:8000]
+
+
+def get_embedding(text, mod=None):
+    if mod is None:
+        mod = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
     client = OpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_API_BASE_URL")
+        api_key=os.getenv("OPENAI_API_KEY", "ollama"),
+        base_url=os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1"),
     )
+    payload = _sanitize_embedding_text(text)
+    if not payload:
+        payload = "N/A"
 
     response = client.embeddings.create(
-        input=text,
+        input=payload,
         model=mod
     )
 
@@ -84,11 +98,11 @@ def add_sum(n4j,content,gid):
 
 def call_llm(sys, user):
     client = OpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_API_BASE_URL")
+        api_key=os.getenv("OPENAI_API_KEY", "ollama"),
+        base_url=os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1"),
     )
     response = client.chat.completions.create(
-        model="gpt-4-1106-preview",
+        model=os.getenv("LLM_MODEL", "qwen2.5:7b-instruct"),
         messages=[
             {"role": "system", "content": sys},
             {"role": "user", "content": f" {user}"},
