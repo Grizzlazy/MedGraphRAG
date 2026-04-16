@@ -3,8 +3,9 @@
 ## Quick Start (Baseline: a simple Graph RAG pipeline on medical data)
 
 1. conda env create -f medgraphrag.yml
-2. export OPENAI_API_KEY = your OPENAI_API_KEY
-3. python run.py -simple True -query "What is the main symptom of the patient?"
+2. ollama serve
+3. ollama pull qwen3.5:9b
+4. python run.py -simple True -query "What is the main symptom of the patient?"
 
 (now using ./dataset_ex/report_0.txt as RAG doc, "What is the main symptom of the patient?" as the prompt)
 
