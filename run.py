@@ -33,7 +33,7 @@ parser.add_argument('-test_data_path', type=str, default='./dataset_ex/report_0.
 args = parser.parse_args()
 
 if args.simple:
-    graph_func = GraphRAG(working_dir="./nanotest1")
+    graph_func = GraphRAG(working_dir="./nanotest")
 
     with open("./dataset_ex/report_0.txt") as f:
         graph_func.insert(f.read())
