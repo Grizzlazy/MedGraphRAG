@@ -15,6 +15,5 @@ __pycache__
 
 # ignore special files or folds
 .DS_Store
-*.csv
 .db
 .rag_cache

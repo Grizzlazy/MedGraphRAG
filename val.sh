@@ -1,0 +1,1 @@
+python graph_rag_eval.py --eval pubmedqa

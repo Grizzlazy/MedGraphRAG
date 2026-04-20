@@ -27,7 +27,7 @@ for path in DATASETS:
             print(f"  Using split: '{split}' ({len(chosen):,} samples)")
             break
 
-    chosen.save_to_disk(f"./evaluation/test_qa/{name}")
-    print(f"  → Saved to ./evaluation/test_qa/{name}")
+    chosen.save_to_disk(f"./evaluation/test_qa_medrag/{name}")
+    print(f"  → Saved to ./evaluation/test_qa_medrag/{name}")
 
 print("\nAll done!")

@@ -1,0 +1,11 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,Does histologic chorioamnionitis correspond to clinical chorioamnionitis?,A,A,True,A
+1,Can vitamin C prevent complex regional pain syndrome in patients with wrist fractures?,A,B,False,B
+2,It's Fournier's gangrene still dangerous?,A,A,True,A
+3,Can the condition of the cell microenvironment of mediastinal lymph nodes help predict the risk of metastases in non-small cell lung cancer?,A,A,True,A
+4,Pancreas retransplantation:  a second chance for diabetic patients?,A,A,True,A
+5,Gender difference in survival of resected non-small cell lung cancer: histology-related phenomenon?,A,A,True,A
+6,Is HIV/STD control in Jamaica making a difference?,A,A,True,A
+7,Delayed peripheral facial palsy in the stapes surgery: can it be prevented?,A,B,False,B
+8,Is external palliative radiotherapy for gallbladder carcinoma effective?,A,C,False,C
+9,Can elevated troponin I levels predict complicated clinical course and inhospital mortality in patients with acute pulmonary embolism?,A,A,True,A

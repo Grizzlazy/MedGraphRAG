@@ -1,0 +1,10 @@
+dataset,accuracy(%),status
+medqa,55.15,ok
+medmcqa,28.47,ok
+pubmedqa,0.0,must be called with a dataclass type or instance
+mmlu_anatomy,68.89,ok
+mmlu_clinical_knowledge,75.85,ok
+mmlu_college_biology,80.56,ok
+mmlu_college_medicine,64.16,ok
+mmlu_medical_genetics,76.0,ok
+mmlu_professional_medicine,69.12,ok

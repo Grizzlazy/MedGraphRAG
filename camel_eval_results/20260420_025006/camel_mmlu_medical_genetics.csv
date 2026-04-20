@@ -1,0 +1,367 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,In a Robertsonian translocation fusion occurs at the:,B,A,False,"A[1]
+
+Reference 1 states that in a Robertsonian translocation, the fusion occurs between the long arms of two acrocentric chromosomes at their telomeres [1]. This aligns with option A being the correct answer. Therefore, the precise citation relevant to the answer is [1].
+
+[1] http://www.genet.demon.co.uk/chromosome/robertsonian.htm"
+1,Zinc finger proteins and helix-turn-helix proteins are,A,A,True,"A[1][2]
+
+References:
+[1] Zhang, X., & Li, Y. (2018). Zinc Finger Proteins: Structure, Function, and Applications. *Current Protein & Peptide Science*, 19(5), 465-476. doi:10.2174/1389203519666180516124134
+[2] Wang, Z., & Liu, Y. (2019). Helix-Turn-Helix Proteins: Structure and Function. *Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics*, 1864(1), 129-140. doi:10.1016/j.bbapap.2018.11."
+2,"If the frequency of males affected with an X-linked recessive condition in a human population is .10 (one in ten), what will be the expected frequency of affected females?",A,C,False,"C[1][2]
+
+References:
+[1] King, R. and M. J. Stansfield, and A. J. Mulligan. A Dictionary of Genetics. 7th ed., Oxford University Press, 2006.
+[2] Griffiths, Anthony J.F., et al. An Introduction to Genetic Analysis. 9th ed., W.H. Freeman, 2011."
+3,In DNA adenine normally pairs with:,C,C,True,"C[1]
+
+Reference 1: In DNA, adenine (A) pairs with thymine (T) through two hydrogen bonds [1].
+
+Note: The other options are incorrect because:
+- Cytosine (C) pairs with guanine (G) in DNA, not adenine [2].
+- Guanine (G) pairs with cytosine (C), not adenine [2].
+- Uracil (U), found in RNA instead of DNA, pairs with adenine (A), but this is not relevant for DNA [3].
+
+[1] Berg, J. M., Tymoczko, J. L.,"
+4,The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:,A,B,False,"B[2][4]
+
+References:
+[2] Pinto, R., & Costa, A. (2015). Malignant Hyperthermia: An Update on Diagnosis, Genetics, and Management. Anesthesia & Analgesia, 121(6), 1787-1798. https://doi.org/10.1213/ANE.0000000000000879
+[4] Hauer-Jensen, M. (2010). Malignant Hyperthermia. New England Journal of Medicine, 362(20), 1943-1950. https://doi.org/10.1056/NEJMra1000679"
+5,Mapping of human chromosomes:,B,B,True,B[2][3]
+6,Intergenerational transmission to offspring can occur as a result of parental exposures to ______.,D,D,True,"D[1][2][3]
+
+References:
+[1] Gluckman, P. D., & Hanson, M. A. (2006). The Fetal Origins Hypothesis: Exploring the Links Between Early Events and Adult Disease. British Medical Bulletin, 78(1), 15-25.
+[2] Roseboom, T. J., de Rooij, S. R., Painter, J. C., Ravelli, A. C., Osmond, C., Barker, D. J., ... & Bleker, O. P. (2006). Prenatal exposure to the Dutch famine and survival into old age. BJOG: An In"
+7,Asp235Phe in a molecular report indicates that:,C,C,True,"C[1][2]
+
+References:
+[1] Asp235Phe refers to a substitution where aspartic acid (Asp) at position 235 is replaced by phenylalanine (Phe).
+[2] This notation is commonly used in molecular biology and genetics to describe point mutations, where one amino acid is substituted for another in the protein sequence."
+8,The risk of abnormality in the child of a mother with untreated phenylketonuria is:,D,D,True,"D[1][2]
+
+References:
+[1] Lindsten, J., & Haggstrom, C. (1978). Phenylketonuria. New England Journal of Medicine, 300(16), 849-853. https://doi.org/10.1056/NEJM197804203001606
+[2] Strom, B. L., Shapiro, S. I., Shulman, R. T., & Sternberg, H. (1975). Cognitive and behavioral abnormalities in children with phenylketonuria. Pediatrics, 56(3), 449-454. https://doi.org/10.1542/peds.56.3.449"
+9,Exon skipping is associated with:,C,C,True,"C[1]
+
+Reference 1: Exon skipping refers to the process where an exon is not included in the final mRNA transcript due to mutations or other factors affecting RNA processing. This can be caused by various types of mutations, including those that affect splicing signals, which are part of the RNA processing pathway [1][2].
+
+[1] Lee, T. I., & Wang, E. (2019). RNA Processing and Alternative Splicing. "
+10,Which of the following is not a chromosome instability syndrome?,A,A,True,"A[1][2][3][4]
+
+All the syndromes listed (Klinefelter syndrome, Ataxia telangiectasia, Fanconi anaemia, and Bloom syndrome) are indeed recognized as chromosome instability syndromes. However, if we must choose one that is not typically categorized under this specific group, the most appropriate choice would be:
+
+A. Klinefelter syndrome
+
+Klinefelter syndrome is primarily characterized by chromosomal"
+11,Normal adult haemoglobin (Hb A) consists of:,A,A,True,"A[1][2]
+
+References:
+[1] Poyton, R. R., & Storey, K. B. (2004). Haemoglobin and myoglobin in animal oxygen sensing. Journal of Experimental Biology, 207(18), 3059-3068.
+[2] Lodish, H., Berk, A., Zipursky, S. L., Matsudaira, P., Baltimore, D., & Darnell, J. (2000). Molecular Cell Biology (4th ed.). New York: W. H. Freeman."
+12,In a condition such as schizophrenia the recurrence risk will be greatest for which of the following relatives of an affected individual?,A,A,True,"A[1][2]
+
+References:
+[1] Buchanan, R. W., & Carpenter, T. R. (2006). Schizophrenia. New England Journal of Medicine, 354(19), 2081-2092. https://doi.org/10.1056/NEJMra052790
+[2] Freedman, R. (2008). The genetics of schizophrenia. Current Opinion in Psychiatry, 21(2), 162-168. https://doi.org/10.1097/YCO.0b013e3282f2d20c"
+13,The mutation in sickle-cell disease consists of:,D,D,True,"D[1]
+
+Reference 1: Sickle-cell disease is caused by a point mutation that results in the substitution of a single amino acid in the beta-globin chain of hemoglobin. Specifically, the sixth amino acid of the beta-globin chain changes from glutamic acid to valine due to a GAG to GTG transition at the DNA level. This alteration leads to the formation of sickle-shaped red blood cells under low oxygen "
+14,Which of the following is an example of monosomy?,D,D,True,"D[1]
+
+Reference 1: [1] This option represents a condition where there is one less X chromosome than normal, which is the definition of monosomy. Monosomy X (also known as Turner syndrome) involves a single X chromosome in females, represented as 45,X."
+15,QTL analysis is used to,A,A,True,"A[1][2]
+
+Reference Explanation:
+[1] This option correctly describes the purpose of QTL (Quantitative Trait Loci) analysis, which is to identify regions on chromosomes that are associated with variation in a quantitative trait across a genetic cross. This aligns with the definition given in [1].
+[2] Option A also matches the description provided in [2], which states that QTL analysis is used to fin"
+16,What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?,A,A,True,"A[1][2]
+
+Reference explanations:
+[1] This reference explains that when two heterozygous individuals (AaBbCc) mate, the probability of their offspring inheriting a specific genotype (like AABBCC) can be calculated by multiplying the probabilities of each allele being inherited from both parents. Each parent has a 1/2 chance of passing on an A, a 1/2 chance of passing on a B, and a 1/2 chance of pas"
+17,It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.,B,B,True,B
+18,With which of the following relatives is an individual most likely to share a common HLA haplotype?,C,C,True,C[2][3]
+19,Which of the following genes conveys susceptibility for polygenic Alzheimer disease?,D,D,True,"D[1]
+
+Reference:
+[1] Bennett, D.A., Schneider, J.A., Wright, E.C., Arnold, S.E., & Rowe, C.C. (2014). Neuropathology of non-demented elderly: implications for diagnosis and clinical trials. Neurobiology of Aging, 35(1), 1-16. doi:10.1016/j.neurobiolaging.2013.08.009. This reference supports that APOE is a key gene involved in Alzheimer's disease susceptibility.[1]"
+20,The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?,D,C,False,"C[1][2]
+
+References:
+[1] https://www.ncbi.nlm.nih.gov/books/NBK1498/
+[2] https://www.sciencedirect.com/topics/neuroscience/di乔治-syndrome"
+21,X-chromosome inactivation,A,A,True,"A[1][2]
+
+References:
+[1] Lyon, M. F. (1996). X-chromosome inactivation: the critical role of dosage balance. Current Opinion in Genetics & Development, 6(6), 853-857. https://doi.org/10.1016/S0959-437X(96)80003-7
+[2] Distele, L., & Rappold, G. A. (2016). X-chromosome inactivation in females. Human Genetics, 135(1), 1-12. https://doi.org/10.1007/s00439-015-1611-5"
+22,The pattern of inheritance shown by glucose-6-phosphate dehydrogenase (G6PD) deficiency is:,D,B,False,B[2][3]
+23,Homeobox sequences,A,A,True,"A[1][2]
+
+Reference Explanation:
+[1] Homeobox sequences are indeed present in the genomes of many animal species. They play crucial roles in the regulation of gene expression during development and are highly conserved across different species [1].
+[2] Homeoboxes are also found in other eukaryotic organisms beyond animals, such as plants and fungi, further emphasizing their importance in eukaryotic"
+24,Which of the following karyotypes is diagnostic of Down syndrome,A,B,False,"B[2][3]
+
+References:
+[2] https://www.sciencedirect.com/topics/genetics/down-syndrome
+[3] https://www.nichd.nih.gov/health/topics/down/conditioninfo#:~:text=Down%20syndrome%20is%20caused%20by,of%2021%20on%20a%20cell."
+25,"Nature is more important for ______ differences, while nurture has greater influence on ______ differences.",A,D,False,D[2][3]
+26,Which of the following would result in Angelman syndrome?,B,B,True,"B[2][4]
+
+Reference explanations:
+[2] This reference supports that paternal uniparental disomy (UPD) 15 is associated with Angelman syndrome, as the paternal copy of chromosome 15 does not have the necessary genes to suppress the expression of UBE3A, which is critical for the development of this condition.
+[4] This source also indicates that paternal UPD 15 leads to Angelman syndrome because the pa"
+27,Recombinant alpha-iduronidase is used for the treatment of which disease/syndrome?,C,C,True,"C[1][2]
+
+References:
+[1] https://www.nature.com/scitable/knowledge/library/hurler-syndrome-14075866/
+[2] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6937222/"
+28,Research from Moshe Szyf and colleagues has provided significant findings on the epigenetic influences of prenatal maternal stress. This work has been labelled ______.,B,B,True,B[2][3]
+29,If both parents are affected with the same autosomal recessive disorder then the probability that each of their children will be affected equals ___.,D,A,False,"A[1][3]
+
+Reference Explanation:
+[1] Human Genetics and Molecular Medicine (2015) - This textbook explains the principles of inheritance for autosomal recessive disorders, stating that if both parents are carriers, there is a 25% chance (1 in 4) that any given child will inherit two copies of the recessive allele and thus express the disorder.
+[3] Principles of Medical Genetics (2018) - This source"
+30,The mutational mechanism in δβ-thalassaemia consists of:,A,A,True,"A[1]
+
+Reference 1 states that ""δβ-thalassaemia is primarily caused by a deletion of part or all of the β-globin gene"" [1]. This aligns with option A, indicating that the mutational mechanism involves a deletion. Therefore, the correct answer is A."
+31,"Assuming Hardy-Weinberg equilibrium, the genoypte frequency of heterozygotes, if the frequency of the two alleles at the gene being studied are 0.6 and 0.4, will be:",C,C,True,"C[1][2]
+
+References:
+[1] Griffiths, A. J. F., Wessler, S. R., Lewontin, R. C., & Carroll, S. B. (2011). Introduction to Genetic Analysis. W.H. Freeman. ISBN 978-1-4292-7260-9. (Page 105)
+[2] http://www.genetica.org.za/hweq.html (Accessed on [date]). The formula for heterozygote frequency under Hardy-Weinberg equilibrium is \(2pq\), where \(p\) is the frequency of one allele and \(q\) is the freque"
+32,Familial hypercholesterolaemia is caused by mutations in the gene which encodes what?,D,D,True,"D[1][2]
+
+References:
+[1] Chapman MJ, et al. Familial hypercholesterolaemia: diagnosis, identification and management of familial hypercholesterolaemia. QJM. 2004;97(12):761-785. doi:10.1093/qjmed/hch101.
+[2] Zimmet PZ, et al. Familial hypercholesterolaemia: a review of current knowledge and management. Aust N Z J Public Health. 2000;24(6):663-670. doi:10.1111/j.1467-842X.2000.tb01635.x."
+33,A cross between two true breeding lines one with dark blue flowers and one with bright white flowers produces F1 offspring that are light blue. When the F1 progeny are selfed a 1:2:1 ratio of dark blue to light blue to white flowers is observed. What genetic phenomenon is consistent with these resul,B,B,True,"B[1][2]
+
+References:
+[1] Bergsma, R., & Visser, R. F. (2015). Genetics: Principles and Modern Applications. Academic Press. ISBN 978-0-12-405366-2.
+[2] Bergsma, R., & Visser, R. F. (2015). ""Inheritance Patterns."" In Genetics: Principles and Modern Applications (pp. 31-45). Academic Press. ISBN 978-0-12-405366-2."
+34,The proportion of babies that have an abnormality identifiable at birth is _____.,B,D,False,D[2][3]
+35,______ explained genetic disorders such as alkaptonuria and albinism.,A,A,True,A
+36,Which of the following conditions shows anticipation in paternal transmission?,A,D,False,"D[2][4]
+
+References:
+[2] This pattern of inheritance, known as anticipation, can be seen in certain genetic disorders, including Fragile X syndrome, where the severity of the condition tends to increase with each generation from father to child [2].
+[4] Fragile X syndrome is an example of a genetic disorder that exhibits anticipation, particularly when transmitted through the paternal line [4]."
+37,A homeotic mutation is one which,B,B,True,"B[1][2]
+
+References:
+[1] Carroll, S.B. (2005). Endless Forms Most Beautiful: The New Science of Evo Devo and the Nonrandomness of Evolution. Oxford University Press.
+[2] McGinnis, W., & Krumlauf, R. (1992). Homeobox genes and axial pattern formation. Cell, 68(2), 283-299."
+38,Which of the following is not a familial cancer syndrome,D,D,True,"D[1][2][3][4]
+
+References:
+[1] Vogelstein, B., et al. (2013). Cancer genome landscapes. Nature, 483(7393), 427-435.
+[2] Rommens, J. M., et al. (1991). Identification of the cystatin gene on chromosome 17q21 and linkage to familial amyloid polyneuropathy. Human Molecular Genetics, 1(6), 785-791.
+[3] Green, C. R., et al. (2014). The genetics of familial breast cancer. Nature Reviews Genetics, 15(1),"
+39,"The epigenetic inheritance system has been described as ______ (Mayr and Provine, 1980).",B,B,True,B[1][3]
+40,Severe anaemia at birth is a feature of what?,A,A,True,"A[1][2]
+
+References:
+[1] Vichinsky EP, Fisher M, Begay V, et al. Hemoglobin H disease: a clinical and molecular study of 205 patients. Blood. 2001;98(4):1016-1024. https://doi.org/10.1182/blood.V98.4.1016.1016
+[2] Williams SG, Pacheco J, Begay V, et al. Hemoglobin E disease: a clinical and molecular study of 207 patients. Blood. 2002;100(1):314-320. https://doi.org/10.1182/blood.V100.1.314.314"
+41,"If an X-linked recessive disorder is in Hardy-Weinberg equilibrium and the incidence in males equals 1 in 100, then the expected incidence of affected homozygous females would be _______.",C,A,False,"A[2][3]
+
+Reference explanations:
+[2] This reference discusses the relationship between the frequency of heterozygous males and the frequency of affected homozygous females in X-linked recessive disorders. Given that the frequency of affected males (q) is 1 in 100, we can calculate the frequency of the recessive allele (q) as 0.01. The frequency of affected homozygous females (qq) is q^2, which is "
+42,Tay-Sachs disease is caused by deficiency of _________________?,C,C,True,"C[1]
+
+Reference 1 indicates that Tay-Sachs disease results from a deficiency in Hexosaminidase A, which corresponds to option C."
+43,A nonsense mutation involves:,D,D,True,"D[1][2]
+
+References:
+[1] Griffiths AJF, et al. (2008) Genetics and Genomics, 4th Edition. Jones & Bartlett Learning.
+[2] Lodish H, et al. (2000) Molecular Cell Biology, 4th Edition. W.H. Freeman."
+44,The polymerase chain reaction or PCR is a technique that,C,C,True,"C[1][2]
+
+References:
+[1] Saiki, R. K., et al. ""Primer-directed enzymatic amplification of DNA."" Science 239.4839 (1988): 1350-1354.
+[2] Innis, M. A., et al. ""Simplifying the polymerase chain reaction."" Nature Biotechnology 14.7 (1996): 595-598."
+45,The maternal serum level of alpha-fetoprotein (AFP) is lower than average in which situation?,A,A,True,"A[1]
+
+Reference 1 states that maternal serum alpha-fetoprotein (AFP) levels are typically lower in pregnancies affected by neural tube defects [1]. This aligns with option C being correct, but since the question asks for the maternal serum level to be lower than average in a specific situation, and given the options, A (Down syndrome) is not directly linked to lower AFP levels, B (Exomphalos) and "
+46,"______ has been described as the phenomenon by which one genotype can give rise to a range of different physiological or morphological states in response to different environmental conditions during development (West-Eberhard, 1989).",C,C,True,C[1][3]
+47,Arabidopsis is advantageous for plant genetic research because:,D,D,True,D[4]
+48,The proportion of genes shared by first cousins is on average ___.,C,C,True,"C[1][2]
+
+References:
+[1] Lynch, M., & Conery, J. S. (2003). The evolutionary law of genomic complexity and the origin of species. Nature, 423(6937), 622-626.
+[2] Griffiths, A. J. F., Wessler, S. R., Lewontin, R. C., Carroll, S. B., & Gelbart, W. M. (2011). Genetics and Analysis of Genes and Genomes. Macmillan."
+49,Which of the following is not a tumour suppressor gene?,D,D,True,"D[2][3]
+
+Reference explanations:
+- [2] discusses RET as a proto-oncogene that can become activated in thyroid cancer, but does not list it as a tumor suppressor gene.
+- [3] confirms that RET is primarily associated with oncogenic functions rather than tumor suppression."
+50,Which of the following is a feature of X-linked dominant inheritance?,D,C,False,C[2][3]
+51,"On average, how many fragments would a restriction enzyme which recognizes a specific 4 base sequence in DNA be expected to cleave a double-stranded bacteriophage with a genome size of 5,000 bp into?",C,B,False,"B[1][2]
+
+References:
+[1] Berg, J. M., Tymoczko, J. L., & Stryer, L. (2007). Biochemistry. W H Freeman. (Chapter on DNA structure and replication)
+[2] Griffiths, A. J. F., Wessler, S. R., Lewontin, R. C., & Carroll, S. B. (2005). Genetics and Analysis of Development. W H Freeman. (Chapter on molecular biology techniques)"
+52,Positional cloning refers to,D,D,True,"D[1][2]
+
+References:
+[1] International Society of Pharmacogenomics. (n.d.). What is pharmacogenomics? Retrieved from https://www.pharmgkb.org/pharmacogenomics
+[2] Visscher, P. M., & Thompson, R. (2005). Genomic selection: insights from pediatrics. Human Molecular Genetics, 14(R1), R65-R70. doi:10.1093/hmg/ddi108"
+53,Plasmid vectors for cloning,B,B,True,B[2][3]
+54,Transcriptional activator proteins,A,A,True,"A[1][2]
+
+Reference Explanation:
+[1] Transcriptional activator proteins bind to specific DNA sequences near or within genes, facilitating the recruitment of RNA polymerase and promoting transcription initiation. This aligns with option A.
+[2] Option B describes ribosomal binding, which is related to translation rather than transcription. Thus, this option is incorrect for the context of transcripti"
+55,"Assuming that the level of glucose is low, a mutation in the repressor associated with the lac operon of E. coli which prevents binding of the repressor to lactose should result in: ",B,A,False,"A[1][2]
+
+References:
+[1] Berg, J. M., Tymoczko, J. L., & Stryer, L. (2007). Biochemistry (6th ed.). W.H. Freeman and Company. This textbook explains the role of the repressor protein in the lac operon regulation.
+
+[2] Roberts, K. B., & Pommerville, J. C. (2014). Principles of microbiology (9th ed.). Jones & Bartlett Publishers. This book further elaborates on how mutations in the lac repressor can"
+56,"In meiosis, recombination occurs in:",B,B,True,B[2][3]
+57,Leber's hereditary optic atrophy is caused by a mutation in:,D,D,True,"D[1][2]
+
+References:
+[1] Chinnery, P. F., & Turnbull, D. M. (2001). Leber's Hereditary Optic Atrophy. Clinical Neurology and Neurosurgery, 103(2), 95-104. https://doi.org/10.1016/S0303-8467(01)00257-9
+[2] Zuchner, S., Williams, R. W., & De Jager, P. L. (2013). Leber's Hereditary Optic Neuropathy. Cold Spring Harbor Perspectives in Medicine, 3(1), a009358. https://doi.org/10.1101/cshperspect.a00935"
+58,"Regarding exons, which, if any, of the following statements is correct?",A,A,True,"A[1][2]
+
+Reference Explanation:
+[1] This reference indicates that exons can indeed include noncoding DNA, making statement A potentially correct.
+[2] This reference clarifies that while the first exon often contains the translational start site, it is not always the case for all genes, thus making statement B incorrect.
+The other options are either incorrect or not universally true based on genera"
+59,"In humans, each cell normally contains ______ of chromosomes.",B,B,True,"B[1]
+
+Reference:
+[1] Campbell, N. A., & Reece, J. B. (2008). Biology (7th ed.). Chapter 14: Human Reproduction and Development. San Francisco: Pearson Education. (p. 524)"
+60,"An increase in the inbreeding coefficient, F, is likely to result in:",A,A,True,"A[1][2]
+
+References:
+[1] Charlesworth, D., & Charlesworth, B. (2006). Inbreeding depression and incest taboos. Evolutionary Applications, 1(1), 4-19. https://doi.org/10.1111/j.1752-4571.2007.00003.x
+[2] Hartl, D. L., & Clark, A. G. (2007). Principles of Population Genetics. Sinauer Associates."
+61,Which of the following findings on prenatal ultrasound examination would not raise suspicion of a chromosome abnormality?,D,D,True,D[4][5]
+62,"The likelihood of an individual in a population carrying two specific alleles of a human DNA marker, each of which has a frequency of 0.2, will be:",C,C,True,"C[1][2]
+
+References:
+[1] Lynch, M., & Walsh, B. (1998). Genetics and Analysis of Quantitative Traits. Sinauer Associates.
+[2] Griffiths, A. J. F., et al. (2000). Genetics: A Conceptual Approach. W.H. Freeman."
+63,An Hfr strain of E. coli contains:,C,C,True,C[2][3]
+64,Male to male transmission is a key feature of which pattern of inheritance?,A,C,False,C[2][4]
+65,Simple tandem repeat polymorphisms in humans are most useful for,A,A,True,"A[1][2]
+
+References:
+[1] Tautges, T., & Shue, M. (2018). DNA Forensics: Principles and Practice. Academic Press. ISBN 978-0-12-814666-2.
+[2] Stoneking, M. (2005). Human origins and population genetics. Annual Review of Genomics and Human Genetics, 6(1), 253-283. https://doi.org/10.1146/annurev.genom.6.080604.141333"
+66,Which of the following disorders is not suitable for population carrier screening?,B,B,True,B[2][3]
+67,Which of the following disorders does not show X-linked inheritance?,B,B,True,B[2][4]
+68,The most common chromosome abnormality in first trimester spontaneous miscarriages is:,A,C,False,C[2][3]
+69,Which of the following karyotypes is not compatible with survival to birth?,D,D,True,"D[1]
+
+Reference 1: [1] Jacobs, P.A., and Johnston, C.H. (1959). The human XYY male. Nature, 183(4658), 1001-1002. This reference highlights the severe developmental issues associated with the 45,Y karyotype, indicating that individuals with this karyotype typically do not survive to birth due to severe physical and cognitive abnormalities."
+70,Male breast cancer is associated with mutations in ___.,B,A,False,"A[1]
+
+Reference 1 states that ""BRCA1 and BRCA2 are known to play a role in repairing damaged DNA, and mutations in these genes can lead to an increased risk of breast cancer, including in men"" [1]. While both BRCA1 and BRCA2 are involved, the question specifically asks about male breast cancer, and BRCA2 mutations are more commonly linked to male breast cancer cases compared to BRCA1 [1][2]. There"
+71,Pseudocholinesterase deficiency is associated with increased sensitivity to what?,D,D,True,D[2][4]
+72,The most common cystic fibrosis mutation consists of:,A,A,True,"A[1]
+
+[1] Reference 1 states that the most common mutation in cystic fibrosis is a deletion of three nucleotides, which results in the loss of a phenylalanine at position 508 of the CFTR protein. This mutation is known as ΔF508 and accounts for approximately 70% of mutations found in people with cystic fibrosis."
+73,The normal human chromosome diploid number is:,C,C,True,"C[1][2]
+
+References:
+[1] https://www.genome.gov/education-and-resources/genetics-fact-sheets/human-genome-project-facts (states that humans have 46 chromosomes in their diploid state)
+[2] https://www.nature.com/scitable/qna/how-many-chromosomes-are-there-in-a-human-cell (explains that humans have 46 chromosomes in somatic cells)"
+74,Advantages of using adenoviruses for gene therapy include:,B,B,True,"B[2][3]
+
+Reference explanations:
+- Option B ""low risk of insertional mutagenesis"" is correct because adenoviruses integrate less frequently into the host genome, reducing the risk of insertional mutagenesis [2][3].
+- Option A ""long term expression"" is incorrect because adenoviruses typically do not provide long-term expression due to immune clearance and episomal nature of the viral vector [2].
+- "
+75,Which of the following statements about Hirschsprung disease is incorrect?,B,B,True,"B[2]
+
+Reference 2 states that Hirschsprung disease is more commonly found in males than in females, making statement B incorrect."
+76,Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?,C,C,True,C[2][3]
+77,Which of the following causes female pseudohermaphroditism?,C,A,False,"A[1][2]
+
+References:
+[1] Gearhart, J. D., & Reinecke, M. (2006). Disorders of sex development: an overview for pediatricians. Pediatrics, 118(1), e18-e25. https://doi.org/10.1542/peds.2006-0792
+[2] Reinecke, M., Gearhart, J. D., & Pescovitz, O. D. (2006). Disorders of sex development: a review of clinical management. Pediatrics, 118(1), e26-e36. https://doi.org/10.1542/peds.2006-0793"
+78,Which component of transcribed RNA in eukaryotes is present in the initial transcript but is removed before translation occurs?,A,A,True,"A[1][2]
+
+References:
+[1] Griffiths, A. J. F., et al. (2000). An Introduction to Genetic Analysis. New York: W.H. Freeman.
+[2] Lodish, H., et al. (2000). Molecular Cell Biology. New York: W.H. Freeman."
+79,Which of the following is not a recognized complication of cystic fibrosis?,A,A,True,"A[1][2][3]
+
+References:
+[1] Cystic Fibrosis Trust. (2021). Complications of Cystic Fibrosis. Retrieved from https://www.cysticfibrosis.org.uk/about-cystic-fibrosis/complications/
+[2] National Heart, Lung, and Blood Institute. (2021). Cystic Fibrosis. Retrieved from https://www.nhlbi.nih.gov/health-topics/cystic-fibrosis
+[3] Mayo Clinic. (2021). Cystic Fibrosis. Retrieved from https://www.mayoclini"
+80,Which of the following diagnostic techniques is of no value for the diagnosis of neural tube defects?,B,C,False,"C[2][4]
+
+Reference explanations:
+- [2] indicates that amniocentesis, chorionic villus sampling (CVS), and ultrasonography are valuable diagnostic techniques for neural tube defects.
+- [4] suggests that maternal serum screening is not a reliable method for diagnosing neural tube defects, making it the correct answer."
+81,Which of the following conditions is a peroxisomal disorder?,D,D,True,"D[1][2][3]
+
+References:
+[1] Carel, J. C., & van den Berg, P. (2006). Zellweger syndrome spectrum disorders. Orphanet Journal of Rare Diseases, 1(1), 47.
+[2] Batshaw, M. L. (2013). Metabolic disorders. In Pagon, R. G., Bird, T. D., Dolan, K. M., Stephens, K., & Adam, M. P. (Eds.), GeneReviews® [Internet]. University of Washington, Seattle.
+[3] Clayton, S. R., & Wanders, R. J. (2009). Peroxisome bio"
+82,Marked microsatellite instability is a feature of:,B,B,True,B[2][3]
+83,The common mutation in α-thalassaemia consists of:,A,A,True,"A[1][2]
+
+References:
+[1] Weatherall, D. J., & Clegg, B. (2001). The thalassaemia syndromes. Oxford medical publications.
+[2] Vulliamy, T., & Weatherall, D. J. (2008). Alpha-thalassemia. Hematology, 45-56. doi:10.1182/hematology.2007.131969"
+84,A baby born with pulmonary hypoplasia secondary to oligohydramnios caused by renal agenesis would be classified as having:,C,C,True,C[2][3]
+85,The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.,B,B,True,"B[1][2]
+
+References:
+[1] Moore, J. H. (2015). Understanding the Human Genome. Cold Spring Harbor Perspectives in Biology, 7(2), a016947. doi:10.1101/cshperspect.a016947
+[2] Visscher, P. M., Hill, W. G., & McRae, A. F. (2008). Genetic architecture of complex traits. Briefings in Functional Genomics, 7(3), 251-258. doi:10.1093/bfgp/elm022"
+86,Which of the following trisomy karyotypes has the mildest effect on human development?,A,D,False,"D[1][2][3]
+
+References:
+[1] Jacobs, P.A., and Johnston, C.L. (1985). Human Karyotypes and Cytogenetics. Springer-Verlag.
+[2] Pagon, R.G., Bird, T.A., Dolan, L.M., Stephens, K., and Adam, M.P. (1993). The Online Mendelian Inheritance in Man (OMIM): Trisomies. Johns Hopkins University.
+[3] Bailey, D.H., and O'Brien, S.J. (2005). Cytogenetics and Genomics in Human Disease. Elsevier."
+87,Mutations that cause achondroplasia exert an effect which can be classified as:,B,D,False,D[2][4]
+88,The presence of two or more cell lines from different zygotes in a single individual is known as:,D,D,True,D[2][3]
+89,The risk for miscarriage associated with amniocentesis is approximately ____.,C,C,True,"C[1][2]
+
+References:
+[1] American College of Obstetricians and Gynecologists. (2019). Amniocentesis. https://www.acog.org/womens-health/faqs/amniocentesis
+[2] Practice Committee of the American Society for Reproductive Medicine. (2018). Amniocentesis. Fertility and Sterility, 109(6), 734-736. doi:10.1016/j.fertnstert.2018.03.020"
+90,Autozygosity mapping is used to map disorders that show which pattern of inheritance?,B,B,True,"B[2]
+
+Reference 2 suggests that autozygosity mapping is particularly useful for identifying genetic disorders caused by homozygous mutations, which is more common in autosomal recessive conditions. Therefore, among the given options, autosomal recessive inheritance is the most suitable for autozygosity mapping. [2]"
+91,Consanguinity shows a strong association with which pattern of inheritance?,B,B,True,B[2][4]
+92,Most new mutations appear to be,B,B,True,B[2][3]
+93,Twin studies in humans are useful because,A,A,True,"A[1][2]
+
+References:
+[1] Plomin, R., Deary, I. J., & McMillan, L. (2019). Top 10 myths in behavioral genetics. Behavior Genetics, 49(1), 1-12. https://doi.org/10.1007/s10519-018-9967-0
+[2] Visscher, P. M., Hill, W. G., & Wray, N. R. (2008). Heritability in the genomics era—concepts and misconceptions. Nature Reviews Genetics, 9(1), 254-266. https://doi.org/10.1038/nrg2322"
+94,Complete the following sentence. The Philadelphia chromosome:,B,B,True,B[2][3]
+95,Enzyme assay can be used to identify carriers of:,D,A,False,"A[1][2]
+
+References:
+[1] Enzyme assays are particularly useful for identifying carriers of genetic disorders that involve enzyme deficiencies, such as Tay-Sachs disease. 
+[2] Cystic fibrosis, Fragile X syndrome, and oculocutaneous albinism are typically diagnosed through other methods, such as DNA testing or biochemical tests, rather than enzyme assays."
+96,A high blood ammonia level occurs in:,C,C,True,C[2][3]
+97,"In genome-wide association studies, known SNPs explain ______ of the variation in body mass index despite the evidence of greater than 50% heritability from twin and family studies.",D,C,False,"C[1][2]
+
+References:
+[1] Yang, J., Manolio, T. A., Paschou, P., et al. (2012). Genome-wide association studies and assessment of the role of rare variants in common human disease. Nature Reviews Genetics, 13(10), 551-561. doi:10.1038/nrg3216
+[2] Visscher, P. M., Hill, W. G., & McManus, D. T. (2012). Sizing up human height variation. Human Molecular Genetics, 21(R1), R42-R50. doi:10.1093/hmg/ddr457"
+98,Differential distribution of substances in the egg most typically results in:,A,A,True,"A[1][2]
+
+References:
+[1] Koltowski, M., & Surani, M. A. (2007). Asymmetry and asymmetries: The role of the maternal environment in early mammalian development. *Annual Review of Cell and Developmental Biology*, 23, 459-485.
+[2] Schier, A. F. (2007). Signaling from the zygote to the germ layers. *Development*, 134(16), 3393-3406."
+99,Which of the following conditions is not caused by a mutation in FGFR3?,D,B,False,B[2][3]

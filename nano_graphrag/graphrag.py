@@ -1,5 +1,7 @@
 import asyncio
 import os
+import time
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from functools import partial
@@ -40,6 +42,9 @@ class GraphRAG:
     # graph mode
     enable_local: bool = True
 
+    # parallel chunking (CPU-bound tiktoken, dùng ThreadPool)
+    chunk_parallel_workers: int = min(8, (os.cpu_count() or 4))
+
     # text chunking
     chunk_token_size: int = 1200
     chunk_overlap_token_size: int = 100
@@ -70,8 +75,14 @@ class GraphRAG:
 
     # community reports
     special_community_report_llm_kwargs: dict = field(
-        default_factory=lambda: {"response_format": {"type": "json_object"}}
+        # Fast-eval defaults: force JSON and cap output length.
+        default_factory=lambda: {
+            "response_format": {"type": "json_object"},
+            "temperature": 0.0,
+            "max_tokens": 384,
+        }
     )
+    enable_community_reports: bool = True
 
     # text embedding
     embedding_func: EmbeddingFunc = field(default_factory=build_local_embedding_func)
@@ -197,11 +208,12 @@ class GraphRAG:
             logger.warning(f"All docs are already in the storage")
             return
         logger.info(f"[New Docs] inserting {len(new_docs)} docs")
+        _t0 = time.perf_counter()
 
-        # ---------- chunking
-        inserting_chunks = {}
-        for doc_key, doc in new_docs.items():
-            chunks = {
+        # ---------- chunking (parallel: tiktoken là CPU-bound, dùng ThreadPool)
+        def _chunk_one(doc_key_doc):
+            doc_key, doc = doc_key_doc
+            return {
                 compute_mdhash_id(dp["content"], prefix="chunk-"): {
                     **dp,
                     "full_doc_id": doc_key,
@@ -213,7 +225,17 @@ class GraphRAG:
                     tiktoken_model=self.tiktoken_model_name,
                 )
             }
-            inserting_chunks.update(chunks)
+
+        loop = asyncio.get_running_loop()
+        with ThreadPoolExecutor(max_workers=self.chunk_parallel_workers) as pool:
+            chunk_results = await asyncio.gather(
+                *[loop.run_in_executor(pool, _chunk_one, item)
+                  for item in new_docs.items()]
+            )
+
+        inserting_chunks = {}
+        for c in chunk_results:
+            inserting_chunks.update(c)
         _add_chunk_keys = await self.full_docs.filter_keys(
             list(inserting_chunks.keys())
         )
@@ -223,35 +245,65 @@ class GraphRAG:
         if not len(inserting_chunks):
             logger.warning(f"All chunks are already in the storage")
             return
+        _t_chunk = time.perf_counter()
+        print(
+            f"  [timing] chunking: {_t_chunk - _t0:.2f}s → "
+            f"{len(inserting_chunks)} chunks",
+            flush=True,
+        )
         logger.info(f"[New Chunks] inserting {len(inserting_chunks)} chunks")
 
-        # TODO: no incremental update for communities now, so just drop all
-        await self.community_reports.drop()
+        if self.enable_community_reports:
+            # TODO: no incremental update for communities now, so just drop all
+            await self.community_reports.drop()
 
         # ---------- extract/summary entity and upsert to graph
         logger.info("[Entity Extraction]...")
+        _t_ext0 = time.perf_counter()
         self.chunk_entity_relation_graph = await extract_entities(
             inserting_chunks,
             knwoledge_graph_inst=self.chunk_entity_relation_graph,
             entity_vdb=self.entities_vdb,
             global_config=asdict(self),
         )
-        if self.llm_response_cache is not None:
-            await self.llm_response_cache.index_done_callback()
-
-        # ---------- update clusterings of graph
-        logger.info("[Community Report]...")
-        await self.chunk_entity_relation_graph.clustering(self.graph_cluster_algorithm)
-        await generate_community_report(
-            self.community_reports, self.chunk_entity_relation_graph, asdict(self)
+        _t_ext1 = time.perf_counter()
+        print(
+            f"  [timing] entity_extract+merge+vdb: {_t_ext1 - _t_ext0:.2f}s "
+            f"(LLM concurrency best={self.best_model_max_async}, "
+            f"cheap={self.cheap_model_max_async})",
+            flush=True,
         )
         if self.llm_response_cache is not None:
             await self.llm_response_cache.index_done_callback()
 
+        if self.enable_community_reports:
+            # ---------- update clusterings of graph
+            logger.info("[Community Report]...")
+            _t_cl0 = time.perf_counter()
+            await self.chunk_entity_relation_graph.clustering(self.graph_cluster_algorithm)
+            _t_cl1 = time.perf_counter()
+            print(f"  [timing] graph clustering: {_t_cl1 - _t_cl0:.2f}s", flush=True)
+            _t_cr0 = time.perf_counter()
+            await generate_community_report(
+                self.community_reports, self.chunk_entity_relation_graph, asdict(self)
+            )
+            _t_cr1 = time.perf_counter()
+            print(f"  [timing] community LLM reports: {_t_cr1 - _t_cr0:.2f}s", flush=True)
+            if self.llm_response_cache is not None:
+                await self.llm_response_cache.index_done_callback()
+
         # ---------- commit upsertings and indexing
+        _t_io0 = time.perf_counter()
         await self.full_docs.upsert(new_docs)
         await self.text_chunks.upsert(inserting_chunks)
         await self._insert_done()
+        _t_end = time.perf_counter()
+        print(f"  [timing] persist (kv+milvus+graphml): {_t_end - _t_io0:.2f}s", flush=True)
+        print(
+            f"  [timing] === insert TOTAL: {_t_end - _t0:.2f}s "
+            f"({len(new_docs)} docs, {len(inserting_chunks)} chunks) ===",
+            flush=True,
+        )
 
     async def _insert_done(self):
         tasks = []

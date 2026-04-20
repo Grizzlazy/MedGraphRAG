@@ -298,18 +298,29 @@ async def extract_entities(
         print(f"Processed {already_processed} chunks\r", end="", flush=True)
         return dict(maybe_nodes), dict(maybe_edges)
 
-    # use_llm_func is wrapped in ascynio.Semaphore, limiting max_async callings
+    # use_llm_func is wrapped in asyncio.Semaphore, limiting max_async callings
+    # return_exceptions=True: chunk lỗi 400/timeout không crash cả batch
     results = await asyncio.gather(
-        *[_process_single_content(c) for c in ordered_chunks]
+        *[_process_single_content(c) for c in ordered_chunks],
+        return_exceptions=True,
     )
     maybe_nodes = defaultdict(list)
     maybe_edges = defaultdict(list)
-    for m_nodes, m_edges in results:
+    n_ok = n_skip = 0
+    for r in results:
+        if isinstance(r, Exception):
+            n_skip += 1
+            logger.warning(f"[Entity extraction] chunk skipped: {r}")
+            continue
+        n_ok += 1
+        m_nodes, m_edges = r
         for k, v in m_nodes.items():
             maybe_nodes[k].extend(v)
         for k, v in m_edges.items():
             # it's undirected graph
             maybe_edges[tuple(sorted(k))].extend(v)
+    if n_skip:
+        logger.warning(f"[Entity extraction] {n_ok} OK / {n_skip} skipped (context overflow or error)")
     all_entities_data = await asyncio.gather(
         *[
             _merge_nodes_then_upsert(k, v, knwoledge_graph_inst, global_config)
@@ -468,6 +479,8 @@ async def _find_most_related_community_from_entities(
         if dp["level"] <= query_param.level
     ]
     related_community_keys_counts = dict(Counter(related_community_dup_keys))
+    if not related_community_keys_counts:
+        return []
     _related_community_datas = await asyncio.gather(
         *[community_reports.get_by_id(k) for k in related_community_keys_counts.keys()]
     )
@@ -476,8 +489,13 @@ async def _find_most_related_community_from_entities(
         for k, v in zip(related_community_keys_counts.keys(), _related_community_datas)
         if v is not None
     }
+    if not related_community_datas:
+        return []
+    present_keys = [k for k in related_community_keys_counts.keys() if k in related_community_datas]
+    if not present_keys:
+        return []
     related_community_keys = sorted(
-        related_community_keys_counts.keys(),
+        present_keys,
         key=lambda k: (
             related_community_keys_counts[k],
             related_community_datas[k]["report_json"].get("rating", -1),

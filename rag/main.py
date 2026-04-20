@@ -3,20 +3,26 @@ main.py — CLI entry point cho RAG pipeline.
 
 Usage:
   # Inference nhanh
-  python -m rag.main --data-path ./dataset/mimic_ex \\
-      --query "What medications is the patient currently taking?"
+  python -m rag.main --query "What medications is the patient currently taking?"
 
-  # Evaluate trên MedQA (50 mẫu)
-  python -m rag.main --data-path ./dataset/mimic_ex \\
-      --eval medqa --max-samples 50
+  # Evaluate 3 bộ gốc
+  python -m rag.main --eval medqa medmcqa pubmedqa
 
-  # Full 3 benchmark
-  python -m rag.main --data-path ./dataset/mimic_ex \\
-      --eval medqa medmcqa pubmedqa
+  # Evaluate 6 MMLU medical subsets
+  python -m rag.main --eval mmlu_anatomy mmlu_clinical_knowledge \\
+      mmlu_college_biology mmlu_college_medicine \\
+      mmlu_medical_genetics mmlu_professional_medicine
 
-  # Build lại index từ đầu (xóa cache)
-  python -m rag.main --data-path ./dataset/mimic_ex --rebuild \\
-      --query "What is the diagnosis?"
+  # Evaluate full 9 bộ
+  python -m rag.main --eval medqa medmcqa pubmedqa \\
+      mmlu_anatomy mmlu_clinical_knowledge mmlu_college_biology \\
+      mmlu_college_medicine mmlu_medical_genetics mmlu_professional_medicine
+
+  # Giới hạn số mẫu (test nhanh)
+  python -m rag.main --eval medqa --max-samples 50
+
+  # Build lại index từ đầu
+  python -m rag.main --rebuild --query "What is the diagnosis?"
 """
 
 import argparse
@@ -31,9 +37,24 @@ from .generator import build_context, generate_answer
 from .evaluator import evaluate_dataset
 
 
+VALID_DATASETS = [
+    # Core medical QA
+    "medqa",
+    "medmcqa",
+    "pubmedqa",
+    # MMLU medical subsets
+    "mmlu_anatomy",
+    "mmlu_clinical_knowledge",
+    "mmlu_college_biology",
+    "mmlu_college_medicine",
+    "mmlu_medical_genetics",
+    "mmlu_professional_medicine",
+]
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="Traditional RAG — FAISS + BM25 + Cross-encoder Reranking",
+        description="Traditional RAG — FAISS + Cross-encoder Reranking",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -45,7 +66,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     data.add_argument(
         "--cache-dir", default=".rag_cache",
-        help="Thư mục cache FAISS + BM25 index (default: .rag_cache)",
+        help="Thư mục cache FAISS index (default: .rag_cache)",
     )
     data.add_argument(
         "--rebuild", action="store_true",
@@ -63,9 +84,14 @@ def build_parser() -> argparse.ArgumentParser:
     )
     mode.add_argument(
         "--eval", nargs="+",
-        choices=["medqa", "medmcqa", "pubmedqa"],
+        choices=VALID_DATASETS,
         metavar="DS",
-        help="Datasets để evaluate. Chọn từ: medqa, medmcqa, pubmedqa",
+        help=(
+            "Datasets để evaluate. Chọn từ:\n"
+            "  Core: medqa, medmcqa, pubmedqa\n"
+            "  MMLU: mmlu_anatomy, mmlu_clinical_knowledge, mmlu_college_biology,\n"
+            "        mmlu_college_medicine, mmlu_medical_genetics, mmlu_professional_medicine"
+        ),
     )
 
     ctrl = p.add_argument_group("Controls")
@@ -103,7 +129,7 @@ def main():
         print(f"Top {len(top)} chunks retrieved:\n")
         for i, c in enumerate(top, 1):
             src   = c["chunk"]["source"]
-            score = f"rrf={c['rrf_score']:.4f}"
+            score = f"score={c.get('dense_score', c.get('rrf_score', 0)):.4f}"
             if "ce_score" in c:
                 score += f", ce={c['ce_score']:.3f}"
             print(f"  [{i}] {src} ({score})")
@@ -116,32 +142,59 @@ def main():
 
     # ── Evaluation mode ───────────────────────────────────────────────────────
     if args.eval:
-        # Tạo thư mục con theo timestamp để không ghi đè lần eval trước
-        run_id      = datetime.now().strftime("%Y%m%d_%H%M%S")
-        run_dir     = os.path.join(args.results_dir, run_id)
+        run_id  = datetime.now().strftime("%Y%m%d_%H%M%S")
+        run_dir = os.path.join(args.results_dir, run_id)
         os.makedirs(run_dir, exist_ok=True)
         print(f"\nRun ID: {run_id}  →  {run_dir}")
 
         summary = []
         for ds in args.eval:
-            print(f"\n{'='*55}")
+            print(f"\n{'='*60}")
             print(f"Evaluating: {ds}")
-            print(f"{'='*55}")
+            print(f"{'='*60}")
 
-            acc = evaluate_dataset(
-                rag,
-                dataset_name=ds,
-                max_samples=args.max_samples,
-                results_dir=run_dir,
-                eval_dir=args.eval_dir,
-            )
-            summary.append({"dataset": ds, "accuracy(%)": round(acc, 2)})
+            try:
+                acc = evaluate_dataset(
+                    rag,
+                    dataset_name=ds,
+                    max_samples=args.max_samples,
+                    results_dir=run_dir,
+                    eval_dir=args.eval_dir,
+                )
+                summary.append({"dataset": ds, "accuracy(%)": round(acc, 2), "status": "ok"})
+            except Exception as e:
+                print(f"\n  [ERROR] {ds}: {e}")
+                summary.append({"dataset": ds, "accuracy(%)": 0.0, "status": str(e)[:80]})
 
-        print("\n" + "=" * 55)
-        print("SUMMARY — Traditional RAG (FAISS + Rerank)")
-        print("=" * 55)
-        for row in summary:
-            print(f"  {row['dataset']:20s}  {row['accuracy(%)']:.2f}%")
+        # ── Print summary table ───────────────────────────────────────────────
+        print("\n" + "=" * 60)
+        print("SUMMARY — Traditional RAG (FAISS + CrossEncoder Rerank)")
+        print("=" * 60)
+
+        # Group: core vs mmlu
+        core_rows = [r for r in summary if not r["dataset"].startswith("mmlu_")]
+        mmlu_rows = [r for r in summary if r["dataset"].startswith("mmlu_")]
+
+        if core_rows:
+            print("\n  Core Medical QA:")
+            for row in core_rows:
+                status = "" if row["status"] == "ok" else f"  ← {row['status']}"
+                print(f"    {row['dataset']:30s}  {row['accuracy(%)']:6.2f}%{status}")
+
+        if mmlu_rows:
+            print("\n  MMLU Medical:")
+            for row in mmlu_rows:
+                status = "" if row["status"] == "ok" else f"  ← {row['status']}"
+                print(f"    {row['dataset']:30s}  {row['accuracy(%)']:6.2f}%{status}")
+
+            mmlu_avg = sum(r["accuracy(%)"] for r in mmlu_rows) / len(mmlu_rows)
+            print(f"    {'MMLU Average':30s}  {mmlu_avg:6.2f}%")
+
+        if summary:
+            total_avg = sum(r["accuracy(%)"] for r in summary) / len(summary)
+            print(f"\n  {'Overall Average':30s}  {total_avg:6.2f}%")
+
+        print("=" * 60)
 
         summary_path = os.path.join(run_dir, "rag_summary.csv")
         pd.DataFrame(summary).to_csv(summary_path, index=False)

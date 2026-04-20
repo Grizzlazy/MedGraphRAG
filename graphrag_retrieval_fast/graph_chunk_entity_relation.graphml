@@ -1,0 +1,1773 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="description" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d3" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;A 21-YEAR-OLD SEXUALLY ACTIVE MALE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A 21-year-old sexually active male complains of fever, pain during urination, and inflammation and pain in the right knee."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;FEVER&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"Fever is a symptom experienced by the patient, often associated with infection."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</node>
+<node id="&quot;PAIN DURING URINATION&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"Pain during urination is a symptom experienced by the patient, indicating possible urinary tract infection."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</node>
+<node id="&quot;INFLAMMATION AND PAIN IN THE RIGHT KNEE&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"Inflammation and pain in the right knee are symptoms experienced by the patient, possibly indicating a bacterial infection in the joint."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</node>
+<node id="&quot;BACTERIA THAT DOES NOT FERMENT MALTOSE AND HAS NO POLYSACCHARIDE CAPSULE&quot;">
+  <data key="d0">"MICROORGANISM"</data>
+  <data key="d1">"The microorganism is characterized by not fermenting maltose and lacking a polysaccharide capsule, which helps in identifying the specific type of bacteria."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</node>
+<node id="&quot;PHYSICIAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The physician is the medical professional who orders antibiotic therapy for the patient."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;ANTIBIOTIC THERAPY&quot;">
+  <data key="d0">"TREATMENT"</data>
+  <data key="d1">"Antibiotic therapy is the treatment ordered by the physician to combat the bacterial infection."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;GENTAMICIN&quot;">
+  <data key="d0">"DRUG"</data>
+  <data key="d1">"Gentamicin is an antibiotic that inhibits protein synthesis in bacteria, which is effective against certain gram-negative bacteria."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;CIPROFLOXACIN&quot;">
+  <data key="d0">"DRUG"</data>
+  <data key="d1">"Ciprofloxacin is a fluoroquinolone antibiotic that inhibits DNA gyrase and topoisomerase IV, which is effective against a wide range of bacteria."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;CEFTRIAXONE&quot;">
+  <data key="d0">"DRUG"</data>
+  <data key="d1">"Ceftriaxone is a third-generation cephalosporin antibiotic that is effective against both gram-positive and gram-negative bacteria."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;TRIMETHOPRIM&quot;">
+  <data key="d0">"DRUG"</data>
+  <data key="d1">"Trimethoprim is an antibiotic that inhibits folic acid synthesis in bacteria, which is effective against certain gram-positive and gram-negative bacteria."</data>
+  <data key="d2">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;PNEUMOCYSTIS CARINII PNEUMONIA&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Pneumocystis carinii pneumonia is a type of pneumonia caused by the fungus P. carinii, often affecting individuals with compromised immune systems."</data>
+  <data key="d2">chunk-0521cfaf26ba5e9d2e68913edafde9d5</data>
+</node>
+<node id="&quot;MEDQUIST36&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Medquist36 is a medical facility or service provider mentioned in the context of medical procedures and diagnoses."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;M.D.&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"m.d. likely refers to a medical doctor, a professional who performs medical procedures and diagnoses."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;VENOUS CATHETERIZATION&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Venous Catheterization is a medical procedure performed as part of diagnostic or therapeutic processes."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;DIAGNOSTIC ULTRASOUND OF HEART&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Diagnostic Ultrasound of Heart is a medical procedure used to visualize the heart for diagnostic purposes."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;BRONCHOSCOPY&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Bronchoscopy is a medical procedure used to examine the airways and lungs, often for diagnostic purposes."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;CIRRHOSIS OF LIVER&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Cirrhosis of Liver is a chronic liver condition characterized by scarring and loss of liver function."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;INFECTION WITH MICROORGANISMS RESISTANT TO PENICILLINS&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Infection with Microorganisms Resistant to Penicillins is a specific type of infection that is difficult to treat due to antibiotic resistance."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;HUMAN IMMUNODEFICIENCY VIRUS [HIV] DISEASE&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Human Immunodeficiency Virus [HIV] Disease is a serious viral infection that weakens the immune system."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;PNEUMOCYSTOSIS&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Pneumocystosis is a lung infection caused by the fungus Pneumocystis jirovecii, often seen in immunocompromised individuals."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;CACHEXIA&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Cachexia is a syndrome characterized by severe weight loss and muscle atrophy, often seen in advanced diseases."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;ALKALOSIS&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Alkalosis is a condition where the body fluids are abnormally alkaline, often due to metabolic imbalances."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;BACTEREMIA&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Bacteremia is a condition where bacteria are present in the blood, which can lead to systemic infections."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;METHICILLIN SUSCEPTIBLE STAPHYLOCOCCUS AUREUS IN CONDITIONS CLASSIFIED ELSEWHERE AND OF UNSPECIFIED SITE&quot;">
+  <data key="d0">"MICROORGANISM"</data>
+  <data key="d1">"Methicillin Susceptible Staphylococcus Aureus is a specific strain of bacteria that can cause infections, often found in various body sites."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;ANTIVIRAL DRUGS CAUSING ADVERSE EFFECTS IN THERAPEUTIC USE&quot;">
+  <data key="d0">"SIDE EFFECT"</data>
+  <data key="d1">"Antiviral Drugs Causing Adverse Effects in Therapeutic Use refers to the negative side effects experienced by patients taking antiviral medications."</data>
+  <data key="d2">chunk-c763680bad75c3153e1901f8226a598e</data>
+</node>
+<node id="&quot;DEACONNESS 4&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Deaconness 4 is a hospital where the patient was admitted for treatment."</data>
+  <data key="d2">chunk-3d56e95e65bc06844f27372e0e5d019f</data>
+</node>
+<node id="&quot;ASPIRIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Aspirin is a medication Mr. takes to manage pain and inflammation, also used for prevention of cardiovascular events."&lt;SEP&gt;"Aspirin is a nonsteroidal anti-inflammatory drug (NSAID</data>
+  <data key="d2">chunk-19c15a09d65205495acf93558e4639c5&lt;SEP&gt;chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;HMFP&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"hmfp is an organization involved in medical procedures and treatments.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;PROCEDURE: NON-INVASIVE MECHANICAL VENTILATION&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Non-invasive mechanical ventilation is a medical procedure performed at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;ELECTROENCEPHALOGRAM&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Electroencephalogram is a medical procedure performed at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;OTHER PSYCHIATRIC DRUG THERAPY&quot;">
+  <data key="d0">"TREATMENT"</data>
+  <data key="d1">"Other psychiatric drug therapy is a treatment provided at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;PURE HYPERCHOLESTEROLEMIA&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Pure hypercholesterolemia is a diagnosis given to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;UNSPECIFIED ESSENTIAL HYPERTENSION&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Unspecified essential hypertension is a diagnosis given to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;OTHER CONVULSIONS&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"Other convulsions are symptoms experienced by a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;LOSS OF WEIGHT&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"Loss of weight is a symptom experienced by a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;DIABETES WITH OTHER SPECIFIED MANIFESTATIONS, TYPE II OR UNSPECIFIED TYPE, NOT STATED AS UNCONTROLLED&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Diabetes with other specified manifestations is a diagnosis given to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;MAJOR DEPRESSIVE AFFECTIVE DISORDER, RECURRENT EPISODE, SEVERE, WITHOUT MENTION OF PSYCHOTIC BEHAVIOR&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Major depressive affective disorder is a diagnosis given to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;LONG-TERM (CURRENT) USE OF INSULIN&quot;">
+  <data key="d0">"TREATMENT"</data>
+  <data key="d1">"Long-term (current) use of insulin is a treatment provided to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;INSULINS AND ANTIDIABETIC AGENTS CAUSING ADVERSE EFFECTS IN THERAPEUTIC USE&quot;">
+  <data key="d0">"EFFECT"</data>
+  <data key="d1">"Insulins and antidiabetic agents causing adverse effects are a concern in therapeutic use at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;LONG-TERM (CURRENT) USE OF OTHER MEDICATIONS&quot;">
+  <data key="d0">"TREATMENT"</data>
+  <data key="d1">"Long-term (current) use of other medications is a treatment provided to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;OTHER DISEASES OF PHARYNX, NOT ELSEWHERE CLASSIFIED&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Other diseases of pharynx are a diagnosis given to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;UNSPECIFIED SLEEP APNEA&quot;">
+  <data key="d0">"DIAGNOSIS"</data>
+  <data key="d1">"Unspecified sleep apnea is a diagnosis given to a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;RIGHT BUNDLE BRANCH BLOCK&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Right bundle branch block is a condition present in a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;FAMILY HISTORY OF PSYCHIATRIC CONDITION&quot;">
+  <data key="d0">"FAMILY HISTORY"</data>
+  <data key="d1">"Family history of psychiatric condition is mentioned in the context of a patient at hmfp.")</data>
+  <data key="d2">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</node>
+<node id="&quot;AFRICAN-AMERICAN MALE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"African-American Male is a patient who was examined and found to have various vital signs and physical characteristics."</data>
+  <data key="d2">chunk-3ef7388425c731f9249d9f0f3198b63f</data>
+</node>
+<node id="&quot;PATIENT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Patient is a person experiencing tremors, disorientation, and hypoglycemia, requiring medical intervention."&lt;SEP&gt;"The patient is experiencing multiple medical issues including brain death, respiratory infections, and renal failure. The patient's condition is critical and involves multiple interventions by medical staff."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f&lt;SEP&gt;chunk-2fbc8f472cd5507ec28c0c1474cd598d</data>
+</node>
+<node id="&quot;DR. MEDQUIST36&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Dr. Medquist36 is the physician dictating the patient's medical records and overseeing the care provided."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;NIPRIDE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Nipride is a medication used to control blood pressure, specifically to maintain it within a certain range."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;CARDENE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Cardene is another medication used to control blood pressure, often used after Nipride has been tapered off."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;LABETALOL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Labetalol is a medication used to control blood pressure, often prescribed after Cardene has been tapered off."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;LEVOFLOXACIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Levofloxacin is an antibiotic used to treat bacterial infections, particularly those involving the lungs."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;FLAGYL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Flagyl is an antibiotic used to treat various infections, including those caused by anaerobic bacteria."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;VANCOMYCIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Vancomycin is a powerful antibiotic used to treat severe infections, especially those caused by resistant bacteria."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;PNEUMONIA&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Pneumonia is a lung infection that can occur due to inhaling food or vomit, leading to inflammation and difficulty breathing."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;ACUTE KIDNEY FAILURE&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Acute Kidney Failure is a sudden decline in kidney function, often due to dehydration or third-spacing of fluids."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;INTRACEREBRAL HEMORRHAGE&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Intracerebral Hemorrhage is a type of stroke where bleeding occurs within the brain tissue, leading to neurological deficits."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;CONGESTIVE HEART FAILURE&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Congestive Heart Failure is a condition where the heart cannot pump enough blood to meet the body's needs, leading to congestion in the lungs."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;ESSENTIAL HYPERTENSION&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Essential Hypertension is a chronic condition characterized by high blood pressure with no identifiable cause."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;HYPONATREMIA&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Hyponatremia is a condition where the level of sodium in the blood is abnormally low, often due to salt wasting from cerebral problems."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;ENDOTRACHEAL TUBE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Endotracheal Tube is a medical device used to maintain an open airway during mechanical ventilation."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;OROGASTRIC TUBE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Orogastric Tube is a medical device used to provide nutrition directly into the stomach or to remove stomach contents."</data>
+  <data key="d2">chunk-2f47d75e140d663304c819e8d214097f</data>
+</node>
+<node id="&quot;BABY GIRL&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Baby Girl is a 31-week premature baby, born at 1,385 grams, with no signs of dysmorphism and is stable on room air."</data>
+  <data key="d2">chunk-d86887328eb3682b9ee8a61f6448fee5</data>
+</node>
+<node id="&quot;HPI: 50 YEAR OLD FEMALE&quot;">
+  <data key="d0">"PATIENT"</data>
+  <data key="d1">"A 50-year-old female presents with a history of falling in the bathtub 4 days ago and hitting the back of her head, experiencing a 'massive headache' that persists despite Tylenol, and noting difficulty with simple tasks and occasional dizziness. She also mentions 'silvery spectors' in her vision."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;GBM&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"GBM stands for Glioblastoma Multiforme, a type of brain cancer that is highly aggressive and characterized by rapid growth and invasion of surrounding brain tissue."&lt;SEP&gt;"GBM stands for Glioblastoma multiforme, a type of brain cancer. The patient is newly diagnosed with this condition."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664&lt;SEP&gt;chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;NEUROLOGICAL EXAMINATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A neurological examination is conducted upon admission, including assessment of vital signs, pupillary responses, cranial nerves, motor function, and sensory function."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;CT HEAD SCAN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"A CT head scan is performed to evaluate the brain mass and any new changes. The findings show unchanged mass effect and edema around the large right parietal mass."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;MRI HEAD SCAN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"An MRI head scan is conducted to further evaluate the extent of the ring-enhancing brain mass with edema. The findings reveal a large right parietal mass with complex appearance, substantial edema, and midline shift."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;DIZZINESS&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"Dizziness is a symptom experienced by the patient, along with headache and visual disturbances."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;SILVERY SPECTORS&quot;">
+  <data key="d0">"SYMPTOM"</data>
+  <data key="d1">"The patient reports seeing 'silvery spectors' in her vision, which could indicate visual disturbances."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;GBM METASTASIS&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"GBM metastasis refers to the spread of glioblastoma multiforme to other parts of the body, indicated by the presence of ring-enhancing brain mass with edema."&gt;</data>
+  <data key="d2">chunk-321b66316d11f34afdca9611a9f48664</data>
+</node>
+<node id="&quot;RIGHT PARIETAL LESION&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"The Right Parietal Lesion is a mass located in the right parietal lobe of the brain, which may represent either a primary or metastatic brain neoplasm."</data>
+  <data key="d2">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;LEFT TEMPORAL LESION&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"The Left Temporal Lesion is a mass located in the left temporal lobe of the brain, which could have alternative diagnoses including hemorrhage or a calcified meningioma."</data>
+  <data key="d2">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;LEFT OCCIPITAL LESION&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"The Left Occipital Lesion is a mass located in the left occipital lobe of the brain, which could have alternative diagnoses including an inflammatory or ischemic process."</data>
+  <data key="d2">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;DR. &quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Dr. is a medical professional involved in the diagnosis and treatment of the patient's brain lesions."&lt;SEP&gt;"Dr. is a medical professional who referred the patient to the inpatient unit for stabilization and evaluation for ECT."</data>
+  <data key="d2">chunk-2fbc8f472cd5507ec28c0c1474cd598d&lt;SEP&gt;chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;HOSPITAL COURSE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Hospital Course describes the medical journey of the patient, including the diagnosis, treatment, and ongoing management of brain masses."</data>
+  <data key="d2">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;CHEST X-RAY&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Chest X-ray is a diagnostic imaging technique used to evaluate the heart size, mediastinal and hilar contours, and pulmonary vasculature."</data>
+  <data key="d2">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</node>
+<node id="&quot;GLIOBLASTOMA&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Glioblastoma is a type of malignant tumor, specifically mentioned in the discharge diagnosis."</data>
+  <data key="d2">chunk-7e31e0831f9538bef6ee60c8ef70b926</data>
+</node>
+<node id="&quot;MR.&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mr. is a 72-year-old male with a complex medical history, including pancreatic cancer, ulcerative colitis, and hypertension."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;PANCREATIC CANCER&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Pancreatic Cancer is a serious condition that Mr. has, with significant implications for his health and treatment options."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;ULCERATIVE COLITIS&quot;">
+  <data key="d0">"DISEASE"</data>
+  <data key="d1">"Ulcerative Colitis is a chronic inflammatory bowel disease that Mr. has had for a long time."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;HYPERTENSION&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Hypertension is a common chronic condition that Mr. has, affecting his cardiovascular system."&lt;SEP&gt;"Hypertension is a medical condition characterized by high blood pressure."&lt;SEP&gt;"Hypertension is a medical condition characterized by persistently elevated blood pressure, often linked to various cardiovascular risks."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb&lt;SEP&gt;chunk-1023b808867f4b3b8d0dcc2a67b4d85e&lt;SEP&gt;chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Endoscopic Retrograde Cholangiopancreatography is a diagnostic procedure Mr. underwent recently, but a stent could not be placed."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;COMPUTED TOMOGRAPHY&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Computed Tomography is a imaging procedure that revealed a head of the pancreas mass and vascular involvement."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;HEAD OF THE PANCREAS MASS&quot;">
+  <data key="d0">"FINDING"</data>
+  <data key="d1">"Head of the Pancreas Mass is a significant finding from the CT scan, indicating potential malignancy."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;INTRAHEPATIC DUCT&quot;">
+  <data key="d0">"ANATOMY"</data>
+  <data key="d1">"Intrahepatic Duct is part of the biliary system, dilated due to the presence of a head of the pancreas mass."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;GASTRODUODENAL ARTERY&quot;">
+  <data key="d0">"ANATOMY"</data>
+  <data key="d1">"Gastroduodenal Artery is a blood vessel that shows vascular involvement, indicating potential complications."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;SUPERIOR MESENTERIC VEIN&quot;">
+  <data key="d0">"ANATOMY"</data>
+  <data key="d1">"Superior Mesenteric Vein is a blood vessel that shows vascular involvement, indicating potential complications."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;TOTAL ABDOMINAL COLECTOMY&quot;">
+  <data key="d0">"SURGERY"</data>
+  <data key="d1">"Total Abdominal Colectomy is a major surgery Mr. underwent 20 years ago, resulting in an ileostomy."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;ILEOSTOMY&quot;">
+  <data key="d0">"SURGERY"</data>
+  <data key="d1">"Ileostomy is a surgical opening in the abdomen to allow waste to exit the body, resulting from the total abdominal colectomy."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;EXPLORATORY LAPAROTOMY&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Exploratory Laparotomy is a surgical procedure Mr. underwent, aimed at resecting a pancreatic mass."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;TRANSURETHRAL RESECTION OF PROSTATE&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Transurethral Resection of Prostate is a procedure Mr. has undergone in the past, related to benign prostatic hypertrophy."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;MOEXIPRIL&quot;">
+  <data key="d0">"MEDICATION"</data>
+  <data key="d1">"Moexipril is a medication Mr. takes to manage hypertension."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+  <data key="d3">[{"level": 0, "cluster": 1}]</data>
+</node>
+<node id="&quot;ATENOLOL&quot;">
+  <data key="d0">"MEDICATION"</data>
+  <data key="d1">"Atenolol is a medication Mr. takes to manage hypertension and reduce heart rate."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;ALLOPURINOL&quot;">
+  <data key="d0">"MEDICATION"</data>
+  <data key="d1">"Allopurinol is a medication Mr. takes to manage gout and reduce uric acid levels."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;MULTIVITAMIN&quot;">
+  <data key="d0">"MEDICATION"</data>
+  <data key="d1">"Multivitamin is a supplement Mr. takes to ensure adequate intake of vitamins and minerals."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;PHYSICAL THERAPY&quot;">
+  <data key="d0">"SERVICE"</data>
+  <data key="d1">"Physical Therapy is a service provided to Mr. to help improve his mobility and overall function."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;SIPS&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Sips are introduced to Mr. to test his ability to tolerate oral intake after a major surgical procedure."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;CODE BLUE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Code Blue is an emergency procedure initiated when a patient becomes unresponsive and requires cardiopulmonary resuscitation."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;EPINEPHRINE&quot;">
+  <data key="d0">"MEDICATION"</data>
+  <data key="d1">"Epinephrine is a medication used during CPR to increase heart rate and blood pressure."</data>
+  <data key="d2">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</node>
+<node id="&quot;CARDIAC COMPLICATIONS&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Cardiac complications refer to various issues affecting the heart, including but not limited to arrhythmias, myocardial infarction, and heart failure."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Hemorrhage complicating a procedure is a specific medical event where bleeding occurs during or after a surgical procedure."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CARDIAC ARREST&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cardiac arrest is a sudden cessation of heart function, leading to no blood flow to vital organs and requiring immediate resuscitation efforts."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;MALIGNANT NEOPLASM OF HEAD OF PANCREAS&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Malignant neoplasm of the head of the pancreas is a serious cancerous growth located in the head region of the pancreas, often associated with poor prognosis."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;CALCULUS OF GALLBLADDER WITH OTHER CHOLECYSTITIS, WITHOUT MENTION OF OBSTRUCTION&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Calculus of the gallbladder with cholecystitis refers to the presence of gallstones combined with inflammation of the gallbladder, without evidence of blockage."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</node>
+<node id="&quot;PERITONEAL ADHESIONS (POSTOPERATIVE) (POSTINFECTION)&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Peritoneal adhesions are bands of scar tissue that form between tissues in the abdomen, occurring post-surgery or post-infection, leading to restricted movement of abdominal organs."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</node>
+<node id="&quot;INCISIONAL HERNIA WITHOUT MENTION OF OBSTRUCTION OR GANGRENE&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Incisional hernia is a protrusion of abdominal contents through a weakness in the abdominal wall at the site of a previous surgical incision, without signs of obstruction or gangrene."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</node>
+<node id="&quot;SURGICAL OPERATION WITH ANASTOMOSIS, BYPASS, OR GRAFT, WITH NATURAL OR ARTIFICIAL TISSUES USED AS IMPLANT CAUSING ABNORMAL PATIENT REACTION, OR LATER COMPLICATION, WITHOUT MENTION OF MISADVENTURE AT TIME OF OPERATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A surgical operation involving anastomosis, bypass, or graft using natural or artificial tissues as implants can lead to abnormal reactions or later complications, without evidence of misadventure during the operation."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;ABNORMAL PATIENT REACTION&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Abnormal patient reaction refers to any unexpected or adverse response to a medical treatment or procedure, including allergic reactions or infections."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;MISADVENTURE AT TIME OF OPERATION&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Misadventure at time of operation refers to errors or accidents that occur during a surgical procedure, leading to complications or harm to the patient."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;PERIPHERAL VASCULAR DISEASE&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Peripheral vascular disease (PVD) refers to disorders of the blood vessels outside the heart and brain, often leading to reduced blood flow to the limbs."</data>
+  <data key="d2">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+  <data key="d3">[{"level": 0, "cluster": 0}]</data>
+</node>
+<node id="&quot;LASIX&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Lasix is a medication used to treat hypertension and edema."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 6}]</data>
+</node>
+<node id="&quot;POTASSIUM&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Potassium is a mineral that needs to be repleted due to hypokalemia."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 6}]</data>
+</node>
+<node id="&quot;HYPERGLYCEMIA&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Hyperglycemia is a medical condition characterized by high blood glucose levels."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 3}]</data>
+</node>
+<node id="&quot;METFORMIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Metformin is a medication used to treat type 2 diabetes mellitus."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 3}]</data>
+</node>
+<node id="&quot;TYPE 2 DIABETES MELLITUS&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Type 2 Diabetes Mellitus is a chronic condition where the body does not use insulin properly."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 3}]</data>
+</node>
+<node id="&quot;OBESITY&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Obesity is a condition where excess body fat accumulates to the point of affecting health."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;HYPERLIPIDEMIA&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Hyperlipidemia is a condition characterized by high levels of lipids in the blood."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;UNSTABLE ANGINA&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Unstable Angina is a condition where chest pain occurs unpredictably and is a sign of potential heart attack."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;THREE-VESSEL CORONARY ARTERY DISEASE&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Three-Vessel Coronary Artery Disease is a condition where blockages affect all three major coronary arteries."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;CORONARY ARTERY BYPASS GRAFTING&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Coronary Artery Bypass Grafting is a surgical procedure to reroute blood flow around blocked arteries."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;INTRAAORTIC BALLOON PUMP&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Intraaortic Balloon Pump is a medical device used to support heart function during surgery."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;AMBIEN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Ambien is a medication used to treat insomnia."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;COLACE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Colace is a medication used to treat constipation."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;PERCOCET&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Percocet is a medication used to relieve pain."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;CAPTOPRIL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Captopril is a medication used to treat hypertension and reduce proteinuria."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;METOPROLOL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Metoprolol is a medication used to treat hypertension and reduce heart rate."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;NITROGLYCERIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Nitroglycerin is a medication used to relieve chest pain and improve blood flow."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;AORTA&quot;">
+  <data key="d0">"ANATOMY"</data>
+  <data key="d1">"Aorta is the largest artery in the body, carrying oxygenated blood away from the heart."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;DIABETES MELLITUS&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Diabetes Mellitus is a chronic condition where the body does not produce enough insulin or cannot use insulin properly."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;HEPARIN&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Heparin is a medication used to prevent blood clots."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;FOLEY CATHETER&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Foley Catheter is a medical device used to drain urine from the bladder."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+  <data key="d3">[{"level": 0, "cluster": 2}]</data>
+</node>
+<node id="&quot;CK&quot;">
+  <data key="d0">"TEST"</data>
+  <data key="d1">"CK is a test measuring creatine kinase levels, indicative of muscle damage."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;WBC&quot;">
+  <data key="d0">"TEST"</data>
+  <data key="d1">"WBC is a test measuring white blood cell count, indicative of infection or inflammation."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;SURGERY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Surgery is a medical procedure involving incisions to treat or diagnose conditions."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;ANGINA&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Angina is a condition characterized by chest pain due to reduced blood flow to the heart muscle."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;TAMPONADE&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Tamponade is a condition where fluid builds up in the pericardium, compressing the heart."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;CARDIOGENIC SHOCK&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Cardiogenic Shock is a severe condition where the heart cannot pump enough blood to meet the body's needs."&lt;SEP&gt;"Cardiogenic shock is a severe medical condition where the heart fails to pump enough blood to meet the body's needs, often a life-threatening situation.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51&lt;SEP&gt;chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;STERNOTOMY&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Sternotomy is a surgical procedure involving an incision through the breastbone."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;PERICARDIAL WINDOW&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Pericardial Window is a surgical procedure involving creating a window in the pericardium to relieve tamponade."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;INTERNAL MAMMARY ARTERY&quot;">
+  <data key="d0">"ANATOMY"</data>
+  <data key="d1">"Internal Mammary Artery is a branch of the subclavian artery, supplying blood to the chest wall and heart."</data>
+  <data key="d2">chunk-196d25513e82c8575904c0661e8cf155</data>
+</node>
+<node id="&quot;MIN. INV. PFO CLOSURE&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Min. Inv. PFO Closure is a minimally invasive procedure to close a Patent Foramen Ovale."</data>
+  <data key="d2">chunk-cbda783652fdb6dcfd61c885183028a8</data>
+</node>
+<node id="&quot;ICARDIUM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"icardium is a medical institution or company mentioned in the context of medical conditions and procedures."</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;HYPOTENSION, UNSPECIFIED&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Hypotension, unspecified is a medical condition characterized by low blood pressure, which is a critical health issue.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;DISPLACEMENT OF CERVICAL INTERVERTEBRAL DISC WITHOUT MYELOPATHY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Displacement of cervical intervertebral disc without myelopathy is a medical condition involving the displacement of a disc in the neck, which does not affect the spinal cord.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;PAIN IN JOINT, LOWER LEG&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Pain in joint, lower leg is a medical condition involving pain localized in the joints of the lower leg, which can be due to various causes such as injury or inflammation.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;BACTRIM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"bactrim is a type of antibiotic, often used in medical treatments and is mentioned as an allergy.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;AMPICILLIN&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"ampicillin is another type of antibiotic, often used in medical treatments and is mentioned as an allergy.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;REMERON&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"remeron is a medication used to treat depression and anxiety, often prescribed by doctors and mentioned as an allergy.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;ATTENDING&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"attending refers to the healthcare professionals responsible for the patient's care during their visit or hospital stay.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;CHIEF COMPLAINT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"chief complaint refers to the primary reason for a patient's medical visit or consultation, which in this case is unspecified.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;HISTORY OF STROKE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"history of stroke refers to a patient's past medical condition where they experienced a stroke, which can affect future treatment plans.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;MINIMALLY INVASIVE CLOSURE OF PATENT FORAMEN OVALE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"minimally invasive closure of patent foramen ovale is a medical procedure to close a hole in the heart, typically performed with minimal invasiveness.")</data>
+  <data key="d2">chunk-595a335cdfcc45035a937faa428dce51</data>
+</node>
+<node id="&quot;MRS.&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mrs. is a 47-year-old female who has a history of a cerebellar stroke and a patent foramen ovale. She is currently followed by a neurologist and has no other neurological events. She works in the neuro-psych department and is married with two children."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;DR.&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Dr. is a neurologist who is following Mrs.'s case and preparing her for surgical intervention."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;PATENT FORAMEN OVALE&quot;">
+  <data key="d0">"CONDITION"</data>
+  <data key="d1">"Patent Foramen Ovale is a congenital heart defect that Mrs. has, which was discovered during her workup after the stroke."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;CEREBELLAR STROKE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Cerebellar Stroke is a neurological event that Mrs. experienced, which led to the discovery of a patent foramen ovale."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;NEURO-PSYCH DEPARTMENT&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"Neuro-Psych Department is the division where Mrs. works, focusing on both neurological and psychological aspects."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;NEUROLOGIST&quot;">
+  <data key="d0">"ROLE"</data>
+  <data key="d1">"Neurologist is a medical professional specializing in the diagnosis and treatment of disorders of the nervous system, including Mrs.'s case."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;CARDIAC CATHETERIZATION&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Cardiac Catheterization is a diagnostic procedure that Mrs. underwent to check her coronary arteries and left ventricular function."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;CORONARY ARTERIES&quot;">
+  <data key="d0">"ANATOMY"</data>
+  <data key="d1">"Coronary Arteries supply oxygen-rich blood to the heart muscle. Normal coronary arteries indicate that Mrs. does not have coronary artery disease."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;LEFT VENTRICULAR FUNCTION&quot;">
+  <data key="d0">"FUNCTION"</data>
+  <data key="d1">"Left Ventricular Function refers to the pumping capacity of the left ventricle, which is normal in Mrs.'s case."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;PATENT FORAMEN OVALE CLOSURE SURGERY&quot;">
+  <data key="d0">"PROCEDURE"</data>
+  <data key="d1">"Patent Foramen Ovale Closure Surgery is the surgical intervention planned for Mrs., which was performed minimally invasive and successfully."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;CSRU&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"CSRU is a critical care unit where Mrs. was brought after her surgery, indicating the level of care she required."</data>
+  <data key="d2">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</node>
+<node id="&quot;LEXAPRO&quot;">
+  <data key="d0">"MEDICATION"</data>
+  <data key="d1">"Lexapro is an SSRI (selective serotonin reuptake inhibitor</data>
+  <data key="d2">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+</node>
+<node id="&quot;PT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"pt is a patient experiencing significant stress, weight loss, panic attacks, and depressive symptoms, along with concerns about his mental health and future."</data>
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</node>
+<node id="&quot;ATIVAN 2MG&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Ativan 2mg is a medication used to treat anxiety and muscle spasms, showing its effectiveness in managing symptoms."</data>
+  <data key="d2">chunk-2fbc8f472cd5507ec28c0c1474cd598d</data>
+</node>
+<node id="&quot;INPATIENT UNIT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Inpatient Unit is a part of the healthcare system where patients receive treatment and monitoring for an extended period."</data>
+  <data key="d2">chunk-2fbc8f472cd5507ec28c0c1474cd598d</data>
+</node>
+<node id="&quot;ICU BED&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"ICU Bed is a specialized bed used in intensive care units for patients requiring close monitoring and medical interventions."</data>
+  <data key="d2">chunk-2fbc8f472cd5507ec28c0c1474cd598d</data>
+</node>
+<node id="&quot;EXTENDED CARE FACILITY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Extended Care Facility is a type of long-term care facility where patients receive ongoing care and support."</data>
+  <data key="d2">chunk-2fbc8f472cd5507ec28c0c1474cd598d</data>
+</node>
+<node id="&quot;CHEST PAIN&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"The woman experiences chest pain with exertion, now occurring with walking, and recently at rest, associated with nausea, diaphoresis, and shortness of breath."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;WOMAN&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"The woman experiences chest pain with exertion, now occurring with walking, and recently at rest, associated with nausea, diaphoresis, and shortness of breath."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;LEFT MAIN ARTERY DISEASE&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"The woman has significant left main artery disease, leading to chest pain and EKG changes, necessitating cardiac catheterization and subsequent bypass surgery."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;ATRIOVENTRICULAR VALVE REPLACEMENT&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"The woman underwent atrioventricular valve replacement as part of her CABG surgery to address her three-vessel disease."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;HOME PHYSICAL THERAPY&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"The woman was cleared for home physical therapy to assist with mobility, strength, and endurance after surgery."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;ATENOILOL&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"Atenolol is used to manage hypertension in the woman's treatment regimen."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;LIPITOR&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"Lipitor is used to manage cholesterol levels in the woman's treatment regimen."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;PROGESTERONE&quot;">
+  <data key="d2">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+  <data key="d1">"Progesterone is used for hormonal balance in the woman's treatment regimen."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d3">[{"level": 0, "cluster": 4}, {"level": 1, "cluster": 5}]</data>
+</node>
+<node id="&quot;LOCAL CARDIOLOGIST&quot;">
+  <data key="d2">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+  <data key="d1">"The local cardiologist is likely attended by Dr., indicating a relationship in professional practice."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;EXAMINATION&quot;">
+  <data key="d2">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+  <data key="d1">"The patient undergoes various examinations, including ultrasound and electroencephalogram, indicating a clinical relationship."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;TREATMENT&quot;">
+  <data key="d2">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+  <data key="d1">"The patient is receiving treatment, including medications and procedures, indicating a therapeutic relationship."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ZOLOFT&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt initially took Zoloft but experienced jitteriness, which led to switching to celexa."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ANXIETY&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt experiences anxiety, including panic attacks and anhedonia, which are impacting his daily life."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;DEPRESSION&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt has depression, with symptoms including decreased sleep, energy, concentration, and motivation, which are worsening his condition."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;SCHIZOPHRENIA&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt fears he might be schizophrenic due to thoughts of hurting his wife, which are causing him stress and anxiety."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;CHILDREN'S SLEEP HABITS&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt and his wife are stressed about their children's sleep habits, which have worsened the situation for the entire family."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;PT AND WIFE&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt and his wife are stressed about their children's sleep habits, which have worsened the situation for the entire family."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;SLEEP ISSUES&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt and his wife are dealing with sleep issues, which are affecting their overall well-being and family dynamics."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;CELEXA&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"Dr. prescribes Celexa to pt after Zoloft caused jitteriness."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;LEXAPRO, NORTRIPTYLINE, SEROQUEL, KLONOPIN, TRAZODONE&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt is currently taking these medications as part of his treatment regimen, which includes lexapro, nortriptyline, seroquel, klonopin, and trazodone."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ANXIETY, DEPRESSION, SCHIZOPHRENIA, CHILDREN'S SLEEP HABITS, SLEEP ISSUES&quot;">
+  <data key="d2">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+  <data key="d1">"pt is struggling with anxiety, depression, schizophrenia, and sleep issues, which are interconnected and affecting his overall mental health and family dynamics."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;A 21-YEAR-OLD SEXUALLY ACTIVE MALE&quot;" target="&quot;PHYSICIAN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The physician is treating the A 21-year-old sexually active male who is experiencing multiple symptoms."</data>
+  <data key="d6">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</edge>
+<edge source="&quot;PHYSICIAN&quot;" target="&quot;ANTIBIOTIC THERAPY&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The physician orders antibiotic therapy for the patient to treat the bacterial infection."</data>
+  <data key="d6">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</edge>
+<edge source="&quot;ANTIBIOTIC THERAPY&quot;" target="&quot;GENTAMICIN&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Gentamicin is a potential option for antibiotic therapy, effective against certain gram-negative bacteria."</data>
+  <data key="d6">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</edge>
+<edge source="&quot;ANTIBIOTIC THERAPY&quot;" target="&quot;CIPROFLOXACIN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Ciprofloxacin is a potential option for antibiotic therapy, effective against a wide range of bacteria."</data>
+  <data key="d6">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</edge>
+<edge source="&quot;ANTIBIOTIC THERAPY&quot;" target="&quot;CEFTRIAXONE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Ceftriaxone is a potential option for antibiotic therapy, effective against both gram-positive and gram-negative bacteria."</data>
+  <data key="d6">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</edge>
+<edge source="&quot;ANTIBIOTIC THERAPY&quot;" target="&quot;TRIMETHOPRIM&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Trimethoprim is a potential option for antibiotic therapy, effective against certain gram-positive and gram-negative bacteria."</data>
+  <data key="d6">chunk-81dbd4ebb0a9594a1876cd2e59a5c3a0</data>
+</edge>
+<edge source="&quot;MEDQUIST36&quot;" target="&quot;M.D.&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Medquist36 is likely the facility where m.d. works, providing medical services and procedures."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;VENOUS CATHETERIZATION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. performs Venous Catheterization as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;DIAGNOSTIC ULTRASOUND OF HEART&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. performs Diagnostic Ultrasound of Heart as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;BRONCHOSCOPY&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. performs Bronchoscopy as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;CIRRHOSIS OF LIVER&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and manages patients with Cirrhosis of Liver as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;INFECTION WITH MICROORGANISMS RESISTANT TO PENICILLINS&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and treats patients with Infection with Microorganisms Resistant to Penicillins as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;HUMAN IMMUNODEFICIENCY VIRUS [HIV] DISEASE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and manages patients with Human Immunodeficiency Virus [HIV] Disease as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;PNEUMOCYSTOSIS&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and treats patients with Pneumocystosis as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;CACHEXIA&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and manages patients with Cachexia as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;ALKALOSIS&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and manages patients with Alkalosis as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;BACTEREMIA&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and treats patients with Bacteremia as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;METHICILLIN SUSCEPTIBLE STAPHYLOCOCCUS AUREUS IN CONDITIONS CLASSIFIED ELSEWHERE AND OF UNSPECIFIED SITE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. diagnoses and manages patients with Methicillin Susceptible Staphylococcus Aureus as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;M.D.&quot;" target="&quot;ANTIVIRAL DRUGS CAUSING ADVERSE EFFECTS IN THERAPEUTIC USE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"m.d. prescribes and monitors patients taking Antiviral Drugs Causing Adverse Effects as part of their medical practice."</data>
+  <data key="d6">chunk-c763680bad75c3153e1901f8226a598e</data>
+</edge>
+<edge source="&quot;ASPIRIN&quot;" target="&quot;MR.&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Mr. takes Aspirin to manage Pain and Inflammation, also used for Prevention of Cardiovascular Events, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;ASPIRIN&quot;" target="&quot;WOMAN&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Aspirin is used to prevent blood clots in the woman's treatment regimen."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;PROCEDURE: NON-INVASIVE MECHANICAL VENTILATION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Procedure: Non-invasive mechanical ventilation is a medical procedure performed at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;ELECTROENCEPHALOGRAM&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Electroencephalogram is a medical procedure performed at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;OTHER PSYCHIATRIC DRUG THERAPY&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Other psychiatric drug therapy is a treatment provided at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;PURE HYPERCHOLESTEROLEMIA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Pure hypercholesterolemia is a diagnosis given to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;UNSPECIFIED ESSENTIAL HYPERTENSION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Unspecified essential hypertension is a diagnosis given to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;OTHER CONVULSIONS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Other convulsions are symptoms experienced by a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;LOSS OF WEIGHT&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Loss of weight is a symptom experienced by a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;DIABETES WITH OTHER SPECIFIED MANIFESTATIONS, TYPE II OR UNSPECIFIED TYPE, NOT STATED AS UNCONTROLLED&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Diabetes with other specified manifestations is a diagnosis given to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;MAJOR DEPRESSIVE AFFECTIVE DISORDER, RECURRENT EPISODE, SEVERE, WITHOUT MENTION OF PSYCHOTIC BEHAVIOR&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Major depressive affective disorder is a diagnosis given to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;LONG-TERM (CURRENT) USE OF INSULIN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Long-term (current) use of insulin is a treatment provided to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;INSULINS AND ANTIDIABETIC AGENTS CAUSING ADVERSE EFFECTS IN THERAPEUTIC USE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Insulins and antidiabetic agents causing adverse effects are a concern in therapeutic use at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;LONG-TERM (CURRENT) USE OF OTHER MEDICATIONS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Long-term (current) use of other medications is a treatment provided to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;OTHER DISEASES OF PHARYNX, NOT ELSEWHERE CLASSIFIED&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Other diseases of pharynx are a diagnosis given to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;UNSPECIFIED SLEEP APNEA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Unspecified sleep apnea is a diagnosis given to a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;RIGHT BUNDLE BRANCH BLOCK&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Right bundle branch block is a condition present in a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;HMFP&quot;" target="&quot;FAMILY HISTORY OF PSYCHIATRIC CONDITION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Family history of psychiatric condition is mentioned in the context of a patient at hmfp."</data>
+  <data key="d6">chunk-c2a56e2047db00680e39eb3fd8f7d299</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;DR. MEDQUIST36&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Dr. Medquist36 is responsible for the patient's care and medical decisions."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;NIPRIDE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Nipride is used to control the patient's blood pressure as part of their treatment regimen."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;CARDENE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Cardene is used to control the patient's blood pressure after Nipride has been tapered off."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;LABETALOL&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Labetalol is used to control the patient's blood pressure after Cardene has been tapered off."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;LEVOFLOXACIN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Levofloxacin is used to treat the patient's pneumonia."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;FLAGYL&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Flagyl is used to treat the patient's aspiration pneumonia."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;VANCOMYCIN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Vancomycin is added to treat the patient's resistant bacteria from sputum cultures."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;PNEUMONIA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Pneumonia is a complication treated in the patient's care."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;ACUTE KIDNEY FAILURE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Acute Kidney Failure is a complication treated in the patient's care."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;INTRACEREBRAL HEMORRHAGE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Intracerebral Hemorrhage is a complication treated in the patient's care."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;CONGESTIVE HEART FAILURE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Congestive Heart Failure is a complication treated in the patient's care."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;ESSENTIAL HYPERTENSION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Essential Hypertension is a complication treated in the patient's care."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;HYPONATREMIA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Hyponatremia is a complication treated in the patient's care."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;ENDOTRACHEAL TUBE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Endotracheal Tube is used to maintain the patient's airway during mechanical ventilation."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;OROGASTRIC TUBE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Orogastric Tube is used to provide nutrition to the patient or to remove stomach contents."|&gt;</data>
+  <data key="d6">chunk-2f47d75e140d663304c819e8d214097f</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;DR.&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Dr. is providing care to the patient, indicating a direct patient-doctor relationship."</data>
+  <data key="d6">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;EXAMINATION&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The patient undergoes various examinations, including ultrasound and electroencephalogram, indicating a clinical relationship."</data>
+  <data key="d6">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+</edge>
+<edge source="&quot;PATIENT&quot;" target="&quot;TREATMENT&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The patient is receiving treatment, including medications and procedures, indicating a therapeutic relationship."</data>
+  <data key="d6">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+</edge>
+<edge source="&quot;HPI: 50 YEAR OLD FEMALE&quot;" target="&quot;GBM&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The HPI indicates that the patient is newly diagnosed with GBM, highlighting the seriousness of her condition."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;HPI: 50 YEAR OLD FEMALE&quot;" target="&quot;DIZZINESS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dizziness is a symptom reported by the patient, which could be related to the brain mass and edema."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;HPI: 50 YEAR OLD FEMALE&quot;" target="&quot;SILVERY SPECTORS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Silvery spectors in the patient's vision could be a visual disturbance related to the brain mass and edema."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;GBM METASTASIS&quot;">
+  <data key="d4">18.0</data>
+  <data key="d5">"GBM metastasis is a progression of the GBM condition, indicated by the presence of ring-enhancing brain mass with edema."&gt;&lt;SEP&gt;"GBM metastasis is suggested by the presence of a ring-enhancing brain mass with edema, indicating the spread of the condition."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;DIZZINESS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dizziness could be a symptom of GBM, especially if the brain mass is affecting the patient's balance and nervous system."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;SILVERY SPECTORS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Silvery spectors could be a symptom of GBM, indicating visual disturbances possibly due to the brain mass affecting the optic pathways."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;NEUROLOGICAL EXAMINATION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The neurological examination confirms the presence of GBM, highlighting the severity of the patient's condition."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;MRI HEAD SCAN&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The MRI head scan confirms the presence of GBM, providing detailed information about the brain mass and its extent."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;RIGHT PARIETAL LESION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Right Parietal Lesion is suspected to be GBM, a type of highly aggressive brain cancer."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;LEFT TEMPORAL LESION&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"The Left Temporal Lesion could be an alternative manifestation of GBM, although other diagnoses such as hemorrhage or a calcified meningioma are also possible."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;GBM&quot;" target="&quot;LEFT OCCIPITAL LESION&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"The Left Occipital Lesion could be an alternative manifestation of GBM, although other diagnoses such as an inflammatory or ischemic process are also possible."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;NEUROLOGICAL EXAMINATION&quot;" target="&quot;CT HEAD SCAN&quot;">
+  <data key="d4">18.0</data>
+  <data key="d5">"The neurological examination and CT head scan are both crucial in assessing the patient's neurological status and the extent of the brain mass."&gt;&lt;SEP&gt;"The neurological examination and CT head scan are complementary assessments, providing a comprehensive evaluation of the patient's condition."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;NEUROLOGICAL EXAMINATION&quot;" target="&quot;MRI HEAD SCAN&quot;">
+  <data key="d4">20.0</data>
+  <data key="d5">"The neurological examination and MRI head scan are both critical in assessing the patient's neurological status and the extent of the brain mass."&gt;&lt;SEP&gt;"The neurological examination and MRI head scan are both essential in evaluating the patient's neurological condition and the extent of the brain mass."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;NEUROLOGICAL EXAMINATION&quot;" target="&quot;GBM METASTASIS&quot;">
+  <data key="d4">10.0</data>
+  <data key="d5">"The neurological examination and GBM metastasis are both critical in assessing the extent of the brain mass and its spread."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;CT HEAD SCAN&quot;" target="&quot;MRI HEAD SCAN&quot;">
+  <data key="d4">30.0</data>
+  <data key="d5">"Both CT and MRI scans are used to evaluate the brain mass and provide detailed information about the extent of the condition."&gt;&lt;SEP&gt;"Both CT and MRI scans provide valuable information about the brain mass and its extent, aiding in the diagnosis and treatment planning."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;CT HEAD SCAN&quot;" target="&quot;GBM METASTASIS&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The CT head scan also indicates the presence of GBM metastasis, supporting the diagnosis."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;CT HEAD SCAN&quot;" target="&quot;DIZZINESS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dizziness could be a symptom observed during the CT head scan, indicating potential neurological issues."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;MRI HEAD SCAN&quot;" target="&quot;GBM METASTASIS&quot;">
+  <data key="d4">10.0</data>
+  <data key="d5">"The MRI head scan provides detailed information about the extent of GBM metastasis, confirming the spread of the condition."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;MRI HEAD SCAN&quot;" target="&quot;SILVERY SPECTORS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Silvery spectors could be a symptom observed during the MRI head scan, indicating potential visual disturbances."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;DIZZINESS&quot;" target="&quot;SILVERY SPECTORS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dizziness and silvery spectors are both symptoms that could be related to the brain mass and edema, indicating potential neurological issues."&gt;</data>
+  <data key="d6">chunk-321b66316d11f34afdca9611a9f48664</data>
+</edge>
+<edge source="&quot;RIGHT PARIETAL LESION&quot;" target="&quot;HOSPITAL COURSE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The Hospital Course includes the diagnosis, treatment, and management of the Right Parietal Lesion, which is suspected to be GBM."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;RIGHT PARIETAL LESION&quot;" target="&quot;DR.&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Dr. is involved in the diagnosis and treatment of the Right Parietal Lesion, which is suspected to be GBM."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;LEFT TEMPORAL LESION&quot;" target="&quot;HOSPITAL COURSE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Hospital Course includes the diagnosis, treatment, and management of the Left Temporal Lesion, which could have alternative diagnoses."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;LEFT TEMPORAL LESION&quot;" target="&quot;DR.&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dr. is involved in the diagnosis and treatment of the Left Temporal Lesion, which could have alternative diagnoses."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;LEFT OCCIPITAL LESION&quot;" target="&quot;HOSPITAL COURSE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The Hospital Course includes the diagnosis, treatment, and management of the Left Occipital Lesion, which could have alternative diagnoses."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;LEFT OCCIPITAL LESION&quot;" target="&quot;DR.&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dr. is involved in the diagnosis and treatment of the Left Occipital Lesion, which could have alternative diagnoses."</data>
+  <data key="d6">chunk-2f8dc58072829c395689fe28e9508edb</data>
+</edge>
+<edge source="&quot;DR. &quot;" target="&quot;CELEXA&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Dr. prescribes Celexa to pt after Zoloft caused jitteriness."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;DR. &quot;" target="&quot;PT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Dr. treats pt, managing his mental health and adjusting his medication regimen."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;PANCREATIC CANCER&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Mr. has a history of Pancreatic Cancer, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;ULCERATIVE COLITIS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Mr. has a history of Ulcerative Colitis, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;HYPERTENSION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Mr. has a history of Hypertension, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Mr. underwent Endoscopic Retrograde Cholangiopancreatography, but a stent could not be placed, indicating ongoing issues with his biliary system."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;COMPUTED TOMOGRAPHY&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Computed Tomography revealed a head of the pancreas mass and vascular involvement, indicating potential complications and the need for further intervention."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;TOTAL ABDOMINAL COLECTOMY&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Mr. underwent Total Abdominal Colectomy 20 years ago, resulting in an ileostomy, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;EXPLORATORY LAPAROTOMY&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Mr. underwent Exploratory Laparotomy, aimed at resecting a pancreatic mass, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;TRANSURETHRAL RESECTION OF PROSTATE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Mr. has a history of Transurethral Resection of Prostate, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;MR.&quot;" target="&quot;MOEXIPRIL&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Mr. takes Moexipril to manage Hypertension, which is significant for his current medical condition and treatment plan."</data>
+  <data key="d6">chunk-1023b808867f4b3b8d0dcc2a67b4d85e</data>
+</edge>
+<edge source="&quot;HYPERTENSION&quot;" target="&quot;CARDIAC COMPLICATIONS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Hypertension can contribute to cardiac complications, including arrhythmias and heart failure."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;HYPERTENSION&quot;" target="&quot;CAPTOPRIL&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Captopril is used to treat hypertension, a condition characterized by high blood pressure."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;HYPERTENSION&quot;" target="&quot;METOPROLOL&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Metoprolol is used to treat hypertension, reducing heart rate and blood pressure."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;HYPERTENSION&quot;" target="&quot;HEPARIN&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Heparin is used to prevent blood clots, which can occur in hypertensive patients."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;HYPERTENSION&quot;" target="&quot;FOLEY CATHETER&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Foley Catheter is used to monitor and manage urinary issues, which can arise in hypertensive patients."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;CARDIAC COMPLICATIONS&quot;" target="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Cardiac complications can lead to hemorrhages during or after surgical procedures due to weakened blood vessels."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;" target="&quot;CARDIAC ARREST&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Severe hemorrhage complicating a procedure can cause cardiac arrest if it leads to significant blood loss and hypovolemic shock."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;" target="&quot;MALIGNANT NEOPLASM OF HEAD OF PANCREAS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"A malignant neoplasm of the head of the pancreas can cause hemorrhage, especially if it involves the blood vessels in the area."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;" target="&quot;SURGICAL OPERATION WITH ANASTOMOSIS, BYPASS, OR GRAFT, WITH NATURAL OR ARTIFICIAL TISSUES USED AS IMPLANT CAUSING ABNORMAL PATIENT REACTION, OR LATER COMPLICATION, WITHOUT MENTION OF MISADVENTURE AT TIME OF OPERATION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Surgical operations involving anastomosis, bypass, or graft can lead to hemorrhages, especially if there are abnormal reactions or later complications."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;" target="&quot;ABNORMAL PATIENT REACTION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Abnormal patient reactions can include hemorrhages, especially if the reaction is severe or life-threatening."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;HEMORRHAGE COMPLICATING A PROCEDURE&quot;" target="&quot;PERIPHERAL VASCULAR DISEASE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Hemorrhage complicating a procedure can be exacerbated by peripheral vascular disease, especially if it affects blood vessel integrity."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;MALIGNANT NEOPLASM OF HEAD OF PANCREAS&quot;" target="&quot;SURGICAL OPERATION WITH ANASTOMOSIS, BYPASS, OR GRAFT, WITH NATURAL OR ARTIFICIAL TISSUES USED AS IMPLANT CAUSING ABNORMAL PATIENT REACTION, OR LATER COMPLICATION, WITHOUT MENTION OF MISADVENTURE AT TIME OF OPERATION&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"A malignant neoplasm of the head of the pancreas may require surgical intervention, which can lead to complications including abnormal reactions and later complications."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;CALCULUS OF GALLBLADDER WITH OTHER CHOLECYSTITIS, WITHOUT MENTION OF OBSTRUCTION&quot;" target="&quot;PERITONEAL ADHESIONS (POSTOPERATIVE) (POSTINFECTION)&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Cholecystitis and gallstone formation can lead to peritoneal adhesions, especially if there is postoperative or post-infection inflammation."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;PERITONEAL ADHESIONS (POSTOPERATIVE) (POSTINFECTION)&quot;" target="&quot;INCISIONAL HERNIA WITHOUT MENTION OF OBSTRUCTION OR GANGRENE&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Postoperative or post-infection peritoneal adhesions can weaken the abdominal wall, leading to incisional hernias."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;SURGICAL OPERATION WITH ANASTOMOSIS, BYPASS, OR GRAFT, WITH NATURAL OR ARTIFICIAL TISSUES USED AS IMPLANT CAUSING ABNORMAL PATIENT REACTION, OR LATER COMPLICATION, WITHOUT MENTION OF MISADVENTURE AT TIME OF OPERATION&quot;" target="&quot;ABNORMAL PATIENT REACTION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Surgical operations can lead to abnormal patient reactions, including later complications such as hemorrhages."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;SURGICAL OPERATION WITH ANASTOMOSIS, BYPASS, OR GRAFT, WITH NATURAL OR ARTIFICIAL TISSUES USED AS IMPLANT CAUSING ABNORMAL PATIENT REACTION, OR LATER COMPLICATION, WITHOUT MENTION OF MISADVENTURE AT TIME OF OPERATION&quot;" target="&quot;MISADVENTURE AT TIME OF OPERATION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Surgical operations can include misadventures, which can lead to abnormal patient reactions or later complications."</data>
+  <data key="d6">chunk-6cfc83ff628e2afe583e1d1cc475b4fb</data>
+</edge>
+<edge source="&quot;LASIX&quot;" target="&quot;WOMAN&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The woman was actively diuresed with lasix to manage fluid retention and potassium repletion."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;LASIX&quot;" target="&quot;POTASSIUM&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Lasix is used to treat hypertension and edema, which can lead to changes in potassium levels."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;HYPERGLYCEMIA&quot;" target="&quot;WOMAN&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"The woman experienced hyperglycemia after resuming her regular diet, managed with metformin 500 mg twice a day to maintain euglycemia."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;HYPERGLYCEMIA&quot;" target="&quot;METFORMIN&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Metformin is prescribed to manage hyperglycemia, a condition characterized by high blood glucose levels."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;METFORMIN&quot;" target="&quot;TYPE 2 DIABETES MELLITUS&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Metformin is used to manage Type 2 Diabetes Mellitus, a chronic condition where the body does not produce enough insulin or cannot use insulin properly."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;CORONARY ARTERY BYPASS GRAFTING&quot;" target="&quot;ANGINA&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Coronary Artery Bypass Grafting is a surgical procedure to treat Angina, a condition characterized by chest pain due to reduced blood flow to the heart muscle."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;INTRAAORTIC BALLOON PUMP&quot;" target="&quot;WOMAN&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The woman had an intraaortic balloon pump placed before surgery to manage blood pressure and reduce the workload on the heart."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;TAMPONADE&quot;" target="&quot;PERICARDIAL WINDOW&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"Pericardial Window is a surgical procedure to relieve Tamponade, a condition where fluid builds up in the pericardium, compressing the heart."</data>
+  <data key="d6">chunk-196d25513e82c8575904c0661e8cf155</data>
+</edge>
+<edge source="&quot;CARDIOGENIC SHOCK&quot;" target="&quot;ICARDIUM&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"icardium is associated with managing Cardiogenic shock, indicating a possible involvement in treating this severe condition."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;CARDIOGENIC SHOCK&quot;" target="&quot;HYPOTENSION, UNSPECIFIED&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Hypotension, unspecified and Cardiogenic shock are related as both are critical medical conditions that require immediate attention and management."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;CARDIOGENIC SHOCK&quot;" target="&quot;DISPLACEMENT OF CERVICAL INTERVERTEBRAL DISC WITHOUT MYELOPATHY&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Cardiogenic shock and Displacement of cervical intervertebral disc without myelopathy are both serious medical conditions that may require coordinated care."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;CARDIOGENIC SHOCK&quot;" target="&quot;PAIN IN JOINT, LOWER LEG&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Cardiogenic shock and Pain in joint, lower leg are related as both can be symptoms of more severe underlying conditions."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;ICARDIUM&quot;" target="&quot;HYPOTENSION, UNSPECIFIED&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"icardium is associated with managing Hypotension, unspecified, indicating a possible involvement in treating this condition."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;ICARDIUM&quot;" target="&quot;DISPLACEMENT OF CERVICAL INTERVERTEBRAL DISC WITHOUT MYELOPATHY&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"icardium is associated with managing Displacement of cervical intervertebral disc without myelopathy, indicating a possible involvement in treating this condition."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;ICARDIUM&quot;" target="&quot;PAIN IN JOINT, LOWER LEG&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"icardium is associated with managing Pain in joint, lower leg, indicating a possible involvement in treating this condition."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;HYPOTENSION, UNSPECIFIED&quot;" target="&quot;DISPLACEMENT OF CERVICAL INTERVERTEBRAL DISC WITHOUT MYELOPATHY&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Hypotension, unspecified and Displacement of cervical intervertebral disc without myelopathy are both medical conditions that may require interdisciplinary care."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;HYPOTENSION, UNSPECIFIED&quot;" target="&quot;PAIN IN JOINT, LOWER LEG&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Hypotension, unspecified and Pain in joint, lower leg are related as both can be symptoms of underlying medical conditions."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;DISPLACEMENT OF CERVICAL INTERVERTEBRAL DISC WITHOUT MYELOPATHY&quot;" target="&quot;PAIN IN JOINT, LOWER LEG&quot;">
+  <data key="d4">13.0</data>
+  <data key="d5">"Displacement of cervical intervertebral disc without myelopathy and Pain in joint, lower leg are related as both can result from similar underlying issues."&lt;SEP&gt;"Displacement of cervical intervertebral disc without myelopathy can cause Pain in joint, lower leg, indicating a direct relationship between the two conditions."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;ATTENDING&quot;" target="&quot;CHIEF COMPLAINT&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"attending is responsible for addressing the chief complaint, which is the primary reason for the patient's visit."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;ATTENDING&quot;" target="&quot;HISTORY OF STROKE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"attending is responsible for managing the patient's history of stroke, which can influence current treatment plans."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;ATTENDING&quot;" target="&quot;MINIMALLY INVASIVE CLOSURE OF PATENT FORAMEN OVALE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"attending is responsible for performing the minimally invasive closure of patent foramen ovale, a specific medical procedure."</data>
+  <data key="d6">chunk-595a335cdfcc45035a937faa428dce51</data>
+</edge>
+<edge source="&quot;MRS.&quot;" target="&quot;DR.&quot;">
+  <data key="d4">40.0</data>
+  <data key="d5">"Dr. is following Mrs.'s case and preparing her for surgical intervention."&lt;SEP&gt;"Mrs. is currently being followed by Dr., who is preparing her for surgical intervention."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;MRS.&quot;" target="&quot;PATENT FORAMEN OVALE CLOSURE SURGERY&quot;">
+  <data key="d4">36.0</data>
+  <data key="d5">"Mrs. is the patient undergoing the planned surgery to close her patent foramen ovale."&lt;SEP&gt;"Mrs. is undergoing the planned surgery to close her patent foramen ovale."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;MRS.&quot;" target="&quot;CEREBELLAR STROKE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Cerebellar Stroke is the neurological event that led to the discovery of Mrs.'s patent foramen ovale."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;MRS.&quot;" target="&quot;CSRU&quot;">
+  <data key="d4">40.0</data>
+  <data key="d5">"Mrs. was brought to CSRU after her surgery, indicating the complexity of her recovery."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;MRS.&quot;" target="&quot;NEURO-PSYCH DEPARTMENT&quot;">
+  <data key="d4">24.0</data>
+  <data key="d5">"Mrs. works in the Neuro-Psych Department, which focuses on both neurological and psychological aspects."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;DR.&quot;" target="&quot;PATENT FORAMEN OVALE CLOSURE SURGERY&quot;">
+  <data key="d4">32.0</data>
+  <data key="d5">"Dr. is responsible for preparing Mrs. for and overseeing the surgery."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;DR.&quot;" target="&quot;LOCAL CARDIOLOGIST&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The local cardiologist is likely attended by Dr., indicating a relationship in professional practice."</data>
+  <data key="d6">chunk-0bdac629880f008ecd50dbb56f584ffe</data>
+</edge>
+<edge source="&quot;PATENT FORAMEN OVALE CLOSURE SURGERY&quot;" target="&quot;CSRU&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"Mrs. was brought to CSRU after her surgery, indicating the complexity of her recovery."</data>
+  <data key="d6">chunk-44ede3717a85fe961207a2ee3bef090e</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;ZOLOFT&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"pt initially took Zoloft but experienced jitteriness, which led to switching to celexa."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;ANXIETY&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"pt experiences anxiety, including panic attacks and anhedonia, which are impacting his daily life."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;DEPRESSION&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"pt has depression, with symptoms including decreased sleep, energy, concentration, and motivation, which are worsening his condition."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;SCHIZOPHRENIA&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"pt fears he might be schizophrenic due to thoughts of hurting his wife, which are causing him stress and anxiety."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;SLEEP ISSUES&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"pt and his wife are dealing with sleep issues, which are affecting their overall well-being and family dynamics."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;LEXAPRO, NORTRIPTYLINE, SEROQUEL, KLONOPIN, TRAZODONE&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"pt is currently taking these medications as part of his treatment regimen, which includes lexapro, nortriptyline, seroquel, klonopin, and trazodone."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;PT&quot;" target="&quot;ANXIETY, DEPRESSION, SCHIZOPHRENIA, CHILDREN'S SLEEP HABITS, SLEEP ISSUES&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"pt is struggling with anxiety, depression, schizophrenia, and sleep issues, which are interconnected and affecting his overall mental health and family dynamics."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;CHEST PAIN&quot;" target="&quot;WOMAN&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The woman experiences chest pain with exertion, now occurring with walking, and recently at rest, associated with nausea, diaphoresis, and shortness of breath."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;WOMAN&quot;" target="&quot;LEFT MAIN ARTERY DISEASE&quot;">
+  <data key="d4">10.0</data>
+  <data key="d5">"The woman has significant left main artery disease, leading to chest pain and EKG changes, necessitating cardiac catheterization and subsequent bypass surgery."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;WOMAN&quot;" target="&quot;ATRIOVENTRICULAR VALVE REPLACEMENT&quot;">
+  <data key="d4">9.0</data>
+  <data key="d5">"The woman underwent atrioventricular valve replacement as part of her CABG surgery to address her three-vessel disease."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;WOMAN&quot;" target="&quot;HOME PHYSICAL THERAPY&quot;">
+  <data key="d4">8.0</data>
+  <data key="d5">"The woman was cleared for home physical therapy to assist with mobility, strength, and endurance after surgery."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;WOMAN&quot;" target="&quot;ATENOILOL&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Atenolol is used to manage hypertension in the woman's treatment regimen."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;WOMAN&quot;" target="&quot;LIPITOR&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Lipitor is used to manage cholesterol levels in the woman's treatment regimen."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;WOMAN&quot;" target="&quot;PROGESTERONE&quot;">
+  <data key="d4">7.0</data>
+  <data key="d5">"Progesterone is used for hormonal balance in the woman's treatment regimen."</data>
+  <data key="d6">chunk-5e891a4b226dba2da45ceb4a34d4aeac</data>
+</edge>
+<edge source="&quot;CHILDREN'S SLEEP HABITS&quot;" target="&quot;PT AND WIFE&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"pt and his wife are stressed about their children's sleep habits, which have worsened the situation for the entire family."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+<edge source="&quot;CHILDREN'S SLEEP HABITS&quot;" target="&quot;SLEEP ISSUES&quot;">
+  <data key="d4">6.0</data>
+  <data key="d5">"Children's Sleep Habits are contributing to the overall sleep issues faced by the family, affecting everyone's well-being."</data>
+  <data key="d6">chunk-6a3e1adbecfa9c938bb626e193ec2351</data>
+</edge>
+</graph></graphml>

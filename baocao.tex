@@ -1,549 +1,384 @@
-\documentclass[aspectratio=169, 12pt]{beamer}
+% Báo cáo bài tập lớn — So sánh RAG và Graph-based RAG (Medical-Graph-RAG)
+% Biên dịch: pdflatex baocao.tex (không bắt buộc -shell-escape)
+\documentclass[a4paper,12pt,twoside]{report}
 
-\PassOptionsToPackage{
-  colorlinks=true,
-  linkcolor=white,
-  urlcolor=cyan!60!black,
-  citecolor=white
-}{hyperref}
+\usepackage{scrextend}
+\changefontsizes{13pt}
+\usepackage[utf8]{vietnam}
+\usepackage[top=2cm, bottom=2cm, left=3.5cm, right=2.5cm]{geometry}
 
-% Theme
-\usetheme{metropolis}
-\usecolortheme{default}
-\setbeamertemplate{navigation symbols}{}
-\setbeamersize{text margin left=8pt,text margin right=8pt}
-\setlength{\leftmargini}{1em}
-\setlength{\leftmarginii}{0.9em}
-\setlength{\itemsep}{2pt}
-\setlength{\parskip}{2pt}
-
-% Packages
-\usepackage[utf8]{inputenc}
-\usepackage[T5]{fontenc}
-\usepackage[vietnamese]{babel}
-\usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds}
-\usepackage[table]{xcolor}
-\usepackage{multirow}
-\usepackage{array}
-\usepackage{tcolorbox}
+\usepackage{fancybox}
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{latexsym}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{times}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{chngcntr}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{capt-of}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{appendix}
+\usepackage{fancyvrb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{xurl}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{tocbasic}
+\usepackage{color}
 
-% Colours
-\definecolor{medblue}{RGB}{13,71,161}
-\definecolor{medteal}{RGB}{0,121,107}
-\definecolor{medorange}{RGB}{230,81,0}
-\definecolor{medgreen}{RGB}{27,94,32}
-\definecolor{medgray}{RGB}{96,96,96}
-\definecolor{lightblue}{RGB}{227,242,253}
-\definecolor{lightyellow}{RGB}{255,253,231}
-\definecolor{lightgreen}{RGB}{232,245,233}
-\definecolor{lightred}{RGB}{255,235,238}
-\definecolor{accentblue}{RGB}{25,118,210}
-
-% Metropolis overrides
-\setbeamercolor{frametitle}{bg=medblue, fg=white}
-\setbeamercolor{title separator}{fg=accentblue}
-\setbeamercolor{progress bar}{fg=accentblue}
-\setbeamercolor{block title}{bg=medblue, fg=white}
-\setbeamercolor{block body}{bg=lightblue}
-\setbeamercolor{alerted text}{fg=medorange}
-
-% Boxes
-\tcbuselibrary{skins}
-\newtcolorbox{statusbox}[1]{
-  colback=lightgreen, colframe=medgreen!80,
-  fonttitle=\bfseries\footnotesize, title=#1,
-  left=4pt, right=4pt, top=3pt, bottom=3pt,
-  boxsep=1pt
+% ---------------------------------------------------------------------------
+% listings — Python / bash
+% ---------------------------------------------------------------------------
+\definecolor{codegreen}{rgb}{0,0.5,0}
+\definecolor{codegray}{rgb}{0.45,0.45,0.45}
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{codegreen},
+  stringstyle=\color{codegray},
+  breaklines=true,
+  frame=single,
+  tabsize=2
 }
-\newtcolorbox{warnbox}[1]{
-  colback=lightyellow, colframe=medorange!80,
-  fonttitle=\bfseries\footnotesize, title=#1,
-  left=4pt, right=4pt, top=3pt, bottom=3pt,
-  boxsep=1pt
+
+% ---------------------------------------------------------------------------
+% Tiêu đề báo cáo (chỉnh sửa tại đây)
+% ---------------------------------------------------------------------------
+\def\TITLE{BÁO CÁO BÀI TẬP LỚN\\SO SÁNH RAG VÀ GRAPH-BASED RAG\\TRÊN DỮ LIỆU Y KHOA}
+\def\AUTHOR{Trần Duy Mẫn \quad Phan Trọng Cường \quad Nguyễn Đức An}
+
+\renewcommand\appendixname{PHỤ LỤC}
+\renewcommand\appendixpagename{PHỤ LỤC}
+\renewcommand\appendixtocname{PHỤ LỤC}
+
+% ---------------------------------------------------------------------------
+% Định dạng chương / mục (theo mẫu)
+% ---------------------------------------------------------------------------
+\titleformat{\chapter}[hang]{\centering\bfseries}{CHƯƠNG \thechapter.\ }{0pt}{}[]
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+\titleformat{\section}[hang]{\bfseries}{\thechapter.\arabic{section}\ \ \ \ }{0pt}{}{}
+\titlespacing{\section}{0pt}{\parskip}{0.5\parskip}
+
+\titleformat{\subsection}[hang]{\bfseries}{\thechapter.\arabic{section}.\arabic{subsection}\ \ \ \ }{0pt}{}{}
+\titlespacing{\subsection}{30pt}{\parskip}{0.5\parskip}
+
+\renewcommand\thesubsubsection{\alph{subsubsection}}
+\titleformat{\subsubsection}[hang]{\bfseries}{\alph{subsubsection}, \ }{0pt}{}{}
+\titlespacing{\subsubsection}{50pt}{\parskip}{0.5\parskip}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[RO,RE]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}}
+\setlength{\headheight}{14pt}
+
+\graphicspath{{figures/}{../figures/}}
+
+\counterwithin{figure}{chapter}
+
+\title{\bfseries \TITLE}
+\author{\AUTHOR}
+\date{\today}
+
+\setcounter{secnumdepth}{3}
+
+\theoremstyle{definition}
+\newtheorem{example}{Ví dụ}[chapter]
+
+\onehalfspacing
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{15pt}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdfborder={0 0 0},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=blue,
+  urlcolor=blue,
+  pdftitle={Bao cao RAG vs GraphRAG},
+  pdfauthor={Nhom thuc hien}
 }
+\usepackage[all]{hypcap}
 
-% Title
-\title{\textbf{Cải thiện Truy vấn Y khoa}\\
-  \normalsize So sánh RAG và Graph-based RAG\\
-  trên Dữ liệu Hồ sơ Bệnh nhân}
-\subtitle{Báo cáo tiến độ — Bài tập lớn}
-\author[Trần Duy Mẫn et al.]{Trần Duy Mẫn \quad Phan Trọng Cường \quad Nguyễn Đức An}
-
+% ---------------------------------------------------------------------------
 \begin{document}
 
-% ── Title slide ────────────────────────────────────────────────────────────────
-\begin{frame}
-  \titlepage
-  \vspace{-0.7em}
-  \begin{center}
-    \footnotesize
-    \href{https://github.com/Grizzlazy/MedGraphRAG}{\texttt{github.com/Grizzlazy/MedGraphRAG}}
-    \quad $\cdot$ \quad
-    Dựa trên Wu et al., \href{https://arxiv.org/abs/2408.04187}{\texttt{arXiv:2408.04187}}
-  \end{center}
-\end{frame}
+% --- Trang bìa đơn giản (thay file subfile Bia) --------------------------------
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\Large \bfseries TRƯỜNG ĐẠI HỌC \ldots}\\[0.5cm]
+  {\large Khoa / Bộ môn \ldots}\\[2.5cm]
+  {\LARGE \bfseries \TITLE}\\[2cm]
+  {\large \textbf{Môn học:} \ldots}\\[0.5cm]
+  {\large \textbf{Giảng viên hướng dẫn:} \ldots}\\[2cm]
+  {\large \textbf{Sinh viên thực hiện:}}\\[0.3cm]
+  {\large \AUTHOR}\\[3cm]
+  {\large \today}
+  \vfill
+\end{titlepage}
 
-% ── Slide 1: Bài toán ─────────────────────────────────────────────────────────
-\begin{frame}[t]{1. Bài toán \& Động lực}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.50\textwidth}
-  \begin{alertblock}{Thách thức với LLM y khoa}
-  \small
-  \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item \textbf{Hallucination}: sinh thông tin sai lệch, nguy hiểm trong lâm sàng
-    \item \textbf{Thiếu trích dẫn}: không thể kiểm chứng nguồn gốc câu trả lời
-    \item \textbf{Dữ liệu riêng tư}: bệnh án không phù hợp để fine-tune trực tiếp
-    \item Kiến thức y khoa cập nhật liên tục, LLM tĩnh không theo kịp
-  \end{itemize}
-  \end{alertblock}
+\pagenumbering{roman}
 
-  \vspace{0.25em}
-  \begin{block}{Câu hỏi nghiên cứu}
-  \small
-  \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item RAG truyền thống hay Graph-based RAG hiệu quả hơn trong y khoa?
-    \item Đồ thị tri thức có cải thiện chất lượng câu trả lời không?
-    \item Có thể chạy được với mô hình tự host (không cần API tốn phí)?
-  \end{itemize}
-  \end{block}
-\end{column}
-\begin{column}{0.45\textwidth}
-\centering
-\begin{tikzpicture}[
-  node distance=0.45cm,
-  box/.style={rounded corners=3pt, draw=medgray, thick,
-              minimum width=3.6cm, minimum height=0.6cm,
-              font=\scriptsize, align=center},
-  arr/.style={-Stealth, thick, medgray}
-]
-  \node[box, fill=yellow!25]              (q1) {Câu hỏi y khoa};
-  \node[box, fill=orange!20, below=of q1] (r1) {RAG — chunk search};
-  \node[box, fill=red!15,    below=of r1] (a1) {Câu trả lời, \textbf{thiếu nguồn}};
-  \draw[arr] (q1)--(r1); \draw[arr] (r1)--(a1);
-  \node[above=0.05cm of q1, font=\tiny\bfseries, text=medgray] {RAG thông thường};
+\renewcommand*\contentsname{MỤC LỤC}
+\titlecontents{chapter}[0.0cm]{\bfseries\vspace{0.3cm}}{{\bfseries\scshape CHƯƠNG \thecontentslabel.\ }}{}{}{\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{section}[0.0cm]{\vspace{0.3cm}}{\thecontentslabel\ }{}{}{\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{subsection}[1.0cm]{\vspace{0.3cm}}{\thecontentslabel\ }{}{}{\titlerule*[0.3pc]{.}\contentspage}
 
-  \node[box, fill=green!12,    right=0.65cm of q1] (q2) {Câu hỏi y khoa};
-  \node[box, fill=medteal!18,  below=of q2]        (r2) {GraphRAG\\đồ thị tri thức};
-  \node[box, fill=green!22,    below=of r2]        (a2) {\textbf{\checkmark} Câu trả lời + [1][2]};
-  \draw[arr] (q2)--(r2); \draw[arr] (r2)--(a2);
-  \node[above=0.05cm of q2, font=\tiny\bfseries, text=medblue] {Graph-based RAG};
-\end{tikzpicture}
-\end{column}
-\end{columns}
-\vfill
-\tiny\textcolor{medgray}{Wu et al., \textit{MedGraphRAG}, arXiv:2408.04187, 2024 \quad|\quad
-Edge et al., \textit{GraphRAG}, arXiv:2404.16130, 2024}
-\end{frame}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
 
-% ── Slide 2: Dữ liệu ──────────────────────────────────────────────────────────
-\begin{frame}[t]{2. Dữ liệu sử dụng}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.48\textwidth}
-  \begin{block}{Dữ liệu xây dựng đồ thị — MIMIC-IV excerpt}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
-    \item \textbf{Nguồn:} \texttt{mimic\_ex}
-      (\href{https://huggingface.co/datasets/Morson/mimic_ex}{\texttt{hf.co/datasets/Morson/mimic\_ex}})
-    \item Tập con đã xử lý từ MIMIC-IV — hồ sơ bệnh nhân ICU
-    \item Định dạng: file \texttt{.txt}, mỗi file = 1 bệnh nhân
-    \item Nội dung: chẩn đoán, thuốc, xét nghiệm, ghi chú lâm sàng
-    \item Không cần đăng ký MIMIC, có thể tải trực tiếp
-  \end{itemize}
-  \vspace{0.3em}
-  \begin{statusbox}{Vai trò trong hệ thống}
-  \scriptsize
-  Đây là \textbf{RAG data} — dữ liệu được nạp vào đồ thị tri thức
-  để hệ thống truy vấn khi trả lời câu hỏi.
-  \end{statusbox}
-  \end{block}
-\end{column}
-\begin{column}{0.48\textwidth}
-  \begin{block}{Tập đánh giá — 3 benchmark y khoa}
-  \scriptsize
-  \setlength{\tabcolsep}{4pt}
-  \begin{tabular}{@{}p{2.6cm}rp{2.2cm}@{}}
+\renewcommand{\listfigurename}{DANH MỤC HÌNH VẼ}
+\listoffigures
+\newpage
+
+\chapter*{DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT}
+\addcontentsline{toc}{chapter}{DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT}
+\begin{description}[style=nextline,leftmargin=2.8cm,labelwidth=2.4cm]
+  \item[RAG] \textit{Retrieval-Augmented Generation} — sinh văn bản có kèm bước truy xuất tài liệu.
+  \item[GraphRAG] RAG dựa trên đồ thị tri thức (đỉnh/cạnh, quan hệ thực thể).
+  \item[MCQ] Câu hỏi trắc nghiệm nhiều lựa chọn.
+  \item[LLM] Mô hình ngôn ngữ lớn.
+  \item[FAISS] Thư viện tìm kiếm vector gần đúng.
+  \item[BM25] Mô hình xếp hạng từ khóa (sparse retrieval).
+\end{description}
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[RE,LO]{\thepage}
+
+% =============================================================================
+\chapter{GIỚI THIỆU}
+\label{chap:intro}
+% =============================================================================
+
+\section{Bối cảnh và động lực}
+Trong lĩnh vực y khoa, việc ứng dụng mô hình ngôn ngữ lớn (LLM) đi kèm rủi ro \textit{hallucination} (sinh thông tin sai lệch), thiếu trích dẫn nguồn để kiểm chứng, và khó tích hợp trực tiếp dữ liệu bệnh án nhạy cảm vào quá trình huấn luyện. \textit{Retrieval-Augmented Generation} (RAG) giảm một phần rủi ro bằng cách đưa các đoạn văn bản liên quan vào ngữ cảnh trước khi sinh câu trả lời.
+
+Graph-based RAG (GraphRAG) mở rộng ý tưởng này bằng cách tổ chức tri thức dưới dạng đồ thị (thực thể và quan hệ), hỗ trợ truy vấn theo cấu trúc thay vì chỉ theo độ tương đồng nông trên từng \textit{chunk} văn bản.
+
+\section{Mục tiêu báo cáo}
+Báo cáo trình bày:
+\begin{itemize}[nosep]
+  \item Bài toán so sánh pipeline RAG truyền thống (vector + tùy chọn BM25, rerank) với hướng GraphRAG theo dự án \texttt{Medical-Graph-RAG} (MedGraphRAG, Wu et al.).
+  \item Dữ liệu xây dựng tri thức và các bộ benchmark đánh giá.
+  \item Luồng xử lý (workflow) hai phương pháp.
+  \item Thực nghiệm đánh giá MCQ và kết quả số liệu hiện có trên các tập dữ liệu y khoa.
+\end{itemize}
+
+\section{Phạm vi}
+Nhóm tập trung tái hiện pipeline trên tập dữ liệu mở \texttt{mimic\_ex}, Neo4j, Ollama (ví dụ \texttt{qwen3.5:9b}), embedding \texttt{nomic-embed-text}; đánh giá MCQ bằng script trong thư mục \texttt{rag/}. Phần so sánh định lượng đầy đủ RAG vs GraphRAG trên cùng bảng điểm phụ thuộc việc chạy đồng nhất hai pipeline trên một tập benchmark — phần này được mô tả rõ trong chương thực nghiệm và kết luận.
+
+\section{Cấu trúc báo cáo}
+Chương~\ref{chap:data} mô tả dữ liệu. Chương~\ref{chap:workflow} trình bày workflow. Chương~\ref{chap:exp} trình bày thực nghiệm. Chương~\ref{chap:conclusion} và~\ref{chap:future} là kết luận và hướng phát triển.
+
+% =============================================================================
+\chapter{DỮ LIỆU}
+\label{chap:data}
+% =============================================================================
+
+\section{Dữ liệu xây dựng đồ thị / kho văn bản RAG}
+\subsection{Nguồn \texttt{mimic\_ex}}
+Dự án sử dụng tập \texttt{mimic\_ex} trên HuggingFace (\url{https://huggingface.co/datasets/Morson/mimic_ex}) — biến thể đã xử lý, trích từ MIMIC-IV, định dạng văn bản theo bệnh nhân (thường mỗi file tương ứng một hồ sơ). Nội dung gồm chẩn đoán, thuốc, xét nghiệm, ghi chú lâm sàng, phù hợp làm \textit{private-style} corpus cho RAG/GraphRAG.
+
+\subsection{Vai trò trong hệ thống}
+\begin{itemize}[nosep]
+  \item \textbf{GraphRAG (MedGraphRAG):} dùng trong giai đoạn \textit{construct graph} — trích thực thể, tạo nút/cạnh, lưu Neo4j, có thể kèm tóm tắt theo tag y khoa (theo paper).
+  \item \textbf{RAG baseline (thư mục \texttt{rag/}):} corpus được chunk hóa, nhúng vector, lưu trữ để truy xuất dense/sparse và rerank.
+\end{itemize}
+
+\section{Tập đánh giá (benchmark)}
+Các tập đánh giá \textbf{không} dùng để xây đồ thị mà chỉ để đo chất lượng trả lời MCQ:
+\begin{itemize}[nosep]
+  \item \textbf{MedQA (USMLE):} câu hỏi trắc nghiệm y khoa (thường 4--5 lựa chọn).
+  \item \textbf{MedMCQA:} trắc nghiệm 4 đáp án.
+  \item \textbf{PubMedQA:} dạng Yes/No/Maybe dựa trên ngữ cảnh/abstract.
+  \item Các mục \textbf{MMLU} nhánh y sinh/lâm sàng (ví dụ \texttt{mmlu\_anatomy}, \texttt{mmlu\_professional\_medicine}, \ldots) nếu được bật trong pipeline đánh giá.
+\end{itemize}
+Dữ liệu benchmark có thể tải qua thư viện \texttt{datasets} hoặc script \texttt{evaluation/download.py} (theo cấu trúc repo).
+
+% =============================================================================
+\chapter{RAG VÀ GRAPHRAG — WORKFLOW}
+\label{chap:workflow}
+% =============================================================================
+
+\section{RAG truyền thống (baseline trong \texttt{rag/})}
+\subsection{Tiền xử lý và chỉ mục}
+Văn bản được chia \textit{chunk} (trong code: kích thước chunk và overlap được cấu hình trong \texttt{rag/config.py}, ví dụ \texttt{CHUNK\_SIZE}, \texttt{CHUNK\_OVERLAP}). Mỗi chunk được nhúng bằng mô hình embedding (ví dụ \texttt{nomic-ai/nomic-embed-text-v1.5}), lưu vector để truy vấn FAISS.
+
+\subsection{Truy xuất và sinh câu trả lời}
+\begin{itemize}[nosep]
+  \item \textbf{Dense retrieval:} lấy top-$k$ vector gần nhất (\texttt{DENSE\_TOPK}).
+  \item \textbf{Hybrid (tùy chọn):} kết hợp BM25 (\texttt{USE\_BM25}) và hợp nhất bằng RRF (\texttt{RRF\_K}).
+  \item \textbf{Rerank:} cross-encoder (\texttt{CROSS\_ENCODER\_MODEL}) chọn top-\texttt{RERANK\_TOPN}, sau đó giữ \texttt{FINAL\_TOPK} đoạn đưa vào prompt.
+  \item \textbf{LLM:} sinh câu trả lời; với MCQ, đáp án được trích bằng quy tắc/regex từ đầu ra.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox{0.85\textwidth}{\centering
+    \vspace{0.4cm}
+    \textbf{Corpus} $\rightarrow$ \textbf{Chunk} $\rightarrow$ \textbf{Embed (FAISS)}\\
+    $\downarrow$\\
+    \textbf{Câu hỏi} $\rightarrow$ \textbf{Retrieve (+BM25)} $\rightarrow$ \textbf{Rerank} $\rightarrow$ \textbf{LLM}\\
+    \vspace{0.4cm}
+  }}
+  \caption{Luồng tổng quát RAG baseline trong dự án.}
+  \label{fig:rag-flow}
+\end{figure}
+
+\section{GraphRAG / MedGraphRAG (theo repo và paper)}
+\subsection{Giai đoạn xây dựng đồ thị}
+Theo hướng dẫn trong \texttt{README.md} của repository:
+\begin{enumerate}[nosep]
+  \item Chuẩn bị Neo4j và biến môi trường (\texttt{NEO4J\_URL}, \texttt{NEO4J\_USERNAME}, \texttt{NEO4J\_PASSWORD}).
+  \item Chạy pipeline ví dụ: \texttt{python run.py -dataset mimic\_ex -data\_path ./dataset/mimic\_ex -grained\_chunk -ingraphmerge -construct\_graph}.
+\end{enumerate}
+Các bước điển hình gồm: nạp văn bản bệnh nhân, trích thực thể/quan hệ bằng LLM, tạo đồ thị, lưu Neo4j; có thể có bước tóm tắt/ghi tag y khoa tùy cấu hình.
+
+\subsection{Giai đoạn suy luận}
+Người dùng đặt câu hỏi (ví dụ qua \texttt{prompt.txt}) và chạy chế độ inference (\texttt{run.py \ldots -inference}). Hệ thống truy vấn đồ thị để lấy ngữ cảnh có cấu trúc (cạnh/thực thể liên quan) rồi gọi LLM sinh câu trả lời; ưu điểm lý thuyết là khả năng kèm nguồn/trích dẫn theo nút/cạnh và suy luận đa bước trên quan hệ.
+
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox{0.85\textwidth}{\centering
+    \vspace{0.4cm}
+    \textbf{mimic\_ex} $\rightarrow$ \textbf{Entity/Relation extraction} $\rightarrow$ \textbf{Neo4j}\\
+    $\downarrow$\\
+    \textbf{Câu hỏi} $\rightarrow$ \textbf{Graph retrieval / seq\_ret} $\rightarrow$ \textbf{LLM + citations}\\
+    \vspace{0.4cm}
+  }}
+  \caption{Luồn tổng quát GraphRAG (MedGraphRAG) — khối tên có thể khớp chi tiết mã nguồn.}
+  \label{fig:graphrag-flow}
+\end{figure}
+
+\section{So sánh khái niệm}
+\begin{table}[H]
+  \centering
+  \caption{Đối chiếu ngắn RAG truyền thống và GraphRAG.}
+  \label{tab:compare}
+  \begin{tabular}{@{}p{3.2cm}p{5.5cm}p{5.5cm}@{}}
     \toprule
-    \textbf{Dataset} & \textbf{\#Mẫu} & \textbf{Loại} \\
+    \textbf{Tiêu chí} & \textbf{RAG (vector)} & \textbf{GraphRAG} \\
     \midrule
-    \textbf{MedQA (USMLE)} & 1,273 & Trắc nghiệm\\
-                           &       & 4--5 đáp án \\[3pt]
-    \textbf{MedMCQA}       & 4,183 & Trắc nghiệm\\
-                           &       & 4 đáp án \\[3pt]
-    \textbf{PubMedQA}      & 500   & Yes/No/Maybe \\
-                           &       & dựa trên abstract \\
+    Cấu trúc tri thức & Chunk độc lập, ít quan hệ rõ ràng & Đỉnh/cạnh, quan hệ thực thể \\
+    Truy vấn & Tương đồng vector (+BM25) & Truy vấn đồ thị / subgraph \\
+    Triển khai & Tương đối đơn giản & Chi phí xây graph cao hơn \\
+    Trích dẫn & Theo đoạn văn & Theo nút/cạnh (mục tiêu thiết kế) \\
     \bottomrule
   \end{tabular}
+\end{table}
 
-  \vspace{0.35em}
-  \scriptsize\textcolor{medgray}{%
-    Tất cả có sẵn trên HuggingFace,\\
-    tải tự động qua \texttt{datasets} library.}
-  \end{block}
+% =============================================================================
+\chapter{THỰC NGHIỆM}
+\label{chap:exp}
+% =============================================================================
 
-  \vspace{0.2em}
-  \begin{warnbox}{Lưu ý}
-  \scriptsize
-  Benchmark dùng để \textbf{đánh giá} chất lượng trả lời
-  của hệ thống RAG — không phải dữ liệu xây đồ thị.
-  \end{warnbox}
-\end{column}
-\end{columns}
-\end{frame}
+\section{Thiết lập}
+\subsection{Phần mềm và môi trường}
+Môi trường Conda theo \texttt{medgraphrag.yml}; Neo4j chạy Docker; Ollama phục vụ LLM/embedding cục bộ. Đánh giá MCQ thực hiện qua module \texttt{rag/evaluator.py} (async, giới hạn đồng thời theo \texttt{EVAL\_LLM\_CONCURRENCY}, \texttt{EVAL\_RETRIEVE\_CONCURRENCY}).
 
-% ── Slide 3: Kiến trúc hệ thống ───────────────────────────────────────────────
-\begin{frame}[t]{3. Kiến trúc hệ thống — MedGraphRAG}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.50\textwidth}
-  \begin{block}{Pipeline xây đồ thị (Build phase)}
-  \scriptsize
-  \begin{tikzpicture}[
-    node distance=0.3cm,
-    step/.style={draw=medgray, rounded corners=2pt, fill=lightblue,
-                 minimum width=5.6cm, minimum height=0.48cm,
-                 font=\scriptsize, align=center}
-  ]
-    \node[step] (s1) {\texttt{mimic\_ex} (.txt) $\rightarrow$ load \& chunk};
-    \node[step, below=of s1] (s2) {Entity extraction — \texttt{qwen3.5:9b} (Ollama)};
-    \node[step, below=of s2] (s3) {Embedding — \texttt{nomic-embed-text} (Ollama)};
-    \node[step, below=of s3, fill=lightgreen] (s4) {Lưu đồ thị vào Neo4j};
-    \node[step, below=of s4] (s5) {Tạo Summary node (medical tags)};
-    \foreach \i/\j in {s1/s2, s2/s3, s3/s4, s4/s5}
-      \draw[-Stealth, thick, medgray] (\i)--(\j);
-  \end{tikzpicture}
-  \end{block}
-\end{column}
-\begin{column}{0.46\textwidth}
-  \begin{block}{Pipeline suy luận (Inference phase)}
-  \scriptsize
-  \begin{tikzpicture}[
-    node distance=0.3cm,
-    step/.style={draw=medgray, rounded corners=2pt, fill=lightyellow,
-                 minimum width=5.0cm, minimum height=0.48cm,
-                 font=\scriptsize, align=center}
-  ]
-    \node[step] (i1) {Câu hỏi $\rightarrow$ \texttt{process\_chunks()} (tags)};
-    \node[step, below=of i1] (i2) {\texttt{seq\_ret()} — chọn subgraph phù hợp};
-    \node[step, below=of i2] (i3) {\texttt{ret\_context()} — lấy triplets từ Neo4j};
-    \node[step, below=of i3, fill=lightblue] (i4) {LLM sinh câu trả lời + citations};
-    \foreach \i/\j in {i1/i2, i2/i3, i3/i4}
-      \draw[-Stealth, thick, medgray] (\i)--(\j);
-  \end{tikzpicture}
-  \end{block}
+\subsection{Chỉ số}
+Độ chính xác MCQ:
+\[
+  \mathrm{Acc} = \frac{\#\text{câu trả lời đúng}}{\#\text{tổng số câu}} \times 100\ (\%).
+\]
+Đáp án chuẩn lấy từ nhãn tập dữ liệu; dự đoán trích ký tự A/B/C/D/E từ đầu ra LLM.
 
-  \vspace{0.2em}
-  \scriptsize
-  \setlength{\tabcolsep}{3pt}
-  \begin{tabular}{@{}p{1.7cm}p{3.0cm}@{}}
+\section{Kết quả}
+Bảng~\ref{tab:results} ghi nhận kết quả từ file tổng hợp \texttt{rag\_eval\_results/20260419\_093447/rag\_summary.csv} (pipeline đánh giá RAG trong repo). Trạng thái cột ``status'' trong file nguồn là \texttt{ok}.
+
+\begin{table}[H]
+  \centering
+  \caption{Độ chính xác MCQ (\%) — lần chạy \texttt{20260419\_093447}.}
+  \label{tab:results}
+  \begin{tabular}{@{}lrr@{}}
     \toprule
-    \textbf{Thành phần} & \textbf{Model} \\
+    \textbf{Dataset} & \textbf{Accuracy (\%)} & \textbf{Ghi chú} \\
     \midrule
-    Graph build   & \texttt{qwen3.5:9b} (Ollama) \\
-    Embedding     & \texttt{nomic-embed-text} \\
-    Inference     & \texttt{GPT-4o} hoặc Ollama \\
-    Graph DB      & Neo4j (Docker) \\
+    MedQA & 54.83 & USMLE-style \\
+    MedMCQA & 26.85 & 4 lựa chọn \\
+    PubMedQA & 74.60 & Y/N/Maybe \\
+    MMLU Anatomy & 64.44 & MMLU \\
+    MMLU Clinical knowledge & 72.45 & MMLU \\
+    MMLU College biology & 77.78 & MMLU \\
+    MMLU College medicine & 64.74 & MMLU \\
+    MMLU Medical genetics & 71.00 & MMLU \\
+    MMLU Professional medicine & 66.54 & MMLU \\
     \bottomrule
   \end{tabular}
-\end{column}
-\end{columns}
-\end{frame}
+\end{table}
 
-% ── Slide 4: RAG vs GraphRAG ──────────────────────────────────────────────────
-\begin{frame}[t]{4. RAG truyền thống vs.\ Graph-based RAG}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.34\textwidth}
-  \begin{block}{RAG truyền thống}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item Chunk $\to$ vector store
-    \item Top-$k$ similarity search
-    \item Không có quan hệ entity
-    \item Thiếu trích dẫn rõ ràng
-    \item Dễ triển khai, rẻ
-  \end{itemize}
-  \end{block}
+\section{Nhận xét}
+\begin{itemize}[nosep]
+  \item MedMCQA có điểm thấp hơn MedQA trong lần chạy này — cần kiểm tra prompt, số mẫu đánh giá, và chất lượng retrieval trên phân bố chủ đề MedMCQA.
+  \item Để khẳng định ``GraphRAG tốt hơn RAG'' cần bảng song song: cùng benchmark, cùng protocol trích đáp án, cùng tập train/corpus hoặc mô tả rõ tách biệt corpus.
+\end{itemize}
 
-  \vspace{0.25em}
+% =============================================================================
+\chapter{KẾT LUẬN}
+\label{chap:conclusion}
+% =============================================================================
 
-  \begin{block}{GraphRAG (MS 2024)}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item Đồ thị + community detection
-    \item Global/local query mode
-    \item Chi phí xây graph cao
-    \item Không domain-specific
-  \end{itemize}
-  \end{block}
+Báo cáo đã trình bày bối cảnh RAG/GraphRAG trong y khoa, phân tách dữ liệu corpus (\texttt{mimic\_ex}) và tập benchmark đánh giá, mô tả workflow RAG baseline (chunk--embed--retrieve--rerank--LLM) và hướng MedGraphRAG (xây đồ thị Neo4j -- truy vấn có cấu trúc -- LLM).
 
-  \vspace{0.25em}
+Về số liệu, nhóm đã có kết quả đánh giá MCQ cho pipeline RAG (Bảng~\ref{tab:results}). Việc hoàn thiện so sánh định lượng với GraphRAG trên cùng các tập là bước còn lại để trả lời đầy đủ câu hỏi nghiên cứu so sánh hai phương pháp.
 
-  \begin{block}{MedGraphRAG}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item Đồ thị 3 tầng y khoa
-    \item Tag-based summary
-    \item U-Retrieval (top-down + bottom-up)
-    \item Trích dẫn nguồn rõ ràng
-  \end{itemize}
-  \end{block}
-\end{column}
-\begin{column}{0.62\textwidth}
-  \begin{block}{So sánh kết quả trên test sets — Accuracy (\%)}
-  \scriptsize
-  \setlength{\tabcolsep}{4pt}
-  \begin{tabular}{@{}lrrrrr@{}}
-    \toprule
-    \textbf{Phương pháp} & \textbf{MedQA} & \textbf{MedMCQA} & \textbf{PubMedQA} & \textbf{FakeH.} & \textbf{MMLU} \\
-    \midrule
-    No RAG      & 78.2 & 72.6 & 75.3 & 71.4 & 86.2 \\
-    + RAG       & 88.1 & 76.3 & 77.6 & 78.6 & 93.1 \\
-    + GraphRAG  & 88.9 & 77.2 & 77.9 & 78.4 & 94.0 \\
-    \midrule
-    \rowcolor{lightgreen}
-    \textbf{+ MedGraphRAG} & \textbf{91.3} & \textbf{81.5} & \textbf{83.3} & \textbf{86.5} & \textbf{96.4} \\
-    \bottomrule
-  \end{tabular}
-  \vspace{0.2em}
+% =============================================================================
+\chapter{HƯỚNG PHÁT TRIỂN}
+\label{chap:future}
+% =============================================================================
 
-  \scriptsize\textit{GPT-4o backbone, trích từ Wu et al.~\cite{wu2024medgraphrag}}
-  \end{block}
+\begin{enumerate}
+  \item Chạy đánh giá GraphRAG đồng nhất protocol với RAG; ghép bảng so sánh theo từng dataset.
+  \item Tối ưu chi phí retrieval (ví dụ giảm số lần gọi LLM trong chọn subgraph, dùng embedding similarity nơi phù hợp).
+  \item Mở rộng corpus hoặc lớp đồ thị (medium/bottom) theo paper nếu có điều kiện dữ liệu và license.
+  \item Đánh giá thủ công chất lượng trích dẫn (citation precision/recall) trên mẫu nhỏ.
+  \item Thử nghiệm backend LLM khác (API mạnh hơn vs self-host) để phân tích trade-off chi phí--chất lượng.
+\end{enumerate}
 
-  \vspace{0.3em}
-  \begin{columns}[T,onlytextwidth]
-  \begin{column}{0.48\textwidth}
-    \scriptsize
-    \textcolor{medgreen}{\textbf{+2.4\%}} MedQA so với GraphRAG\\
-    \textcolor{medgreen}{\textbf{+4.3\%}} MedMCQA so với GraphRAG\\
-    \textcolor{medgreen}{\textbf{+5.4\%}} PubMedQA so với GraphRAG
-  \end{column}
-  \begin{column}{0.48\textwidth}
-    \scriptsize
-    Citation Precision \textbf{92\%}\\
-    Citation Recall \textbf{86\%}\\
-    \textcolor{medgray}{(human evaluation, Table~2)}
-  \end{column}
-  \end{columns}
-\end{column}
-\end{columns}
-\vfill
-\tiny\textcolor{medgray}{Nhóm đang tái hiện kết quả này với hạ tầng tự host (Ollama + GPT-4o).}
-\end{frame}
-
-% ── Slide 5: Thiết lập thực nghiệm ────────────────────────────────────────────
-\begin{frame}[t]{5. Thiết lập thực nghiệm của nhóm}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.50\textwidth}
-  \begin{block}{Cấu hình mô hình — 2 chế độ}
-  \scriptsize
-  \setlength{\tabcolsep}{3pt}
-  \begin{tabular}{@{}p{1.8cm}p{2.4cm}p{2.4cm}@{}}
-    \toprule
-    \textbf{Bước} & \textbf{Chế độ Ollama} & \textbf{Chế độ GPT-4o} \\
-    \midrule
-    Graph build   & \texttt{qwen3.5:9b}    & \texttt{qwen3.5:9b} \\
-    Embedding     & \texttt{nomic-embed}   & \texttt{nomic-embed} \\
-    Inference LLM & \texttt{qwen3.5:9b}   & \texttt{GPT-4o} (API) \\
-    Graph DB      & Neo4j (Docker)         & Neo4j (Docker) \\
-    \bottomrule
-  \end{tabular}
-  \end{block}
-
-  \vspace{0.3em}
-
-  \begin{block}{Chỉ số đánh giá}
-  \scriptsize
-  \textbf{MCQ Accuracy (\%):}
-  \[
-    \text{Acc} = \frac{\#\text{đúng}}{\#\text{tổng}} \times 100
-  \]
-  \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item Áp dụng cho MedQA, MedMCQA, PubMedQA
-    \item Ground truth: nhãn A/B/C/D có sẵn trong dataset
-    \item Prediction: trích chữ cái từ output LLM bằng regex
-  \end{itemize}
-  \end{block}
-\end{column}
-\begin{column}{0.46\textwidth}
-  \begin{block}{Luồng evaluation}
-  \scriptsize
-  \begin{tikzpicture}[
-    node distance=0.28cm,
-    step/.style={draw=medgray, rounded corners=2pt, fill=lightblue,
-                 minimum width=4.8cm, minimum height=0.46cm,
-                 font=\scriptsize, align=center}
-  ]
-    \node[step]                     (e1) {Load dataset (HuggingFace)};
-    \node[step, below=of e1]        (e2) {Format prompt MCQ};
-    \node[step, below=of e2, fill=lightyellow] (e3) {MedGraphRAG inference};
-    \node[step, below=of e3]        (e4) {Trích đáp án (regex)};
-    \node[step, below=of e4, fill=lightgreen]  (e5) {So sánh ground truth $\to$ Accuracy};
-    \foreach \i/\j in {e1/e2, e2/e3, e3/e4, e4/e5}
-      \draw[-Stealth, thick, medgray] (\i)--(\j);
-  \end{tikzpicture}
-  \end{block}
-
-  \vspace{0.2em}
-  \scriptsize\textcolor{medgray}{%
-    Script: \texttt{evaluate.py}\\
-    Chạy: \texttt{python evaluate.py -{}-datasets medqa medmcqa pubmedqa}}
-\end{column}
-\end{columns}
-\end{frame}
-
-% ── Slide 6: Trạng thái ───────────────────────────────────────────────────────
-\begin{frame}[t]{6. Trạng thái triển khai}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.48\textwidth}
-  \begin{statusbox}{Đã hoàn thành}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
-    \item Môi trường: conda, Neo4j (Docker), Ollama
-    \item Pull model \texttt{qwen3.5:9b} + \texttt{nomic-embed-text}
-    \item Build graph từ \texttt{mimic\_ex} thành công
-    \item Pipeline end-to-end: build $\to$ inference $\to$ output
-    \item Kết nối cả 2 chế độ: Ollama và GPT-4o API
-    \item Viết \texttt{evaluate.py} hỗ trợ MedQA, MedMCQA, PubMedQA
-  \end{itemize}
-  \end{statusbox}
-
-  \vspace{0.3em}
-
-  \begin{warnbox}{Đang thực hiện}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
-    \item Chạy evaluation trên 3 benchmark
-    \item So sánh kết quả Ollama vs.\ GPT-4o
-    \item Phân tích chất lượng citation trong câu trả lời
-  \end{itemize}
-  \end{warnbox}
-\end{column}
-\begin{column}{0.48\textwidth}
-  \begin{block}{Kết quả kỳ vọng}
-  \scriptsize
-  \setlength{\tabcolsep}{3pt}
-  \begin{tabular}{@{}p{2.0cm}p{1.7cm}p{1.7cm}@{}}
-    \toprule
-    \textbf{Dataset} & \textbf{Ollama} & \textbf{GPT-4o} \\
-    \midrule
-    MedQA (USMLE) & đang chạy & đang chạy \\
-    MedMCQA       & đang chạy & đang chạy \\
-    PubMedQA      & đang chạy & đang chạy \\
-    \bottomrule
-  \end{tabular}
-
-  \vspace{0.4em}
-  \scriptsize\textit{Kết quả sẽ cập nhật trong báo cáo cuối kỳ.}
-  \end{block}
-
-  \vspace{0.3em}
-
-  \begin{block}{Câu hỏi nghiên cứu cần trả lời}
-  \scriptsize
-  \begin{enumerate}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
-    \item GraphRAG có thật sự tốt hơn RAG trên y khoa?
-    \item Ollama self-host có đủ tốt thay GPT-4o?
-    \item Đồ thị tri thức cải thiện citation quality?
-  \end{enumerate}
-  \end{block}
-\end{column}
-\end{columns}
-\end{frame}
-
-% ── Slide 7: Kế hoạch tiếp theo ───────────────────────────────────────────────
-\begin{frame}[t]{7. Kế hoạch tiếp theo}
-\small
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.55\textwidth}
-  \begin{block}{Lộ trình còn lại}
-  \footnotesize
-  \begin{enumerate}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
-    \item \textbf{Hoàn thành evaluation:}
-      chạy \texttt{evaluate.py} trên MedQA, MedMCQA, PubMedQA
-      với cả 2 chế độ Ollama và GPT-4o.
-
-    \item \textbf{Phân tích kết quả:}
-      so sánh accuracy 2 phương pháp RAG;
-      đánh giá chất lượng citation thủ công trên mẫu nhỏ.
-
-    \item \textbf{Tối ưu retrieval:}
-      thay \texttt{seq\_ret()} (gọi LLM $N$ lần) bằng
-      embedding cosine similarity để giảm chi phí.
-
-    \item \textbf{Báo cáo cuối:}
-      trình bày bảng so sánh thực tế,
-      phân tích trade-off chi phí vs.\ chất lượng.
-  \end{enumerate}
-  \end{block}
-\end{column}
-\begin{column}{0.41\textwidth}
-  \begin{statusbox}{Đầu ra mong đợi}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
-    \item Bảng accuracy 3 dataset $\times$ 2 LLM backend
-    \item Nhận xét: Graph-based RAG có tốt hơn không?
-    \item Nhận xét: Ollama có thể thay GPT-4o không?
-    \item Source code đã chạy được, có thể tái hiện
-  \end{itemize}
-  \end{statusbox}
-
-  \vspace{0.3em}
-
-  \begin{warnbox}{Rủi ro}
-  \scriptsize
-  \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
-    \item Chi phí API GPT-4o khi chạy full dataset
-    \item Tốc độ inference Ollama chậm hơn API
-    \item Kết quả có thể thấp hơn paper do thiếu Middle/Bottom layer
-  \end{itemize}
-  \end{warnbox}
-\end{column}
-\end{columns}
-\end{frame}
-
-% ── Slide 8: Tài liệu tham khảo ───────────────────────────────────────────────
-\begin{frame}[t]{8. Tài liệu tham khảo}
-\footnotesize
-\begin{thebibliography}{9}
-
-\bibitem{wu2024medgraphrag}
+% =============================================================================
+\begin{thebibliography}{99}
+\bibitem{wu2024}
 J.~Wu et al.,
-``Medical Graph RAG: Towards Safe Medical Large Language Model
-via Graph Retrieval-Augmented Generation,''
+``Medical Graph RAG: Towards Safe Medical Large Language Model via Graph Retrieval-Augmented Generation,''
 \textit{arXiv:2408.04187}, 2024.
 
-\bibitem{edge2024graphrag}
+\bibitem{edge2024}
 D.~Edge et al.,
 ``From Local to Global: A Graph RAG Approach to Query-Focused Summarization,''
 \textit{arXiv:2404.16130}, 2024.
 
-\bibitem{singhal2023medpalm}
-K.~Singhal et al.,
-``Towards Expert-Level Medical Question Answering with Large Language Models,''
-\textit{arXiv:2305.09617}, 2023.
-
-\bibitem{johnson2023mimic}
+\bibitem{johnson2023}
 A.~E.~W.~Johnson et al.,
 ``MIMIC-IV, a freely accessible electronic health record dataset,''
 \textit{Scientific Data}, 10(1):1, 2023.
 
+\bibitem{mimicex}
+Morson,
+``mimic\_ex dataset,''
+\url{https://huggingface.co/datasets/Morson/mimic_ex}, truy cập 2026.
 \end{thebibliography}
-
-\vfill
-\begin{center}
-\scriptsize\textcolor{medgray}{%
-  Repo: \href{https://github.com/Grizzlazy/MedGraphRAG}{\texttt{github.com/Grizzlazy/MedGraphRAG}}
-  \quad $\cdot$ \quad
-  Dataset: \href{https://huggingface.co/datasets/Morson/mimic_ex}{\texttt{hf.co/datasets/Morson/mimic\_ex}}}
-\end{center}
-\end{frame}
 
 \end{document}

@@ -69,6 +69,16 @@ def format_sample(dataset_name: str, item) -> Dict:
             "context":  ctx,
         }
 
+    # mmlu_anatomy, mmlu_clinical_knowledge, mmlu_college_biology,
+    # mmlu_college_medicine, mmlu_medical_genetics, mmlu_professional_medicine
+    if dataset_name.startswith("mmlu_"):
+        d = item["data"]
+        return {
+            "question": d["Question"],
+            "options":  d["Options"],   # {"A": ..., "B": ..., "C": ..., "D": ...}
+            "answer":   str(d["Correct Option"]).strip().upper(),
+        }
+
     raise ValueError(f"Unknown dataset: {dataset_name!r}")
 
 
