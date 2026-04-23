@@ -1,0 +1,112 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,In a Robertsonian translocation fusion occurs at the:,B,B,True,B
+1,Zinc finger proteins and helix-turn-helix proteins are,A,A,True,A
+2,"If the frequency of males affected with an X-linked recessive condition in a human population is .10 (one in ten), what will be the expected frequency of affected females?",A,B,False,B
+3,In DNA adenine normally pairs with:,C,A,False,A.
+4,The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:,A,A,True,A
+5,Mapping of human chromosomes:,B,B,True,B
+6,Intergenerational transmission to offspring can occur as a result of parental exposures to ______.,D,A,False,A
+7,Asp235Phe in a molecular report indicates that:,C,A,False,A
+8,The risk of abnormality in the child of a mother with untreated phenylketonuria is:,D,A,False,A.
+9,Exon skipping is associated with:,C,C,True,C
+10,Which of the following is not a chromosome instability syndrome?,A,A,True,A
+11,Normal adult haemoglobin (Hb A) consists of:,A,A,True,A
+12,In a condition such as schizophrenia the recurrence risk will be greatest for which of the following relatives of an affected individual?,A,A,True,A
+13,The mutation in sickle-cell disease consists of:,D,D,True,D
+14,Which of the following is an example of monosomy?,D,D,True,D
+15,QTL analysis is used to,A,A,True,A
+16,What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?,A,B,False,B
+17,It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.,B,B,True,B
+18,With which of the following relatives is an individual most likely to share a common HLA haplotype?,C,B,False,B
+19,Which of the following genes conveys susceptibility for polygenic Alzheimer disease?,D,D,True,D
+20,The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?,D,D,True,D
+21,X-chromosome inactivation,A,A,True,A
+22,The pattern of inheritance shown by glucose-6-phosphate dehydrogenase (G6PD) deficiency is:,D,B,False,B.
+23,Homeobox sequences,A,A,True,A
+24,Which of the following karyotypes is diagnostic of Down syndrome,A,A,True,A
+25,"Nature is more important for ______ differences, while nurture has greater influence on ______ differences.",A,A,True,A
+26,Which of the following would result in Angelman syndrome?,B,C,False,C
+27,Recombinant alpha-iduronidase is used for the treatment of which disease/syndrome?,C,C,True,C
+28,Research from Moshe Szyf and colleagues has provided significant findings on the epigenetic influences of prenatal maternal stress. This work has been labelled ______.,B,A,False,A
+29,If both parents are affected with the same autosomal recessive disorder then the probability that each of their children will be affected equals ___.,D,D,True,D
+30,The mutational mechanism in δβ-thalassaemia consists of:,A,A,True,A
+31,"Assuming Hardy-Weinberg equilibrium, the genoypte frequency of heterozygotes, if the frequency of the two alleles at the gene being studied are 0.6 and 0.4, will be:",C,B,False,B
+32,Familial hypercholesterolaemia is caused by mutations in the gene which encodes what?,D,D,True,D
+33,A cross between two true breeding lines one with dark blue flowers and one with bright white flowers produces F1 offspring that are light blue. When the F1 progeny are selfed a 1:2:1 ratio of dark blue to light blue to white flowers is observed. What genetic phenomenon is consistent with these resul,B,B,True,B
+34,The proportion of babies that have an abnormality identifiable at birth is _____.,B,,False,I'm ready to answer. Please provide the relevant graph-based data.
+35,______ explained genetic disorders such as alkaptonuria and albinism.,A,C,False,C
+36,Which of the following conditions shows anticipation in paternal transmission?,A,D,False,D
+37,A homeotic mutation is one which,B,B,True,B
+38,Which of the following is not a familial cancer syndrome,D,D,True,D
+39,"The epigenetic inheritance system has been described as ______ (Mayr and Provine, 1980).",B,B,True,B
+40,Severe anaemia at birth is a feature of what?,A,A,True,A
+41,"If an X-linked recessive disorder is in Hardy-Weinberg equilibrium and the incidence in males equals 1 in 100, then the expected incidence of affected homozygous females would be _______.",C,A,False,A
+42,Tay-Sachs disease is caused by deficiency of _________________?,C,C,True,C
+43,A nonsense mutation involves:,D,D,True,D
+44,The polymerase chain reaction or PCR is a technique that,C,C,True,C
+45,The maternal serum level of alpha-fetoprotein (AFP) is lower than average in which situation?,A,A,True,A
+46,"______ has been described as the phenomenon by which one genotype can give rise to a range of different physiological or morphological states in response to different environmental conditions during development (West-Eberhard, 1989).",C,C,True,C
+47,Arabidopsis is advantageous for plant genetic research because:,D,D,True,D
+48,The proportion of genes shared by first cousins is on average ___.,C,A,False,A
+49,Which of the following is not a tumour suppressor gene?,D,A,False,A
+50,Which of the following is a feature of X-linked dominant inheritance?,D,D,True,D
+51,"On average, how many fragments would a restriction enzyme which recognizes a specific 4 base sequence in DNA be expected to cleave a double-stranded bacteriophage with a genome size of 5,000 bp into?",C,A,False,A
+52,Positional cloning refers to,D,D,True,D
+53,Plasmid vectors for cloning,B,A,False,A
+54,Transcriptional activator proteins,A,A,True,A
+55,"Assuming that the level of glucose is low, a mutation in the repressor associated with the lac operon of E. coli which prevents binding of the repressor to lactose should result in: ",B,A,False,A
+56,"In meiosis, recombination occurs in:",B,B,True,B
+57,Leber's hereditary optic atrophy is caused by a mutation in:,D,D,True,D
+58,"Regarding exons, which, if any, of the following statements is correct?",A,A,True,A
+59,"In humans, each cell normally contains ______ of chromosomes.",B,B,True,B
+60,"An increase in the inbreeding coefficient, F, is likely to result in:",A,A,True,A
+61,Which of the following findings on prenatal ultrasound examination would not raise suspicion of a chromosome abnormality?,D,D,True,D
+62,"The likelihood of an individual in a population carrying two specific alleles of a human DNA marker, each of which has a frequency of 0.2, will be:",C,A,False,A
+63,An Hfr strain of E. coli contains:,C,C,True,C
+64,Male to male transmission is a key feature of which pattern of inheritance?,A,D,False,D
+65,Simple tandem repeat polymorphisms in humans are most useful for,A,A,True,A
+66,Which of the following disorders is not suitable for population carrier screening?,B,A,False,A
+67,Which of the following disorders does not show X-linked inheritance?,B,D,False,D
+68,The most common chromosome abnormality in first trimester spontaneous miscarriages is:,A,A,True,A
+69,Which of the following karyotypes is not compatible with survival to birth?,D,D,True,"I. 47,XX,+18 [1]
+II. 47,XY,+21 [1][2]
+III. 47,XY,+13 [3]
+IV. 45,X [4]
+
+Given the options, the karyotype that is not compatible with survival to birth is D. 45,Y, as individuals with 45,X are typically viable and can survive to birth, while 45,Y is not viable due to the absence of the Y chromosome necessary for male development [4].
+
+Answer: D"
+70,Male breast cancer is associated with mutations in ___.,B,A,False,A
+71,Pseudocholinesterase deficiency is associated with increased sensitivity to what?,D,D,True,D
+72,The most common cystic fibrosis mutation consists of:,A,A,True,A
+73,The normal human chromosome diploid number is:,C,A,False,A
+74,Advantages of using adenoviruses for gene therapy include:,B,B,True,B
+75,Which of the following statements about Hirschsprung disease is incorrect?,B,A,False,A
+76,Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?,C,C,True,C
+77,Which of the following causes female pseudohermaphroditism?,C,A,False,A
+78,Which component of transcribed RNA in eukaryotes is present in the initial transcript but is removed before translation occurs?,A,A,True,A
+79,Which of the following is not a recognized complication of cystic fibrosis?,A,A,True,A
+80,Which of the following diagnostic techniques is of no value for the diagnosis of neural tube defects?,B,A,False,A
+81,Which of the following conditions is a peroxisomal disorder?,D,D,True,D
+82,Marked microsatellite instability is a feature of:,B,B,True,B
+83,The common mutation in α-thalassaemia consists of:,A,A,True,A.
+84,A baby born with pulmonary hypoplasia secondary to oligohydramnios caused by renal agenesis would be classified as having:,C,A,False,A
+85,The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.,B,B,True,B
+86,Which of the following trisomy karyotypes has the mildest effect on human development?,A,A,True,"I'm ready to help, but I don't see any provided data. Please provide the necessary data or information so I can give a correct answer.
+
+However, I can provide some general information about the trisomy karyotypes mentioned in the options.
+
+Trisomy 21, also known as Down syndrome, is a genetic disorder caused by an extra copy of chromosome 21. The severity of the condition can vary depending on the"
+87,Mutations that cause achondroplasia exert an effect which can be classified as:,B,C,False,C
+88,The presence of two or more cell lines from different zygotes in a single individual is known as:,D,A,False,A
+89,The risk for miscarriage associated with amniocentesis is approximately ____.,C,C,True,C
+90,Autozygosity mapping is used to map disorders that show which pattern of inheritance?,B,B,True,B
+91,Consanguinity shows a strong association with which pattern of inheritance?,B,B,True,B
+92,Most new mutations appear to be,B,B,True,B
+93,Twin studies in humans are useful because,A,A,True,A
+94,Complete the following sentence. The Philadelphia chromosome:,B,B,True,B
+95,Enzyme assay can be used to identify carriers of:,D,A,False,A
+96,A high blood ammonia level occurs in:,C,C,True,C
+97,"In genome-wide association studies, known SNPs explain ______ of the variation in body mass index despite the evidence of greater than 50% heritability from twin and family studies.",D,A,False,A.
+98,Differential distribution of substances in the egg most typically results in:,A,A,True,A
+99,Which of the following conditions is not caused by a mutation in FGFR3?,D,D,True,D

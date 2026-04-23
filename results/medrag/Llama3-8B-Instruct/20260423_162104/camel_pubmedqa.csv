@@ -1,0 +1,501 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,Is anorectal endosonography valuable in dyschesia?,A,A,True,A
+1,Is there a connection between sublingual varices and hypertension?,A,A,True,A
+2,Is the affinity column-mediated immunoassay method suitable as an alternative to the microparticle enzyme immunoassay method as a blood tacrolimus assay?,A,A,True,A
+3,Does a physician's specialty influence the recording of medication history in patients' case notes?,A,A,True,A
+4,Locoregional opening of the rodent blood-brain barrier for paclitaxel using Nd:YAG laser-induced thermo therapy: a new concept of adjuvant glioma therapy?,A,A,True,A
+5,Spinal subdural hematoma: a sequela of a ruptured intracranial aneurysm?,A,A,True,A
+6,Is there a correlation between androgens and sexual desire in women?,A,A,True,A
+7,Is the zeolite hemostatic agent beneficial in reducing blood loss during arterial injury?,A,A,True,A
+8,Are endothelial cell patterns of astrocytomas indicative of grade?,A,A,True,A
+9,Should cavitation in proximal surfaces be reported in cone beam computed tomography examination?,A,A,True,A
+10,Ultrasound in squamous cell carcinoma of the penis; a useful addition to clinical staging?,A,A,True,A
+11,Can third trimester ultrasound predict the presentation of the first twin at delivery?,A,A,True,A
+12,Is micro-computed tomography reliable to determine the microstructure of the maxillary alveolar bone?,A,A,True,A
+13,Is primary angioplasty an acceptable alternative to thrombolysis?,A,A,True,A
+14,Is endometrial polyp formation associated with increased expression of vascular endothelial growth factor and transforming growth factor-beta1?,A,A,True,A
+15,Improvements in survival of gynaecological cancer in the Anglia region of England: are these an effect of centralisation of care and use of multidisciplinary management?,A,A,True,A
+16,Estimated fetal weight by ultrasound: a modifiable risk factor for cesarean delivery?,A,A,True,A
+17,Are financial incentives cost-effective to support smoking cessation during pregnancy?,A,A,True,A
+18,Do adjuvant aromatase inhibitors increase the cardiovascular risk in postmenopausal women with early breast cancer?,A,A,True,A
+19,Is fear of anaphylactic shock discouraging surgeons from more widely adopting percutaneous and laparoscopic techniques in the treatment of liver hydatid cyst?,A,A,True,A
+20,Risk stratification in emergency surgical patients: is the APACHE II score a reliable marker of physiological impairment?,A,B,False,B
+21,Can Flexible Instruments Create Adequate Femoral Tunnel Lengths at 90° of Knee Flexion in Anterior Cruciate Ligament Reconstruction?,A,A,True,A
+22,Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?,A,A,True,A
+23,"""Occult"" posttraumatic lesions of the knee: can magnetic resonance substitute for diagnostic arthroscopy?",A,A,True,A
+24,Does Sensation Return to the Nasal Tip After Microfat Grafting?,A,A,True,A
+25,Do some U.S. states have higher/lower injury mortality rates than others?,A,A,True,A
+26,Hepatorenal syndrome: are we missing some prognostic factors?,A,A,True,A
+27,"The Main Gate Syndrome: a new format in mass-casualty victim ""surge"" management?",A,A,True,A
+28,Is EQ-5D a valid quality of life instrument in patients with acute coronary syndrome?,A,A,True,A
+29,Is portable ultrasonography accurate in the evaluation of Schanz pin placement during extremity fracture fixation in austere environments?,A,B,False,B
+30,Is grandmultiparity an independent risk factor for adverse perinatal outcomes?,A,A,True,A
+31,Does depression diagnosis and antidepressant prescribing vary by location?,A,A,True,A
+32,Learning needs of postpartum women: does socioeconomic status matter?,A,A,True,A
+33,Is there a differential in the dental health of new recruits to the British Armed Forces?,A,A,True,A
+34,Do patients with rheumatoid arthritis established on methotrexate and folic acid 5 mg daily need to continue folic acid supplements long term?,A,B,False,B
+35,Can teaching medical students to investigate medication errors change their attitudes towards patient safety?,A,A,True,A
+36,Does a delay in transfer to a rehabilitation unit for older people affect outcome after fracture of the proximal femur?,A,A,True,A
+37,Are there gender differences in the reasons why African Americans delay in seeking medical help for symptoms of an acute myocardial infarction?,A,A,True,A
+38,Does ambulatory process of care predict health-related quality of life outcomes for patients with chronic disease?,A,A,True,A
+39,Is the combination with 2-methoxyestradiol able to reduce the dosages of chemotherapeutices in the treatment of human ovarian cancer?,A,A,True,A
+40,Does a dedicated discharge coordinator improve the quality of hospital discharge?,A,A,True,A
+41,Impact of MPH programs: contributing to health system strengthening in low- and middle-income countries?,A,A,True,A
+42,Pap smears with glandular cell abnormalities: Are they detected by rapid prescreening?,A,A,True,A
+43,Can transcranial direct current stimulation be useful in differentiating unresponsive wakefulness syndrome from minimally conscious state patients?,A,A,True,A
+44,Is etoricoxib effective in preventing heterotopic ossification after primary total hip arthroplasty?,A,A,True,A
+45,Assessing Patient Reported Outcomes Measures via Phone Interviews Versus Patient Self-Survey in the Clinic: Are We Measuring the Same Thing?,A,A,True,A
+46,Can emergency physicians accurately and reliably assess acute vertigo in the emergency department?,A,A,True,A
+47,Proof of concept study: does fenofibrate have a role in sleep apnoea syndrome?,A,A,True,A
+48,Does implant coating with antibacterial-loaded hydrogel reduce bacterial colonization and biofilm formation in vitro?,A,A,True,A
+49,Does bone anchor fixation improve the outcome of percutaneous bladder neck suspension in female stress urinary incontinence?,A,A,True,A
+50,Is leptin involved in phagocytic NADPH oxidase overactivity in obesity?,A,A,True,A
+51,Can we predict which head and neck cancer survivors develop fears of recurrence?,A,A,True,A
+52,Differentiation of nonalcoholic from alcoholic steatohepatitis: are routine laboratory markers useful?,A,A,True,A
+53,Traumatic aortic injury: does the anatomy of the aortic arch influence aortic trauma severity?,A,A,True,A
+54,The Prevalence of Incidentally Detected Idiopathic Misty Mesentery on Multidetector Computed Tomography: Can Obesity Be the Triggering Cause?,A,A,True,A
+55,Fast foods - are they a risk factor for asthma?,A,A,True,A
+56,Assessment of appropriate antimicrobial prescribing: do experts agree?,A,A,True,A
+57,Pulmonary valve replacement in adults late after repair of tetralogy of fallot: are we operating too late?,A,B,False,B
+58,Is amoxapine an atypical antipsychotic?,A,A,True,A
+59,Do older patients who refuse to participate in a self-management intervention in the Netherlands differ from older patients who agree to participate?,A,A,True,A
+60,Is horizontal semicircular canal ocular reflex influenced by otolith organs input?,A,A,True,A
+61,Preoperative tracheobronchoscopy in newborns with esophageal atresia: does it matter?,A,A,True,A
+62,Is it appropriate to implant kidneys from elderly donors in young recipients?,A,A,True,A
+63,Is muscle power related to running speed with changes of direction?,A,B,False,B
+64,Stretch-sensitive KCNQ1 mutation A link between genetic and environmental factors in the pathogenesis of atrial fibrillation?,A,A,True,A
+65,Are pelvic anatomical structures in danger during arthroscopic acetabular labral repair?,A,A,True,A
+66,Is intraoperative neuromonitoring associated with better functional outcome in patients undergoing open TME?,A,A,True,A
+67,Profiling quality of care: Is there a role for peer review?,A,A,True,A
+68,Multidisciplinary decisions in breast cancer: does the patient receive what the team has recommended?,A,A,True,A
+69,Are performance measurement systems useful?,A,A,True,A
+70,The colour of pain: can patients use colour to describe osteoarthritis pain?,A,A,True,A
+71,Do mossy fibers release GABA?,A,A,True,A
+72,Is severe macrosomia manifested at 11-14 weeks of gestation?,A,A,True,A
+73,Visceral adipose tissue area measurement at a single level: can it represent visceral adipose tissue volume?,A,A,True,A
+74,Is an advance care planning model feasible in community palliative care?,A,A,True,A
+75,Do cytokines have any role in epilepsy?,A,A,True,A
+76,Is expert breast pathology assessment necessary for the management of ductal carcinoma in situ ?,A,A,True,A
+77,Treadmill testing of children who have spina bifida and are ambulatory: does peak oxygen uptake reflect maximum oxygen uptake?,A,A,True,A
+78,Subclavian steal syndrome: can the blood pressure difference between arms predict the severity of steal?,A,B,False,B
+79,Is size-reducing ascending aortoplasty with external reinforcement an option in modern aortic surgery?,A,A,True,A
+80,Is digoxin use for cardiovascular disease associated with risk of prostate cancer?,A,A,True,A
+81,Screening for gestational diabetes mellitus: are the criteria proposed by the international association of the Diabetes and Pregnancy Study Groups cost-effective?,A,A,True,A
+82,Does a 4 diagram manual enable laypersons to operate the Laryngeal Mask Supreme®?,A,A,True,A.
+83,Is laparoscopic reoperation for failed antireflux surgery feasible?,A,A,True,A
+84,The Omega-3 Index: a new risk factor for death from coronary heart disease?,A,A,True,A
+85,Do cytokine concentrations in pancreatic juice predict the presence of pancreatic diseases?,A,A,True,A
+86,Factors determining the survival of nasopharyngeal carcinoma with lung metastasis alone: does combined modality treatment benefit?,A,A,True,A
+87,Is minimally invasive mitral valve repair with artificial chords reproducible and applicable in routine surgery?,A,A,True,A
+88,Does receipt of hospice care in nursing homes improve the management of pain at the end of life?,A,A,True,A
+89,Is intensive chemotherapy safe for rural cancer patients?,A,A,True,A
+90,Is the urinary biomarkers assessment a non-invasive approach to tubular lesions of the solitary kidney?,A,A,True,A
+91,Does open access endoscopy close the door to an adequately informed patient?,A,A,True,A
+92,Do viral infections have a role in benign paroxysmal positional vertigo?,A,A,True,A
+93,Does reducing spasticity translate into functional benefit?,A,A,True,A
+94,Is the Retromandibular Transparotid Approach a Reliable Option for the Surgical Treatment of Condylar Fractures?,A,A,True,A
+95,Do ventricular arrhythmias in athletes subside over time?,A,A,True,A
+96,Are complex coronary lesions more frequent in patients with diabetes mellitus?,A,A,True,A
+97,Can dogs prime autistic children for therapy?,A,A,True,A
+98,Quality of life in lung cancer patients: does socioeconomic status matter?,A,A,True,A
+99,Is there a model to teach and practice retroperitoneoscopic nephrectomy?,A,A,True,A
+100,Is the type of remission after a major depressive episode an important risk factor to relapses in a 4-year follow up?,A,A,True,A
+101,Implementation of epidural analgesia for labor: is the standard of effective analgesia reachable in all women?,A,A,True,A
+102,Longer term quality of life and outcome in stroke patients: is the Barthel index alone an adequate measure of outcome?,A,B,False,B
+103,Does a special interest in laparoscopy affect the treatment of acute cholecystitis?,A,A,True,A
+104,Do older adults with cancer fall more often?,A,A,True,A
+105,Two-year follow-up survey of patients with allergic contact dermatitis from an occupational cohort: is the prognosis dependent on the omnipresence of the allergen?,A,B,False,B
+106,Is there a favorable subset of patients with prostate cancer who develop oligometastases?,A,A,True,A
+107,Does radiotherapy around the time of pregnancy for Hodgkin's disease modify the risk of breast cancer?,A,A,True,A
+108,Does left atrial appendage (LAA) occlusion device alter the echocardiography and electrocardiogram parameters in patients with atrial fibrillation?,A,A,True,A
+109,Is non-invasive diagnosis of esophageal varices in patients with compensated hepatic cirrhosis possible by duplex Doppler ultrasonography?,A,A,True,A
+110,Do inhaled steroids differ from cromones in terms of hospital admission rates for asthma in children?,A,B,False,B
+111,Does airway surgery lower serum lipid levels in obstructive sleep apnea patients?,A,A,True,A
+112,Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?,A,A,True,A
+113,Do instrumental activities of daily living predict dementia at 1- and 2-year follow-up?,A,A,True,A
+114,Is pelvic pain associated with defecatory symptoms in women with pelvic organ prolapse?,A,A,True,A
+115,Does the SCL 90-R obsessive-compulsive dimension identify cognitive impairments?,A,B,False,B
+116,Is non-HDL-cholesterol a better predictor of long-term outcome in patients after acute myocardial infarction compared to LDL-cholesterol?,A,A,True,A
+117,Body diffusion-weighted MR imaging of uterine endometrial cancer: is it helpful in the detection of cancer in nonenhanced MR imaging?,A,A,True,A
+118,Does pediatric housestaff experience influence tests ordered for infants in the neonatal intensive care unit?,A,A,True,A
+119,Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?,A,A,True,A
+120,Is the 7th TNM edition suitable for biological predictor in early gastric cancer?,A,A,True,A
+121,Are lower fasting plasma glucose levels at diagnosis of type 2 diabetes associated with improved outcomes?,A,A,True,A
+122,Remote ischemic postconditioning: does it protect against ischemic damage in percutaneous coronary revascularization?,A,A,True,A
+123,Does multi-modal cervical physical therapy improve tinnitus in patients with cervicogenic somatic tinnitus?,A,A,True,A
+124,Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?,A,A,True,A
+125,Fulfilling human resources development goal in West Africa: can the training of ophthalmologist diplomates be improved?,A,A,True,A
+126,Predicting admission at triage: are nurses better than a simple objective score?,A,B,False,B
+127,Are adult body circumferences associated with height?,A,A,True,A
+128,Can progression of valvar aortic stenosis be predicted accurately?,A,A,True,A
+129,Does the National Institutes of Health Stroke Scale favor left hemisphere strokes?,A,B,False,B
+130,MiraLAX vs. Golytely: is there a significant difference in the adenoma detection rate?,A,B,False,B
+131,Can gingival crevicular blood be relied upon for assessment of blood glucose level?,A,A,True,A
+132,Is zero central line-associated bloodstream infection rate sustainable?,A,A,True,A
+133,Does treatment duration affect outcome after radiotherapy for prostate cancer?,A,A,True,A
+134,Patient-Controlled Therapy of Breathlessness in Palliative Care: A New Therapeutic Concept for Opioid Administration?,A,A,True,A
+135,Is pain a clinically relevant problem in general adult psychiatry?,A,A,True,A
+136,Should displaced midshaft clavicular fractures be treated surgically?,A,A,True,A
+137,Telemedicine and type 1 diabetes: is technology per se sufficient to improve glycaemic control?,A,B,False,B
+138,Do European people with type 1 diabetes consume a high atherogenic diet?,A,A,True,A
+139,Preoperative platelet count in esophageal squamous cell carcinoma: is it a prognostic factor?,A,A,True,A
+140,Should serum pancreatic lipase replace serum amylase as a biomarker of acute pancreatitis?,A,A,True,A
+141,Do Electrochemiluminescence Assays Improve Prediction of Time to Type 1 Diabetes in Autoantibody-Positive TrialNet Subjects?,A,A,True,A
+142,Does SYNTAX score predict in-hospital outcomes in patients with ST elevation myocardial infarction undergoing primary percutaneous coronary intervention?,A,A,True,A
+143,Are behavioural risk factors to be blamed for the conversion from optimal blood pressure to hypertensive status in Black South Africans?,A,A,True,A
+144,Does the type of tibial component affect mechanical alignment in unicompartmental knee replacement?,A,A,True,A
+145,Upstream solutions: does the supplemental security income program reduce disability in the elderly?,A,A,True,A
+146,Can serum be used for analyzing the EGFR mutation status in patients with advanced non-small cell lung cancer?,A,A,True,A
+147,Are failures of anterior cruciate ligament reconstruction associated with steep posterior tibial slopes?,A,A,True,A
+148,Do teleoncology models of care enable safe delivery of chemotherapy in rural towns?,A,A,True,A
+149,Is solitary kidney really more resistant to ischemia?,A,B,False,B
+150,Is it safe to perform rectal anastomosis in gynaecological debulking surgery without a diverting stoma?,A,A,True,A
+151,Has the mammography quality standards act affected the mammography quality in North Carolina?,A,A,True,A
+152,Is breast cancer prognosis inherited?,A,A,True,A
+153,c-Kit-dependent growth of uveal melanoma cells: a potential therapeutic target?,A,A,True,A
+154,Pituitary apoplexy: do histological features influence the clinical presentation and outcome?,A,A,True,A
+155,Orthostatic myoclonus: an underrecognized cause of unsteadiness?,A,A,True,A
+156,Is low serum chloride level a risk factor for cardiovascular mortality?,A,A,True,A
+157,Does ethnicity affect where people with cancer die?,A,A,True,A
+158,Transesophageal echocardiographic assessment of left ventricular function in brain-dead patients: are marginally acceptable hearts suitable for transplantation?,A,A,True,A
+159,Can the postoperative pain level be predicted preoperatively?,A,A,True,A
+160,Does age moderate the effect of personality disorder on coping style in psychiatric inpatients?,A,B,False,B
+161,Is neck pain associated with worse health-related quality of life 6 months later?,A,A,True,A
+162,Dose end-tidal carbon dioxide measurement correlate with arterial carbon dioxide in extremely low birth weight infants in the first week of life?,A,A,True,A
+163,Does Residency Selection Criteria Predict Performance in Orthopaedic Surgery Residency?,A,A,True,A
+164,Is CA72-4 a useful biomarker in differential diagnosis between ovarian endometrioma and epithelial ovarian cancer?,A,A,True,A
+165,Is the breast best for children with a family history of atopy?,A,A,True,A
+166,Is Bare-Metal Stent Implantation Still Justifiable in High Bleeding Risk Patients Undergoing Percutaneous Coronary Intervention?,A,B,False,B
+167,"Marital status, living arrangement and mortality: does the association vary by gender?",A,A,True,A
+168,Does ibuprofen increase perioperative blood loss during hip arthroplasty?,A,A,True,A
+169,Can magnetic resonance imaging accurately predict concordant pain provocation during provocative disc injection?,A,B,False,B
+170,Does case-mix based reimbursement stimulate the development of process-oriented care delivery?,A,A,True,A
+171,Cerebromediastinal tuberculosis in a child with a probable Say-Barber-Miller syndrome: a causative link?,A,A,True,A
+172,Is the determination of specific IgE against components using ISAC 112 a reproducible technique?,A,A,True,A
+173,Schizophrenia patients with high intelligence: A clinically distinct sub-type of schizophrenia?,A,A,True,A
+174,Is halofantrine ototoxic?,A,A,True,A
+175,Identification of racial disparities in breast cancer mortality: does scale matter?,A,A,True,A
+176,Can fractional lasers enhance transdermal absorption of topical lidocaine in an in vivo animal model?,A,A,True,A
+177,Does laparoscopic surgery decrease the risk of atrial fibrillation after foregut surgery?,A,A,True,A
+178,Is breast cancer survival improving?,A,A,True,A
+179,Does partial expander deflation exacerbate the adverse effects of radiotherapy in two-stage breast reconstruction?,A,A,True,A
+180,Does the clinical presentation of a prior preterm birth predict risk in a subsequent pregnancy?,A,A,True,A
+181,Cold preparation use in young children after FDA warnings: do concerns still exist?,A,A,True,A
+182,Does occupational nuclear power plant radiation affect conception and pregnancy?,A,B,False,B
+183,Can shape analysis differentiate free-floating internal carotid artery thrombus from atherosclerotic plaque in patients evaluated with CTA for stroke or transient ischemic attack?,A,A,True,A
+184,Can pictorial warning labels on cigarette packages address smoking-related health disparities?,A,A,True,A
+185,Surgical treatment of prosthetic valve endocarditis in patients with double prostheses: is single-valve replacement safe?,A,A,True,A
+186,Do nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer outcomes than BCR?,A,A,True,A
+187,"Do ""America's Best Hospitals"" perform better for acute myocardial infarction?",A,A,True,A
+188,Do socioeconomic differences in mortality persist after retirement?,A,A,True,A
+189,Convulsions and retinal haemorrhage: should we look further?,A,A,True,A
+190,Is the use of cyanoacrylate in intestinal anastomosis a good and reliable alternative?,A,A,True,A
+191,Are increased carotid artery pulsatility and resistance indexes early signs of vascular abnormalities in young obese males?,A,A,True,A
+192,Does topical ropivacaine reduce the post-tonsillectomy morbidity in pediatric patients?,A,A,True,A
+193,Is robotically assisted laparoscopic radical prostatectomy less invasive than retropubic radical prostatectomy?,A,A,True,A
+194,Is specialty care associated with improved survival of patients with congestive heart failure?,A,A,True,A
+195,Histologic evaluation of the testicular remnant associated with the vanishing testes syndrome: is surgical management necessary?,A,A,True,A
+196,Does oxybutynin hydrochloride cause arrhythmia in children with bladder dysfunction?,A,A,True,A
+197,Does the manic/mixed episode distinction in bipolar disorder patients run true over time?,A,A,True,A
+198,Is the first urinary albumin/creatinine ratio (ACR) in women with suspected preeclampsia a prognostic factor for maternal and neonatal adverse outcome?,A,A,True,A
+199,Are pediatric concussion patients compliant with discharge instructions?,A,B,False,B
+200,Can communication with terminally ill patients be taught?,A,A,True,A
+201,Are environmental factors important in primary systemic vasculitis?,A,A,True,A
+202,Diagnosis and follow-up in constipated children: should we use ultrasound?,A,A,True,A
+203,Out of the smokescreen II: will an advertisement targeting the tobacco industry affect young people's perception of smoking in movies and their intention to smoke?,A,A,True,A
+204,Do general practitioner hospitals reduce the utilisation of general hospital beds?,A,A,True,A
+205,Does insulin resistance drive the association between hyperglycemia and cardiovascular risk?,A,A,True,A
+206,Ultra high risk (UHR) for psychosis criteria: are there different levels of risk for transition to psychosis?,A,A,True,A
+207,Aberrant loss of dickkopf-3 in gastric cancer: can it predict lymph node metastasis preoperatively?,A,A,True,A
+208,Can CT predict the level of CSF block in tuberculous hydrocephalus?,A,B,False,B
+209,Is oral endotracheal intubation efficacy impaired in the helicopter environment?,A,A,True,A
+210,Sternal plating for primary and secondary sternal closure; can it improve sternal stability?,A,A,True,A
+211,Can early second-look tympanoplasty reduce the rate of conversion to modified radical mastoidectomy?,A,A,True,A
+212,Can T-cell deficiency affect spatial learning ability following toluene exposure?,A,A,True,A
+213,Are acceptance rates of a national preventive home visit programme for older people socially imbalanced?,A,A,True,A
+214,Increased neutrophil migratory activity after major trauma: a factor in the etiology of acute respiratory distress syndrome?,A,A,True,A
+215,"Do improvements in outreach, clinical, and family and community-based services predict improvements in child survival?",A,A,True,A
+216,Vertical lines in distal esophageal mucosa (VLEM): a true endoscopic manifestation of esophagitis in children?,A,A,True,A
+217,An HIV1/2 point of care test on sputum for screening TB/HIV co-infection in Central India - Will it work?,A,A,True,A
+218,Is crime associated with over-the-counter pharmacy syringe sales?,A,B,False,B
+219,Colorectal cancer in young patients: is it a distinct clinical entity?,A,A,True,A
+220,Does evidence-based practice improve patient outcomes?,A,A,True,A
+221,Can the prognosis of polymyalgia rheumatica be predicted at disease onset?,A,B,False,B
+222,Does prior benign prostate biopsy predict outcome for patients treated with radical perineal prostatectomy?,A,A,True,A
+223,Is the Distance Worth It?,A,B,False,B
+224,Treatment as prevention in resource-limited settings: is it feasible to maintain HIV viral load suppression over time?,A,A,True,A
+225,Does head positioning influence anterior chamber depth in pseudoexfoliation syndrome?,A,B,False,B
+226,Are intraoperative precursor events associated with postoperative major adverse events?,A,A,True,A
+227,Transient tachypnea of the newborn (TTN): a role for polymorphisms in the beta-adrenergic receptor (ADRB) encoding genes?,A,A,True,A
+228,Could ADMA levels in young adults born preterm predict an early endothelial dysfunction?,A,A,True,A
+229,Informed consent for total hip arthroplasty: does a written information sheet improve recall by patients?,A,A,True,A
+230,Quaternary cytoreductive surgery in ovarian cancer: does surgical effort still matter?,A,A,True,A
+231,Can a Novel Surgical Approach to the Temporomandibular Joint Improve Access and Reduce Complications?,A,A,True,A
+232,Hepatic arterial embolization for unresectable hepatocellular carcinomas: do technical factors affect prognosis?,A,A,True,A
+233,Is plate clearing a risk factor for obesity?,A,A,True,A
+234,Outcomes of severely injured adult trauma patients in an Australian health service: does trauma center level make a difference?,A,A,True,A
+235,Does the lipid-lowering peroxisome proliferator-activated receptors ligand bezafibrate prevent colon cancer in patients with coronary artery disease?,A,A,True,A
+236,Serum angiotensin-converting enzyme and frequency of severe hypoglycaemia in Type 1 diabetes: does a relationship exist?,A,A,True,A
+237,Hypotension in patients with coronary disease: can profound hypotensive events cause myocardial ischaemic events?,A,A,True,A
+238,Measuring hospital mortality rates: are 30-day data enough?,A,B,False,B
+239,Is the ability to perform transurethral resection of the prostate influenced by the surgeon's previous experience?,A,A,True,A
+240,"Syncope during bathing in infants, a pediatric form of water-induced urticaria?",A,A,True,A
+241,Do women residents delay childbearing due to perceived career threats?,A,A,True,A
+242,Is trabecular bone related to primary stability of miniscrews?,A,A,True,A
+243,Acute respiratory distress syndrome in children with malignancy--can we predict outcome?,A,B,False,B
+244,"Neoadjuvant Imatinib in Locally Advanced Gastrointestinal stromal Tumours, Will Kit Mutation Analysis Be a Pathfinder?",A,A,True,A
+245,Is obesity a risk factor for wheezing among adolescents?,A,A,True,A
+246,Could ESC (Electronic Stability Control) change the way we drive?,A,A,True,A
+247,Does a geriatric oncology consultation modify the cancer treatment plan for elderly patients?,A,A,True,A
+248,Can students' scores on preclerkship clinical performance examinations predict that they will fail a senior clinical performance examination?,A,A,True,A
+249,Adults with mild intellectual disabilities: can their reading comprehension ability be improved?,A,A,True,A
+250,Can nurse-led preoperative education reduce anxiety and postoperative complications of patients undergoing cardiac surgery?,A,A,True,A
+251,Is there a relationship between homocysteine and vitiligo?,A,A,True,A
+252,Does para-cervical block offer additional advantages in abortion induction with gemeprost in the 2nd trimester?,A,B,False,B
+253,Is a 9-month treatment sufficient in tuberculous enterocolitis?,A,A,True,A
+254,Reporting and interpreting red blood cell morphology: is there discordance between clinical pathologists and clinicians?,A,A,True,A
+255,The inverse equity hypothesis: does it apply to coverage of cancer screening in middle-income countries?,A,B,False,B
+256,Menopausal hormone therapy and irregular endometrial bleeding: a potential role for uterine natural killer cells?,A,A,True,A
+257,Can we ease the financial burden of colonoscopy?,A,A,True,A
+258,Does open access publishing increase the impact of scientific articles?,A,A,True,A
+259,Can biofeedback training of psychophysiological responses enhance athletes' sport performance?,A,A,True,A
+260,Are patients willing participants in the new wave of community-based medical education in regional and rural Australia?,A,A,True,A
+261,Are pectins involved in cold acclimation and de-acclimation of winter oil-seed rape plants?,A,A,True,A
+262,The HELPP syndrome--evidence of a possible systemic inflammatory response in pre-eclampsia?,A,A,True,A
+263,Optimism and survival: does an optimistic outlook predict better survival at advanced ages?,A,A,True,A
+264,Is combined therapy more effective than growth hormone or hyperbaric oxygen alone in the healing of left ischemic and non-ischemic colonic anastomoses?,A,A,True,A
+265,The promise of specialty pharmaceuticals: are they worth the price?,A,A,True,A
+266,A comparison of 500 prefilled textured saline breast implants versus 500 standard textured saline breast implants: is there a difference in deflation rates?,A,A,True,A
+267,Is withdrawal-induced anxiety in alcoholism based on beta-endorphin deficiency?,A,A,True,A
+268,Cardiac reoperations in octogenarians: Do they really benefit?,A,A,True,A
+269,Is first-line single-agent mitoxantrone in the treatment of high-risk metastatic breast cancer patients as effective as combination chemotherapy?,A,B,False,B
+270,Can clinical supervision sustain our workforce in the current healthcare landscape?,A,A,True,A
+271,Can distal ureteral diameter predict reflux resolution after endoscopic injection?,A,A,True,A
+272,Is lumbar drainage of postoperative cerebrospinal fluid fistula after spine surgery effective?,A,A,True,A
+273,Assessing joint line positions by means of the contralateral knee: a new approach for planning knee revision surgery?,A,A,True,A
+274,Can myometrial electrical activity identify patients in preterm labor?,A,A,True,A
+275,Does the Transmissible Liability Index (TLI) assessed in late childhood predict suicidal symptoms at young adulthood?,A,A,True,A
+276,Does strategy training reduce age-related deficits in working memory?,B,B,True,B
+277,Does the sex of acute stroke patients influence the effectiveness of rt-PA?,B,B,True,B
+278,Does the early adopter of drugs exist?,B,B,True,B
+279,Can 'high-risk' human papillomaviruses (HPVs) be detected in human breast milk?,B,B,True,B
+280,Is nasogastric decompression useful in prevention of leaks after laparoscopic sleeve gastrectomy?,B,A,False,A
+281,"Regional anesthesia as compared with general anesthesia for surgery in geriatric patients with hip fracture: does it decrease morbidity, mortality, and health care costs?",B,B,True,B
+282,Double reading of barium enemas: is it necessary?,B,A,False,A
+283,"Is there any evidence of a ""July effect"" in patients undergoing major cancer surgery?",B,B,True,B
+284,Characterization of the gender dimorphism after injury and hemorrhagic shock: are hormonal differences responsible?,B,B,True,B
+285,Cardiogenic shock complicating acute myocardial infarction in elderly patients: does admission to a tertiary center improve survival?,B,B,True,B
+286,Sub-classification of low-grade cerebellar astrocytoma: is it clinically meaningful?,B,B,True,B
+287,Department of Transportation vs self-reported data on motor vehicle collisions and driving convictions for stroke survivors: do they agree?,B,B,True,B
+288,Cholesterol screening in school children: is family history reliable to choose the ones to screen?,B,B,True,B
+289,Did the call for boycott by the Catholic bishops affect the polio vaccination coverage in Kenya in 2015?,B,B,True,B
+290,Does early discharge with nurse home visits affect adequacy of newborn metabolic screening?,B,A,False,A
+291,Is alexithymia a risk factor for unexplained physical symptoms in general medical outpatients?,B,B,True,B
+292,Are sports medicine journals relevant and applicable to practitioners and athletes?,B,B,True,B
+293,Does quantitative left ventricular regional wall motion change after fibrous tissue resection in endomyocardial fibrosis?,B,B,True,B
+294,Does gestational age misclassification explain the difference in birthweights for Australian aborigines and whites?,B,B,True,B
+295,Utility of unenhanced fat-suppressed T1-weighted MRI in children with sickle cell disease -- can it differentiate bone infarcts from acute osteomyelitis?,B,B,True,B
+296,Do African American women require fewer calories to maintain weight?,B,B,True,B
+297,The use of audit to identify maternal mortality in different settings: is it just a difference between the rich and the poor?,B,B,True,B
+298,Are wandering and physically nonaggressive agitation equivalent?,B,B,True,B
+299,Is the covering of the resection margin after distal pancreatectomy advantageous?,B,B,True,B
+300,Does continuous intravenous infusion of low-concentration epinephrine impair uterine blood flow in pregnant ewes?,B,B,True,B
+301,Do healthier lifestyles lead to less utilization of healthcare resources?,B,A,False,A
+302,Do risk factors for suicidal behavior differ by affective disorder polarity?,B,B,True,B
+303,Thrombosis prophylaxis in hospitalised medical patients: does prophylaxis in all patients make sense?,B,A,False,A
+304,Is late-night salivary cortisol a better screening test for possible cortisol excess than standard screening tests in obese patients with Type 2 diabetes?,B,B,True,B
+305,Does escalation of the apical dose change treatment outcome in beta-radiation of posterior choroidal melanomas with 106Ru plaques?,B,B,True,B
+306,Estradiol and Antagonist Pretreatment Prior to Microdose Leuprolide in in Vitro Fertilization. Does It Improve IVF Outcomes in Poor Responders as Compared to Oral Contraceptive Pill?,B,B,True,B
+307,Do risk calculators accurately predict surgical site occurrences?,B,B,True,B
+308,Is diffusion-weighted imaging a significant indicator of the development of vascularization in hypovascular hepatocellular lesions?,B,B,True,B
+309,Does confined placental mosaicism account for adverse perinatal outcomes in IVF pregnancies?,B,B,True,B
+310,Do elderly cancer patients have different care needs compared with younger ones?,B,A,False,A
+311,Does increased nerve length within the treatment volume improve trigeminal neuralgia radiosurgery?,B,B,True,B
+312,Amblyopia: is visual loss permanent?,B,B,True,B
+313,Are physicians meeting the needs of family caregivers of the frail elderly?,B,B,True,B
+314,Will CT ordering practices change if we educate residents about the potential effects of radiation exposure?,B,A,False,A
+315,Is arch form influenced by sagittal molar relationship or Bolton tooth-size discrepancy?,B,B,True,B
+316,Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?,B,A,False,A
+317,Should temperature be monitorized during kidney allograft preservation?,B,A,False,A
+318,Should all human immunodeficiency virus-infected patients with end-stage renal disease be excluded from transplantation?,B,A,False,A
+319,Does minimal access major surgery in the newborn hurt less?,B,B,True,B
+320,Does increased patient awareness improve accrual into cancer-related clinical trials?,B,B,True,B
+321,Continuity of care experience of residents in an academic vascular department: are trainees learning complete surgical care?,B,B,True,B
+322,Health habits and vaccination status of Lebanese residents: are future doctors applying the rules of prevention?,B,B,True,B
+323,Landolt C and snellen e acuity: differences in strabismus amblyopia?,B,A,False,A
+324,The insertion allele of the ACE gene I/D polymorphism. A candidate gene for insulin resistance?,B,B,True,B
+325,Is fetal gender associated with emergency department visits for asthma during pregnancy?,B,B,True,B
+326,Blunt trauma in intoxicated patients: is computed tomography of the abdomen always necessary?,B,B,True,B
+327,Risk factors for avascular necrosis of bone in patients with systemic lupus erythematosus: is there a role for antiphospholipid antibodies?,B,B,True,B
+328,Volume change of uterine myomas during pregnancy: do myomas really grow?,B,A,False,A
+329,Do foreign bodies migrate through the body towards the heart?,B,A,False,A
+330,Does concomitant anterior/apical repair during midurethral sling improve the overactive bladder component of mixed incontinence?,B,B,True,B
+331,Is hypoalbuminemia an independent prognostic factor in patients with gastric cancer?,B,B,True,B
+332,Is adjustment for reporting heterogeneity necessary in sleep disorders?,B,A,False,A
+333,Can the growth rate of a gallbladder polyp predict a neoplastic polyp?,B,B,True,B
+334,Preoperative locoregional staging of gastric cancer: is there a place for magnetic resonance imaging?,B,A,False,A
+335,Are hepatitis G virus and TT virus involved in cryptogenic chronic liver disease?,B,B,True,B
+336,Are patients with Werlhof's disease at increased risk for bleeding complications when undergoing cardiac surgery?,B,B,True,B
+337,Does Mammographic Density have an Impact on the Margin Re-excision Rate After Breast-Conserving Surgery?,B,B,True,B
+338,Are UK radiologists satisfied with the training and support received in suspected child abuse?,B,B,True,B
+339,Do oblique views add value in the diagnosis of spondylolysis in adolescents?,B,B,True,B
+340,The clinical significance of bile duct sludge: is it different from bile duct stones?,B,B,True,B
+341,Can bedside assessment reliably exclude aspiration following acute stroke?,B,B,True,B
+342,Does frozen section alter surgical management of multinodular thyroid disease?,B,B,True,B
+343,Does type 1 diabetes mellitus affect Achilles tendon response to a 10 km run?,B,B,True,B
+344,Are higher rates of depression in women accounted for by differential symptom reporting?,B,B,True,B
+345,Do Indigenous Australians age prematurely?,B,B,True,B
+346,Adjuvant radiation of stage III thymoma: is it necessary?,B,B,True,B
+347,Are patients with diabetes receiving the same message from dietitians and nurses?,B,B,True,B
+348,"Do lipids, blood pressure, diabetes, and smoking confer equal risk of myocardial infarction in women as in men?",B,B,True,B
+349,Diabetes mellitus among Swedish art glass workers--an effect of arsenic exposure?,B,A,False,A
+350,Preoperative staging of patients with liver metastases of colorectal carcinoma. Does PET/CT really add something to multidetector CT?,B,B,True,B
+351,Epidural analgesia for surgical treatment of peritoneal carcinomatosis: a risky technique?,B,B,True,B
+352,Do acute changes in heart rate by isoproterenol affect aortic stiffness in patients with hypertension?,B,B,True,B
+353,Totally implantable venous access device placement by interventional radiologists: are prophylactic antibiotics necessary?,B,B,True,B
+354,Does increasing blood pH stimulate protein synthesis in dialysis patients?,B,B,True,B
+355,Necrotizing fasciitis: an indication for hyperbaric oxygenation therapy?,B,B,True,B
+356,MR arthrography of the shoulder: do we need local anesthesia?,B,B,True,B
+357,Prognosis of low-tone sudden deafness - does it inevitably progress to Meniere's disease?,B,B,True,B
+358,Is there a relationship between complex fractionated atrial electrograms recorded during atrial fibrillation and sinus rhythm fractionation?,B,B,True,B
+359,Is bicompartmental knee arthroplasty more favourable to knee muscle strength and physical performance compared to total knee arthroplasty?,B,B,True,B
+360,Does pain intensity predict a poor opioid response in cancer patients?,B,B,True,B
+361,Does the radiographic transition zone correlate with the level of aganglionosis on the specimen in Hirschsprung's disease?,B,B,True,B
+362,Serovar specific immunity to Neisseria gonorrhoeae: does it exist?,B,B,True,B
+363,Is calibration the cause of variation in liquid chromatography tandem mass spectrometry testosterone measurement?,B,B,True,B
+364,Internal derangement of the temporomandibular joint: is there still a place for ultrasound?,B,C,False,C
+365,Does delivery mode affect women's postpartum quality of life in rural China?,B,B,True,B
+366,Endovenous laser ablation in the treatment of small saphenous varicose veins: does site of access influence early outcomes?,B,B,True,B
+367,Is there a role for fondaparinux in perioperative bridging?,B,A,False,A
+368,Is it better to be big?,B,B,True,B
+369,Chemotherapy and survival in advanced non-small cell lung carcinoma: is pneumologists' skepticism justified?,B,B,True,B
+370,The association of puberty and young adolescent alcohol use: do parents have a moderating role?,B,B,True,B
+371,Does increased use of private health care reduce the demand for NHS care?,B,B,True,B
+372,Is decompressive surgery effective for spinal cord sarcoidosis accompanied with compressive cervical myelopathy?,B,B,True,B
+373,Does the aggressive use of polyvalent antivenin for rattlesnake bites result in serious acute side effects?,B,B,True,B
+374,Does successful completion of the Perinatal Education Programme result in improved obstetric practice?,B,B,True,B
+375,Can surgeon familiarization with current evidence lead to a change in practice?,B,B,True,B
+376,Kell alloimmunization in pregnancy: associated with fetal thrombocytopenia?,B,A,False,A
+377,Globulomaxillary cysts--do they really exist?,B,B,True,B
+378,Colorectal cancer with synchronous liver metastases: does global management at the same centre improve results?,B,B,True,B
+379,Are octogenarians at high risk for carotid endarterectomy?,B,B,True,B
+380,Is there a need for pelvic CT scan in cases of renal cell carcinoma?,B,B,True,B
+381,Should circumcision be performed in childhood?,B,B,True,B
+382,Does the Simultaneous Use of a Neuroendoscope Influence the Incidence of Ventriculoperitoneal Shunt Infection?,B,B,True,B
+383,Is the probability of prenatal diagnosis or termination of pregnancy different for fetuses with congenital anomalies conceived following assisted reproductive techniques?,B,B,True,B
+384,Is There an Additional Value of Using Somatostatin Receptor Subtype 2a Immunohistochemistry Compared to Somatostatin Receptor Scintigraphy Uptake in Predicting Gastroenteropancreatic Neuroendocrine Tumor Response?,B,B,True,B
+385,Does growth hormone replacement therapy reduce mortality in adults with growth hormone deficiency?,B,B,True,B
+386,Can decisional algorithms replace global introspection in the individual causality assessment of spontaneously reported ADRs?,B,B,True,B
+387,Sternal skin conductance: a reasonable surrogate for hot flash measurement?,B,B,True,B
+388,Is the Androgen Deficiency of Aging Men (ADAM) questionnaire useful for the screening of partial androgenic deficiency of aging men?,B,A,False,A
+389,Does a history of unintended pregnancy lessen the likelihood of desire for sterilization reversal?,B,B,True,B
+390,Can we measure mesopic pupil size with the cobalt blue light slit-lamp biomicroscopy method?,B,A,False,A
+391,Does stress increase imitation of drinking behavior?,B,B,True,B
+392,Do clinical variables predict pathologic radiographs in the first episode of wheezing?,B,B,True,B
+393,"Is distance to provider a barrier to care for medicaid patients with breast, colorectal, or lung cancer?",B,A,False,A
+394,Laminoplasty outcomes: is there a difference between patients with degenerative stenosis and those with ossification of the posterior longitudinal ligament?,B,B,True,B
+395,Do overweight children necessarily make overweight adults?,B,B,True,B
+396,Does patient position during liver surgery influence the risk of venous air embolism?,B,B,True,B
+397,Is routine chest radiography after transbronchial biopsy necessary?,B,B,True,B
+398,Can folic acid protect against congenital heart defects in Down syndrome?,B,B,True,B
+399,Location and number of sutures placed for hiatal hernia repair during laparoscopic adjustable gastric banding: does it matter?,B,A,False,A
+400,Does the distribution of health care benefits in Kenya meet the principles of universal coverage?,B,B,True,B
+401,Are women with major depression in pregnancy identifiable in population health data?,B,A,False,A
+402,Can bone thickness and inter-radicular space affect miniscrew placement in posterior mandibular sites?,B,A,False,A
+403,SPECT study with I-123-Ioflupane (DaTSCAN) in patients with essential tremor. Is there any correlation with Parkinson's disease?,B,A,False,A
+404,Are many colorectal cancers due to missed adenomas?,B,A,False,A
+405,Clinician assessment for acute chest syndrome in febrile patients with sickle cell disease: is it accurate enough?,B,B,True,B
+406,Can nonproliferative breast disease and proliferative breast disease without atypia be distinguished by fine-needle aspiration cytology?,B,A,False,A
+407,Is vancomycin MIC creep a worldwide phenomenon?,B,B,True,B
+408,Is vitamin D deficiency a feature of pediatric celiac disease?,B,B,True,B
+409,Is renal warm ischemia over 30 minutes during laparoscopic partial nephrectomy possible?,B,A,False,A
+410,PSA repeatedly fluctuating levels are reassuring enough to avoid biopsy?,B,B,True,B
+411,Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?,B,B,True,B
+412,Prognosis of well differentiated small hepatocellular carcinoma--is well differentiated hepatocellular carcinoma clinically early cancer?,B,A,False,A
+413,Does a preoperative medically supervised weight loss program improve bariatric surgery outcomes?,B,B,True,B
+414,Bony defects in chronic anterior posttraumatic dislocation of the shoulder: Is there a correlation between humeral and glenoidal lesions?,B,B,True,B
+415,Does the bracket-ligature combination affect the amount of orthodontic space closure over three months?,B,B,True,B
+416,Can increases in the cigarette tax rate be linked to cigarette retail prices?,B,B,True,B
+417,Attaining negative margins in breast-conservation operations: is there a consensus among breast surgeons?,B,B,True,B
+418,Does the sequence of clamp application during open abdominal aortic aneurysm surgery influence distal embolisation?,B,B,True,B
+419,Discharging patients earlier from Winnipeg hospitals: does it adversely affect quality of care?,B,B,True,B
+420,Surgical management of the atherosclerotic ascending aorta: is endoaortic balloon occlusion safe?,B,B,True,B
+421,Is there a relationship between serum paraoxonase level and epicardial fat tissue thickness?,B,B,True,B
+422,Do antibiotics decrease post-tonsillectomy morbidity?,B,B,True,B
+423,Should prostate specific antigen be adjusted for body mass index?,B,B,True,B
+424,Is it necessary to insert a nasobiliary drainage tube routinely after endoscopic clearance of the common bile duct in patients with choledocholithiasis-induced cholangitis?,B,B,True,B
+425,Have antiepileptic drug prescription claims changed following the FDA suicidality warning?,B,B,True,B
+426,Are high flow nasal cannulae noisier than bubble CPAP for preterm infants?,B,B,True,B
+427,Are the arginine vasopressin V1a receptor microsatellites related to hypersexuality in children with a prepubertal and early adolescent bipolar disorder phenotype?,B,B,True,B
+428,Are variations in the use of carotid endarterectomy explained by population Need?,B,B,True,B
+429,Do supervised colorectal trainees differ from consultants in terms of quality of TME surgery?,B,B,True,B
+430,Major depression and alcohol use disorder in adolescence: Does comorbidity lead to poorer outcomes of depression?,B,A,False,A
+431,Perioperative care in an animal model for training in abdominal surgery: is it necessary a preoperative fasting?,B,B,True,B
+432,Metastatic carcinoma to the cervical nodes from an unknown head and neck primary site: Is there a need for neck dissection?,B,B,True,B
+433,Does Viral Co-Infection Influence the Severity of Acute Respiratory Infection in Children?,B,B,True,B
+434,Cardiopulmonary bypass temperature does not affect postoperative euthyroid sick syndrome?,B,A,False,A
+435,Xanthogranulomatous cholecystitis: a premalignant condition?,B,B,True,B
+436,Does septoplasty change the dimensions of compensatory hypertrophy of the middle turbinate?,B,B,True,B
+437,Prescriptions as a proxy for asthma in children: a good choice?,B,B,True,B
+438,Does combining antiretroviral agents in a single dosage form enhance quality of life of HIV/AIDS patients?,B,A,False,A
+439,Does desflurane alter left ventricular function when used to control surgical stimulation during aortic surgery?,B,B,True,B
+440,Is fluoroscopy essential for retrieval of lower ureteric stones?,B,B,True,B
+441,Does the treatment of amblyopia normalise subfoveal choroidal thickness in amblyopic children?,B,B,True,B
+442,Should tumor depth be included in prognostication of soft tissue sarcoma?,B,B,True,B
+443,Does performance in selection processes predict performance as a dental student?,B,B,True,B
+444,"Antiretroviral therapy related adverse effects: Can sub-Saharan Africa cope with the new ""test and treat"" policy of the World Health Organization?",B,B,True,B
+445,"Expression of c-kit protooncogen in hepatitis B virus-induced chronic hepatitis, cirrhosis and hepatocellular carcinoma: has it a diagnostic role?",C,A,False,A
+446,Can calprotectin predict relapse risk in inflammatory bowel disease?,C,A,False,A
+447,Does shaving the incision site increase the infection rate after spinal surgery?,C,A,False,A
+448,Antral follicle assessment as a tool for predicting outcome in IVF--is it a better predictor than age and FSH?,C,A,False,A
+449,Treatment of contralateral hydrocele in neonatal testicular torsion: Is less more?,C,A,False,A
+450,Do parents recall and understand children's weight status information after BMI screening?,C,A,False,A
+451,Do Web-based and clinic samples of gay men living with HIV differ on self-reported physical and psychological symptoms?,C,A,False,A
+452,Are home sampling kits for sexually transmitted infections acceptable among men who have sex with men?,C,A,False,A
+453,Does rugby headgear prevent concussion?,C,B,False,B
+454,Does body mass index (BMI) influence morbidity and long-term survival in gastric cancer patients after gastrectomy?,C,A,False,A
+455,Is determination between complete and incomplete traumatic spinal cord injury clinically relevant?,C,B,False,B
+456,Does use of hydrophilic guidewires significantly improve technical success rates of peripheral PTA?,C,A,False,A
+457,"Are lifetime prevalence of impetigo, molluscum and herpes infection really increased in children having atopic dermatitis?",C,A,False,A
+458,Can routinely collected ambulance data about assaults contribute to reduction in community violence?,C,A,False,A
+459,Is irritable bowel syndrome a diagnosis of exclusion?,C,B,False,B
+460,Is a patient's self-reported health-related quality of life a prognostic factor for survival in non-small-cell lung cancer patients?,C,A,False,A
+461,Vaginal dose assessment in image-guided brachytherapy for cervical cancer: Can we really rely on dose-point evaluation?,C,B,False,B
+462,Is there a role for endothelin-1 in the hemodynamic changes during hemodialysis?,C,A,False,A
+463,Is vitamin D insufficiency or deficiency related to the development of osteochondritis dissecans?,C,A,False,A
+464,Does timing of initial surfactant treatment make a difference in rates of chronic lung disease or mortality in premature infants?,C,B,False,B
+465,Is it Crohn's disease?,C,B,False,B
+466,Do French lay people and health professionals find it acceptable to breach confidentiality to protect a patient's wife from a sexually transmitted disease?,C,A,False,A
+467,Can patients be anticoagulated after intracerebral hemorrhage?,C,B,False,B
+468,Do elderly patients call 911 when presented with clinical scenarios suggestive of acute stroke?,C,B,False,B
+469,Are opioid dependence and methadone maintenance treatment (MMT) documented in the medical record?,C,B,False,B
+470,Should chest wall irradiation be included after mastectomy and negative node breast cancer?,C,A,False,A
+471,Does managed care enable more low income persons to identify a usual source of care?,C,B,False,B
+472,Is the cell death in mesial temporal sclerosis apoptotic?,C,B,False,B
+473,Does vaginal intraepithelial neoplasia have the same evolution as cervical intraepithelial neoplasia?,C,B,False,B
+474,Does government assistance improve utilization of eye care services by low-income individuals?,C,A,False,A
+475,HIF1A as a major vascular endothelial growth factor regulator: do its polymorphisms have an association with age-related macular degeneration?,C,B,False,B
+476,Detailed analysis of sputum and systemic inflammation in asthma phenotypes: are paucigranulocytic asthmatics really non-inflammatory?,C,B,False,B
+477,Do Surrogates of Injury Severity Influence the Occurrence of Heterotopic Ossification in Fractures of the Acetabulum?,C,A,False,A
+478,Does obstructive sleep apnea affect aerobic fitness?,C,A,False,A
+479,30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?,C,A,False,A
+480,Combining process indicators to evaluate quality of care for surgical patients with colorectal cancer: are scores consistent with short-term outcome?,C,B,False,B
+481,Are the elderly with oropharyngeal carcinoma undertreated?,C,A,False,A
+482,Do older patients receive adequate stroke care?,C,B,False,B
+483,Continuation of pregnancy after antenatal corticosteroid administration: opportunity for rescue?,C,A,False,A
+484,Should HIV-infected patients be screened for silent myocardial ischaemia using gated myocardial perfusion SPECT?,C,A,False,A
+485,Is a specialised training of phonological awareness indicated in every preschool child?,C,B,False,B
+486,BCRABL transcript detection by quantitative real-time PCR : are correlated results possible from homebrew assays?,C,A,False,A
+487,Does HER2 immunoreactivity provide prognostic information in locally advanced urothelial carcinoma patients receiving adjuvant M-VEC chemotherapy?,C,A,False,A
+488,Does the familial transmission of drinking patterns persist into young adulthood?,C,B,False,B
+489,Bactericidal activity of 3 cutaneous/mucosal antiseptic solutions in the presence of interfering substances: Improvement of the NF EN 13727 European Standard?,C,A,False,A
+490,Does ultrasound imaging before puncture facilitate internal jugular vein cannulation?,C,A,False,A
+491,Can a practicing surgeon detect early lymphedema reliably?,C,B,False,B
+492,Is perforation of the appendix a risk factor for tubal infertility and ectopic pregnancy?,C,A,False,A
+493,Does perspective-taking increase patient satisfaction in medical encounters?,C,A,False,A
+494,Sternal fracture in growing children : A rare and often overlooked fracture?,C,A,False,A
+495,Midwives' competence: is it affected by working in a rural location?,C,A,False,A
+496,Does the severity of obstructive sleep apnea predict patients requiring high continuous positive airway pressure?,C,A,False,A
+497,Does self-efficacy mediate the relationship between transformational leadership behaviours and healthcare workers' sleep quality?,C,B,False,B
+498,Are there mental health differences between francophone and non-francophone populations in manitoba?,C,A,False,A
+499,Outcome Feedback within Emergency Medicine Training Programs: An Opportunity to Apply the Theory of Deliberate Practice?,C,A,False,A

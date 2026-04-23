@@ -13,7 +13,7 @@ from utils import *
 
 def _build_kg_agent() -> KnowledgeGraphAgent:
     """Build KnowledgeGraphAgent backed by the local Ollama/Qwen model."""
-    llm_model = os.getenv("LLM_MODEL", "qwen2.5:7b-instruct")
+    llm_model = os.getenv("LLM_MODEL", "meta-llama/Llama-3.2-3B-Instruct")
     base_url = os.getenv("OPENAI_API_BASE_URL", "http://localhost:11434/v1")
     model = ModelFactory.create(
         model_platform=ModelPlatformType.OLLAMA,

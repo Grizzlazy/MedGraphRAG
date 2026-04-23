@@ -1,0 +1,10 @@
+dataset,Qwen2.5-7B-Instruct,Llama3-3B-Instruct,Llama3-8B-Instruct
+medmcqa,27.43,27.48,40.29
+medqa,55.07,52.16,60.25
+mmlu_anatomy,66.67,57.04,62.22
+mmlu_clinical_knowledge,72.08,58.87,68.30
+mmlu_college_biology,78.47,66.67,68.06
+mmlu_college_medicine,63.58,54.91,60.12
+mmlu_medical_genetics,72.00,64.00,73.00
+mmlu_professional_medicine,65.44,67.65,69.85
+pubmedqa,73.80,73.40,74.80

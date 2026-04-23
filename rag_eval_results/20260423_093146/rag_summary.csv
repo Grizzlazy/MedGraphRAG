@@ -1,0 +1,10 @@
+dataset,accuracy(%),status
+medqa,55.07,ok
+medmcqa,27.43,ok
+pubmedqa,73.8,ok
+mmlu_anatomy,66.67,ok
+mmlu_clinical_knowledge,72.08,ok
+mmlu_college_biology,78.47,ok
+mmlu_college_medicine,63.58,ok
+mmlu_medical_genetics,72.0,ok
+mmlu_professional_medicine,65.44,ok

@@ -1,0 +1,10 @@
+dataset,accuracy(%),status
+medqa,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+medmcqa,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+pubmedqa,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+mmlu_anatomy,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+mmlu_clinical_knowledge,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+mmlu_college_biology,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+mmlu_college_medicine,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+mmlu_medical_genetics,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"
+mmlu_professional_medicine,0.0,"Error code: 404 - {'error': {'message': 'model ""nomic-embed-text"" not found, try"

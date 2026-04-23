@@ -1,0 +1,474 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+
+% =========================================================
+% Theme (clean academic)
+% =========================================================
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+% =========================================================
+% Vietnamese + math + figures
+% =========================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+
+% =========================================================
+% Title
+% =========================================================
+\title[Hệ tăng cường truy hồi]{Tăng cường truy hồi cho mô hình ngôn ngữ trong miền y khoa:\\Từ RAG truyền thống đến GraphRAG/MedGraphRAG}
+\author{(Họ tên tác giả/nhóm)}
+\institute{(Đơn vị / Trường / Lab)}
+\date{(Hội thảo / Seminar) \;\;\;\today}
+
+% =========================================================
+% Helpers
+% =========================================================
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\A}{\mathcal{A}}
+
+\begin{document}
+
+% =========================================================
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% =========================================================
+\begin{frame}{Tóm tắt đóng góp (Abstract-style)}
+\small
+\begin{block}{Bối cảnh}
+Trong y khoa, LLM thường gặp \textit{hallucination}, khó truy vết nguồn, và hạn chế cập nhật tri thức ngoài dữ liệu huấn luyện.
+\end{block}
+
+\begin{block}{Mục tiêu}
+Trình bày một cách hệ thống cách \textbf{RAG} và \textbf{GraphRAG/MedGraphRAG} hoạt động, nhấn mạnh: (i) mô hình hoá, (ii) thuật toán truy hồi, (iii) chi phí tính toán, (iv) đánh giá hiệu năng.
+\end{block}
+
+\begin{block}{Thông điệp chính}
+RAG tối ưu cho \textbf{truy hồi nhanh theo đoạn văn}; GraphRAG tối ưu cho \textbf{suy luận theo cấu trúc/quan hệ}, đổi lại chi phí xây dựng và truy vấn phức tạp hơn.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Dàn ý}
+\small
+\begin{itemize}
+  \item Động lực, bài toán và tiêu chí đánh giá
+  \item RAG: mô hình xác suất, truy hồi dense/sparse, tái xếp hạng, sinh có điều kiện
+  \item GraphRAG/MedGraphRAG: đồ thị tri thức, truy vấn cục bộ/toàn cục, tóm tắt cộng đồng
+  \item So sánh hiệu năng: chất lượng, độ trễ, chi phí xây chỉ mục, khả năng mở rộng
+  \item Thảo luận: độ tin cậy, trích dẫn, hạn chế, hướng nghiên cứu
+\end{itemize}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Động lực: vì sao ``truy hồi'' là trung tâm trong y khoa?}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{0.52\textwidth}
+\begin{block}{Các ràng buộc miền}
+\begin{itemize}
+  \item \textbf{Tính đúng đắn}: sai sót y khoa có chi phí cao.
+  \item \textbf{Truy vết nguồn}: cần căn cứ (guideline, paper, EHR).
+  \item \textbf{Riêng tư}: dữ liệu bệnh án khó dùng để fine-tune.
+\end{itemize}
+\end{block}
+
+\column{0.48\textwidth}
+\begin{block}{Hệ quả}
+\begin{itemize}
+  \item Cần cơ chế \textbf{đưa bằng chứng} vào ngữ cảnh suy luận.
+  \item Cần mô hình hoá \textbf{bằng chứng có cấu trúc} (thực thể--quan hệ) để hỗ trợ suy luận đa bước.
+\end{itemize}
+\end{block}
+\end{columns}
+
+\vspace{0.2cm}
+\begin{block}{Quan sát}
+RAG giải quyết ``thiếu tri thức trong prompt''; GraphRAG giải quyết ``thiếu cấu trúc quan hệ để suy luận''.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Bài toán chung: Question Answering có tăng cường truy hồi}
+\small
+\begin{block}{Đầu vào / đầu ra}
+\begin{itemize}
+  \item Query \(q\) (câu hỏi, có thể kèm ngữ cảnh lâm sàng).
+  \item Kho tri thức \(\B\): văn bản (RAG) hoặc đồ thị (GraphRAG).
+  \item Sinh đáp án \(\hat{y}\) và (tuỳ chọn) tập bằng chứng \(\hat{z}\).
+\end{itemize}
+\end{block}
+
+\begin{block}{Mục tiêu tối ưu (khái quát)}
+\[
+\hat{y} = \arg\max_y \sum_{z \in \mathcal{Z}} p_\theta(y \mid q, z)\, p_\phi(z \mid q),
+\]
+trong đó \(z\) là bằng chứng truy hồi (đoạn văn / subgraph / báo cáo cộng đồng).
+\end{block}
+
+\begin{block}{Tiêu chí đánh giá}
+\begin{itemize}
+  \item \textbf{Độ chính xác} (MCQ accuracy), \textbf{độ phù hợp} (pertinence), \textbf{độ tin cậy} (faithfulness).
+  \item \textbf{Chi phí}: độ trễ truy vấn, chi phí xây chỉ mục, số lần gọi LLM/embedding.
+\end{itemize}
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{RAG truyền thống: trực giác và kiến trúc}
+\small
+\begin{block}{Trực giác}
+Tách bài toán thành: (i) \textbf{truy hồi} các đoạn văn liên quan; (ii) \textbf{sinh} câu trả lời có điều kiện trên các đoạn văn đó.
+\end{block}
+
+\begin{center}
+\fbox{\parbox{0.95\textwidth}{\centering
+\textbf{Corpus} \(\rightarrow\) chunk \(\rightarrow\) embed/index \(\rightarrow\)
+\(\underbrace{\textbf{Retrieve}}_{\text{dense/sparse/hybrid}}\) \(\rightarrow\)
+\(\underbrace{\textbf{Rerank}}_{\text{cross-encoder}}\) \(\rightarrow\)
+\(\underbrace{\textbf{Generate}}_{\text{LLM}}\)
+}}
+\end{center}
+
+\begin{block}{Câu hỏi nghiên cứu}
+Trong y khoa, khi tri thức trải dài nhiều tài liệu và có quan hệ nhân quả/điều trị/phân loại, truy hồi theo \textit{chunk} có đủ hay cần cấu trúc đồ thị?
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{RAG: truy hồi dense, sparse và hybrid}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{0.52\textwidth}
+\begin{block}{Dense retrieval (bi-encoder)}
+\begin{itemize}
+  \item Embed query \(e(q)\) và chunk \(e(c)\).
+  \item Xếp hạng theo cosine/dot-product:
+  \[
+  s_{\text{dense}}(q,c)=\langle e(q), e(c)\rangle.
+  \]
+  \item Ưu: nhanh, mở rộng tốt; Nhược: phụ thuộc chất lượng embedding.
+\end{itemize}
+\end{block}
+
+\column{0.48\textwidth}
+\begin{block}{Sparse retrieval (BM25)}
+\begin{itemize}
+  \item Dựa trên thống kê từ khoá (tf-idf variant).
+  \item Ưu: mạnh với thuật ngữ y khoa hiếm; Nhược: yếu khi paraphrase.
+\end{itemize}
+\end{block}
+\end{columns}
+
+\vspace{0.15cm}
+\begin{block}{Hybrid \& RRF fusion}
+Hợp nhất hai danh sách xếp hạng bằng Reciprocal Rank Fusion:
+\[
+\text{RRF}(c)=\sum_{m\in\{\text{dense},\text{sparse}\}}\frac{1}{k+\text{rank}_m(c)}.
+\]
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{RAG: tái xếp hạng (reranking) và sinh có điều kiện}
+\small
+\begin{block}{Cross-encoder reranking}
+\begin{itemize}
+  \item Mô hình hoá trực tiếp \(s_{\text{ce}}(q,c)\) trên cặp (query, passage).
+  \item Độ chính xác cao hơn bi-encoder nhưng chi phí lớn hơn \(\Rightarrow\) chỉ rerank top-\(N\).
+\end{itemize}
+\end{block}
+
+\begin{block}{Sinh câu trả lời}
+\begin{itemize}
+  \item Xây dựng ngữ cảnh \(Z=\{c_1,\dots,c_K\}\) và sinh:
+  \[
+  \hat{y} \sim p_\theta(y\mid q, Z).
+  \]
+  \item Vấn đề: \textbf{ngữ cảnh không cấu trúc}; suy luận đa bước dễ suy giảm khi \(K\) nhỏ hoặc chunk bị thiếu quan hệ.
+\end{itemize}
+\end{block}
+
+\begin{block}{Rủi ro}
+Nếu chunk đúng nhưng thiếu quan hệ (thuốc--bệnh--xét nghiệm), LLM có thể suy luận sai hoặc thiếu trích dẫn đúng mức.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Giới hạn bản chất của RAG theo đoạn văn (trong y khoa)}
+\small
+\begin{itemize}
+  \item \textbf{Mất cấu trúc}: quan hệ giữa thực thể (bệnh, triệu chứng, thuốc, xét nghiệm) bị ``phẳng hoá'' thành văn bản.
+  \item \textbf{Suy luận đa bước}: các chuỗi suy luận kiểu \(A\rightarrow B\rightarrow C\) khó tái tạo nếu các mối liên kết nằm rải rác.
+  \item \textbf{Trích dẫn}: citation theo chunk có thể không tương ứng đúng với thực thể/quan hệ then chốt.
+  \item \textbf{Nhiễu}: chunk retrieval dễ kéo đoạn ``gần nghĩa'' nhưng không chứa bằng chứng quyết định.
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{block}{Động lực GraphRAG}
+Biểu diễn tri thức dưới dạng đồ thị giúp bảo toàn quan hệ và cho phép truy vấn theo cấu trúc, thay vì chỉ theo tương đồng ngữ nghĩa bề mặt.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{GraphRAG/MedGraphRAG: mô hình hoá và pipeline tổng quát}
+\small
+\begin{block}{Biểu diễn}
+Đồ thị tri thức \(\G=(\V,\E)\) với:
+\begin{itemize}
+  \item Đỉnh \(v\in\V\): thực thể y khoa (Disease, Symptom, Drug, Test, Procedure, \ldots).
+  \item Cạnh \(e=(u,r,v)\in\E\): quan hệ (TREATS, CAUSES, INDICATES, HAS\_SYMPTOM, \ldots).
+  \item Thuộc tính: mô tả, embedding, nguồn gốc, thời gian, mức độ tin cậy.
+\end{itemize}
+\end{block}
+
+\begin{center}
+\fbox{\parbox{0.95\textwidth}{\centering
+\textbf{Text/EHR} \(\rightarrow\) \textbf{Entity/Relation Extraction} \(\rightarrow\) \textbf{Graph Storage/Index}\\
+\(\downarrow\)\\
+\textbf{Query} \(\rightarrow\) \textbf{Graph Retrieval (local/global)} \(\rightarrow\) \textbf{Graph-grounded Generation}
+}}
+\end{center}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Bước 1: Trích xuất thực thể--quan hệ (IE) bằng LLM}
+\small
+\begin{block}{Mục tiêu}
+Từ văn bản đầu vào \(x\), suy ra tập thực thể \(\hat{\V}(x)\) và quan hệ \(\hat{\E}(x)\).
+\end{block}
+
+\begin{block}{Khuôn dạng khái quát}
+\[
+(\hat{\V},\hat{\E}) = f_{\text{IE}}(x;\theta),
+\]
+trong đó \(f_{\text{IE}}\) có thể là LLM với prompt ràng buộc schema + bộ phân tích cú pháp (parser).
+\end{block}
+
+\begin{block}{Thách thức}
+\begin{itemize}
+  \item \textbf{Sai schema}: LLM sinh quan hệ không đúng loại hoặc thực thể không chuẩn hoá.
+  \item \textbf{Độ bao phủ}: bỏ sót thực thể hiếm hoặc quan hệ ngầm.
+  \item \textbf{Chi phí}: IE thường là bước đắt nhất khi xây graph.
+\end{itemize}
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Bước 2: Cấu trúc hoá, hợp nhất và chuẩn hoá (canonicalization)}
+\small
+\begin{block}{Vì sao cần hợp nhất?}
+Cùng một khái niệm y khoa có nhiều biến thể (viết tắt, đồng nghĩa, lỗi chính tả) \(\Rightarrow\) làm đồ thị phân mảnh, giảm recall và giảm chất lượng suy luận.
+\end{block}
+
+\begin{block}{Hợp nhất theo tương đồng embedding (ý tưởng)}
+\begin{itemize}
+  \item Gán embedding cho node \(e(v)\).
+  \item Nếu \(\cos(e(v_i), e(v_j)) \ge \tau\) và cùng loại thực thể \(\Rightarrow\) merge.
+\end{itemize}
+\end{block}
+
+\begin{block}{Trade-off}
+\begin{itemize}
+  \item \(\tau\) thấp: merge nhầm (precision giảm).
+  \item \(\tau\) cao: graph phân mảnh (recall giảm).
+\end{itemize}
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Truy vấn GraphRAG: local vs global}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{0.5\textwidth}
+\begin{block}{Local retrieval (cục bộ)}
+\begin{itemize}
+  \item Tập trung quanh các node ``neo'' liên quan trực tiếp tới query.
+  \item Lấy subgraph nhỏ (k-hop neighborhood), phù hợp QA ngắn, độ trễ thấp hơn.
+\end{itemize}
+\end{block}
+
+\column{0.5\textwidth}
+\begin{block}{Global retrieval (toàn cục)}
+\begin{itemize}
+  \item Tận dụng cấu trúc cộng đồng/chủ đề của đồ thị.
+  \item Phù hợp câu hỏi khái quát, tổng hợp; chi phí cao hơn.
+\end{itemize}
+\end{block}
+\end{columns}
+
+\vspace{0.15cm}
+\begin{block}{Gợi ý hình thức hoá}
+Truy hồi trong GraphRAG có thể xem như tối ưu:
+\[
+\hat{S}=\arg\max_{S\subseteq \G} \;\; \text{Rel}(q,S) - \lambda\cdot \text{Cost}(S),
+\]
+với \(S\) là subgraph/báo cáo cộng đồng được chọn.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Cơ chế ``community reports'' (ý tưởng GraphRAG hiện đại)}
+\small
+\begin{block}{Động cơ}
+Đồ thị lớn \(\Rightarrow\) truy vấn trực tiếp có thể rơi vào nhiễu. Ta gom cụm (clustering) để tạo \textbf{tóm tắt cấp cộng đồng} như một tầng truy hồi trung gian.
+\end{block}
+
+\begin{block}{Quy trình}
+\begin{itemize}
+  \item Clustering đồ thị (theo cấu trúc/embedding) \(\Rightarrow\) communities \(\C_1,\dots,\C_M\).
+  \item Mỗi community sinh báo cáo \(r_i\): mô tả chủ đề, thực thể nổi bật, quan hệ chính, phát hiện đáng chú ý.
+  \item Truy hồi theo \(r_i\) trước, rồi mở rộng xuống subgraph chi tiết.
+\end{itemize}
+\end{block}
+
+\begin{block}{Lợi ích}
+Giảm không gian tìm kiếm, tăng khả năng tổng hợp và giảm phụ thuộc vào chunk rời rạc.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{So sánh hệ thống: RAG vs GraphRAG (góc nhìn học thuật)}
+\small
+\begin{tabular}{@{}p{3.1cm}p{4.3cm}p{5.9cm}@{}}
+\toprule
+\textbf{Khía cạnh} & \textbf{RAG theo văn bản} & \textbf{GraphRAG/MedGraphRAG} \\
+\midrule
+Biểu diễn tri thức & đoạn văn (chunk) & thực thể--quan hệ (node/edge), có thể thêm community reports \\
+Đối tượng truy hồi \(z\) & top-\(K\) chunks & subgraph / path / community report \\
+Suy luận đa bước & phụ thuộc LLM + prompt & hỗ trợ bởi cấu trúc quan hệ (explicit multi-hop) \\
+Trích dẫn & theo đoạn văn & theo node/edge/report (gần với bằng chứng) \\
+Chi phí xây dựng & embedding + index & IE bằng LLM + chuẩn hoá/merge + graph index \\
+Chi phí truy vấn & nhanh (FAISS/BM25) & thường cao hơn (graph ops + tóm tắt/đối sánh) \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Phân tích độ phức tạp \& chi phí (định tính)}
+\small
+\begin{block}{RAG}
+\begin{itemize}
+  \item Build: \(O(N)\) embedding cho \(N\) chunks; index \(O(N)\) (tuỳ cấu trúc).
+  \item Query: retrieve \(O(\log N)\) (xấp xỉ) + rerank \(O(K)\) cross-encoder + 1 lần sinh LLM.
+\end{itemize}
+\end{block}
+
+\begin{block}{GraphRAG}
+\begin{itemize}
+  \item Build: IE bằng LLM \(\approx O(N)\) nhưng hệ số chi phí lớn; merge/normalize có thể tăng theo số node.
+  \item Query: local/global retrieval (graph traversal / report retrieval) + 1--2 bước sinh LLM (tùy thiết kế).
+\end{itemize}
+\end{block}
+
+\begin{block}{Hàm ý thực nghiệm}
+So sánh công bằng cần kiểm soát: model, prompt, nhiệt độ, ngân sách token, và chuẩn đánh giá.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Thiết kế thực nghiệm khuyến nghị (đúng chuẩn báo cáo học thuật)}
+\small
+\begin{block}{Thiết lập}
+\begin{itemize}
+  \item Dữ liệu: cùng một corpus xây chỉ mục (EHR/medical text) cho cả hai phương pháp.
+  \item Benchmark: MedQA, MedMCQA, PubMedQA, các subset MMLU y khoa.
+  \item Mô hình sinh: cố định LLM, cùng prompt template, cùng nhiệt độ/seed.
+\end{itemize}
+\end{block}
+
+\begin{block}{Chỉ số}
+\begin{itemize}
+  \item \textbf{MCQ accuracy} và phân rã theo loại câu hỏi.
+  \item \textbf{Faithfulness}: tỷ lệ mệnh đề trong đáp án được nâng đỡ bởi bằng chứng truy hồi.
+  \item \textbf{Latency/cost}: thời gian build index, thời gian query, số lần gọi LLM/embedding.
+\end{itemize}
+\end{block}
+
+\begin{block}{Báo cáo}
+Trình bày mean\(\pm\)std qua nhiều lần chạy; phân tích lỗi (error taxonomy).
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Thảo luận: Khi nào GraphRAG vượt trội?}
+\small
+\begin{block}{Kịch bản phù hợp GraphRAG}
+\begin{itemize}
+  \item Câu hỏi cần \textbf{suy luận quan hệ}: thuốc--chỉ định--chống chỉ định; xét nghiệm--chẩn đoán; bệnh--triệu chứng.
+  \item Bằng chứng rải rác, cần \textbf{kết nối nhiều mảnh} thông tin.
+  \item Cần \textbf{truy vết} theo thực thể/quan hệ (explainability).
+\end{itemize}
+\end{block}
+
+\begin{block}{Kịch bản RAG đủ tốt / tối ưu}
+\begin{itemize}
+  \item Hỏi-đáp ngắn, bằng chứng tập trung trong vài đoạn.
+  \item Cần throughput cao, độ trễ thấp (clinical assistant near-real-time).
+\end{itemize}
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Hạn chế và rủi ro khoa học (Limitations)}
+\small
+\begin{itemize}
+  \item \textbf{IE noise}: đồ thị sai từ đầu \(\Rightarrow\) suy luận sai có cấu trúc (``garbage-in, garbage-out'').
+  \item \textbf{Chuẩn hoá khái niệm}: thiếu ontology chuẩn (UMLS/SNOMED) làm tăng ambiguity.
+  \item \textbf{Đánh giá citation}: citation đúng hình thức nhưng sai nội dung vẫn có thể xảy ra.
+  \item \textbf{Chi phí triển khai}: Neo4j/graph ops + LLM extraction đắt và phức tạp vận hành.
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{block}{Hướng khắc phục}
+Kết hợp ontology, kiểm định quan hệ (relation validation), và truy hồi nhiều tầng (report \(\rightarrow\) subgraph \(\rightarrow\) evidence snippets).
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Kết luận (Take-home messages)}
+\small
+\begin{block}{Thông điệp 1}
+RAG là baseline mạnh nhờ đơn giản, nhanh, và dễ tối ưu; phù hợp cho nhiều bài toán QA theo đoạn văn.
+\end{block}
+
+\begin{block}{Thông điệp 2}
+GraphRAG/MedGraphRAG mở rộng RAG bằng cấu trúc đồ thị để hỗ trợ suy luận đa bước và trích dẫn theo thực thể--quan hệ; đổi lại chi phí xây dựng và truy vấn cao hơn.
+\end{block}
+
+\begin{block}{Thông điệp 3}
+So sánh performance có ý nghĩa cần một protocol chặt: cùng corpus, cùng LLM, cùng budget token, đo cả chất lượng lẫn chi phí.
+\end{block}
+\end{frame}
+
+% =========================================================
+\begin{frame}{Tài liệu tham khảo (gợi ý)}
+\small
+\begin{itemize}
+  \item Retrieval-Augmented Generation (RAG): các hướng dense/sparse/hybrid, reranking.
+  \item Graph-based RAG (GraphRAG/MedGraphRAG): trích xuất thực thể--quan hệ, community reports, local/global retrieval.
+  \item (Bạn có thể thêm biblatex/bibtex nếu cần chuẩn hoá theo hội thảo.)
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{center}
+\textit{Cảm ơn! Q\&A}
+\end{center}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,266 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,What size of cannula would you use in a patient who needed a rapid blood transfusion (as of 2020 medical knowledge)?,A,C,False,C
+1,The key attribute in successful marathon running is:,D,D,True,D
+2,Which of the following is the commonest cause of dementia in the UK?,A,A,True,A
+3,Which of the following is NOT a symptom of anaphylaxis?,B,B,True,B
+4,In what situation are closed pouches applied?,B,B,True,B
+5,With an increasing number of sprints the:,D,A,False,A
+6,Which of the following is true in diplopia?,B,A,False,A
+7,Sodium bicarbonate ingestion improves middle distance running performance by:,A,A,True,A
+8,Codons are composed of:,A,A,True,A
+9,Fatty acids are transported into the mitochondria bound to:,D,C,False,C
+10,Which of the answers below best indicates the compatible blood types that can be given to a person with a blood group B (rhesus negative)?,C,C,True,C
+11,Which of the following is true of a lower motor neurone lesion in the arm?,D,D,True,D
+12,Which of the following statements is false?,B,B,True,B
+13,Glycogen breakdown in muscle initially results in the formation of:,B,B,True,B
+14,The two principal contractile proteins found in skeletal muscle are:,B,B,True,B
+15,Which one of the following represents a IIIrd cranial nerve palsy and is a neurosurgical emergency?,C,C,True,C
+16,Which of the following is true about a thyroid swelling?,D,D,True,D
+17,Which of the following is true of hepatomegaly?,C,B,False,B
+18,Which of the following is true regarding reflexes?,C,D,False,D
+19,Which of the following is true of facial nerve palsy?,C,C,True,C
+20,What is a colles fracture?,D,D,True,D
+21,"If a transfusion reaction is suspected, you should:",A,A,True,A
+22,"Once a prescribed unit of blood product has been obtained from the blood bank and is out of refrigeration, the transfusion should commence within what period of time before it starts to deteriorate (as of 2020 medical knowledge)?",A,C,False,C
+23,Which of the following statements is true about informal carers (as of 2020)?,B,B,True,B
+24,Which of the following processes is not used to modify protein structure after translation has occurred?,B,B,True,B
+25,Why would you need to carry out a bladder washout for a patient at home?,B,B,True,B
+26,A 14-16 gauge needle is most likely to be used for:,D,D,True,D
+27,Which of these features suggest that a crackling sound is more likely due to a pleural friction rub than crackles?,A,C,False,C
+28,In games like soccer the blood lactate concentration:,B,D,False,D
+29,Lactate and hydrogen ions leave the muscle:,C,D,False,D
+30,Which of the following is true of the spine?,B,D,False,D
+31,Which of the following is true of psoriatic arthropathy?,D,D,True,D
+32,Which of the following is true of Graves Disease of the thyroid?,A,B,False,B
+33,Which of the following is true of calcium metabolism?,B,D,False,D
+34,Kinase reactions:,B,B,True,B
+35,The normal respiratory rate for an adult male is:,D,A,False,A
+36,Collagen fibres:,C,C,True,C
+37,Which of the following releases most energy when completely oxidised in the body?,B,B,True,B
+38,Embedded in the inner membrane of the mitochondrion are:,B,B,True,B
+39,"If the mean rate of oxygen consumption of a male athlete during a training session is 2 l/min, then his rate of energy expenditure is approximately:",D,A,False,A
+40,A normal heart rate for an adult at rest is:,B,B,True,B
+41,Which of the following statements is false?,D,D,True,D
+42,Which of the following is true in ulna nerve palsy?,C,A,False,A
+43,How much toothpaste is recommended for cleaning teeth?,B,A,False,A
+44,Which of the following is true about Cushing's Syndrome?,D,D,True,D
+45,The main factors determining success in sport are:,D,D,True,D
+46,"In a double stranded molecule of DNA, the ratio of purines : pyrimidines is:",D,D,True,D
+47,Performance enhancing synthetic steroids are based on the structure of the hormone:,A,A,True,A
+48,Glycogen breakdown in exercising muscle is activated by:,D,D,True,D
+49,Most of the free fatty acids are transported in the blood:,D,B,False,B
+50,How often should a cannula be flushed?,C,C,True,C
+51,The activity of creatine kinase is:,A,A,True,A
+52,The smallest increments on a mercury and aneroid sphygmomanometer measure are:,C,C,True,C
+53,Which of the following is not an abnormal breathing pattern seen in head injury and altered conscious level?,B,B,True,B
+54,During CPR chest compressions and ventilations should be delivered in a ratio of:,D,D,True,D
+55,A person weighs 62 kg. Their drug dose is 15 mg/kg. How many grams is their dose? Choose one answer from the following:,D,C,False,C
+56,An expected side effect of creatine supplementation is:,B,B,True,B
+57,The cardiac cycle consists of the phases:,C,C,True,C
+58,Which of the following factors does not influence success in sport?,D,C,False,C
+59,The chain of survival has four links. Put the following list in the correct order: 1. Early defibrillation; 2. Early CPR; 3. Recognition and call for help early; 4. Post-resuscitation care.,B,B,True,B
+60,A fundamental cause of fatigue in high intensity exercise is:,C,C,True,C
+61,Which of the following is true about possible rectal findings?,B,B,True,B
+62,What commonly causes skin excoriation?,C,C,True,C
+63,Which of the following is true of Systemic Sclerosis?,D,D,True,D
+64,A palpable left parasternal impulse suggests which abnormality?,A,D,False,D
+65,"In hypovolaemic shock, what percentage of blood can be lost before it is reflected in changes in heart rate and blood pressure?",D,B,False,B
+66,Which of the following best describes the effects of morphine?,B,B,True,B
+67,Which of the following is true of headache?,D,D,True,D
+68,Between contractions of the left ventricle the blood continues to flow through the vessels because:,D,D,True,D
+69,What might make the nurse think a patient could not use an inhaler?,D,D,True,D
+70,Removal of adhesive strips:,A,A,True,A
+71,"During CPR, chest compressions should be delivered at a rate of:",C,C,True,C
+72,Which of the following physiological characteristics is not important for success in endurance events such as the marathon race?,D,D,True,D
+73,"When using an inhaler, when should a patient be asked to rinse their mouth?",D,D,True,D
+74,Muscle lactate production increases when:,D,C,False,C
+75,What is the minimum time a stretch should be held for?,B,B,True,B
+76,What three factors regulate stroke volume?,B,B,True,B
+77,Name the bones of the middle finger in the correct order from the hand.,A,A,True,A
+78,Which of the following promotes glucose and amino acid uptake by muscle?,B,B,True,B
+79,An ileostomy opening should be:,B,B,True,B
+80,Which of the following would not be done before catheterizing?,D,B,False,B
+81,Hydrogen ions are formed when:,D,C,False,C
+82,Which one of the following manoeuvres is not a central painful stimulus?,B,B,True,B
+83,"Dopamine is prescribed at a rate of 4 micrograms/kg/min. For a 65 kg person, how many milligrams will they receive in an hour?",B,B,True,B
+84,Which of the following is true about the rectal examination?,D,D,True,D
+85,Why can't a patient talk if the cuff is inflated?,D,D,True,D
+86,Wound drainage should be assessed for volume and consistency:,A,B,False,B
+87,Creatine is synthesized from:,B,B,True,B
+88,"If a catheter resists all attempts to unblock it and you are unable to remove it, what should you do?",D,D,True,D
+89,Bladder washout solution should be:,D,A,False,A
+90,"When developing a plan of care relating to the management of a person's pain, attention should be given to the following needs:",C,C,True,C
+91,Patients with the apolipoprotein E gene are at risk of which disease?,C,C,True,C
+92,Which of the following groups of drugs may cause a dry mouth?,C,D,False,D
+93,Which of the following is not a true statement?,D,D,True,D
+94,"If a patient is cyanosed, what might their oxygen saturation level be?",C,C,True,C
+95,When assessing a patient's breathing:,C,C,True,C
+96,A person is prescribed Ropinirole 1.5 mg divided into three doses. How many micrograms is each dose? Choose one answer from the following:,D,B,False,B
+97,Which of the following is thought to be implicated in the development of peripheral muscle fatigue during multiple sprint activities?,A,A,True,A
+98,The ATP store in muscle can only supply energy in high intensity exercise for about:,B,B,True,B
+99,960 mg of the antibacterial drug Cotrimoxazole is prescribed every 12 hours. What is the daily dose in grams? Choose one answer from the following:,B,B,True,B
+100,Which of the following is true of hypothyroidism?,C,C,True,C
+101,What is hypochlorhydria?,C,C,True,C
+102,"A 67-year-old man, three hours post-transurethral resection of prostate with irrigation, has a blocked catheter. Which solution should be used to complete bladder washout?",B,B,True,B
+103,A keloid is:,B,B,True,B
+104,Which of the following is not an amino acid?,D,D,True,D
+105,Wound drainage is described as serous if:,D,D,True,D
+106,The sex of a child is dictated by the inheritance of:,D,D,True,D
+107,Which of the following is true in spastic paraplegia?,A,A,True,A
+108,"The synthesis of glucose from lactate, glycerol, or amino acids is called:",D,D,True,D
+109,"If a blood unit has been out of refrigeration for longer than the accepted time limit, you should:",C,C,True,C
+110,The auscultatory gap is:,C,C,True,C
+111,How many different types of microorganisms may colonize the mouth?,C,D,False,D
+112,Why should shampoo not be used for washing the skin when showering or bathing?,D,A,False,A
+113,Which of the following is the same strength as Adrenaline 1 in 1000? Choose one answer from the following:,A,A,True,A
+114,An allele that is masked is referred to as:,A,A,True,A
+115,Hypernatraemic dehydration is:,A,A,True,A
+116,Which of the following is not associated with an increase in the work of breathing?,D,D,True,D
+117,Which of the following can act as an intracellular buffer to limit pH changes when the rate of glycolysis is high?,C,B,False,B
+118,Which of the following is true about Addisons Disease?,B,B,True,B
+119,Which of the following are indicative signs and symptoms of circulatory overload?,D,D,True,D
+120,What is the most likely cause of acute urinary retention of urine?,B,B,True,B
+121,Which of the following tools is the first choice for cleaning the mouth?,A,A,True,A
+122,Which of the following drugs may be used to enhance gastric motility?,C,B,False,B
+123,The creatine kinase reaction is:,D,B,False,B
+124,Where should a stoma be sited?,A,D,False,D
+125,Women's world record performances have improved rapidly in recent years mainly because:,D,D,True,D
+126,Our genetic material is made up of:,A,A,True,A
+127,Insensible loss does not come from:,C,C,True,C
+128,"Exhaustion, confusion, and unresponsiveness can be indicators of:",A,D,False,D
+129,"Pairs of electrons carried in the form, FADH2 and NADH+H, collectively contain enough free energy to rephosphorylate:",B,C,False,C
+130,A muscle fibre relaxes when:,A,A,True,A
+131,Which of the following best describes the Golgi tendon organ?,B,B,True,B
+132,The pulse can be palpated:,D,D,True,D
+133,The pyruvate dehydrogenase complex:,B,B,True,B
+134,Which of the following is true about the knee joint?,C,C,True,C
+135,Who is the publication Your guide to the NHS written for?,C,C,True,C
+136,Which of the following is true about the assessment of arm reflexes?,A,B,False,B
+137,Which of these is most likely to cause deviation of the trachea?,C,A,False,A
+138,What is the risk if water is used for bladder washout in secondary care?,C,C,True,C
+139,What is the 'normal' range of flexion at the knee joint?,B,B,True,B
+140,Which of the following is not a controlled drug?,D,D,True,D
+141,After what period of time does maximal dynamic exercise become predominantly aerobic?,C,D,False,D
+142,The trigger to initiate the contractile process in skeletal muscle is:,D,B,False,B
+143,Which of the following is NOT a sign of phlebitis?,D,D,True,D
+144,The energy charge of the cell is:,D,D,True,D
+145,The sarcoplasmic reticulum in muscle cells acts as a:,D,D,True,D
+146,Which of the following parameters are seen on typical neurological observation charts?,B,C,False,C
+147,"In the discharge checklist recommended by the Department of Health (2004), who should be involved in completing the form?",B,D,False,D
+148,Which of the following is true regarding the complications of a large goitre?,B,C,False,C
+149,The heart has:,B,B,True,B
+150,Which one of the following groups of patients should be assessed using an Early Warning Score (EWS)?,D,D,True,D
+151,What is the purpose of the cuff on a tracheostomy tube?,A,A,True,A
+152,What type of covalent bonds link the amino acids in a protein?,A,A,True,A
+153,Which is the most reliable way to assess for clubbing?,D,C,False,C
+154,The term gene doping refers to:,B,B,True,B
+155,Name three of the five main uses of the hand.,B,D,False,D
+156,Which of the following is true about an abdominal mass?,D,D,True,D
+157,Which of the following is not a category used to classify patients according to the Glasgow Coma Scale?,D,D,True,D
+158,Which of these combinations of clinical features is most suggestive of mixed mitral valve disease with a predominance of mitral regurgitation?,A,C,False,C
+159,"Prior to undergoing a painful procedure, a patient should be informed about what to expect and how their pain will be controlled, as this is associated with:",A,A,True,A
+160,The conversion of one molecule of glucose to two molecules of pyruvate results in the net formation of:,B,C,False,C
+161,The net production of ATP via substrate-level phosphorylation in glycolysis is:,A,B,False,B
+162,Which of the following is true about rectal bleeding?,A,A,True,A
+163,Mutations are errors in DNA that:,D,D,True,D
+164,"When recording peak flow results, within how many litres/minute should the three readings be?",B,B,True,B
+165,Peak flow meters record:,D,D,True,D
+166,Which of the following should patients remember when taking paracetamol?,C,C,True,C
+167,Which of the following molecules does not form part of DNA?,D,D,True,D
+168,Which of the following is true about jaundice?,C,C,True,C
+169,Which of the following nucleotide bases is not found in RNA?,A,A,True,A
+170,Bronchial breathing is characterized by,B,C,False,C
+171,Which of the following drugs is most commonly responsible for patients who present with acute confusion?,C,C,True,C
+172,The frontal lobe of the brain's cortex is responsible for which of the following?,B,C,False,C
+173,The carpal bones are the small bones of the wrist - name them.,A,A,True,A
+174,The process of translation requires the presence of:,A,A,True,A
+175,What is 'coring'?,D,D,True,D
+176,What must you ensure before a speaking valve is used?,C,C,True,C
+177,Which one of the following statements is true with regard to intravenous drug administration?,C,C,True,C
+178,Which of the following factors can affect enzyme activity?,D,D,True,D
+179,"For very high force contractions lasting 1-2 seconds, the initial energy source is from:",D,C,False,C
+180,A change in blood pressure is detected by the:,A,A,True,A
+181,Blood clots are responsible for repeatedly blocking a catheter. What should you do?,B,B,True,B
+182,What is the pH of water?,B,B,True,B
+183,How long can a cannula remain in situ?,D,D,True,D
+184,Metabolism is determined by the:,C,D,False,D
+185,How many chromosomes do all human somatic cells contain?,D,D,True,D
+186,Under what circumstances would you use antibiotics prior to catheterization?,C,C,True,C
+187,Which of these features suggest that a pulsation in the neck is arterial?,C,C,True,C
+188,The rate limiting enzyme of glycolysis is:,D,D,True,D
+189,Which of the following is true about haemorrhoids?,B,B,True,B
+190,Selective Androgen Receptor Modulators (SARMs) are:,C,C,True,C
+191,"The β-oxidation of a molecule of palmitic acid, CH3(CH2)14CO2H:",A,A,True,A
+192,Which products of ADP degradation increase in concentration in the blood during multiple sprint sports?,A,A,True,A
+193,The optimum position for performing CPR is to position the patient:,C,C,True,C
+194,The complete resynthesis of phosphocreatine after very high intensity exercise normally takes:,D,D,True,D
+195,What type of joint is the elbow?,C,C,True,C
+196,A hypertonic solution is:,A,A,True,A
+197,Which of these is not necessary when examining the jugular venous pulse?,B,C,False,C
+198,The maximum sustainable power:,B,B,True,B
+199,Fast-twitch fibres contain:,C,D,False,D
+200,The rate of blood lactate accumulation is determined by:,D,D,True,D
+201,The enzymes of glycolysis are located in the:,C,C,True,C
+202,"The energy released from the breakdown of the high-energy phosphates, ATP and phosphocreatine, can sustain maximal exertion exercise for about:",B,B,True,B
+203,Prosthetic groups are:,D,D,True,D
+204,Which of the following is true in peripheral neuropathy?,A,A,True,A
+205,Which of the following is true about involuntary movements in the arm?,D,C,False,C
+206,Which of these options is not recognized as a cause of chronic cough?,D,D,True,D
+207,Which of the following is recommended for cleaning the mouth?,B,D,False,D
+208,As a general principle what is the best approach to the use of analgesic drugs following surgery?,B,B,True,B
+209,Which of the following best describes nociceptive pain?,A,A,True,A
+210,Complete the following: A variation of serial peak flow readings over a two week period are considered diagnostic in . . .,A,A,True,A
+211,Under which circumstances would you not use a catheter valve?,A,C,False,C
+212,Which of the following is true of Paget's Disease?,A,A,True,A
+213,Your first action following confirmation of cardiac arrest is to:,A,A,True,A
+214,What is an urgent reason for catheterizing a patient?,A,A,True,A
+215,Which of the following is true?,B,B,True,B
+216,"Who has legal responsibility for a patient's care during hospital admission, stay, and discharge?",B,D,False,D
+217,Endurance training increases the muscle's capacity to:,C,C,True,C
+218,An action potential arriving at the motor endplate causes release of:,A,C,False,C
+219,Your patient has diabetes. Why is this important?,B,B,True,B
+220,What is meant by the term 'passive movements'?,D,B,False,B
+221,What is a tracheostomy?,B,B,True,B
+222,Which of the following is true of haematemesis?,A,D,False,D
+223,Which of the following is true of rheumatoid arthritis?,C,C,True,C
+224,Why should careful consideration be given to providing people aged over 65 with information sources that are internet based?,B,B,True,B
+225,Which of the following is true about the carpal tunnel syndrome?,A,C,False,C
+226,How many CO2 and ATP molecules are formed during one complete turn of the tricarboxylic acid cycle (Krebs' cycle)?,D,C,False,C
+227,"Which potential complication of IV therapy is described thus: 'Leakage of vesicant (irritant) medication or fluid into surrounding tissues, causing tissue damage'?",A,A,True,A
+228,Which of the following is present in saliva and has an antibacterial action?,A,A,True,A
+229,The genome is:,B,B,True,B
+230,Alterations in which neurotransmitters in the brain by pharmacological agents has been shown to influence fatigue development?,D,D,True,D
+231,In all-out exercise such as sprinting the first fibre types to fatigue are the:,D,C,False,C
+232,The main fate of lactate that leaves muscle and enters the circulation is:,D,D,True,D
+233,The most rapid method to resynthesize ATP during exercise is through:,B,B,True,B
+234,Which of the following is true in a sensory assessment of the arm?,B,B,True,B
+235,The blood glucose concentration during 80-90 minutes of intermittent high intensity exercise:,A,B,False,B
+236,One of the most common reasons for stoma formation is:,C,C,True,C
+237,A surgical support can be used for:,C,A,False,A
+238,What size of catheter bag may be used at night?,D,B,False,B
+239,Anaerobic metabolism refers to the generation of ATP:,C,C,True,C
+240,Approximately how many kJ of energy are expended if an athlete's steady-rate oxygen uptake averages 3.0 l/min for 5 minutes of exercise?,C,C,True,C
+241,A patient has been on the operating table for four hours. How long may it take for any pressure damage to be visible?,B,C,False,C
+242,Eccrine and apocrine glands are both types of:,A,A,True,A
+243,Which of the following is true of the assessment of power in the arms?,C,D,False,D
+244,"Two of the following are evident - pain at IV site, erythema, and swelling. What stage on the phlebitis scale is this and what should you do?",B,B,True,B
+245,Which hormone is primarily responsible for fluid regulation?,A,A,True,A
+246,The low intake of carbohydrate in the diet:,C,C,True,C
+247,Phophocreatine resynthesis during recovery from exercise is inhibited by:,D,D,True,D
+248,The transcription of DNA to a molecule of messenger RNA occurs:,C,C,True,C
+249,Oedema is the presence of:,B,B,True,B
+250,Why should the short-acting bronchodilator be taken first?,A,A,True,A
+251,Which of the following is true about an intention tremor?,C,D,False,D
+252,Glucose is transported into the muscle cell:,A,A,True,A
+253,Oxygen is used:,B,C,False,C
+254,Measuring the blood pressure in an arm that is above the level of the heart will:,D,D,True,D
+255,When you are taking a musculoskeletal history which of the following is true?,A,A,True,A
+256,Why are male patients advised to take their own electric razor to hospital?,C,C,True,C
+257,Which organ secretes insulin?,B,B,True,B
+258,"When teaching a patient inhaler technique, how will you ensure that a large proportion of the drug reaches the lower airways?",D,D,True,D
+259,Why should a patient stand or sit as upright as possible when recording a peak flow rate?,A,A,True,A
+260,Why might a patient need a tracheostomy?,C,C,True,C
+261,"In general, the higher the intensity of exercise, the greater the proportional contribution of:",B,B,True,B
+262,What is the second commonest hospital acquired infection?,D,A,False,A
+263,Phosphocreatine in the muscle cell is found in:,D,D,True,D
+264,The patient's self-report of pain is important because health care staff:,C,C,True,C

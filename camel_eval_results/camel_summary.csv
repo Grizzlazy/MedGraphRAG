@@ -1,2 +1,0 @@
-dataset,accuracy(%),status,csv
-medqa,70.0,ok,./camel_eval_results/camel_medqa.csv

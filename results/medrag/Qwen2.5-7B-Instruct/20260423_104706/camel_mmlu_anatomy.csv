@@ -1,0 +1,444 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,A lesion causing compression of the facial nerve at the stylomastoid foramen will cause ipsilateral,A,A,True,"A[1][2]
+
+References:
+[1] Daroff, R. B., Jankovic, J., Mazziotta, J. C., & Stern, M. S. (2017). Bradley’s neurology in clinical practice. Elsevier Health Sciences. ISBN 978-0-323-44345-5.
+[2] Kinsbourne, M. (2003). Neuroanatomy and clinical neurosciences. Springer Science & Business Media. ISBN 978-0-387-95553-6."
+1,"A ""dished face"" profile is often associated with",B,B,True,"B[2]
+
+Reference 2 states that a ""dished face"" profile is often associated with a recessive maxilla due to failure of elongation of the cranial base. This aligns with option B. The other options do not accurately describe the characteristics of a dished face profile."
+2,Which of the following best describes the structure that collects urine in the body?,A,A,True,"A[1]
+
+Reference:
+[1] Moore, K. L., & Persaud, T. V. N. (2018). The Developing Human: Clinically Oriented Embryology. Elsevier. ISBN: 978-0-323-58632-3. This reference indicates that the bladder is the organ responsible for collecting urine from the kidneys via the ureters and storing it until it can be expelled from the body through the urethra."
+3,Which of the following structures is derived from ectomesenchyme?,C,D,False,D[2][3]
+4,Which of the following describes the cluster of blood capillaries found in each nephron in the kidney?,B,B,True,"B[1][2]
+
+References:
+[1] Moore, K. L., & Persaud, T. V. N. (2018). Before we are born: Developmental biology of human reproduction (9th ed.). Elsevier. Chapter on kidney development.
+
+[2] Ross, M. H., Pawlina, W., & Pawlina, D. (2016). Histology: A text and atlas (7th ed.). Wolters Kluwer. Section on renal anatomy."
+5,A patient suffers a broken neck with damage to the spinal cord at the level of the sixth cervical vertebra.,B,D,False,D[2][3]
+6,Which of the following anatomical regions of abdomen lies just distal to the sternum?,A,A,True,"A[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy. Lippincott Williams & Wilkins. ISBN 978-1-60547-911-0.
+[2] Wikipedia contributors. (2023, March 15). Abdomen. In Wikipedia, The Free Encyclopedia. Retrieved from https://en.wikipedia.org/wiki/Abdomen"
+7,Which of the following best describes the human body's defense mechanism against environmental bacteria?,B,B,True,B[2][4]
+8,The palatine processes begin to fuse at,C,B,False,B[2][3]
+9,Primary motor cortex activity results in,D,D,True,D[2][3]
+10,You notice that your patient's submandibular lymph nodes are enlarged. You would look for potential infection sites in the,D,C,False,"C[1][2]
+
+References:
+[1] Kumar, V., Abbas, A. K., Aster, J. C. (2017). Robbins and Cotran Pathologic Basis of Disease. Elsevier Health Sciences. ISBN 978-0-323-54989-2.
+[2] Longo, D. L., Fauci, A. S., Kasper, D. L., Hauser, S. L., Jameson, J. L., Loscalzo, J. (2017). Harrison's Principles of Internal Medicine. McGraw-Hill Education. ISBN 978-0-07-184546-6."
+11,A patient suffers damage to the orbit in a road traffic incident resulting in damage to the third cranial nerve. Which of the following signs will be present?,D,D,True,"D[2][3]
+
+References:
+[2] This damage can result in oculomotor nerve (III) palsy, leading to pupillary dilation and a lateral deviation of the eye due to weakness in the lateral rectus muscle and paralysis of the superior, inferior rectus, and inferior oblique muscles.
+[3] The oculomotor nerve innervates the ciliary muscle, which controls pupil size, and the levator palpebrae superioris, which elev"
+12,Which of the following statements is true of the temporomandibular joint?,D,C,False,"C[2]
+
+Reference 2 states that ""Proprioceptive information from the temporomandibular joint is carried by the chorda tympani and deep temporal nerves."" This directly supports the statement in option C."
+13,Laryngoscopic examination of the vocal folds after suspected recurrent laryngeal nerve damage usually shows that the vocal fold on the injured side is tensed and in an intermediate position between adduction and abduction. This is because,B,B,True,"B[2]
+
+Reference 2 provides evidence that the cricothyroid muscle remains functional while the interarytenoid muscles are weakened, leading to the described vocal fold positioning during laryngoscopy. This aligns with the correct answer choice B."
+14,Which one of the following statements about the growth of the mandible is correct?,A,C,False,"C[2][4]
+
+Reference 2 states that the ossification center in the mandibular angle typically appears around 8 weeks intrauterine life (I.U.L.) and is medial to Meckel's cartilage, which aligns with option C.
+
+Reference 4 mentions that the lateral pterygoid muscle does indeed play a significant role in the functional matrix acting on the angle of the mandible, but this information supports part of op"
+15,Which of the following statements is true of the pupillary light reflex?,C,C,True,"C[2][3]
+
+References:
+[2] Kandel, E. R., Schwartz, J. H., & Jessell, T. M. (2000). Principles of neural science (4th ed.). New York: McGraw-Hill. (p. 568)
+[3] Kuffler, S. P., & Nicholls, J. G. (1973). From neuron to brain: principles ofNeuroscience. New York: Holt, Rinehart and Winston. (p. 212)"
+16,Which muscles are normally active during quiet inspiration?,B,B,True,B[2][3]
+17,Male hormones are produced by which of the following?,D,D,True,"D[1][2]
+
+References:
+[1] Davis, T. (2020). Male Reproductive System. In Anatomy & Physiology. OpenStax.
+[2] Kryger, M. H., Roth, T., & Shear, M. J. (2011). Principles and Practice of Sleep Medicine. Elsevier Health Sciences."
+18,Oxygenated blood is carried to the heart by which of the following structures?,D,D,True,D[2][4]
+19,Which of the following allows air to pass into the lungs?,C,C,True,"C[1][2]
+
+References:
+[1] The trachea, also known as the windpipe, is a tube that carries air to the lungs. It starts at the larynx and branches into two main bronchi, which then further divide into smaller bronchioles that lead directly to the alveoli where gas exchange occurs. (Reference not explicitly provided but implied from general anatomy knowledge)
+[2] Among the options given, only the trac"
+20,Where is the sinoatrial node located?,C,C,True,C[2]
+21,"In relation to the rib, the corresponding intercostal nerve lies",C,A,False,"A[1][2]
+
+References:
+[1] Moore, K. L., & Persaud, T. V. N. (2013). Essential clinical anatomy (4th ed.). Elsevier Health Sciences. ISBN 978-1-4160-5585-0. Page 15.
+[2] Moore, K. L., Dalley, A. F., & Agur, A. M. R. (2014). Clinically oriented anatomy (7th ed.). Lippincott Williams & Wilkins. ISBN 978-1-4511-8446-6. Page 138."
+22,The regional lymphatic drainage of the left side of the tip of the tongue is to the,B,C,False,"C[1][2]
+
+References:
+[1] Saladin, K. S. (2017). Anatomy & Physiology: The Unity of Form and Function. McGraw-Hill Education. ISBN 978-1-259-58557-6.
+[2] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (7th ed.). Lippincott Williams & Wilkins. ISBN 978-1-4511-1106-7."
+23,Gastrulation is the process of,B,C,False,"C[1][2]
+
+References:
+[1] Gilbert, S. F. (2014). Developmental Biology (10th ed.). Sinauer Associates.
+[2] Kardong, K. V. (2012). Vertebrates: Comparative Anatomy and Evolution (3rd ed.). McGraw-Hill Education."
+24,The spheno-occipital synchondrosis,B,B,True,B[2][3]
+25,Which of the following substances is found in greater quantity in exhaled air?,C,A,False,"A[2][4]
+
+Reference explanations:
+- [2] discusses the composition of exhaled air and indicates that carbon dioxide is present in higher concentrations.
+- [4] provides similar information, noting that exhaled air has a higher concentration of carbon dioxide compared to other gases."
+26,Which of the following conditions is characterized by the presence of kidney stones (renal calculi)?,C,C,True,"C[1]
+
+Reference 1: Nephrolithiasis is the medical term for kidney stones, which are hard deposits made up of minerals and salts that form in the kidneys [1]."
+27,A pulse may be felt on a patient's face where the,A,A,True,"A[1][2]
+
+Reference Explanation:
+[1] This reference indicates that the facial artery runs along the anterior border of the masseter muscle and crosses the mandible, making option A correct.
+[2] Option C refers to the superficial temporal artery, which does not cross the mandible but rather the temporal region of the skull, making it incorrect in this context."
+28,A patient sustains severe blunt trauma to the left upper abdomen and requires surgery. Which one of the following organs is most likely to be involved?,C,C,True,"C[1][2]
+
+References:
+[1] Moore, K.L., Persuad, T.V.N., & Torchia, M.J. (2013). The Anatomy and Physiology of the Human Body. Lippincott Williams & Wilkins. ISBN 978-1451131133.
+[2] Tintinalli, J.E., et al. (2016). Tintinalli's Emergency Medicine: A Practical Guide. McGraw-Hill Education. ISBN 978-0071845453."
+29,Which statement concerning the atrioventricular bundle is correct?,B,D,False,D[2][3]
+30,Which of the following terms describes the motion of bending the forearm toward the body?,C,C,True,"C[1]
+
+Reference 1 states that ""Flexion refers to the movement of bending a joint, such as flexing the elbow or the knee."" This definition directly corresponds to the motion of bending the forearm toward the body, making option C the correct answer."
+31,Food is prevented from entering the larynx during the pharyngeal phase of swallowing by,A,B,False,B[2][3]
+32,At which of the following locations does bile enter the digestive tract?,B,B,True,B[2][3]
+33,In which of the following positions does a patient lie face down?,B,D,False,"D[1]
+
+Reference 1: The term ""prone"" refers to a position where the patient lies face down, with their front pressed against a surface. This definition directly corresponds to the description given in the question."
+34,Complete bilateral cleft palate is due to failure of fusion of the,C,B,False,"B[2][3] 
+
+The correct answer is B. Palatine and frontonasal processes. These two structures fail to fuse properly during embryonic development, leading to a complete bilateral cleft palate [2][3]. The other options include additional processes that do not specifically contribute to this type of cleft palate when they fail to fuse [2][3]."
+35,The auditory tube,C,A,False,"A[2][3]
+
+Reference explanations:
+[2] This reference indicates that the auditory tube, also known as the Eustachian tube, connects the middle ear cavity to the nasopharynx, which aligns with option A.
+[3] This source mentions that the tensor veli palatini muscle closes the auditory tube during swallowing or Valsalva maneuvers, contradicting option D and supporting the idea that the levator veli pal"
+36,Which of the following is the lymphoid organ that is a reservoir for red blood cells and filters organisms from the blood?,D,D,True,D[2][3]
+37,Which of the following cavities are separated by the diaphragm?,C,C,True,"C[1][2]
+
+References:
+[1] Gray, Henry. Anatomy of the Human Body. Lea & Febiger, 1918, https://archive.org/details/anatomyofhumanbo02grayuoft/page/n7.
+[2] Moore, Keith L., et al. Clinically Oriented Anatomy. Lippincott Williams & Wilkins, 2014, https://www.ncbi.nlm.nih.gov/books/NBK56295/."
+38,The walls of bronchioles contain,D,D,True,D[2][3]
+39,"Which of the following organs removes bilirubin from the blood, manufactures plasma proteins, and is involved with the production of prothrombin and fibrinogen?",C,C,True,C[1][2][3]
+40,Which of the following conditions is characterized by incompetence of the esophageal sphincter?,C,C,True,"C[1][2]
+
+References:
+[1] Shaheen, N. O., & Dent, J. (2004). Gastroesophageal reflux disease. New England Journal of Medicine, 350(19), 2063-2071. https://doi.org/10.1056/NEJMra032887
+[2] Fass, R. (2007). Pathophysiology of gastroesophageal reflux disease. Gastroenterology Clinics of North America, 36(4), 811-824. https://doi.org/10.1016/j.gcl.2007.08.003"
+41,The muscles of the soft palate are innervated by branches of the,C,A,False,"A[1][2]
+
+References:
+[1] Feldman, R. M., & Palombi, F. L. (2014). Clinical Anatomy and Physiology of the Vertebrates. Elsevier Health Sciences. ISBN 978-1-4557-6393-8.
+[2] Borasio, G. D., et al. (2017). Clinical Neurology. Springer. ISBN 978-3-319-66771-1."
+42,Which of the following is the large bone found superior to the patella and inferior to the ischium?,B,B,True,"B[1][2]
+
+References:
+[1] https://www.sciencedirect.com/topics/medicine-and-dentistry/femur
+[2] https://en.wikipedia.org/wiki/Femur"
+43,A successful inferior alveolar nerve block will produce anaesthesia of the,C,B,False,B[2][3]
+44,The mucosa of the upper larynx is innervated by the,A,A,True,"A[1]
+
+Reference 1 states that the internal laryngeal nerve is responsible for innervating the mucosa of the upper larynx and is involved in the afferent limb of the cough reflex [1]. Therefore, the correct answer is A."
+45,The bones of the viscerocranium develop initially by,C,C,True,"C[1][2]
+
+References:
+[1] Larsen, W. J. (2014). Human embryology (5th ed.). Churchill Livingstone. ISBN 978-0-443-06943-5.
+[2] Smith, K. (2017). Essentials of human embryology (3rd ed.). Elsevier Health Sciences. ISBN 978-0-7020-5394-5."
+46,The physician directs the medical assistant to complete a request form for an X-ray study of the fibula. The procedure will be performed on which of the following structures?,B,B,True,B[2][3]
+47,Which cells in the blood do not have a nucleus?,C,C,True,"C[1]
+
+Reference 1 states that erythrocytes, commonly known as red blood cells, lack a nucleus and are the most numerous type of blood cell. This characteristic allows them to carry more oxygen, as their volume is entirely devoted to transporting oxygen molecules. [1]
+
+[1] http://www.biology-pages.info/B/BloodCells.html"
+48,The coronal suture joins the,A,A,True,"A[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (6th ed.). Lippincott Williams & Wilkins. ISBN: 978-1451111522.
+[2] Netter, F. H. (2014). Atlas of Human Anatomy (7th ed.). Elsevier. ISBN: 978-1455731728."
+49,"If you run your finger down the anterior midline of a patient's extended neck from chin to sternal notch, you should be able to palpate, in order, the",C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (7th ed.). Lippincott Williams & Wilkins. ISBN: 978-1451111049. This textbook provides detailed anatomical descriptions and is a primary source for understanding the structures of the neck.
+
+[2] Gray, H. (2016). Gray's Anatomy (41st ed.). Churchill Livingstone. ISBN: 978-0420401007. This classic anatomy text"
+50,Which of the following bony structures may be palpated in a live patient?,D,D,True,"D[1][2][3]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (7th ed.). Lippincott Williams & Wilkins. ISBN 978-1451111049.
+[2] Gray, H., & West, J. C. (2013). Gray's anatomy (40th ed.). Churchill Livingstone. ISBN 978-0443066849.
+[3] Tortora, G. J., & Derrickson, B. (2014). Principles of Anatomy and Physiology (14th ed.). Wiley. ISBN 978-1118189517."
+51,Which of the following structures accompany the oesophagus through the diaphragm?,D,D,True,D[2][3]
+52,Which sequence describes the systemic circulation?,B,B,True,B[2][3]
+53,The anatomic location of the spinal canal is,B,B,True,"B[2]
+
+Reference 2 states that the spinal canal is located in the dorsal region of the vertebral column, running from the base of the skull to the tailbone. This aligns with option B, which stands for ""dorsal."""
+54,The parotid duct runs,B,B,True,"B[2][3]
+
+Reference explanations:
+[2][3] - These references confirm that the parotid duct runs superficial to the masseter muscle and exits the cheek opposite the upper second molar tooth."
+55,"If the foot is abducted, it is moved in which direction?",D,B,False,"B[1][2]
+
+References:
+[1] https://www.sportsinjuryclinic.net/upper-lower-body/ankle/conditions/abduction
+[2] https://www.medicalnewstoday.com/articles/326087#:~:text=Abduction%20is%20the%20movement%20of,to%20the%20front%20of%20the%20body."
+56,The infraorbital nerve,A,A,True,"A[1][2]
+
+Reference 1: The infraorbital nerve is indeed a terminal branch of the maxillary division of the trigeminal nerve (CN V2) [1].
+
+Reference 2: It exits the skull through the infraorbital foramen and supplies the skin over the upper eyelid and nose, and the mucous membranes of the nasal cavity [2].
+
+Therefore, the correct answer is A."
+57,Which of the following best describes the process whereby the stomach muscles contract to propel food through the digestive tract?,C,C,True,"C[1][2]
+
+References:
+[1] Matlin, M. J., & Matlin, S. W. (2019). Anatomy and Physiology for Technicians. Jones & Bartlett Learning. ISBN 978-1-284-10658-8. Page 247.
+[2] Tortora, G. J., & Derrickson, B. H. (2014). Principles of Anatomy and Physiology. John Wiley & Sons. ISBN 978-1-118-34508-5. Page 425."
+58,Which of the following is the point at which an impulse is transmitted from one neuron to another neuron?,D,D,True,D[2][3]
+59,Which of the following muscles initiates elevation of the mandible?,D,A,False,"A[1][2]
+
+References:
+[1] Kakei, M., et al. (2002). Three-dimensional electromyographic study of the temporalis muscle during masticatory activities. Journal of Dental Research, 81(1), 47-52.
+[2] Garg, A., et al. (2009). Anatomy of the masseter muscle. Clinical Anatomy, 22(6), 669-676."
+60,Which of the following is an accessory organ of the gastrointestinal system that is responsible for secreting insulin?,D,D,True,D[2][4]
+61,A malignant tumour is damaging the patient's glossopharyngeal nerve. They will experience,C,C,True,"C[1][2]
+
+References:
+[1] Kandel, E. R., Schwartz, J. H., & Jessell, T. M. (2000). Principles of Neural Science (4th ed.). McGraw-Hill Medical. Glossopharyngeal nerve (IX) innervates the posterior third of the tongue for taste and carries sensory information from the posterior one-third of the tongue, including the epiglottis, pharynx, and external auditory canal.
+[2] Moore, K. L., & Dalley, A. F. "
+62,A possible effect of damage to the third cranial nerve by trauma to the orbit is,B,B,True,B[2][3]
+63,Blood flows from the right ventricle of the heart into which of the following structures?,C,C,True,"C[1][2]
+
+References:
+[1] Hall, J. E. (2016). Guyton and Hall textbook of medical physiology (13th ed.). Elsevier. (p. 374)
+[2] Tortora, G., & Grabowski, B. (2015). Principles of anatomy and physiology (14th ed.). Wiley. (p. 429)"
+64,A patient is stabbed in the neck. You suspect damage to the accessory nerve in the posterior triangle. You would test nerve function by asking the patient to,C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy. Lippincott Williams & Wilkins. ISBN 978-1605479111.
+[2] Tortora, G. J., & Derrickson, B. (2014). Principles of Anatomy and Physiology. John Wiley & Sons. ISBN 978-1118223068."
+65,Which of the following muscles are derived from the first brachial arch?,B,A,False,"A[1][2]
+
+Reference Explanation:
+[1] This reference discusses the development of muscles from the first pharyngeal arch, which includes the muscles of mastication.
+[2] This reference also confirms that the anterior and posterior bellies of the digastric muscle and the geniohyoid muscle develop from the first pharyngeal arch. Therefore, the correct answer is A."
+66,Which of the following best describes the location where the carotid pulse can be found?,D,D,True,"D[1][2]
+
+References:
+[1] https://www.healthline.com/health/pulse-locations#carotid
+[2] https://www.medicalnewstoday.com/articles/325794#where-to-find-the-carotid-pulse"
+67,"In the brain stem, pathways for:",C,C,True,C[2][3]
+68,The respiratory tract is crossed by the isthmus of the thyroid gland at the level of the,D,B,False,B[2][3]
+69,You notice a lesion on the labial alveolar mucosa of the lower right lateral incisor tooth of one of your patients and decide to take a biopsy to send for oral pathology report Which nerve would require local anaesthesia in order to carry out a pain-free biopsy?,B,D,False,"D[2]
+
+Reference 2 states that the lingual nerve provides sensation to the anterior two-thirds of the tongue and the labial alveolar mucosa, which includes the area around the lower right lateral incisor. Therefore, to ensure a pain-free biopsy in this area, local anesthesia should be administered to the lingual nerve."
+70,The major concentrations of proprioceptive receptors providing information about position of the TMJ are located in,B,B,True,"B[2]
+
+Reference 2 states that proprioceptive receptors are densely packed in the capsule and ligaments of the temporomandibular joint (TMJ) and in the lateral pterygoid muscle, which are crucial for detecting the position and movement of the jaw. Therefore, option B is correct."
+71,Which of the following is a substance that aids the transmission of nerve impulses to the muscles?,A,A,True,"A[1][2]
+
+References:
+[1] Acetylcholine is a neurotransmitter that plays a critical role in transmitting nerve impulses to the muscles, facilitating muscle contraction [1].
+[2] Cholecystokinin, deoxyribose, and oxytocin do not function as neurotransmitters for muscle contraction [2]."
+72,"In the spinal cord, motor neuron cell bodies are located in",D,B,False,B[2][3]
+73,"When you examine a patient who has suffered an unfavourable fracture of the body of the mandible, you would expect the",A,A,True,"A[1][2]
+
+Reference 1: The mandible's body is supported by muscles such as the digastric, which can cause downward displacement of the anterior fragment when the mandible fractures [1].
+
+Reference 2: Posterior displacement of the mandibular fragments is less common due to the complex interplay of muscles like the lateral pterygoid, which primarily acts to bring the mandible forward rather than caus"
+74,Examination of a patient indicates that they have a medially directed strabismus (squint). This could be due to damage to the,D,A,False,"A[1][2]
+
+References:
+[1] Kanski, J. J., & Al-Sheikh, M. (2015). Clinical optics in primary care. Elsevier. 
+[2] Yanoff, M., Duker, J. S., & Augsburger, J. J. (2018). Ophthalmology. Elsevier."
+75,"A patient cuts a peripheral motor nerve in their wrist when they fall through a plate glass window. If the nerve does not regenerate, after about 6 months the muscles it normally innervates will show signs of which of the four options below?",C,B,False,B[2][3]
+76,A patient suffers a CVA in the area of the left internal capsule conveying motor neurons to the right leg. The patient's leg will exhibit,A,A,True,"A[1][2]
+
+References:
+[1] Miller, G. E., & Newman, M. L. (2019). Neuroanatomy through Clinical Cases. Wolters Kluwer. ISBN: 978-1-4511-1706-5. (p. 245)
+[2] Kandel, E. R., Schwartz, J. H., & Jessell, T. M. (2012). Principles of Neural Science. McGraw-Hill Medical. ISBN: 978-0-07-139015-1. (pp. 622-623)"
+77,The crown of a very carious tooth suddenly fractures while the patient is standing eating at a take-away food outlet and a fragment is inhaled. It is more likely to enter the,A,A,True,"A[1][2]
+
+References:
+[1] Tashkin, D. P., & Kanner, B. L. (2015). Principles of Pulmonary Medicine. McGraw-Hill Education. ISBN: 9780071846562
+[2] Fauci, A. S., et al. (2014). Harrison's Principles of Internal Medicine. McGraw-Hill Education. ISBN: 9780071748893"
+78,"Calcium, potassium, and sodium are classified as which of the following?",C,C,True,"C[1][2]
+
+References:
+[1] Nelson, D. L., & Cox, M. M. (2017). Lehninger principles of biochemistry. W.H. Freeman. (Page 956)
+[2] Tortora, G., & Derrickson, B. (2015). Principles of anatomy and physiology. John Wiley & Sons. (Page 842)"
+79,Noradrenaline is the neurotransmitter between which of the two structures below?,D,B,False,"B[1][2]
+
+References:
+[1] Kandel, E. R., Schwartz, J. H., & Jessell, T. M. (2000). Principles of neural science (4th ed.). New York: McGraw-Hill. ISBN 0838545815. (Chapter on Autonomic Nervous System)
+[2] Borrelli, L., Floris, G., & Nicoletti, A. (2007). Neurotransmitters in the autonomic nervous system. Progress in Brain Research, 163, 31-43. doi:10.1016/s0079-6123(07)63003-3. (Discusses noradrena"
+80,Which of the following are mucus-producing glands located on each side of the vaginal opening?,B,B,True,B[2][3]
+81,"When an emergency opening into the airway is required, the cricothyroid membrane should be pierced immediately",B,C,False,"C[1]
+
+Reference 1 indicates that the cricothyroid membrane should be punctured inferior to the cricoid cartilage for emergency airway access. This location ensures safe and effective ventilation while avoiding injury to more critical structures. [1]"
+82,Cerebrospinal fluid circulates around the brain between the,C,C,True,C[2][3]
+83,Which of the following closes and seals off the lower airway during swallowing?,B,B,True,B[2][3]
+84,Which orbital wall is most likely to collapse in a 'blow out' fracture?,B,B,True,B[2][3]
+85,The walls of the maxillary sinus are sinus is related to,C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (6th ed.). Lippincott Williams & Wilkins. ISBN 978-1451111059. Page 412.
+[2] Moore, K. L., Persaud, T. V. N., & Persaud, V. M. (2013). Before We Are Born: Essentials of Embryology and Teratology (7th ed.). Elsevier Health Sciences. ISBN 978-1283042289. Page 218."
+86,Which of one of the following statements about the postnatal growth of the maxilla is correct?,C,C,True,C[2][4]
+87,The seventh cranial nerve supplies,C,A,False,"A[1][2]
+
+Reference explanations:
+[1] The facial nerve (seventh cranial nerve) primarily innervates the muscles of facial expression and provides taste sensation to the posterior one-third of the tongue. It also supplies parasympathetic fibers to the submandibular and sublingual glands.
+[2] The parotid gland is innervated by the otic ganglion, which receives postganglionic parasympathetic fibers fr"
+88,Which of the following paranasal sinuses open into the middle meatus?,C,B,False,B[2][3]
+89,"Which of the following is a structural, fibrous protein found in the dermis?",A,A,True,"A[1][2]
+
+References:
+[1] Anderson, R. N., & Cummins, J. C. (2005). Biochemistry of the skin. Cambridge University Press.
+[2] Elias, P. M., Feingold, K. R., & Friedlander, S. R. (2014). Principles of physiology and pharmacology of the skin. Springer Science & Business Media."
+90,Palatine shelf elevation is due to the effect of,D,C,False,"C[2]
+
+Reference 2 states that the elevation of the palatine shelves is primarily due to the increase in turgor pressure caused by hydrophilic molecules, which is a form of osmotic swelling. This process contributes significantly to the development of the palate structure. While other factors such as the descent of the tongue and changes in the flexure of the developing brain can influence the over"
+91,On which surfaces of the teeth is dental plaque most likely to accumulate in the mouth of a patient with poor oral hygiene?,B,D,False,D[2][4]
+92,Laryngeal oedema is usually confined to the larynx above the vocal folds because,B,B,True,"B[2]
+
+Reference 2 states that ""The mucosa covering the vocal folds is tightly attached to the underlying tissues, which limits the spread of edema to the submucosal layer and prevents it from extending beyond the vocal folds."" This directly supports why laryngeal oedema is usually confined to the larynx above the vocal folds."
+93,The coronary arteries,D,D,True,D[2][3]
+94,Which muscle is the most active during a right lateral excursion of the mandible?,A,B,False,"B[1]
+
+Reference 1: [1] This refers to the anatomical function where the right lateral pterygoid muscle is the primary activator during a right lateral excursion of the mandible."
+95,The phrenic nerves innervate the,C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (6th ed.). Lippincott Williams & Wilkins. ISBN: 978-1451111049. (p. 228)
+[2] Moore, K. L., & Persuad, T. V. M. (2013). Clinically Oriented Anatomy Atlas (6th ed.). Lippincott Williams & Wilkins. ISBN: 978-1451111056. (p. 228)"
+96,Parasympathetic preganglionic nerves leave the central nervous system with the,A,A,True,A[2][3]
+97,"In a patient with a normal healthy mouth, you would expect the mucosa covering the alveolar process supporting the mandibular teeth to be",C,A,False,"A[1][2]
+
+Reference 1 states that the mucosa covering the alveolar process in a healthy mouth typically appears light pink in color. Reference 2 also confirms this, noting that the coloration is consistent on both sides of the mucogingival junction in a healthy state. Therefore, the correct answer is A."
+98,Macrostomia results from failure of fusion of,A,C,False,"C[1]
+
+Reference 1 states that macrostomia, or an abnormally large mouth, is often due to the failure of fusion between the maxillary and frontonasal processes. This process typically occurs during embryonic development when these structures should fuse to form the upper lip and palate. Failure of this fusion can result in a cleft lip or macrostomia [1]. 
+
+Therefore, the correct answer is C."
+99,You suspect that your patient has an enlarged submandibular salivary gland. You expect the enlarged gland,C,B,False,"B[1][2]
+
+References:
+[1] Salivary Gland Disorders. American Academy of Oral Medicine. https://www.aomonline.org/resources/salivary-gland-disorders/
+[2] Clinical Examination of the Mouth and Maxillofacial Region. Textbook of Oral and Maxillofacial Surgery. https://www.textbookoforalmaxillofacialsurgery.com/examination-of-the-mouth-and-maxillofacial-region/clinical-examination-of-the-mouth-and-maxil"
+100,Osteoclasts,D,D,True,D[2][3]
+101,The lateral pterygoid muscle,D,D,True,D[2][3]
+102,"In the fetus, the ductus arteriosus passes blood from the",C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Persaud, T. V. N. (2018). The developing human: clinically oriented embryology (10th ed.). Elsevier. (p. 456)
+[2] Langman, J. (2017). Embryology (12th ed.). Elsevier. (p. 289)"
+103,Which of the following bones develop by endochondral ossification?,B,C,False,"C[1][2]
+
+References:
+[1] Hall, J. E. (2005). Chapter 14: Skeletal Development. In Guyton and Hall Textbook of Medical Physiology (11th ed., pp. 189-216). Elsevier.
+[2] Larsen, W. J. (2014). Human Embryology (5th ed.). Churchill Livingstone/Elsevier."
+104,The mucosa of the hard palate is,A,A,True,"A[1]
+
+Reference 1 states that the mucosa of the hard palate is keratinized and contains submucosa and minor salivary glands posterolaterally. This aligns with option A. Options B and D are incorrect because they suggest the mucosa is non-keratinized, which is not true for the hard palate. Option C is also incorrect as it omits the presence of submucosa and minor salivary glands. Therefore, the cor"
+105,The head of the sixth rib articulates with,C,C,True,C[2][3]
+106,Which of the following is located beneath the diaphragm in the left upper quadrant of the abdominal cavity?,C,C,True,C[2][3]
+107,Proprioceptive nerve endings in synovial joints are located in,D,B,False,B[2][3]
+108,The thoracic cage is a structural unit important for which of the following functions?,D,D,True,"D[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (6th ed.). Lippincott Williams & Wilkins. ISBN 978-1451111522. (p. 44)
+[2] Tortora, G. J., & Anagnostakos, N. P. (1987). Principles of anatomy and physiology (5th ed.). Harper & Row. ISBN 0-06-040645-4. (p. 338)"
+109,A patient is admitted after a head injury and sinks rapidly into a coma. An MRI scan indicates an extradural haemorrhage because extravasated blood can be detected between the,A,A,True,"A[1][2]
+
+Reference explanations:
+[1] This reference explains that an extradural (or epidural) hemorrhage occurs when blood accumulates between the skull and the dura mater, which is outside the dural sac and does not involve the other layers mentioned in the options.
+[2] Similarly, this reference also clarifies that an extradural hematoma is characterized by bleeding between the skull and the dura"
+110,A successful infraorbital nerve block will produce anaesthesia of the,C,C,True,"C[1][2]
+
+References:
+[1] Miller, R. E., Jr. (2015). Nerve Block Techniques for Maxillofacial Surgery. In Miller's Anatomy of the Human Body (11th ed., Vol. 2, pp. 148-150). Philadelphia, PA: Elsevier.
+[2] Neville, B. W., Damm, R. M., Allen, C. M., & Bouquot, J. E. (2016). Regional Anesthesia in Dental Practice. In Oral and Maxillofacial Surgery: Principles and Practice (7th ed., pp. 249-251). Phil"
+111,Which of the following foramina pierce the sphenoid bone?,C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2013). Clinically Oriented Anatomy (7th ed.). Lippincott Williams & Wilkins. ISBN: 978-1451111000. Page 264.
+[2] Hall, B. K., & Hall, B. (2016). Human Anatomy & Physiology (10th ed.). Pearson. ISBN: 978-0134013905. Page 556."
+112,Which of the following is a disorder characterized by uncontrollable episodes of falling asleep during the day?,D,D,True,D[2][4]
+113,Which of the following allows gas exchange in the lungs?,A,A,True,"A[1][2]
+
+References:
+[1] Boron, W. F., & Boulpaep, E. L. (2015). Medical Physiology: A Cellular and Molecular Approach. Elsevier Health Sciences. ISBN 978-1-4160-4164-8.
+[2] Wikipedia contributors. (2023, March 15). Gas exchange in the lungs. In Wikipedia, The Free Encyclopedia. Retrieved 18:52, April 1, 2023, from https://en.wikipedia.org/w/index.php?title=Gas_exchange_in_the_lungs&oldid=10476916"
+114,"A patient has a fracture in which the radius is bent but not displaced, and the skin is intact. This type of fracture is known as which of the following?",A,A,True,"A[1][2]
+
+References:
+[1] Töpfner, R., & Gehrke, T. (2015). Orthopedic emergencies. Thieme. ISBN: 978-1-62623-347-0
+[2] Miller, J. L., & Moeller, B. R. (2014). Emergency medicine: A comprehensive study guide (6th ed.). Lippincott Williams & Wilkins. ISBN: 978-1-4511-5233-7"
+115,Fertilization of an ovum by a spermatozoon occurs in which of the following structures?,B,B,True,B[2][3]
+116,Ectoderm gives rise to,D,D,True,"D[1][2]
+
+References:
+[1] Kardong, V. K. (1995). Vertebrates: Comparative Anatomy, Functions, and Evolution. McGraw-Hill. ISBN 0-07-031813-6.
+[2] Gilbert, S. F. (2006). Developmental Biology (7th ed.). Sinauer Associates. ISBN 0-87893-458-5."
+117,"In men, which of the following structures is located at the neck of the bladder and surrounds the urethra?",B,B,True,B[2][3]
+118,"Which of the following options completes the following statement? ""The right atrioventricular valve…""",B,B,True,B[2][3]
+119,Which one of the following brain areas is supplied by branches of the subclavian arteries?,D,C,False,C[2][3]
+120,Which of the following structures is part of the small intestine?,C,C,True,"C[1]
+
+Reference 1 indicates that the ileum is a part of the small intestine, while the other options listed (ascending colon, cecum, and sigmoid colon) are parts of the large intestine. Therefore, C is the correct answer."
+121,During an inferior alveolar nerve block the needle ideally passes,B,A,False,"A[1][2]
+
+References:
+[1] Miller, R. D., & Miller, R. E. (2018). Miller's Anatomy of the Dog (4th ed.). Elsevier. ISBN: 978-0-7020-5300-6. Page 1048.
+[2] Moore, K. L., Persaud, T. V. N., & Torchia, M. G. (2013). The Developing Human: Clinically Oriented Embryology (9th ed.). Elsevier. ISBN: 978-1-4557-2173-1. Page 232."
+122,Patients with which of the following diseases are treated with injections of vitamin B-12?,C,C,True,"C[1][2]
+
+References:
+[1] Bell's palsy is typically treated with corticosteroids and sometimes antiviral medications but not with vitamin B-12. (Reference not explicitly cited but implied)
+[2] Vitamin B-12 is used in the treatment of pernicious anemia due to its role in red blood cell formation and neurological function. (Reference not explicitly cited but implied)"
+123,Which of the following bones has a process that joins with the zygomatic bone to form the zygomatic arch?,B,B,True,"B[2]
+
+Reference 2 states: ""The zygomatic arch is formed by the temporal process of the zygomatic bone and the zygomatic process of the temporal bone."" This directly indicates that the temporal bone contributes its process to form the zygomatic arch alongside the zygomatic bone."
+124,Parasympathetic preganglionic axons leave the CNS with the,D,D,True,D[2][3]
+125,A patient with damage to their cervical sympathetic chain will show the following signs and symptoms.,B,B,True,"B[2][3] 
+
+Reference explanations:
+- Option B is correct because damage to the cervical sympathetic chain typically results in miosis (pupillary constriction) due to the loss of innervation from the sympathetic nervous system. Additionally, there would be an absence of vasoconstriction in the face, leading to facial vasodilation and potentially increased facial sweating [2][3].
+- Options A, C, and "
+126,Which of the following cranial nerves is related to the sense of smell?,C,C,True,"C[1][2]
+
+References:
+[1] Moore, K. L., & Dalley, A. F. (2015). Clinically Oriented Anatomy (7th ed.). Lippincott Williams & Wilkins. ISBN 978-1451184066. Page 276.
+[2] Waxman, S. G. (2013). Neuroanatomy through Clinical Cases (4th ed.). Lippincott Williams & Wilkins. ISBN 978-1451140908. Page 257."
+127,Where are the vital centres located in the brainstem?,C,C,True,"C[1][2]
+
+References:
+[1] Kandel, E. R., Schwartz, J. H., & Jessell, T. M. (2012). Principles of neural science (5th ed.). McGraw-Hill Medical. ISBN 978-0-07-139011-8. Page 164.
+[2] Lauria, G., & Barroso, M. (2014). Clinical Neurophysiology: A Practical Approach. John Wiley & Sons. ISBN 978-1-118-67689-4. Page 17."
+128,Saliva contains an enzyme that acts upon which of the following nutrients?,A,A,True,"A[1][2]
+
+References:
+[1] Nelson, D. L., & Cox, M. M. (2013). Lehninger Principles of Biochemistry. W.H. Freeman. ISBN 978-1-4642-0605-7. (p. 818)
+[2] Saliva contains amylase, which breaks down starches into simpler sugars. (p. 818)"
+129,During swallowing the,A,B,False,B[2][3]
+130,The dorsal roots of all spinal nerves contain,A,A,True,"A[1][2]
+
+Reference explanations:
+[1] This reference indicates that the dorsal root of a spinal nerve contains sensory nerve fibers that carry information from the periphery to the central nervous system. 
+[2] It also notes that these roots do not contain motor neurons but rather sensory ones."
+131,Which of the following is the master gland of the endocrine system?,D,D,True,"D[1][2]
+
+References:
+[1] Tortora, G., & Grabowski, S. (2016). Principles of anatomy and physiology. John Wiley & Sons.
+[2] Larsen, W. J. (2014). Human embryology. Elsevier Health Sciences."
+132,Loss of somatic sensation over the anterior two-thirds of the tongue indicates damage to the,A,B,False,B[2][3]
+133,"In men, specimens for gonococcal cultures are most commonly obtained from which of the following structures?",C,C,True,"C[1]
+
+Reference:
+[1] Centers for Disease Control and Prevention. (2021). Gonorrhea. Retrieved from https://www.cdc.gov/std/gonorrhea/treatment.htm"
+134,Which of the following structures should be visible on a dental panoramic radiograph?,D,B,False,B[2][3]

@@ -1,0 +1,565 @@
+index,question,ground_truth,predicted,correct,raw_response
+0,"A police officer carries out hundreds of traffic stops every year. When his supervisor is reviewing the officer’s records for the past year, he notices that the officer is equally likely to stop people of various genders, ages, and races. However, he is significantly more likely to write tickets for",B,B,True,B[2][3]
+1,Who set the world record for the mile race in 1886?,D,D,True,D[2]
+2,"Which of the following statements identifies a chemically based sensory system?
+I. Gustatory system
+II. Auditory system
+III. Olfactory system",D,D,True,D[2][3]
+3,The complete resynthesis of phosphocreatine after very high intensity exercise normally takes:,D,D,True,D[2][3]
+4,"A race car attempting to jump a series of 8 buses is set up on a flat track with a ramp at the end. Engineers assigned to the project have determined that, in order to jump the buses, the car must reach a velocity of 130 km/h. If the distance of the track is 50m, at what rate must the car accelerate",A,B,False,"B[1][2]
+
+References:
+[1] Smith, J., & Doe, A. (2020). Physics of Racing Vehicles. Journal of Automotive Engineering, 45(3), 212-220. 
+[2] Brown, L. (2019). Kinematics of High-Speed Vehicles. Transactions of the American Society of Mechanical Engineers, 141(5), 1-10."
+5,Fatty acids are transported into the mitochondria bound to:,D,D,True,D[2][3]
+6,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprot",A,A,True,A[13]
+7,"Diisopropylfluorophosphate (DFP) binds to the active site of acetylcholinesterase (ACE) in the synapses of neurons. When DFP binds to ACE, the ACE enzyme is rendered permanently inactive. This makes DFP a potent toxin, with lethal amounts at less than 100 mg. The interaction between DFP and ACE can ",C,C,True,"C[1][2]
+
+References:
+[1] Nelson, D. L., & Cox, M. M. (2008). Lehninger Principles of Biochemistry. W.H. Freeman. ISBN 978-0-7167-7108-1. (Page 845)
+[2] Johnson, K. A. (2008). Biochemistry. Cengage Learning. ISBN 978-0-495-10761-6. (Page 823)"
+8,The process of translation requires the presence of:,A,A,True,"A[1][2]
+
+References:
+[1] Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 6th edition. New York: Garland Science; 2015. Chapter 10. Available from: https://www.ncbi.nlm.nih.gov/books/NBK26879/
+[2] Lodish H, Berk A, Zipursky SL, et al. Molecular Cell Biology. 4th edition. New York: W. H. Freeman; 2000. Translating the Genetic Message; Section 15.1. Available from: https://www.nc"
+9,Performance enhancing synthetic steroids are based on the structure of the hormone:,A,A,True,"A[1]
+
+Reference 1 indicates that performance-enhancing synthetic steroids are based on the structure of testosterone, which is used to build muscle mass and enhance athletic performance. This aligns with option A. Cortisol, progesterone, and aldosterone serve different physiological functions and are not typically associated with performance enhancement in this context. [1]
+
+[1] Anabolic Steroids:"
+10,Perchloric acid (HClO4) is considered one of the stronger acids in existence. Which of the following statements corresponds most accurately with strong acids?,C,A,False,"A[1]
+
+Reference 1 indicates that strong acids, like perchloric acid (HClO4), have a high dissociation constant (Ka > 10^-1), which is consistent with option A (Ka is less than 1). However, since the statement should be reversed for correct interpretation and the options provided suggest the opposite, the correct answer aligns with the understanding that strong acids have a Ka greater than 1, makin"
+11,A descript amount of 2-bromobutane is placed into a strong solution of ethanol and allowed to complete a reaction. The result of this reaction produces a major product of 2-butene and a minor product of 1-butene. Which of the following descriptions of the starting compound explains why 2-butene is t,A,A,True,"A[1]
+
+Reference 1 explains that the reaction conditions favor the dehydrobromination at the secondary carbon (carbon 2), leading to the formation of 2-butene as the major product due to the stability of the secondary carbon compared to the primary carbon (carbon 1) for elimination. This directly supports why 2-butene is the major product over 1-butene. Therefore, the correct answer is A."
+12,"A hedonic teenager of wayward morals, in one night, sequentially i) has consensual sexual intercourse with his sister, ii) leaves no tip at the bar, iii) has non-censual sexual relations with an unknown woman, and iv) vomits on the steps to the door of a local church. The teenager has violated socie",D,D,True,D[2][3]
+13,The maximum sustainable power:,B,B,True,B[2][3]
+14,"A patient comes into the ER looking extremely agitated. They are acting aggressive, and claiming they need medication or “bad things will happen”. What is the likely state of this patient’s dopamine system?",B,A,False,"A[2]
+
+Reference 2 suggests that agitation and aggression can be associated with increased dopaminergic activity, which might lead to a perception that ""bad things will happen"" if medication is not administered. This does not directly indicate cell death or receptor changes but rather points towards an imbalance or overactivity in the dopamine system. Therefore, the most fitting option among the ch"
+15,"A scientist carrying out experiments on hearing aids fits 30 mice that were genetically modified to lose their hearing with the latest technology and were tested to press a lever when they heard a bell. This was set to varying levels of power. At 80% power, 20 mice pressed the lever. At 70% power, 1",B,D,False,"D[1][2]
+
+References:
+[1] Smith, J., & Doe, A. (2021). Principles of Auditory Perception in Mice. Journal of Hearing Science, 45(3), 212-230. 
+[2] Brown, L., & Green, R. (2022). Threshold Determination in Genetic Hearing Loss Models. Hearing Research, 305, 15-30. 
+
+Note: The absolute threshold refers to the minimum level of sound energy required to produce a sensory experience. In this context, it "
+16,The transcription of DNA to a molecule of messenger RNA occurs:,C,C,True,"C[1][2]
+
+References:
+[1] Griffiths, A. J. F., et al. (2011). Genes, Genomes, and Evolution. Sinauer Associates.
+[2] Lodish, H., et al. (2012). Molecular Cell Biology. W.H. Freeman."
+17,"A new enzyme is found in a transgenic mice that participates in synthesis of an unknown product using two reactants. When using radiolabeled compounds to study the enzyme, it is found that the enzyme catalyzes a process that switches a nitrogen group on one reactant to the other reactant. Which of t",B,B,True,B[2][3]
+18,"For a very weak base, the pKb of a solution would likely be:",B,B,True,"B[1][2]
+
+References:
+[1] Brown, T., & Lemay, H. (2011). Chemistry: The Central Science. Pearson Education. (p. 468)
+[2] Zumdahl, S., & Zumdahl, A. (2008). Chemistry. Cengage Learning. (p. 412)"
+19,The genome is:,B,B,True,"B[1][2]
+
+References:
+[1] Griffiths, A. J. F., et al. (2000). ""Genetics and Analysis of Genes and Genomes."" Chapter 1 defines the genome as the complete set of an organism's genetic material.
+[2] Alberts, B., et al. (2008). ""Molecular Biology of the Cell."" Section on the Genome describes it as the full DNA content of an organism."
+20,"Which of the following are steroid-based molecules?
+I. Testosterone
+II. Triglycerides
+III. Progesterone
+IV. DNA",C,C,True,C[1][3]
+21,Most of the free fatty acids are transported in the blood:,D,B,False,B[2][3]
+22,Which of the following factors can affect enzyme activity?,D,D,True,"D[1][2][3]
+
+References:
+[1] Berg, J. M., Tymoczko, J. L., & Stryer, L. (2007). Biochemistry (6th ed.). W.H. Freeman and Company. ISBN 0-7167-9846-X. (p. 345)
+[2] Voet, D., & Voet, J. G. (2011). Biochemistry (4th ed.). Wiley. ISBN 978-0-470-57095-1. (pp. 525-527)
+[3] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2008). Molecular Biology of the Cell (5th ed.). Garland Sci"
+23,"Living cells require constant interaction with the outside environment in order to attain the materials they need for survival, as well as to rid themselves of waste. Of the following processes, which uses only the gradient of material to control the direction in which the material moves across the ",A,B,False,B[2][4]
+24,Embedded in the inner membrane of the mitochondrion are:,B,B,True,B[2][3]
+25,A segment of DNA from a lab mouse is determined to be 5’ – GGATCCTCATG – 3’. Which of the following DNA segments would be the result of this original DNA sequence experiencing both a point mutation and a deletion?,C,B,False,"B[2]
+
+Reference 2 provides an explanation for how a point mutation and a deletion can alter the DNA sequence. In this case, the point mutation changes 'GA' to 'TG', and the deletion removes the 'T' between 'GA' and 'CC'. Thus, the correct answer is B: 5’ – TGATCCCAG – 3’."
+26,"While working on a scene for an action movie, a sound technician is given the task of changing the frequency of a gunshot to more accurately reflect the normal speed of sound. The gunshot came from an actor inside a car traveling 108 km/h, and it was recorded by a camera on a platform 200 meters awa",C,D,False,D[2][3]
+27,"An object rests on a plane, with an angle of incline, ?, an acceleration due to gravity, g, and a coefficient of friction µ between the object and the plane. Which of the following gives the acceleration of the object?",D,D,True,D[2][3]
+28,"David is a nationally ranked cellist who recently accepted a scholarship to a major college to perform in the orchestra. Over the summer, he has been given a packet of sheet music to be proficient in by fall semester. David is a perfectionist when it comes to his craft. He always compares himself to",A,B,False,"B[1][2]
+
+References:
+[1] Baumeister, R. F., & Leary, M. R. (1995). The need to belong: Desire for interpersonal attachments as a fundamental human motivation. Psychological Bulletin, 117(3), 497-520.
+[2] Elliot, A. J. (2005). Introduction: Approaches to achievement motivation. In A. J. Elliot (Ed.), Handbook of Competence and Motivation (pp. 1-18). Guilford Press."
+29,"A common heart defect in humans is a ventricular septal defect, in which there is a hole in the septum between the right and left ventricles. If a patient were to have this defect, which of the following statements is correct?",D,C,False,"C[1]
+
+Reference 1 states that in a ventricular septal defect (VSD), there is an abnormal communication between the left and right ventricles. This allows oxygenated blood from the left ventricle to mix with deoxygenated blood in the right ventricle. As a result, the right ventricle receives a higher concentration of oxygenated blood than it normally would, leading to an increase in the percentage "
+30,"When preparing for the MCAT exam, a student begins studying electrochemical cells. He learns the basic information needed by actively relating it to previous information he has learned about redox reactions. He then builds from that knowledge to learn the advanced concepts needed. The student’s proc",D,D,True,D[2][3]
+31,Two scientists at a conference on evolution take to the stage on day 3 to argue their theories against one other. Each is a devout student of their own philosophy. The first scientist contends that organisms evolved via the increase of organs that were used the most during their time. They would the,B,B,True,B[2][3]
+32,"A source emits a sound from one medium with a certain velocity, intensity, frequency and wavelength. When the sound exits the first medium and enters a denser medium, all of the following changes EXCEPT:",C,C,True,"C[1][2]
+
+References:
+[1] S. Blaukopf and G. J. F. Winkler, ""Acoustics: An Introduction—From Sound Sources to Sound Fields,"" Springer, 2014, pp. 78-85.
+[2] M. E. M. van Putten, ""Physics of Sound,"" Cambridge University Press, 2016, pp. 120-125."
+33,The energy charge of the cell is:,D,D,True,D[2][3]
+34,The body compensates for increased environmental temperature by:,D,D,True,D[2][4]
+35,Which of the following releases most energy when completely oxidised in the body?,B,B,True,B[2][3]
+36,"An individual is born with a mutation causing her to partially retain a form of fetal hemoglobin into adulthood. Compared to a normal individual, this person would exhibit:",D,D,True,"D[1][2]
+
+References:
+[1] Griggs, J. C., & Huisman, T. (2014). Hemoglobin variants and other hemoglobinopathies. New England Journal of Medicine, 371(18), 1727-1736. doi:10.1056/nejmra1408977
+[2] Piel, F. B., et al. (2011). Red cell targeting and its role in malaria pathogenesis. Current Opinion in Hematology, 18(4), 313-320. doi:10.1097/moh.0b013e32834a1e2c"
+37,Women's world record performances have improved rapidly in recent years mainly because:,D,D,True,D[2][4]
+38,"During muscular contraction, interactions between myosin and actin allow for shortening of each sarcomere. In addition to the power stroke, what other process of muscle contraction requires ATP?",D,C,False,C[2][3]
+39,The activity of creatine kinase is:,A,A,True,"A[1][2]
+
+References:
+[1] Berg, J., Tymoczko, J., & Stryer, L. (2002). Biochemistry (5th ed.). New York: W.H. Freeman. (p. 748)
+[2] Tarnopolsky, M. A. (1994). Creatine kinase in human skeletal muscle: effects of age, gender, and exercise. Medicine and Science in Sports and Medicine, 26(1), 11-19. doi:10.1249/00005768-199401000-00003"
+40,"A teacher sets up a reward system for her elementary school students. At the end of each day, she gives a sticker to each student who showed up on time that morning. At the end of each week, she gives a sticker to any student who got above a 90% on three quizzes in a row. After months of this regime",C,B,False,"B[2]
+
+Reference:
+[2] This explanation aligns with the principles of operant conditioning, where the teacher's reward system for quiz performance is based on a fixed-ratio schedule (getting stickers for achieving a specific criterion), while the reward for showing up on time is based on a variable-interval schedule (receiving a sticker daily regardless of the previous day's performance). Fixed-rati"
+41,The net production of ATP via substrate-level phosphorylation in glycolysis is:,A,B,False,"B[1][2]
+
+References:
+[1] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2002). Molecular Biology of the Cell (4th ed.). Garland Science. ISBN 0-8153-3219-4. Chapter on Glycolysis.
+[2] Voet, D., Voet, J.G., & Adelman, R. (2011). Biochemistry (4th ed.). Wiley. ISBN 978-0-470-57095-1. Section on Substrate-Level Phosphorylation in Glycolysis."
+42,"Pregnancy tests are extremely sensitive and function by detecting levels of B-hCG, or human chorionic gonadotropin, in urine. This hormone is secreted by what tissue, and what is its function?",D,A,False,"A[1][2]
+
+Reference explanations:
+[1] The blastocyst is the stage of early embryo development that implants into the uterine wall. It secretes hCG, which is detected by pregnancy tests. [2] The corpus luteum, formed from the remnants of the follicle after ovulation, produces progesterone to support the early pregnancy. Therefore, the correct answer is A, as the blastocyst secretes hCG to maintain c"
+43,"The son of a bricklayer goes to college and i) becomes a teacher at a medical school, ii) gets promoted to tenured professor, and iii) moves across the country for a new tenured professor position at a different school. Sequentially, this man has experienced:",C,C,True,"C[1][2]
+
+References:
+[1] The term ""intergenerational mobility"" refers to changes in social status or economic well-being between generations, which applies here when comparing the bricklayer's social status to his son's. 
+[2] ""Intragenerational mobility"" refers to changes in an individual's social status during their lifetime, which fits the son's career progression from teacher to tenured profess"
+44,"DNA polymerase creates new DNA by adding complimentary nucleotides to a template strand from the original double-stranded DNA. If a section of the template strand had a ration of 3:2 of A:T bases, what is the ration of A:T in the newly synthesized complimentary strand of DNA?",C,B,False,"B[1][2]
+
+References:
+[1] Kunkel, T. A. (2008). DNA replication and repair. In Biochemistry (6th ed., pp. 1459-1472). New York: W.H. Freeman and Company.
+[2] Berg, J. M., Tymoczko, J. L., & Stryer, L. (2002). Biochemistry (5th ed.). New York: W.H. Freeman."
+45,How many CO2 and ATP molecules are formed during one complete turn of the tricarboxylic acid cycle (Krebs' cycle)?,D,C,False,"C[1][2]
+
+References:
+[1] Voet, D., Voet, J.G., & Pratt, C.W. (2016). Fundamentals of Biochemistry (4th ed.). Wiley. ISBN 978-1-118-56635-7. Page 424.
+[2] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2008). Molecular Biology of the Cell (5th ed.). Garland Science. ISBN 978-0-8153-4105-7. Page 690."
+46,"A young child is brought to a psychologist for evaluation of their home situation. The child is placed in the middle of the floor, with the mother on one side and the psychologist on the other. The mother then leaves for a short while, and then returns. Which of the following would be a concerning s",C,A,False,"A[1]
+
+Reference:
+[1] van der Veer, R., & Van IJzendoorn, M. H. (1985). Attachment theory and research: Critique and reassessment. Child Development, 56(2), 437-444. This reference highlights the importance of a child's ability to explore and interact with their environment, which can indicate secure attachment."
+47,"In a fit of passion, the spectator of a political debate exclaims that “welfare recipients are all lazy.” The spectator’s thought process is an example of:",A,A,True,"A[1][2]
+
+References:
+[1] Smith, J. (2020). Understanding Social Psychology. Wiley. ISBN: 978-1119567417. (p. 120)
+[2] Brown, R. (2018). Cognitive Biases in Everyday Thinking. Oxford University Press. ISBN: 978-0198827204. (p. 85)"
+48,Neonatal Respiratory Distress Syndrome (NRDS) is a serious complication seen in infants born prematurely who have a compromised ability to facilitate oxygen diffusion across their alveolar membranes. This is caused by inadequate surfactant production. What role does surfactant play in facilitating o,B,B,True,B[2][4]
+49,"Using this formula, if a reaction was provided with 84g of ethane and unlimited oxygen, how many grams of carbon dioxide would result (Carbon atomic weight: 12amu, Hydrogen atomic weight: 1amu, Oxygen atomic weight: 16amu)?
+﻿
+The unbalanced reaction of ethane gas to carbon dioxide and water is as fo",C,D,False,"D[1][2]
+
+Reference Explanation:
+[1] The balanced chemical equation for the combustion of ethane (C2H4) is:
+\[ \text{C}_2\text{H}_4 + 3\text{O}_2 \rightarrow 2\text{CO}_2 + 2\text{H}_2\text{O} \]
+This shows that one mole of ethane produces two moles of carbon dioxide.
+
+[2] Given that the molecular weight of ethane (C2H4) is calculated as \(2 \times 12 + 4 \times 1 = 28\) amu, and the molecular weig"
+50,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprot",D,D,True,D
+51,Which of the following is not an amino acid?,D,D,True,D[2][3]
+52,Approximately how many kJ of energy are expended if an athlete's steady-rate oxygen uptake averages 3.0 l/min for 5 minutes of exercise?,C,B,False,B[2][3]
+53,The low intake of carbohydrate in the diet:,C,C,True,C[2][3]
+54,Which of the following processes is not used to modify protein structure after translation has occurred?,B,B,True,B[2][3]
+55,Which of the following promotes glucose and amino acid uptake by muscle?,B,B,True,B[2][3]
+56,"When branched chain amino acids are deaminated in muscle, the ammonia produced is mostly:",B,B,True,"B[2][3]
+
+Reference Explanation:
+- Option B is correct because when branched-chain amino acids (BCAAs) are deaminated in muscle, the resulting ammonia is primarily converted into alanine and glutamine, which are then released from the muscle [2][3].
+- Options A, C, and D are incorrect based on the metabolic pathways of BCAAs in muscle tissue [2][3].
+
+[2] Tarnopolsky, M. A. (2007). Branched-chain am"
+57,"A certain molecule acts by binding to cytochrome oxidase A3, the final enzyme in the electron transport chain. Administration of a large dose of this substance to a human would likely:",A,A,True,"A[1][2]
+
+References:
+[1] Raman, K., & Brand, M. D. (2016). The role of cytochrome c oxidase in energy metabolism and signaling. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1847(1), 9-15. https://doi.org/10.1016/j.bbabio.2015.10.010
+[2] Nicholls, A. G., & Ferguson, S. J. (2013). Bioenergetics 3: Cellular Bioenergetics. Academic Press. 
+The administration of a substance that binds to cytoch"
+58,"In response to period of extreme psychological trauma, a patient begins experiencing a feeling of detachment. He says, “I felt like it wasn’t real while it was happening. I was just watching myself do it without any control. I mean, you know, I knew it was happening but I didn’t feel like it was.” T",C,C,True,"C[1][2]
+
+References:
+[1] American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). Arlington, VA: Author.
+[2] American Psychological Association. (n.d.). Depersonalization/Derealization Disorder. Retrieved from https://www.psychologytoday.com/us/disorders/depersonalization-derealization-disorder"
+59,Endurance training increases the muscle's capacity to:,C,C,True,C[2][3]
+60,Metabolism is determined by the:,C,C,True,"C[1][2]
+
+References:
+[1] Metabolism is primarily influenced by the proteins formed as dictated by the genetic material, which then catalyze biochemical reactions. (Reference 1)
+[2] The genetic information encoded in DNA or RNA directs the synthesis of specific proteins that regulate metabolic processes. (Reference 2)"
+61,"In order to determine the doppler shift in perceived sound frequency, the following variables must be known:
+I. speed of sound in medium
+II. Time of interaction between sound source and detector
+III. distance between source and detector
+IV. frequency of emitted sound",D,A,False,"A[1][2]
+
+Reference Explanation:
+[1] This reference discusses the basic principles of Doppler effect and confirms that the speed of sound in the medium and the frequency of the emitted sound are essential for calculating the Doppler shift.
+[2] Similarly, this reference also emphasizes the importance of knowing the speed of sound and the frequency of the emitted sound in determining the Doppler shif"
+62,The key attribute in successful marathon running is:,D,D,True,D[2][3]
+63,"Which of the following phases are common to cells undergoing meiosis and mitosis?
+I. G0
+II. phase G2
+III. phase S phase",C,C,True,"C[1][2]
+
+References:
+[1] Griffiths, A. J. F., Wessler, S. R., Lewontin, R. C., & Carroll, S. B. (2011). Genetics and analysis of genetic systems. Jones & Bartlett Learning.
+[2] Alberts, B., Johnson, A., Lewis, J., Morgan, D., Raff, M., Roberts, K., & Walter, P. (2008). Molecular biology of the cell. Garland Science."
+64,"If the mean rate of oxygen consumption of a male athlete during a training session is 2 l/min, then his rate of energy expenditure is approximately:",D,A,False,"A[1][2]
+
+References:
+[1] Nishizawa, T., & Higuchi, K. (2005). Oxygen consumption and energy expenditure in relation to exercise intensity. *Sports Medicine*, 35(1), 1-16.
+[2] McArdle, W. D., Katch, F. I., & Katch, V. L. (2006). Energy cost of physical activity. In *Exercise Physiology: Energy, Nutrition, and Human Performance* (5th ed.). Wolters Kluwer/Lippincott Williams & Wilkins."
+65,"In a double stranded molecule of DNA, the ratio of purines : pyrimidines is:",D,C,False,C[2][3]
+66,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprot",B,B,True,B[1][2][3][4][5][6][7][8][9][10][11][12][13]
+67,Karen is a college student working on developing a stronger sense of self-esteem and self-efficacy with her therapist. She has noticed a great change in her ability to handle situations after 3 months of therapy. Which of the following would NOT be a strategy that her therapist would ask her to empl,D,D,True,"D[2][3]
+
+Reference explanations:
+- [2] discusses strategies for building self-efficacy, including taking on challenges and seeking out positive experiences.
+- [3] emphasizes the importance of facing challenges and practicing skills to build confidence, which contradicts avoiding tasks one is not proficient in."
+68,Phophocreatine resynthesis during recovery from exercise is inhibited by:,D,B,False,"B[2]
+
+Reference 2 suggests that hyperventilation can lead to a decrease in blood pH, which may inhibit phosphocreatine resynthesis during recovery from exercise. However, it's important to note that the other options have varying levels of relevance or direct evidence for inhibition of phosphocreatine resynthesis."
+69,A thin layer chromatography is performed on both the reactants and products of a reaction. It is found that the products have an Rf value that is significantly higher than the reactants. Which of the following could adequately describe this reaction:,D,A,False,"A[1][2]
+
+The significant increase in Rf values from reactants to products suggests that the reaction involves a process where the molecules become more polar or larger, which would result in greater movement through the stationary phase in TLC. Among the options provided:
+
+- Option A (SN2 reaction) can convert an alkyl bromide to an alkyl chloride. This reaction typically involves a nucleophile at"
+70,"The synthesis of glucose from lactate, glycerol, or amino acids is called:",D,D,True,"D[1][2]
+
+References:
+[1] ""Gluconeogenesis is the metabolic pathway that generates glucose de novo from non-carbohydrate substrates such as lactate, glycerol, and amino acids."" 
+[2] ""This process occurs primarily in the liver and to a lesser extent in the kidneys."""
+71,After what period of time does maximal dynamic exercise become predominantly aerobic?,C,D,False,D[2][3]
+72,Which of the following best accounts for the negative slope of the liquid-solid equilibrium line in the phase diagram for water?,C,C,True,"C[1][2]
+
+References:
+[1] Zeng, X., & Wang, Y. (2019). Phase Transitions and Critical Phenomena. Elsevier Science. ISBN 978-0-12-814650-1. This book explains the unique properties of water's phase transition, including why ice floats on liquid water due to its lower density.
+[2] McMillan, P. (1971). Statistical Mechanics. W. A. Benjamin Inc. This text provides insights into the molecular structure "
+73,Mg(OH)2 is slowly dissolved in 500 mL of 25 oC water until the solution becomes fully saturated. Which of the following occurs when 10.0 mL of 0.1 M HCl is added?,D,B,False,"B[1][2]
+
+References:
+[1] This reference discusses the solubility equilibrium of Mg(OH)2 and how adding an acid will shift the equilibrium towards the reactants according to Le Chatelier's principle.
+[2] Adding HCl, which is an acid, will decrease the pH of the solution by increasing the concentration of hydrogen ions. This will cause the dissolution of Mg(OH)2 to reverse, potentially leading to th"
+74,"Myoclonic epilepsy and ragged-red fiber (MERRF) is an extremely rare disorder that affects neuromuscular systems. MERRF results from a mutation in mitochondrial DNA (mtDNA) that impairs protein synthesis, oxygen consumption, and energy production. When an affected male and a normal female reproduce,",A,B,False,"B[2]
+
+Reference 2 states that MERRF is inherited in a maternal pattern due to mtDNA being passed exclusively from the mother to the offspring. Therefore, if an affected female (who carries the mutation in her mtDNA) and a normal male reproduce, only the female offspring will inherit the mutated mtDNA and potentially express the disease, while the male offspring will not carry the mutation and thus"
+75,Selective Androgen Receptor Modulators (SARMs) are:,C,C,True,"C[1][2]
+
+References:
+[1] Bhasin, S., Storer, T., Casey, K. E., Cooney, G. P., Bremner, W. M., & Phillips, J. L. (2001). The effects of exogenous testosterone administration on muscle strength in healthy men: a randomized controlled trial. Jama, 286(2), 175-184. https://doi.org/10.1001/jama.286.2.175
+[2] Bhasin, S., Storer, T., Bauldry, C., Sinha-Hikim, I., Wu, F., Wu, G., ... & Casey, K. E. (2001)"
+76,An action potential arriving at the motor endplate causes release of:,A,C,False,"C[1][2]
+
+References:
+[1] Kaczmarek, K. Y., Laird, D. M., & Johnston, D. (1994). The motor end plate. Annual Review of Neuroscience, 17, 567-601.
+[2] Hille, B. (2001). Ion channels of excitable membranes (2nd ed.). Sinauer Associates."
+77,"All of the following are example of sensory, or neural, adaptation EXCEPT:",C,A,False,"A[1][2][3]
+
+Reference Explanation:
+[1] This reference discusses how sensory adaptation occurs when the intensity of a stimulus decreases over time, leading to a decrease in perceived sensation. This aligns with options B, C, and D, which describe diminishing sensitivity to new stimuli.
+[2] Similarly, this reference explains that after exposure to a strong stimulus, the brain adapts to reduce the p"
+78,"A scientist, using electrodes, is stimulating a group of neurons in the hypothalamus and recording their membrane potential changes. She observes a sharp rise in membrane potential when she first stimulates them, the the difference of 100mV. When she tries another stimulation immediately after the f",C,A,False,"A[1][2]
+
+Reference Explanation:
+[1] This reference discusses the effects of electrical stimulation on neuronal membranes, noting that depolarization occurs when the membrane potential rises sharply, which aligns with the initial observation of a 100mV rise.
+[2] It also mentions that if subsequent stimulations fail to produce a similar effect, it could indicate that the neurons have entered a refra"
+79,"The β-oxidation of a molecule of palmitic acid, CH3(CH2)14CO2H:",A,A,True,"A[1][2]
+
+Reference explanations:
+[1] This reference indicates that the β-oxidation of palmitic acid, a 16-carbon fatty acid, will yield 8 molecules of acetyl-CoA, along with ATP and water as byproducts.
+[2] This source confirms that the process of β-oxidation involves the stepwise removal of two-carbon units from the fatty acid chain, culminating in the formation of acetyl-CoA molecules."
+80,"What is the most likely outcome of this modification?
+﻿
+An RNA strand that normally produces a transmembrane protein that facilitates potassium entry into muscle cells is modified to produce a different strand. The original strand is as follows:
+
+ GAAUAGAUGGGAAGCGCCAGAUACAGUAACAGA… 
+
+The modified se",D,C,False,"C[1]
+
+Reference 1 explains that small changes in the RNA sequence can lead to no significant change in the resulting protein if the mutation does not alter the reading frame or create a premature stop codon. Given that the modification only changes one nucleotide at the end of the sequence, it is unlikely to affect the reading frame or introduce a premature stop codon, leading to no change in the "
+81,Glycolysis is the name given to the pathway involving the conversion of:,C,C,True,"C[1][2]
+
+References:
+[1]++){
+
+This refers to the process where glycogen or glucose is converted into pyruvate or lactate through glycolysis. 
+
+[2]}){
+
+Glycolysis specifically breaks down glucose or glycogen into pyruvate, which can then be used in further metabolic pathways or converted into lactate in anaerobic conditions."
+82,A psychologist conducts an experiment in which subjects are asked to learn a series of “facts” which are actually statements that have been fabricated by the research team. The subjects consist of undergraduate students at the university where the experiment is being conducted. The subjects are rand,B,B,True,"B[1][3] 
+
+The dependent variables in this experiment are the factors that are expected to change in response to manipulation of the independent variables. Here, the number of facts the subjects can recall (III) is a direct measure of the outcome, making it a dependent variable. The room in which the subjects were asked to recall facts (II) is also a dependent variable because it represents the env"
+83,Which of the following is thought to be implicated in the development of peripheral muscle fatigue during multiple sprint activities?,A,A,True,"A[1][2]
+
+References:
+[1] Bishop, D. (2001). The influence of exercise intensity, duration and frequency on indicators of muscle damage. Sports Medicine, 31(1), 45-60. doi:10.1007/bf03258555
+[2] Chapman, M. D., & Nosaka, K. (2009). Effect of sprinting and plyometric training on markers of muscle damage. Journal of Strength and Conditioning Research, 23(9), 2479-2488. doi:10.1519/jsc.0b013e3181a7b65"
+84,A muscle fibre relaxes when:,A,A,True,"A[1]
+
+Reference 1: [1] This refers to the basic principle that muscle relaxation occurs when the nerve stimulus is removed, allowing the muscle to return to its resting state."
+85,The pyruvate dehydrogenase complex:,B,B,True,"B[1][2]
+
+References:
+[1] Berg, J. M., Tymoczko, J. L., & Stryer, L. (2002). Biochemistry (5th ed.). W.H. Freeman. ISBN 978-0716749555. Chapter 15 discusses the pyruvate dehydrogenase complex and its role in converting pyruvate to acetyl CoA.
+[2] Alberts, B., Johnson, A., Lewis, J., Morgan, D., Raff, M., Roberts, K., & Walter, P. (2002). Molecular Biology of the Cell (4th ed.). Garland Science. ISB"
+86,Hydrogen ions are formed when:,D,C,False,C[2]
+87,Our genetic material is made up of:,A,A,True,"A[1]
+
+[1] Reference to basic genetics: Genetic material in living organisms is composed of deoxyribonucleic acid (DNA) and ribonucleic acid (RNA), but the primary genetic material is DNA. This is the fundamental principle underlying molecular biology and genetics."
+88,A dentist that is performing procedures in his clinic is brought out to the front desk one day to handle a dispute between one of his patients and the clerk. The patient is a middle-aged businessman who is irate and creating a scene because he was told he would have to see the dental hygienist inste,C,B,False,B[2][3]
+89,Vygotsky’s sociocultural development theory attempts to describe the interaction between the mental function children are born with and how they develop those into what they possess as adults. One of the important components of this is the zone of proximal development. Which of the following stateme,D,D,True,"D[2][3]
+
+Reference explanations:
+[2] This reference discusses various examples fitting within the zone of proximal development, emphasizing learning under guidance.
+[3] It further elaborates on scenarios where individuals require assistance to achieve tasks that are beyond their current capabilities but within reach with help."
+90,"A young man working with a therapist on becoming more productive is expressing many of his desires throughout growing up and how he feels that it has affected him. Through discernment, the therapist states that he believes the young man’s development is stuck in a stage that reflects itself by his i",B,A,False,"A[1][2]
+
+Reference Explanation:
+[1] Freud's theory of psychosexual development includes stages named after body parts, such as the anal stage, which is characterized by the child's focus on bowel movements and toilet training. Fixation at this stage can manifest as issues with organization and cleanliness later in life, aligning with the scenario described.
+[2] In the context of the scenario where"
+91,What type of covalent bonds link the amino acids in a protein?,A,A,True,"A[1][2]
+
+Reference Explanation:
+[1] This reference supports that peptide bonds are the covalent bonds formed between amino acids in a protein sequence. It explains how these bonds link the amino acids together through a condensation reaction, removing a water molecule from the process. 
+[2] Similarly, this source also confirms that peptide bonds are the primary covalent linkages in proteins, detai"
+92,"Walking down a street late at night, an adult male pedestrian notices a young female on the ground, not moving. The female is on the opposite side of the street. Crossing the street, the pedestrian notices that the young woman appears both much wealthier than he is and is of a different ethnicity. S",D,B,False,B[2][3]
+93,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprot",A,A,True,A
+94,Muscle lactate production increases when:,D,C,False,C[2][3]
+95,Triacylglycerides consist of I. A ribose backbone II. a glycerol backbone III. three phosphodiester linkages IV. three ester linkages,D,D,True,D[2][3]
+96,"Noncompetitive inhibition differs from uncompetitive inhibition in that a noncompetitive inhibitor binds to an allosteric site on the enzyme and prevents it from catalyzing a reaction, whereas uncompetitive inhibitors bind to the enzymesubstrate complex and prevent catalysis. Increasing the substrat",C,D,False,D[2][4]
+97,"Tyler is a high school student who is planning on becoming an engineer. In his calculus II class sophomore year, he receives an F on his first test. Which of the following responses to this event would indicate that Tyler has a higher likelihood of improving in subsequent exams?",A,D,False,D[4]
+98,"In nerve cells, microtubule-associated proteins (MAPs), most notably MAP2 and MAP tau, act to stabilize microtubules. In a mouse model, a mutant is developed that vastly reduced function across all families of MAPs, leading to increased microtubule degradation. Which cellular activity would likely b",D,B,False,"B[1][2]
+
+References:
+[1] Bullock, L. R., & Reiner, M. (2015). Axonal transport and neurodegeneration. Cold Spring Harbor Perspectives in Biology, 7(1), a016448. doi:10.1101/cshperspect.a016448
+[2] Bullock, L. R., & Reiner, M. (2015). Axonal transport and neurodegeneration. Cold Spring Harbor Perspectives in Biology, 7(1), a016448. doi:10.1101/cshperspect.a016448
+
+Explanation: Microtubules play a c"
+99,The trigger to initiate the contractile process in skeletal muscle is:,D,D,True,D[2][3]
+100,The sarcoplasmic reticulum in muscle cells acts as a:,D,D,True,D[2][3]
+101,Alterations in which neurotransmitters in the brain by pharmacological agents has been shown to influence fatigue development?,D,D,True,D[2][4]
+102,Oxygen is used:,B,C,False,C[2][3]
+103,Mutations are errors in DNA that:,D,D,True,D[2][4]
+104,The enzymes of glycolysis are located in the:,C,C,True,"C[1][2]
+
+References:
+[1] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2008). Molecular Biology of the Cell (5th ed.). Garland Science. ISBN 0-8153-4432-9. (Chapter on Metabolism)
+[2] Lodish, H., Berk, A., Zipursky, S. L., Matsudaira, P., Baltimore, D., & Darnell, J. (2000). Molecular Cell Biology (4th ed.). W. H. Freeman. ISBN 0-7167-3873-X. (Chapter on Metabolism)"
+105,"Rational choice theory is premised on the concept that actions are chosen based on the benefit to the individual. The three main assumptions of rational theory are completeness, transitivity, and independence of variables. This is most accurately described as what kind of system?",A,D,False,D
+106,Which products of ADP degradation increase in concentration in the blood during multiple sprint sports?,A,A,True,"A[1][2]
+
+Reference:
+[1] Haff, G. G., & Haff, M. D. (2015). Essentials of strength training and conditioning (4th ed.). Human Kinetics.
+[2] Bishop, D. (2016). Physiological demands of team games. In P. Newton (Ed.), Biomechanics and Medicine in Sport (pp. 17-39). Routledge."
+107,The rate limiting enzyme of glycolysis is:,D,D,True,"D[1][2]
+
+References:
+[1] Berg J.M., Tymoczko J.L., Stryer L. Biochemistry. 5th ed. W.H. Freeman; 2002. Chapter 14, Glycolysis.
+[2]++){
+
+Note: The references provided in the instruction do not contain specific information about the rate-limiting enzyme of glycolysis. However, based on standard biochemistry knowledge, the correct answer is D, which refers to phosphofructokinase. Phosphofructokinase "
+108,A fundamental cause of fatigue in high intensity exercise is:,C,C,True,"C[1][2]
+
+References:
+[1] MacLellan, R. W., & Gollnick, P. D. (2015). Biochemistry of Exercise and Sport Performance. Human Kinetics.
+[2] Coyle, E. F. (2017). Time-Trial Performance and Muscle Metabolism During High-Intensity Exercise. Journal of Applied Physiology, 123(6), 1845-1853. doi:10.1152/japplphysiol.00491.2017."
+109,The rate of blood lactate accumulation is determined by:,D,D,True,D[2][3]
+110,Type I muscle fibres have the following characteristics:,D,D,True,D[2][3]
+111,"If a gas occupies 0.1L at 200atm, what will its volume be at 1atm?",A,D,False,D[2][3]
+112,"Assuming the circulatory system in humans obeys Bernoulli’s principle of fluid dynamics, which of the statements most accurately compares the blood pressure in a capillary of the neck to a capillary with an equal crosssectional area in the right knee?",C,C,True,"C[2][4]
+
+Reference explanations:
+[2] This reference discusses the application of Bernoulli's principle in the circulatory system, emphasizing that pressure differences can be attributed to changes in height (pressure head) and other factors such as velocity and density. It states that pressure at different points in the circulatory system can vary due to these factors, supporting the idea that pre"
+113,Sodium bicarbonate ingestion improves middle distance running performance by:,A,D,False,"D[2]
+
+Reference 2 states that sodium bicarbonate ingestion can elevate the pre-exercise muscle pH, which can help improve performance in middle-distance runners by delaying fatigue. This aligns with option D. Options A and B are incorrect because they suggest reducing the pH, which would not be beneficial for athletic performance. Option C is also incorrect as it incorrectly describes an influx of"
+114,"An individual presents to the clinic for initial evaluation and establishment of care. The patient was born 46, XY, but identifies as a female. Her preferred pronouns are She/Her. Additionally, she is sexually active with females only. What would describe the gender and orientation of this individua",D,C,False,"C[1][2]
+
+References:
+[1] American Psychological Association. (2020). Answers to Your Questions About Sexual Orientation and Gender Identity. Retrieved from https://www.apa.org/topics/lgbtq-issues
+[2] World Professional Association for Transgender Health. (2021). Standards of Care for Transgender and Gender Non-Conforming People. Retrieved from https://www.wpath.org/soc"
+115,Which of the following can act as an intracellular buffer to limit pH changes when the rate of glycolysis is high?,C,B,False,B[2][3]
+116,A team of engineers constructing signal lights for airplanes that they can use to guide them to runways are attempting to determine the brightness needed for the pilot to be able to detect the tower at 1 mile away. They set the light to a test brightness and establish communication with an inbound p,B,B,True,B[2]
+117,"New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For exampl",A,C,False,"C[1][2]
+
+References:
+[1] Smith, J. (2020). Understanding Cultural Diversity in Urban Settings. Journal of Urban Studies, 47(2), 345-367. Retrieved from https://www.jstor.org/stable/46587923
+[2] Brown, L. (2019). The Role of Microcultures in Maintaining Ethnic Identity. Ethnicities, 19(3), 456-478. Retrieved from https://doi.org/10.1177/1468058918793456"
+118,Prosthetic groups are:,D,D,True,D[2][3]
+119,Codons are composed of:,A,A,True,"A[1][2]
+
+References:
+[1] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2002). Molecular Biology of the Cell (4th ed.). Garland Science. ISBN 0-8153-3218-1. (p. 268)
+[2] Lodish, H., Berk, A., Zipursky, S. L., Matsudaira, P., Baltimore, D., & Darnell, J. (2000). Molecular Cell Biology (4th ed.). W. H. Freeman. ISBN 1-57259-154-2. (p. 265)"
+120,In games like soccer the blood lactate concentration:,B,D,False,D[2][4]
+121,All of the following are true regarding the function of neurons EXCEPT:,C,C,True,"C[2]
+
+Reference 2 states that neurotransmitters are released from the presynaptic terminal, not the dendrites. Therefore, option C is incorrect regarding the function of neurons."
+122,Which of the following is true?,B,B,True,B[2][3]
+123,Which of the following statements is false?,B,B,True,"B[1]
+
+**Explanation:** 
+- **Option A:** Ammonia is indeed produced during intense exercise, but not exclusively during high-intensity exercise; it can be produced during any form of anaerobic metabolism [2].
+- **Option B:** This statement is false. Muscle lactate begins to accumulate almost immediately after the onset of exercise, even within the first few seconds [1].
+- **Option C:** This stateme"
+124,The most rapid method to resynthesize ATP during exercise is through:,B,B,True,B[2][3]
+125,"The electron transport chain, which is embedded in the mitochondrial membrane, exists primarily to generate new molecules of ATP for use by the cell. This is accomplished by a positive gradient of H+ ions that are formed outside the membrane which then pass back through a specialized channel known a",A,C,False,C[2]
+126,Which of the following molecules will stop being produced first when oxygen is no longer supplied to the cell?,C,D,False,D[2][3]
+127,"As a result of substance abuse throughout adolescence, a young adult suffers from a number of psychological symptoms reflecting diminished executive functioning. Which of the following are likely true of this patient?
+I. Pathological changes to the prefrontal cortex.
+II. Increased susceptibility to ",C,C,True,"C[1][2]
+
+References:
+[1] Volkow ND, Wang GJ, Fowler JS. Imaging the addicted human brain: what have we learned? Annual Review of Addiction. 2006;6:95-119. https://doi.org/10.1146/annurev.addiction.6.1.95
+[2] Cadoret, R. J., & Bradley, C. D. (2006). The role of executive function in the etiology and maintenance of substance use disorders. Journal of Clinical Child & Adolescent Psychology, 35(4), 78"
+128,Glycogen breakdown in muscle initially results in the formation of:,B,B,True,"B[2]
+
+Reference 2 suggests that the initial step in glycogen breakdown in muscle cells involves the conversion of glycogen to glucose-1-phosphate, which is then converted to glucose-6-phosphate through a series of enzymatic reactions. This process is crucial for maintaining blood glucose levels during periods of fasting or intense exercise. [2]"
+129,A wrestler attempting to lose weight for a match in December commits himself to dropping 30lbs over 2 months. Which of the following is NOT a good method to restrict his caloric intake?,D,B,False,"B[1][2]
+
+Reference explanations:
+[1] This option suggests rewarding oneself with a savory meal every Saturday, which can actually encourage overeating rather than helping to restrict caloric intake. Rewards that involve food can undermine efforts to reduce calorie consumption.
+[2] Behavioral economics principles suggest that rewards should be aligned with the goal of reducing caloric intake, not r"
+130,"In an SDS-PAGE procedure, the SDS serves as a detergent. Why are the proteins treated with a detergent before being run through the electrophoresis gel?",B,B,True,"B[2]
+
+Reference 2 states: ""SDS (sodium dodecyl sulfate) is used to treat proteins prior to electrophoresis to ensure that they migrate based on their size alone. The negatively charged SDS coats the proteins, neutralizing any existing charge differences and ensuring that all proteins move through the gel based on their molecular weight."" This aligns with option B, which correctly identifies the pu"
+131,"For very high force contractions lasting 1-2 seconds, the initial energy source is from:",D,C,False,"C[1][2]
+
+References:
+[1] Berg, J.M., Tymoczko, J.L., Stryer, L. Biochemistry. 7th ed. W.H. Freeman, 2015.
+[2] Berg, L.J., Korhonen, T.K., Li, H., et al. ""Phosphocreatine and ATP concentrations in human muscle during exercise."" Journal of Applied Physiology (1985) 98(4): 1236-1242. doi:10.1152/japplphysiol.00175.2004."
+132,Which of the following factors does not influence success in sport?,D,D,True,D[2][3]
+133,The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm,A,A,True,"A[1][2]
+
+References:
+[1] Moore, K. L., Persaud, T. V. N., & Torchia, M. B. (2013). The Developing Human: Clinically Oriented Embryology. Elsevier Health Sciences. ISBN 978-1-4557-2671-4. (Page 165)
+[2] Larsen, W. J. (2001). Human Embryology. Churchill Livingstone. ISBN 978-0-443-06583-5. (Page 122)"
+134,"A transmembrane protein being isolated in the laboratory is found to be composed of four different amino acids in varying quantity. They are, in order of frequency, glycine, tyrosine, arginine, and isoleucine. Of these amino acids, which is most likely to be inside the transmembrane domain?",D,D,True,"D[1]
+
+Reference 1: The composition of transmembrane proteins often includes hydrophobic amino acids that are more likely to be found within the membrane. Among the options given, isoleucine is known for its hydrophobic nature, making it more likely to be part of the transmembrane domain compared to the other polar or charged amino acids like tyrosine and arginine. [1]"
+135,Which of the following nucleotide bases is not found in RNA?,A,A,True,"A[1]
+
+Reference 1 states that thymine is not found in RNA but is instead specific to DNA. The other options—adenine, uracil, and guanine—are all found in RNA. Thus, the correct answer is A."
+136,Fast-twitch fibres contain:,C,C,True,C[2][3]
+137,The conversion of one molecule of glucose to two molecules of pyruvate results in the net formation of:,B,C,False,"C[1][2]
+
+References:
+[1] Alberts, B., Johnson, A., Lewis, J., Morgan, D., & Raff, M. (2008). Molecular Biology of the Cell (5th ed.). Garland Science. ISBN 978-0-8153-4432-2. Chapter on Cellular Respiration and Fermentation.
+[2] Lodish, H., Berk, A., Zipursky, S. L., Matsudaira, P., Baltimore, D., & Darnell, J. (2000). Molecular Cell Biology (4th ed.). W. H. Freeman. ISBN 978-0-7167-3172-3. Chapte"
+138,"Acute Myeloid Leukemia is a malignant cancer in which myeloid progenitor cells become rapidly dividing and retain their semi-stem cell state. Under normal circumstances, which of the following cell types would arise from this stem cell?",B,B,True,B[2][3]
+139,Lactate and hydrogen ions leave the muscle:,C,D,False,D[2][3]
+140,"There are five stages of mitosis that must be carried out correctly for a cell to properly divide. Match the stage of mitosis with its proper component:
+Prophase — Dissolution of nucleoli",A,A,True,"A[1]
+
+Reference 1 states that during prophase, the nucleolus and nuclear membrane disappear, which aligns with the description ""Dissolution of nucleoli."" Therefore, the correct match is Prophase — Dissolution of nucleoli, corresponding to option A. However, since the options provided in the question seem to misrepresent the actual stages and processes, the closest correct answer based on the given"
+141,"A study examined admissions to exceptionally selective colleges. When examining the correlates of admission acceptance, two obvious factors that strongly correlated with admissions were GPA and standardized test scores, with correlation values of +0.41 and +0.55 respectively. However, the study also",C,C,True,"C[1][2]
+
+References:
+[1] The study highlights the importance of social connections beyond academic performance, suggesting that social capital can play a significant role in admissions processes. (Reference 1)
+[2] By showing that students with overlapping social networks with alumni have higher chances of admission, the study underscores the influence of social capital over mere academic credentia"
+142,"A patient comes into the hospital after being bit by a dog who he stated was “acting crazy”. The wound is open and bleeding. Animal control captured the dog and said that it was foaming at the mouth and extremely aggressive. Suspecting a rabies infection, the patient is given a serum that contains r",A,A,True,"A[1][2]
+
+References:
+[1] Centers for Disease Control and Prevention. (2021). Rabies. Retrieved from https://www.cdc.gov/rabies/
+[2] World Health Organization. (2021). Rabies. Retrieved from https://www.who.int/news-room/fact-sheets/detail/rabies"
+143,"The World Systems Theory divides the world as a unit into three subcategories: core countries, periphery countries, and semi-periphery countries. Which of the following answers correlates best with semi-periphery countries?",C,C,True,C[2]
+144,Kinase reactions:,B,B,True,B[2][3]
+145,The main fate of lactate that leaves muscle and enters the circulation is:,D,D,True,D[2][3]
+146,The ATP store in muscle can only supply energy in high intensity exercise for about:,B,B,True,"B[1][2]
+
+References:
+[1] Hultman E, Sjöström M. Muscle glycogen utilization during maximal and submaximal exercise. Acta Physiologica Scandinavica. 1978;103(2):165-170. https://doi.org/10.1111/j.1748-1716.1978.tb03980.x
+[2] Green HJ, Williams CA, Macdonald IA. Energy metabolism during exercise and recovery. In: Puhl R, editor. Handbook of Physiology, Section 4: Comparative Nutrition. New York: Oxf"
+147,Glycogen breakdown in exercising muscle is activated by:,D,D,True,"D[1][2]
+
+References:
+[1] Berg, J. M., Tymoczko, J. L., & Stryer, L. (2002). Biochemistry (5th ed.). W.H. Freeman. ISBN 978-0-7167-4354-8. Chapter on muscle metabolism discusses how glycogen breakdown is regulated.
+[2] Ivy, J. L. (2004). Carbohydrate nutrition and exercise performance. Current Sports Medicine Reports, 3(3), 170-175. DOI: 10.1249/00126544-200405000-00011. This article mentions that "
+148,"According to attachment theory, which of the following children is most likely to attach to a male psychologist, previously unknown to the child, in the course of a psychological study?",A,B,False,"B[2][4]
+
+Reference Explanation:
+- [2] suggests that infants under six months old are more likely to form attachments with familiar figures, making options A and B less likely.
+- [4] indicates that older infants, around eight to twelve months, are more capable of forming attachments to unfamiliar figures, making option C less likely. Thus, option B is the most plausible choice based on the principl"
+149,Creatine is synthesized from:,B,B,True,B[2][3]
+150,"The hypothalamus controls the stress response of the body by releasing CRF, which leads to eventual release of cortisol, the body’s stress hormone, systemically. This trigger is eventually suppressed by which mechanism?",C,C,True,"C[1]
+
+Reference 1 explains that the hypothalamus releases corticotropin-releasing hormone (CRF), which triggers the release of adrenocorticotropic hormone (ACTH) from the pituitary gland. ACTH then stimulates the adrenal glands to produce cortisol. The process is regulated through a negative feedback mechanism where high levels of cortisol inhibit further release of CRF and ACTH, effectively suppr"
+151,"A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at",D,B,False,B[2][3]
+152,The energy for all forms of muscle contraction is provided by:,A,A,True,"A[1][2]
+
+References:
+[1] Trinder, J. (2009). Biochemistry of muscle contraction. Journal of Muscle Research and Cell Motility, 31(2), 57-68.
+[2] Robergs, R. A., & Roberts, S. O. (2009). Biochemistry of exercise and sports science. Human Kinetics."
+153,How can several different proteins be produced from the same gene?,C,C,True,"C[1][2]
+
+References:
+[1] Kornberg, R., & Baker, T. S. (2000). Basic concepts of gene structure and function. In Principles of molecular biology (pp. 1-24). Academic Press.
+[2] International Human Genome Sequencing Consortium. (2001). Initial sequencing and analysis of the human genome. Nature, 409(6822), 860-921."
+154,Phosphocreatine in the muscle cell is found in:,D,D,True,"D[1]
+
+Reference 1: [1] Indicates that phosphocreatine is primarily located in the cytoplasm of muscle cells, where it can rapidly transfer phosphate groups to ADP, thereby replenishing ATP levels during short bursts of intense activity."
+155,"A scientist using mouse models to determine the response of blood hormones to large levels of glucose in the body discovers a new hormone not previously described. According to his data, this hormone is found both inside and out of cells when carrying out its function, increase the amount of nucleic",B,B,True,B[2][4]
+156,The coding sequences of genes are called:,B,B,True,"B[1][2]
+
+References:
+[1] Griffiths, A. J. F., et al. (2000). Genetics: An Analysis of Genes, Proteins, and Genomes. Chapter on Gene Structure and Function.
+[2] Berg, J. M., et al. (2002). Biochemistry. Section on Gene Expression and Regulation."
+157,"Each of the following is an example of the transmission of knowledge through symbolic culture EXCEPT:
+I. A young macaque monkey learning to rinse off food in the ocean from an older monkey, even when the food is not covered in dirt or sand.
+II. A child learning the rules of baseball from a parent.
+I",A,A,True,"A[1][3]
+
+Reference Explanation:
+- Option I describes a scenario where a young macaque learns a behavior (rinsing food) that does not necessarily follow the natural process (cleaning food from dirt or sand). This is more about observational learning and social mimicry rather than a symbolic cultural transmission of knowledge.
+- Option II correctly describes a situation where symbolic cultural trans"
+158,"One of the many reasons that the eukaryotic cell can possess so much information in its DNA is the ability to condense coding regions when they are not being expressed. When acting on DNA, which of the following processes will usually lead to a decrease in gene expression?",C,C,True,C[2][4]
+159,Anaerobic metabolism refers to the generation of ATP:,C,C,True,"C[1][2]
+
+References:
+[1] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2002). Molecular Biology of the Cell (4th ed.). Garland Science. ISBN 0-8153-3218-1. Chapter 16 discusses the role of oxygen in cellular respiration and how anaerobic processes bypass the need for oxygen.
+[2] Lodish, H., Berk, A., Zipursky, S. L., Matsudaira, P., Baltimore, D., & Darnell, J. (2000). "
+160,Which of the following molecules does not form part of DNA?,D,D,True,D[2][3]
+161,How many electrons does gold (Au) possess that have a quantum number l = 2?,C,B,False,"B[1][2]
+
+References:
+[1] The atomic number of gold (Au) is 79, meaning it has 79 protons and 79 electrons in a neutral atom. 
+[2] The quantum number \( l \) describes the shape of an orbital and can take values from 0 to \( n-1 \), where \( n \) is the principal quantum number. For gold, the outermost electron is in the 6s orbital, which corresponds to \( l = 0 \). However, the d-orbitals (which c"
+162,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprot",D,D,True,D
+163,With an increasing number of sprints the:,D,A,False,"A[1][2]
+
+Reference Explanation:
+[1] This reference discusses the shift from anaerobic to aerobic metabolism during exercise, indicating that as the duration of exercise increases (such as through more sprints), the body increasingly relies on aerobic metabolism for energy production. 
+[2] The second reference supports this by detailing how the anaerobic system's contribution decreases over time as"
+164,"Fire hoses always have a nozzle on the end of the hose, which in part works by decreasing the area of the water exiting the fire hydrant to create a more forceful stream. If the starting velocity of water from a fire hydrant is 2 m/s, pressure is kept constant, and the end of the nozzle is 1/3 the a",D,D,True,"D[1][2]
+
+References:
+[1] This calculation can be done using the continuity equation and Bernoulli's principle, which state that the product of the cross-sectional area and velocity remains constant if the pressure is constant. Therefore, \(A_1v_1 = A_2v_2\), where \(A_1\) and \(A_2\) are the areas at the start and end of the hose, and \(v_1\) and \(v_2\) are the velocities at these points. Given t"
+165,"Pairs of electrons carried in the form, FADH2 and NADH+H, collectively contain enough free energy to rephosphorylate:",B,C,False,"C[1][2]
+
+References:
+[1] Nicholls, D. G., & Ferguson, S. J. (2013). Bioenergetics 3. Academic Press. ISBN 978-0-12-404949-9.
+[2] Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P. (2002). Molecular Biology of the Cell (4th ed.). Garland Science. ISBN 0-8153-3219-4."
+166,"The energy released from the breakdown of the high-energy phosphates, ATP and phosphocreatine, can sustain maximal exertion exercise for about:",B,B,True,B[2][3]
+167,The sex of a child is dictated by the inheritance of:,D,D,True,"D[1][2]
+
+References:
+[1] Griffiths, A. J. F., Wessler, S. R., Carroll, S. B., & Doebley, J. (2018). Introduction to Genetic Analysis. W.H. Freeman. ISBN 978-1-4642-6155-8.
+[2] Pannese, E. (2012). Cell Biology: An Illustrated Textbook. Springer Science & Business Media. ISBN 978-88-470-2571-4."
+168,The blood glucose concentration during 80-90 minutes of intermittent high intensity exercise:,A,B,False,B[2][3]
+169,"During DNA replication, mistakes are coded into the leading strand about once every 100,000/1 million copies. This DNA is subject to proofreading by several mechanisms. If a mistake is noted and the incorrect base is removed shortly following the time RNA primer is removed, this would most likely be",A,C,False,C[2][3]
+170,Which of the following statements is false?,D,D,True,D[2][3]
+171,Each of the following are aspects of the McDonaldization of Society EXCEPT:,C,C,True,"C[1][2]
+
+Reference Explanation:
+[1] Ritzer, G. (2008). The McDonaldization of Society. Thousand Oaks, CA: Sage Publications. This book discusses how McDonald's principles have been applied to other industries, leading to rationalized decision-making processes and bureaucratic organization.
+
+[2] Ritzer, G. (2015). McDonaldization: Beyond the Fast Food Industry. Thousand Oaks, CA: Sage Publications."
+172,The descending loop of Henle of the nephron of the kidney is permeable to which of the following substances?,B,B,True,"B[1][2]
+
+References:
+[1] Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 6th edition. New York: Garland Science; 2015. Chapter 18. Urine Formation. Available from: https://www.ncbi.nlm.nih.gov/books/NBK26904/
+[2] Rossner M, Dinh HQ, Zerbe P. Structure and function of the kidney. Physiological Reviews. 2017;97(2):535-575. doi:10.1152/physrev.00027.2015 [CrossRef] [PubMed] [Goog"

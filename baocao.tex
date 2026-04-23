@@ -1,48 +1,45 @@
-% Báo cáo bài tập lớn — So sánh RAG và Graph-based RAG (Medical-Graph-RAG)
-% Biên dịch: pdflatex baocao.tex (không bắt buộc -shell-escape)
+
 \documentclass[a4paper,12pt,twoside]{report}
 
-\usepackage{scrextend}
-\changefontsizes{13pt}
-\usepackage[utf8]{vietnam}
-\usepackage[top=2cm, bottom=2cm, left=3.5cm, right=2.5cm]{geometry}
+% =========================
+% Encoding and language
+% =========================
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
 
+% =========================
+% Page layout and spacing
+% =========================
+\usepackage[top=2cm,bottom=2cm,left=3.5cm,right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{15pt}
+
+% =========================
+% Math and symbols
+% =========================
+\usepackage{amsmath,amssymb,amsthm}
+
+% =========================
+% Tables, figures, lists
+% =========================
 \usepackage{graphicx}
-\usepackage{fancybox}
-\usepackage{indentfirst}
-\usepackage{amsthm}
-\usepackage{latexsym}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsbsy}
-\usepackage{times}
+\usepackage{booktabs}
 \usepackage{array}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{titletoc}
-\usepackage{chngcntr}
-\usepackage{pdflscape}
-\usepackage{afterpage}
-\usepackage[ruled,vlined]{algorithm2e}
-\usepackage{capt-of}
 \usepackage{multirow}
-\usepackage{fancyhdr}
-\usepackage{appendix}
-\usepackage{fancyvrb}
-\usepackage[font=small,labelfont=bf]{caption}
-\usepackage{listings}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{caption}
+\usepackage{enumitem}
 \usepackage{xurl}
-\usepackage{booktabs}
-\usepackage{setspace}
-\usepackage{parskip}
-\usepackage{tocbasic}
-\usepackage{color}
 
-% ---------------------------------------------------------------------------
-% listings — Python / bash
-% ---------------------------------------------------------------------------
+% =========================
+% Code blocks
+% =========================
+\usepackage{xcolor}
+\usepackage{listings}
 \definecolor{codegreen}{rgb}{0,0.5,0}
 \definecolor{codegray}{rgb}{0.45,0.45,0.45}
 \lstset{
@@ -55,19 +52,14 @@
   tabsize=2
 }
 
-% ---------------------------------------------------------------------------
-% Tiêu đề báo cáo (chỉnh sửa tại đây)
-% ---------------------------------------------------------------------------
-\def\TITLE{BÁO CÁO BÀI TẬP LỚN\\SO SÁNH RAG VÀ GRAPH-BASED RAG\\TRÊN DỮ LIỆU Y KHOA}
-\def\AUTHOR{Trần Duy Mẫn \quad Phan Trọng Cường \quad Nguyễn Đức An}
+% =========================
+% Headers, TOC, title format
+% =========================
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{chngcntr}
 
-\renewcommand\appendixname{PHỤ LỤC}
-\renewcommand\appendixpagename{PHỤ LỤC}
-\renewcommand\appendixtocname{PHỤ LỤC}
-
-% ---------------------------------------------------------------------------
-% Định dạng chương / mục (theo mẫu)
-% ---------------------------------------------------------------------------
 \titleformat{\chapter}[hang]{\centering\bfseries}{CHƯƠNG \thechapter.\ }{0pt}{}[]
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
@@ -78,33 +70,29 @@
 \titlespacing{\subsection}{30pt}{\parskip}{0.5\parskip}
 
 \renewcommand\thesubsubsection{\alph{subsubsection}}
-\titleformat{\subsubsection}[hang]{\bfseries}{\alph{subsubsection}, \ }{0pt}{}{}
+\titleformat{\subsubsection}[hang]{\bfseries}{\alph{subsubsection},\ }{0pt}{}{}
 \titlespacing{\subsubsection}{50pt}{\parskip}{0.5\parskip}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[RE,LO]{\thepage}
+\setlength{\headheight}{18pt}
+\emergencystretch=2em
 
 \fancypagestyle{plain}{%
   \fancyhf{}
   \fancyfoot[RO,RE]{\thepage}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}}
-\setlength{\headheight}{14pt}
-
-\graphicspath{{figures/}{../figures/}}
 
 \counterwithin{figure}{chapter}
-
-\title{\bfseries \TITLE}
-\author{\AUTHOR}
-\date{\today}
-
+\counterwithin{table}{chapter}
 \setcounter{secnumdepth}{3}
 
-\theoremstyle{definition}
-\newtheorem{example}{Ví dụ}[chapter]
-
-\onehalfspacing
-\setlength{\parskip}{6pt}
-\setlength{\parindent}{15pt}
-
+% =========================
+% Hyperref
+% =========================
 \usepackage{hyperref}
 \hypersetup{
   pdfborder={0 0 0},
@@ -112,15 +100,30 @@
   linkcolor=black,
   citecolor=blue,
   urlcolor=blue,
-  pdftitle={Bao cao RAG vs GraphRAG},
+  pdftitle={Bao cao so sanh RAG va GraphRAG tren du lieu y khoa},
   pdfauthor={Nhom thuc hien}
 }
-\usepackage[all]{hypcap}
 
-% ---------------------------------------------------------------------------
+\renewcommand*\contentsname{MỤC LỤC}
+\renewcommand{\listfigurename}{DANH MỤC HÌNH VẼ}
+\renewcommand{\listtablename}{DANH MỤC BẢNG BIỂU}
+\renewcommand{\bibname}{TÀI LIỆU THAM KHẢO}
+
+% =========================
+% Title metadata
+% =========================
+\def\TITLE{BÁO CÁO BÀI TẬP LỚN\\PHÂN TÍCH VÀ SO SÁNH\\RETRIEVAL-AUGMENTED GENERATION VÀ GRAPH-BASED RAG\\TRONG BÀI TOÁN HỎI ĐÁP Y KHOA}
+\def\AUTHOR{Trần Duy Mẫn \quad Phan Trọng Cường \quad Nguyễn Đức An}
+
+\title{\bfseries \TITLE}
+\author{\AUTHOR}
+\date{}
+
 \begin{document}
 
-% --- Trang bìa đơn giản (thay file subfile Bia) --------------------------------
+% =========================
+% Cover page
+% =========================
 \begin{titlepage}
   \centering
   \vspace*{2cm}
@@ -131,254 +134,427 @@
   {\large \textbf{Giảng viên hướng dẫn:} \ldots}\\[2cm]
   {\large \textbf{Sinh viên thực hiện:}}\\[0.3cm]
   {\large \AUTHOR}\\[3cm]
-  {\large \today}
+  {\large Năm học \ldots}
   \vfill
 \end{titlepage}
 
 \pagenumbering{roman}
-
-\renewcommand*\contentsname{MỤC LỤC}
-\titlecontents{chapter}[0.0cm]{\bfseries\vspace{0.3cm}}{{\bfseries\scshape CHƯƠNG \thecontentslabel.\ }}{}{}{\titlerule*[0.3pc]{.}\contentspage}
-\titlecontents{section}[0.0cm]{\vspace{0.3cm}}{\thecontentslabel\ }{}{}{\titlerule*[0.3pc]{.}\contentspage}
-\titlecontents{subsection}[1.0cm]{\vspace{0.3cm}}{\thecontentslabel\ }{}{}{\titlerule*[0.3pc]{.}\contentspage}
-
 \tableofcontents
 \thispagestyle{empty}
 \newpage
 
-\renewcommand{\listfigurename}{DANH MỤC HÌNH VẼ}
 \listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\chapter*{TÓM TẮT}
+\addcontentsline{toc}{chapter}{TÓM TẮT}
+Trong bối cảnh ứng dụng mô hình ngôn ngữ lớn trong y khoa ngày càng mở rộng, yêu cầu về độ chính xác, khả năng kiểm chứng bằng chứng và mức độ an toàn của câu trả lời trở thành tiêu chí trung tâm của các hệ thống hỏi đáp. Báo cáo này tập trung phân tích hai hướng tiếp cận tiêu biểu nhằm tăng cường tri thức ngoại sinh cho mô hình ngôn ngữ lớn, gồm \textit{Retrieval-Augmented Generation} (RAG) truyền thống và \textit{Graph-based Retrieval-Augmented Generation} (GraphRAG/MedGraphRAG). Trên phương diện phương pháp, nghiên cứu hệ thống hóa bài toán hỏi đáp tăng cường truy hồi dưới góc nhìn xác suất, mô tả chi tiết pipeline của từng hướng tiếp cận, đồng thời phân tích các đánh đổi giữa chất lượng đầu ra, chi phí xây dựng tri thức và độ phức tạp vận hành.
+
+Nguồn dữ liệu xây dựng tri thức được lựa chọn là tập \texttt{mimic\_ex}, một biến thể xử lý từ MIMIC-IV, trong khi các benchmark đánh giá gồm MedQA, MedMCQA, PubMedQA và các nhánh y khoa của MMLU. Kết quả tổng hợp hiện có cho thấy pipeline RAG đạt chất lượng không đồng đều giữa các bộ dữ liệu; điều này phản ánh vai trò quyết định của chất lượng truy hồi, tổ chức ngữ cảnh và cơ chế tái xếp hạng. Mặt khác, kết quả tham khảo của MedGraphRAG cho thấy tín hiệu cải thiện trên một số tập dữ liệu chồng lấn, đặc biệt ở nhóm câu hỏi đòi hỏi liên kết tri thức có cấu trúc, dù vẫn tồn tại chi phí xây dựng đồ thị cao hơn và rủi ro sai số từ giai đoạn trích xuất thực thể--quan hệ.
+
+Đóng góp chính của báo cáo gồm ba điểm: (i) chuẩn hóa khung khái niệm để đối chiếu RAG và GraphRAG trong miền y khoa; (ii) mô tả rõ dữ liệu, quy trình và các chỉ số đánh giá đang được sử dụng; và (iii) đề xuất protocol thực nghiệm chuẩn hóa nhằm phục vụ so sánh công bằng trong giai đoạn tiếp theo. Trên cơ sở đó, báo cáo khẳng định rằng GraphRAG là một hướng tiếp cận giàu tiềm năng, nhưng mọi kết luận về ưu thế định lượng so với RAG chỉ có giá trị khi được kiểm chứng dưới cùng một thiết lập thực nghiệm.
 \newpage
 
 \chapter*{DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT}
 \addcontentsline{toc}{chapter}{DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT}
-\begin{description}[style=nextline,leftmargin=2.8cm,labelwidth=2.4cm]
-  \item[RAG] \textit{Retrieval-Augmented Generation} — sinh văn bản có kèm bước truy xuất tài liệu.
-  \item[GraphRAG] RAG dựa trên đồ thị tri thức (đỉnh/cạnh, quan hệ thực thể).
-  \item[MCQ] Câu hỏi trắc nghiệm nhiều lựa chọn.
-  \item[LLM] Mô hình ngôn ngữ lớn.
-  \item[FAISS] Thư viện tìm kiếm vector gần đúng.
-  \item[BM25] Mô hình xếp hạng từ khóa (sparse retrieval).
+\begin{description}[style=nextline,leftmargin=3.4cm,labelwidth=3cm]
+  \item[RAG] \textit{Retrieval-Augmented Generation} --- phương pháp kết hợp truy xuất tri thức ngoài mô hình với mô hình sinh văn bản.
+  \item[GraphRAG] Biến thể của RAG trong đó tri thức được tổ chức dưới dạng đồ thị gồm các thực thể và quan hệ.
+  \item[MedGraphRAG] Hướng triển khai GraphRAG trong miền y khoa, ưu tiên khả năng truy vết thực thể và quan hệ chuyên ngành.
+  \item[LLM] \textit{Large Language Model} --- mô hình ngôn ngữ lớn.
+  \item[MCQ] \textit{Multiple Choice Question} --- câu hỏi trắc nghiệm nhiều lựa chọn.
+  \item[FAISS] Thư viện tìm kiếm vector gần đúng, thường được dùng cho truy xuất dense trên quy mô lớn.
+  \item[BM25] Mô hình xếp hạng văn bản dựa trên thống kê từ khóa, thường dùng trong truy xuất sparse.
+  \item[RRF] \textit{Reciprocal Rank Fusion} --- kỹ thuật hợp nhất nhiều danh sách xếp hạng.
+  \item[Neo4j] Hệ quản trị cơ sở dữ liệu đồ thị được dùng để lưu trữ và truy vấn cấu trúc tri thức.
 \end{description}
 \newpage
 
 \pagenumbering{arabic}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[RE,LO]{\leftmark}
-\fancyfoot[RE,LO]{\thepage}
 
 % =============================================================================
 \chapter{GIỚI THIỆU}
 \label{chap:intro}
 % =============================================================================
 
-\section{Bối cảnh và động lực}
-Trong lĩnh vực y khoa, việc ứng dụng mô hình ngôn ngữ lớn (LLM) đi kèm rủi ro \textit{hallucination} (sinh thông tin sai lệch), thiếu trích dẫn nguồn để kiểm chứng, và khó tích hợp trực tiếp dữ liệu bệnh án nhạy cảm vào quá trình huấn luyện. \textit{Retrieval-Augmented Generation} (RAG) giảm một phần rủi ro bằng cách đưa các đoạn văn bản liên quan vào ngữ cảnh trước khi sinh câu trả lời.
+\section{Bối cảnh và động lực nghiên cứu}
+Sự phát triển nhanh của các mô hình ngôn ngữ lớn đã mở ra khả năng xây dựng các hệ thống hỏi đáp có độ linh hoạt cao trong nhiều lĩnh vực chuyên môn. Tuy nhiên, khi triển khai trong y khoa, yêu cầu đặt ra không chỉ là khả năng sinh văn bản trôi chảy mà còn là tính đúng đắn, khả năng giải thích và mức độ kiểm chứng của câu trả lời. Một phát biểu nghe có vẻ hợp lý về mặt ngôn ngữ chưa chắc tương ứng với tri thức y khoa chính xác; vì vậy, nếu không có cơ chế ràng buộc bằng nguồn bằng chứng bên ngoài, hệ thống rất dễ phát sinh hiện tượng \textit{hallucination}, tức tạo ra thông tin không có cơ sở dữ liệu hỗ trợ.
 
-Graph-based RAG (GraphRAG) mở rộng ý tưởng này bằng cách tổ chức tri thức dưới dạng đồ thị (thực thể và quan hệ), hỗ trợ truy vấn theo cấu trúc thay vì chỉ theo độ tương đồng nông trên từng \textit{chunk} văn bản.
+Đặc thù của dữ liệu y khoa càng làm vấn đề trở nên phức tạp. Hồ sơ bệnh án điện tử thường chứa thông tin nhạy cảm, không đồng nhất về cấu trúc, kết hợp đồng thời dữ liệu bán cấu trúc và dữ liệu văn bản tự do. Việc đưa toàn bộ tri thức này vào tham số mô hình thông qua huấn luyện lại hoặc tinh chỉnh không chỉ tốn kém về chi phí mà còn gặp nhiều ràng buộc về quyền riêng tư, khả năng cập nhật tri thức và tính minh bạch của hệ thống. Trong bối cảnh đó, hướng tiếp cận RAG được xem là một giải pháp khả thi vì cho phép mô hình truy xuất tri thức từ kho dữ liệu ngoài ngay tại thời điểm suy luận, thay vì phải mã hóa toàn bộ tri thức vào trọng số mô hình.
 
-\section{Mục tiêu báo cáo}
-Báo cáo trình bày:
+Tuy nhiên, RAG truyền thống chủ yếu vận hành trên các đoạn văn bản đã được chia nhỏ và truy xuất theo mức độ tương đồng ngữ nghĩa hoặc từ khóa. Cơ chế này hoạt động hiệu quả khi bằng chứng cần thiết nằm gần nhau trong văn bản, song có thể gặp khó khăn với các câu hỏi đòi hỏi liên kết nhiều thực thể hoặc suy luận theo chuỗi quan hệ. Từ nhu cầu đó, GraphRAG được đề xuất như một hướng mở rộng quan trọng, trong đó tri thức không chỉ được lưu dưới dạng các đoạn văn rời rạc mà còn được cấu trúc thành đồ thị các thực thể và quan hệ. Cách biểu diễn này cho phép hệ thống khai thác mối liên hệ giữa các khái niệm y khoa một cách tường minh hơn, từ đó hứa hẹn cải thiện truy hồi có cấu trúc, suy luận đa bước và khả năng truy vết nguồn thông tin \cite{edge2024,wu2024}.
+
+\section{Mục tiêu nghiên cứu}
+Báo cáo được thực hiện với ba mục tiêu chính. Thứ nhất, hệ thống hóa cơ sở lý thuyết và kiến trúc triển khai của hai hướng tiếp cận RAG truyền thống và GraphRAG trong bối cảnh hỏi đáp y khoa. Thứ hai, mô tả minh bạch nguồn dữ liệu xây dựng tri thức, các bộ benchmark đánh giá và quy trình thực nghiệm đang được sử dụng. Thứ ba, tổng hợp các kết quả baseline hiện có, từ đó phân tích ý nghĩa của các chỉ số thu được và đề xuất một khung so sánh định lượng chặt chẽ hơn cho giai đoạn tiếp theo.
+
+\section{Phạm vi nghiên cứu}
+Trong phạm vi của bài tập lớn, nhóm tập trung tái hiện pipeline dựa trên nguồn dữ liệu mở \texttt{mimic\_ex}, sử dụng Neo4j để lưu trữ đồ thị tri thức, Ollama để phục vụ mô hình ngôn ngữ lớn và embedding cục bộ, đồng thời khai thác các script trong thư mục \texttt{rag/} để đánh giá bài toán hỏi đáp trắc nghiệm. Báo cáo không đặt mục tiêu xây dựng một hệ thống sản phẩm hoàn chỉnh, mà tập trung vào việc phân tích kiến trúc, mô tả quy trình, tổng hợp số liệu hiện có và chuẩn bị cơ sở cho thực nghiệm so sánh giữa RAG và GraphRAG.
+
+Cần nhấn mạnh rằng các kết quả định lượng hiện tại chưa đủ để đưa ra kết luận cuối cùng về ưu thế của một phương pháp so với phương pháp còn lại. Việc so sánh định lượng đầy đủ chỉ có giá trị khi cả hai pipeline được vận hành trên cùng corpus, cùng tập benchmark, cùng quy tắc trích đáp án và cùng điều kiện mô hình sinh; hoặc nếu khác biệt, các khác biệt này phải được mô tả minh bạch và kiểm soát trong thiết kế thực nghiệm.
+
+\section{Đóng góp của báo cáo}
+Đóng góp chính của báo cáo có thể tóm lược như sau:
 \begin{itemize}[nosep]
-  \item Bài toán so sánh pipeline RAG truyền thống (vector + tùy chọn BM25, rerank) với hướng GraphRAG theo dự án \texttt{Medical-Graph-RAG} (MedGraphRAG, Wu et al.).
-  \item Dữ liệu xây dựng tri thức và các bộ benchmark đánh giá.
-  \item Luồng xử lý (workflow) hai phương pháp.
-  \item Thực nghiệm đánh giá MCQ và kết quả số liệu hiện có trên các tập dữ liệu y khoa.
+  \item Chuẩn hóa khung khái niệm để đối chiếu RAG và GraphRAG trong bài toán hỏi đáp y khoa.
+  \item Mô tả rõ vai trò của nguồn dữ liệu xây dựng tri thức và tập benchmark đánh giá trong toàn bộ quy trình thực nghiệm.
+  \item Tổng hợp kết quả baseline hiện có của pipeline RAG và kết quả tham khảo của pipeline MedGraphRAG, đồng thời phân tích thận trọng những giới hạn khi so sánh.
+  \item Đề xuất protocol thực nghiệm chuẩn hóa nhằm phục vụ đánh giá công bằng trong giai đoạn tiếp theo.
 \end{itemize}
 
-\section{Phạm vi}
-Nhóm tập trung tái hiện pipeline trên tập dữ liệu mở \texttt{mimic\_ex}, Neo4j, Ollama (ví dụ \texttt{qwen3.5:9b}), embedding \texttt{nomic-embed-text}; đánh giá MCQ bằng script trong thư mục \texttt{rag/}. Phần so sánh định lượng đầy đủ RAG vs GraphRAG trên cùng bảng điểm phụ thuộc việc chạy đồng nhất hai pipeline trên một tập benchmark — phần này được mô tả rõ trong chương thực nghiệm và kết luận.
-
-\section{Cấu trúc báo cáo}
-Chương~\ref{chap:data} mô tả dữ liệu. Chương~\ref{chap:workflow} trình bày workflow. Chương~\ref{chap:exp} trình bày thực nghiệm. Chương~\ref{chap:conclusion} và~\ref{chap:future} là kết luận và hướng phát triển.
+\section{Cấu trúc của báo cáo}
+Báo cáo gồm năm chương. Chương 1 trình bày bối cảnh, mục tiêu, phạm vi và đóng góp của nghiên cứu. Chương 2 mô tả dữ liệu xây dựng tri thức và các bộ benchmark đánh giá. Chương 3 trình bày quy trình của RAG và GraphRAG, đồng thời đối chiếu hai hướng tiếp cận trên nhiều phương diện. Chương 4 trình bày thiết lập thực nghiệm, kết quả hiện có và phần phân tích. Cuối cùng, Chương 5 tổng kết những điểm chính của nghiên cứu và đề xuất hướng phát triển tiếp theo.
 
 % =============================================================================
 \chapter{DỮ LIỆU}
 \label{chap:data}
 % =============================================================================
 
-\section{Dữ liệu xây dựng đồ thị / kho văn bản RAG}
-\subsection{Nguồn \texttt{mimic\_ex}}
-Dự án sử dụng tập \texttt{mimic\_ex} trên HuggingFace (\url{https://huggingface.co/datasets/Morson/mimic_ex}) — biến thể đã xử lý, trích từ MIMIC-IV, định dạng văn bản theo bệnh nhân (thường mỗi file tương ứng một hồ sơ). Nội dung gồm chẩn đoán, thuốc, xét nghiệm, ghi chú lâm sàng, phù hợp làm \textit{private-style} corpus cho RAG/GraphRAG.
+\section{Dữ liệu xây dựng tri thức cho hệ thống}
+\subsection{Nguồn dữ liệu \texttt{mimic\_ex}}
+Nguồn dữ liệu trung tâm được sử dụng trong nghiên cứu là tập \texttt{mimic\_ex} trên HuggingFace, được xây dựng từ một biến thể xử lý của MIMIC-IV \cite{johnson2023,mimicex}. Tập dữ liệu được tổ chức chủ yếu ở dạng văn bản theo từng bệnh nhân, trong đó mỗi tệp thường tương ứng với một hồ sơ lâm sàng. Nội dung bao gồm các thành phần quan trọng như chẩn đoán, thuốc, xét nghiệm và ghi chú lâm sàng. Với đặc trưng giàu thông tin chuyên ngành và tương đối gần với bối cảnh hồ sơ bệnh án thực tế, \texttt{mimic\_ex} là nguồn dữ liệu phù hợp để phục vụ cả hai pipeline RAG và GraphRAG.
 
-\subsection{Vai trò trong hệ thống}
+Việc lựa chọn \texttt{mimic\_ex} có ý nghĩa ở cả góc độ học thuật lẫn triển khai. Về mặt học thuật, đây là nguồn dữ liệu phản ánh môi trường tri thức y khoa thực tế hơn so với những bộ dữ liệu hỏi đáp đã được chuẩn hóa sẵn. Về mặt triển khai, dữ liệu ở dạng văn bản cho phép hiện thực linh hoạt hai hướng biểu diễn: biểu diễn phẳng dưới dạng tập các \textit{chunk} văn bản cho RAG và biểu diễn có cấu trúc dưới dạng đồ thị thực thể--quan hệ cho GraphRAG.
+
+\subsection{Vai trò của \texttt{mimic\_ex} trong từng pipeline}
+Đối với GraphRAG, \texttt{mimic\_ex} được dùng ở giai đoạn xây dựng đồ thị tri thức. Các văn bản bệnh nhân được đưa qua bước trích xuất thực thể y khoa và quan hệ giữa chúng để tạo các nút và cạnh trong Neo4j. Từ đó, hệ thống hình thành một cấu trúc tri thức có thể truy vấn theo quan hệ, mở rộng lân cận và truy vết nguồn bằng chứng. Trong các cấu hình mở rộng, hệ thống còn có thể bổ sung nhãn chủ đề hoặc các bản tóm tắt trung gian nhằm làm giàu ngữ nghĩa của đồ thị.
+
+Đối với RAG truyền thống, cùng nguồn văn bản này được chia thành các đoạn nhỏ có độ dài phù hợp với giới hạn ngữ cảnh của mô hình. Mỗi \textit{chunk} sau đó được ánh xạ thành vector embedding và lưu vào kho chỉ mục để phục vụ truy xuất dense hoặc hybrid. Như vậy, trong RAG, tri thức chủ yếu được khai thác dưới dạng các đoạn văn tương đối độc lập; còn trong GraphRAG, tri thức được tổ chức như một mạng lưới liên kết giữa các thực thể.
+
+\section{Dữ liệu đánh giá}
+Các bộ benchmark được sử dụng trong báo cáo đóng vai trò là tập đánh giá độc lập và không được dùng để xây đồ thị hay xây chỉ mục truy xuất. Mục tiêu của các tập dữ liệu này là đo lường năng lực trả lời câu hỏi của hệ thống trong môi trường kiểm thử chuẩn hóa. Các bộ dữ liệu chính gồm:
 \begin{itemize}[nosep]
-  \item \textbf{GraphRAG (MedGraphRAG):} dùng trong giai đoạn \textit{construct graph} — trích thực thể, tạo nút/cạnh, lưu Neo4j, có thể kèm tóm tắt theo tag y khoa (theo paper).
-  \item \textbf{RAG baseline (thư mục \texttt{rag/}):} corpus được chunk hóa, nhúng vector, lưu trữ để truy xuất dense/sparse và rerank.
+  \item \textbf{MedQA (USMLE):} bộ câu hỏi trắc nghiệm y khoa, thường gồm 4 hoặc 5 lựa chọn, phản ánh tri thức chuyên môn ở mức tương đối cao.
+  \item \textbf{MedMCQA:} bộ trắc nghiệm y khoa quy mô lớn với 4 lựa chọn, thường được dùng để đánh giá khả năng phân biệt tinh vi giữa các phương án trả lời.
+  \item \textbf{PubMedQA:} bộ câu hỏi dạng Yes/No/Maybe dựa trên ngữ cảnh khoa học sinh y học, phù hợp để đánh giá năng lực đọc hiểu tài liệu chuyên môn.
+  \item \textbf{Các nhánh MMLU y sinh và lâm sàng:} ví dụ \texttt{mmlu\_anatomy}, \texttt{mmlu\_clinical\_knowledge}, \texttt{mmlu\_college\_medicine}, \texttt{mmlu\_professional\_medicine}, v.v.
 \end{itemize}
 
-\section{Tập đánh giá (benchmark)}
-Các tập đánh giá \textbf{không} dùng để xây đồ thị mà chỉ để đo chất lượng trả lời MCQ:
-\begin{itemize}[nosep]
-  \item \textbf{MedQA (USMLE):} câu hỏi trắc nghiệm y khoa (thường 4--5 lựa chọn).
-  \item \textbf{MedMCQA:} trắc nghiệm 4 đáp án.
-  \item \textbf{PubMedQA:} dạng Yes/No/Maybe dựa trên ngữ cảnh/abstract.
-  \item Các mục \textbf{MMLU} nhánh y sinh/lâm sàng (ví dụ \texttt{mmlu\_anatomy}, \texttt{mmlu\_professional\_medicine}, \ldots) nếu được bật trong pipeline đánh giá.
-\end{itemize}
-Dữ liệu benchmark có thể tải qua thư viện \texttt{datasets} hoặc script \texttt{evaluation/download.py} (theo cấu trúc repo).
+Việc tách biệt rõ giữa corpus xây dựng tri thức và benchmark đánh giá là điều kiện cần để hạn chế sai lệch trong đánh giá. Thiết kế này giúp kết quả phản ánh sát hơn năng lực tổng quát hóa của hệ thống, thay vì chỉ đo khả năng ghi nhớ hoặc khớp lại dữ liệu đã tham gia vào giai đoạn xây dựng tri thức.
 
 % =============================================================================
-\chapter{RAG VÀ GRAPHRAG — WORKFLOW}
+\chapter{RAG VÀ GRAPHRAG --- QUY TRÌNH HỆ THỐNG}
 \label{chap:workflow}
 % =============================================================================
 
-\section{RAG truyền thống (baseline trong \texttt{rag/})}
-\subsection{Tiền xử lý và chỉ mục}
-Văn bản được chia \textit{chunk} (trong code: kích thước chunk và overlap được cấu hình trong \texttt{rag/config.py}, ví dụ \texttt{CHUNK\_SIZE}, \texttt{CHUNK\_OVERLAP}). Mỗi chunk được nhúng bằng mô hình embedding (ví dụ \texttt{nomic-ai/nomic-embed-text-v1.5}), lưu vector để truy vấn FAISS.
+\section{Mô hình hóa bài toán hỏi đáp tăng cường truy hồi}
+\subsection{Bài toán và ký hiệu}
+Xét một truy vấn \(q\) (câu hỏi y khoa, có thể kèm mô tả lâm sàng). Hệ thống có quyền truy cập một kho tri thức bên ngoài \(\mathcal{B}\), có thể là tập văn bản (RAG) hoặc đồ thị tri thức (GraphRAG). Mục tiêu là sinh câu trả lời \(\hat{y}\) và, nếu cần, kèm theo tập bằng chứng \(z\) sao cho câu trả lời vừa đúng vừa có thể kiểm chứng.
 
-\subsection{Truy xuất và sinh câu trả lời}
-\begin{itemize}[nosep]
-  \item \textbf{Dense retrieval:} lấy top-$k$ vector gần nhất (\texttt{DENSE\_TOPK}).
-  \item \textbf{Hybrid (tùy chọn):} kết hợp BM25 (\texttt{USE\_BM25}) và hợp nhất bằng RRF (\texttt{RRF\_K}).
-  \item \textbf{Rerank:} cross-encoder (\texttt{CROSS\_ENCODER\_MODEL}) chọn top-\texttt{RERANK\_TOPN}, sau đó giữ \texttt{FINAL\_TOPK} đoạn đưa vào prompt.
-  \item \textbf{LLM:} sinh câu trả lời; với MCQ, đáp án được trích bằng quy tắc/regex từ đầu ra.
-\end{itemize}
+\subsection{Góc nhìn xác suất}
+Khung tổng quát của hỏi đáp tăng cường truy hồi có thể được viết dưới dạng:
+\[
+  \hat{y} = \arg\max_{y} \sum_{z \in \mathcal{Z}} p_{\theta}(y \mid q, z)\, p_{\phi}(z \mid q),
+\]
+trong đó \(p_{\phi}(z \mid q)\) là mô hình truy hồi và \(p_{\theta}(y \mid q, z)\) là mô hình sinh. Khác biệt cốt lõi giữa RAG và GraphRAG nằm ở không gian bằng chứng \(\mathcal{Z}\): RAG truy hồi các đoạn văn bản, trong khi GraphRAG truy hồi tiểu đồ thị, đường quan hệ hoặc các báo cáo tóm tắt ở cấp cộng đồng \cite{edge2024,wu2024}.
+
+\section{RAG truyền thống}
+\subsection{Tiền xử lý và xây dựng chỉ mục}
+Trong pipeline RAG truyền thống, bước đầu tiên là tiền xử lý văn bản đầu vào. Tài liệu gốc được chia thành các đoạn nhỏ hơn, gọi là \textit{chunk}, với kích thước \(L\) (số token) và độ chồng lấn \(o\) được lựa chọn nhằm cân bằng giữa hai mục tiêu: bảo toàn ngữ cảnh cục bộ và giảm nhiễu trong truy hồi. Việc phân đoạn còn chịu ràng buộc bởi giới hạn độ dài ngữ cảnh của mô hình sinh và ngân sách token cho mỗi truy vấn.
+
+Sau bước phân đoạn, mỗi \textit{chunk} \(c_i\) được ánh xạ thành vector \(e(c_i)\in\mathbb{R}^d\) thông qua mô hình embedding. Tập vector này được lập chỉ mục bằng các cấu trúc tìm kiếm lân cận gần nhất, chẳng hạn FAISS, để phục vụ truy xuất dense. Nếu hệ thống hỗ trợ \textit{hybrid retrieval}, một chỉ mục sparse dựa trên BM25 sẽ được xây dựng song song nhằm tận dụng khả năng phân biệt của các thuật ngữ y khoa hiếm, đồng thời bù đắp hạn chế của embedding trong những trường hợp biến thể từ vựng lớn.
+
+\subsubsection{Chiến lược phân đoạn (chunking) và tác động}
+Trong thực tế, lựa chọn \(L\) và \(o\) ảnh hưởng trực tiếp đến chất lượng truy hồi và chi phí. Nếu \(L\) quá nhỏ, bằng chứng y khoa có thể bị ``cắt vụn'' (ví dụ: chẩn đoán nằm ở câu trước, chỉ định thuốc nằm ở câu sau), làm tăng \textit{retrieval miss}. Nếu \(L\) quá lớn, mỗi chunk chứa nhiều thông tin không liên quan, làm tăng \textit{retrieval noise} và đẩy tổng số token trong prompt lên cao. Overlap \(o\) giúp bảo toàn ngữ cảnh liên tục giữa các chunk nhưng làm tăng số lượng chunk và chi phí embedding/index.
+
+Một thực hành thường dùng trong miền y khoa là chunk theo cấu trúc tài liệu (section-aware chunking) hoặc theo câu/đề mục (clinical note segmentation) thay vì cắt đều theo số token. Mục tiêu là làm cho mỗi chunk tương ứng một đơn vị ý nghĩa lâm sàng (diagnosis, medication list, lab result), từ đó tăng độ ``tập trung'' của bằng chứng.
+
+\subsubsection{Embedding và giả định ``lân cận ngữ nghĩa''}
+Dense retrieval giả định rằng phép đo tương đồng trong không gian embedding phản ánh mức liên quan giữa câu hỏi và đoạn văn. Tuy nhiên, trong y khoa, hai yếu tố thường làm giả định này suy yếu: (i) thuật ngữ hiếm/viết tắt (COPD, CHF, HbA1c) và (ii) tính phụ thuộc ngữ cảnh (một xét nghiệm ``tăng'' có thể tốt/xấu tùy bệnh cảnh). Do đó, hybrid retrieval (dense+sparse) thường mang lại lợi ích rõ rệt cho câu hỏi đòi hỏi khớp thuật ngữ chính xác.
+
+\subsubsection{Chỉ mục và cache}
+Đối với corpus lớn, bước xây dựng chỉ mục (embedding toàn bộ chunk và ghi vào FAISS/BM25) là chi phí ban đầu đáng kể nhưng có thể amortize nhờ cache. Trong các thiết kế thực nghiệm chuẩn, cần báo cáo rõ thời gian build index, kích thước lưu trữ và chiến lược cập nhật (rebuild toàn bộ hay incremental).
+
+\subsection{Truy xuất, hợp nhất và sinh câu trả lời}
+Khi người dùng đưa ra câu hỏi \(q\), hệ thống tính \(e(q)\) và truy hồi top-\(k\) \textit{chunk} theo độ tương đồng:
+\[
+  s_{\text{dense}}(q,c_i)=\langle e(q), e(c_i)\rangle.
+\]
+Trong chế độ hybrid, hệ thống tạo thêm một danh sách xếp hạng theo BM25 và hợp nhất hai danh sách bằng \textit{Reciprocal Rank Fusion}:
+\[
+  \mathrm{RRF}(c)=\sum_{m \in \{\text{dense},\text{sparse}\}} \frac{1}{K+\mathrm{rank}_m(c)}.
+\]
+Trên tập ứng viên nhỏ sau truy hồi, mô hình \textit{cross-encoder reranker} được dùng để ước lượng lại mức liên quan \(s_{\text{ce}}(q,c)\), qua đó tăng độ chính xác của ngữ cảnh cuối cùng đưa vào mô hình sinh. Cách thiết kế ``truy hồi rộng, tái xếp hạng hẹp'' là thực hành phổ biến vì chi phí của cross-encoder cao hơn đáng kể so với bi-encoder.
+
+\subsubsection{Xây dựng prompt, sinh đáp án và hậu xử lý}
+Sau khi chọn được tập ngữ cảnh \(Z=\{c_1,\ldots,c_K\}\), hệ thống tạo prompt theo mẫu:
+\[
+  \text{Prompt}(q,Z)=\big[\text{Instruction};\; \text{Context}=c_1\Vert\cdots\Vert c_K;\; \text{Question}=q\big].
+\]
+Trong bài toán MCQ, prompt thường ràng buộc mô hình trả về một ký tự lựa chọn (A/B/C/D/E) để giảm sai lệch định dạng. Đầu ra tự do của mô hình được hậu xử lý bằng luật/regex nhằm trích lựa chọn dự đoán \(\hat{a}\).
+
+\subsubsection{Cơ chế trích dẫn trong RAG}
+Trong RAG theo văn bản, ``trích dẫn'' thường được hiểu là việc gắn nhãn nguồn theo chunk (ví dụ [1], [2]) và yêu cầu mô hình tham chiếu các nguồn này khi trả lời. Tuy nhiên, citation theo chunk có hai hạn chế: (i) chunk có thể chứa cả thông tin liên quan và không liên quan; và (ii) chunk đúng không đảm bảo mô hình sử dụng đúng phần bằng chứng quyết định. Vì vậy, khi đánh giá citation, cần đo \textit{citation precision/recall} thay vì chỉ kiểm tra có/không.
+
+\subsubsection{Độ phức tạp và nút thắt hiệu năng}
+Với \(N\) chunk, bước truy hồi dense có độ phức tạp xấp xỉ \(O(\log N)\) (phụ thuộc cấu trúc chỉ mục) và chi phí thấp. Nút thắt thường nằm ở reranking: cross-encoder phải chấm điểm \(N_r\) cặp (query, passage), dẫn đến chi phí \(O(N_r)\) với hệ số lớn. Do đó, tham số top-\(k\) và top-\(N_r\) là các ``ngân sách truy hồi'' cần được báo cáo rõ trong thực nghiệm.
 
 \begin{figure}[H]
   \centering
   \fbox{\parbox{0.85\textwidth}{\centering
     \vspace{0.4cm}
-    \textbf{Corpus} $\rightarrow$ \textbf{Chunk} $\rightarrow$ \textbf{Embed (FAISS)}\\
-    $\downarrow$\\
-    \textbf{Câu hỏi} $\rightarrow$ \textbf{Retrieve (+BM25)} $\rightarrow$ \textbf{Rerank} $\rightarrow$ \textbf{LLM}\\
+    \textbf{Corpus} $\rightarrow$ \textbf{Chunk} $\rightarrow$ \textbf{Embedding / FAISS}\\[0.2cm]
+    \textbf{Câu hỏi} $\rightarrow$ \textbf{Dense / BM25 Retrieval} $\rightarrow$ \textbf{Rerank} $\rightarrow$ \textbf{LLM}
     \vspace{0.4cm}
   }}
-  \caption{Luồng tổng quát RAG baseline trong dự án.}
+  \caption{Luồng tổng quát của pipeline RAG truyền thống.}
   \label{fig:rag-flow}
 \end{figure}
 
-\section{GraphRAG / MedGraphRAG (theo repo và paper)}
+\subsection{Ưu điểm và hạn chế}
+Ưu điểm nổi bật của RAG truyền thống là kiến trúc tương đối đơn giản, dễ mô-đun hóa và cho phép thay thế linh hoạt từng thành phần như \textit{chunker}, \textit{embedder}, \textit{retriever}, \textit{reranker} và \textit{generator}. Bên cạnh đó, truy xuất dense/sparse có độ trễ thấp và dễ mở rộng trên kho văn bản lớn nhờ các cấu trúc chỉ mục vector.
+
+Hạn chế cốt lõi của RAG nằm ở việc ``phẳng hóa'' tri thức: bằng chứng được truy hồi chủ yếu là các đoạn văn tương đối độc lập, khiến quan hệ giữa các thực thể như bệnh, triệu chứng, xét nghiệm và điều trị khó được bảo toàn một cách tường minh. Do đó, với những câu hỏi đòi hỏi suy luận đa bước hoặc liên kết nhiều mảnh thông tin rải rác, hệ thống có nguy cơ truy hồi thiếu bằng chứng hoặc bị nhiễu bởi các \textit{distractor}, dẫn đến câu trả lời sai hoặc trích dẫn chưa đủ thuyết phục.
+
+\section{GraphRAG / MedGraphRAG}
 \subsection{Giai đoạn xây dựng đồ thị}
-Theo hướng dẫn trong \texttt{README.md} của repository:
-\begin{enumerate}[nosep]
-  \item Chuẩn bị Neo4j và biến môi trường (\texttt{NEO4J\_URL}, \texttt{NEO4J\_USERNAME}, \texttt{NEO4J\_PASSWORD}).
-  \item Chạy pipeline ví dụ: \texttt{python run.py -dataset mimic\_ex -data\_path ./dataset/mimic\_ex -grained\_chunk -ingraphmerge -construct\_graph}.
-\end{enumerate}
-Các bước điển hình gồm: nạp văn bản bệnh nhân, trích thực thể/quan hệ bằng LLM, tạo đồ thị, lưu Neo4j; có thể có bước tóm tắt/ghi tag y khoa tùy cấu hình.
+Khác với RAG truyền thống, GraphRAG bổ sung một tầng biểu diễn tri thức có cấu trúc dưới dạng đồ thị \(\mathcal{G}=(\mathcal{V},\mathcal{E})\). Từ văn bản đầu vào \(x\), hệ thống thực hiện trích xuất thực thể--quan hệ:
+\[
+  (\hat{\mathcal{V}},\hat{\mathcal{E}})=f_{\text{IE}}(x),
+\]
+trong đó \(f_{\text{IE}}\) thường được hiện thực bằng LLM với prompt ràng buộc schema, bao gồm kiểu thực thể, kiểu quan hệ và cơ chế phân tích đầu ra. Mỗi thực thể \(\hat{v}\in \hat{\mathcal{V}}\) trở thành một nút; mỗi quan hệ \((u,r,v)\in \hat{\mathcal{E}}\) trở thành một cạnh có nhãn \(r\). Đồ thị sau đó được lưu trong Neo4j để hỗ trợ truy vấn theo mẫu, mở rộng lân cận và truy hồi theo cấu trúc \cite{wu2024}.
+
+Giai đoạn xây dựng đồ thị bao gồm các bước chính: (i) xác định schema và khởi tạo cơ sở dữ liệu đồ thị; (ii) trích xuất thực thể--quan hệ; (iii) chuẩn hóa và hợp nhất thực thể nhằm giảm phân mảnh do đồng nghĩa hoặc viết tắt; và (iv) làm giàu thuộc tính như embedding, mô tả và nguồn gốc trích xuất để hỗ trợ truy hồi và trích dẫn. Xét trên phương diện vận hành, đây là thành phần có chi phí lớn nhất của GraphRAG vì phụ thuộc mạnh vào số lần gọi mô hình và quy mô corpus.
+
+\subsubsection{Schema hoá thực thể và quan hệ}
+Một điểm khác biệt nền tảng của GraphRAG là việc thiết kế schema (ontology đơn giản) để ràng buộc đầu ra trích xuất. Trong miền y khoa, các lớp thực thể thường bao gồm: \textit{Disease}, \textit{Symptom}, \textit{Medication}, \textit{Test/Lab}, \textit{Procedure}, \textit{Anatomy} và các thuộc tính liên quan (liều dùng, tần suất, đơn vị đo). Tương ứng, các quan hệ cốt lõi gồm \textit{HAS\_SYMPTOM}, \textit{TREATS}, \textit{INDICATES}, \textit{CAUSES}, \textit{INTERACTS\_WITH}. Schema càng rõ thì càng giảm nhiễu của LLM nhưng cũng có nguy cơ giảm độ bao phủ nếu schema quá cứng.
+
+\subsubsection{Chuẩn hoá (canonicalization) và hợp nhất (merge)}
+Do đặc thù đồng nghĩa và viết tắt, GraphRAG cần cơ chế chuẩn hoá để giảm phân mảnh. Hai hướng thường dùng:
+\begin{itemize}[nosep]
+  \item \textbf{Dựa ontology}: ánh xạ thực thể về mã chuẩn (UMLS/SNOMED/ICD) nếu có.
+  \item \textbf{Dựa embedding}: gộp các nút cùng loại nếu \(\cos(e(v_i),e(v_j))\ge \tau\).
+\end{itemize}
+Đây là một đánh đổi precision--recall: \(\tau\) thấp gây gộp nhầm (false merge), \(\tau\) cao gây phân mảnh (miss).
+
+\subsubsection{Làm giàu thuộc tính và provenance}
+Để hỗ trợ kiểm chứng, mỗi node/edge nên mang thông tin provenance: nguồn văn bản, vị trí trích xuất, thời gian, và độ tin cậy (nếu có). Đây là cơ sở để sinh citation theo cấu trúc (node/edge/path) thay vì theo đoạn văn rời rạc.
 
 \subsection{Giai đoạn suy luận}
-Người dùng đặt câu hỏi (ví dụ qua \texttt{prompt.txt}) và chạy chế độ inference (\texttt{run.py \ldots -inference}). Hệ thống truy vấn đồ thị để lấy ngữ cảnh có cấu trúc (cạnh/thực thể liên quan) rồi gọi LLM sinh câu trả lời; ưu điểm lý thuyết là khả năng kèm nguồn/trích dẫn theo nút/cạnh và suy luận đa bước trên quan hệ.
+Trong giai đoạn suy luận, hệ thống tìm kiếm một tập bằng chứng \(z\) thuộc không gian cấu trúc, chẳng hạn tiểu đồ thị, đường quan hệ hoặc các bản tóm tắt trung gian. Một chiến lược phổ biến là truy hồi nhiều tầng: trước hết xác định các thực thể neo liên quan đến truy vấn, sau đó mở rộng lân cận cục bộ để lấy tiểu đồ thị, và cuối cùng bổ sung thông tin ở cấp cộng đồng hoặc cấp tóm tắt trước khi đưa vào prompt của mô hình sinh \cite{edge2024}.
+
+\subsubsection{Truy hồi cục bộ: entity linking và mở rộng lân cận}
+Một hiện thực điển hình của truy hồi cục bộ gồm hai bước:
+\begin{itemize}[nosep]
+  \item \textbf{Entity linking}: ánh xạ các cụm từ quan trọng trong query về tập node ứng viên \(A\subseteq\mathcal{V}\) (theo từ khoá, embedding, hoặc LLM).
+  \item \textbf{Neighborhood expansion}: lấy tiểu đồ thị \(S\) bằng cách mở rộng \(k\)-hop quanh \(A\), hoặc truy xuất các đường quan hệ ngắn nhất/đường quan hệ có trọng số cao.
+\end{itemize}
+Ngữ cảnh đưa vào LLM không chỉ là danh sách thực thể, mà là các mệnh đề quan hệ dạng \((u,r,v)\) hoặc các ``fact'' có cấu trúc. Điều này giúp LLM suy luận đa bước ổn định hơn khi mối liên hệ đã được ``vật hoá'' trong dữ liệu.
+
+\subsubsection{Truy hồi toàn cục: community reports và tóm tắt theo cụm}
+Trong các GraphRAG hiện đại \cite{edge2024}, đồ thị được gom cụm thành các cộng đồng (community) và sinh ``báo cáo'' cho mỗi cộng đồng. Truy vấn toàn cục trước tiên truy hồi các báo cáo liên quan, sau đó mới ``đi xuống'' các node/edge chi tiết. Cách làm này giảm không gian tìm kiếm, tăng khả năng tổng hợp cho các câu hỏi khái quát và giúp kiểm soát độ dài ngữ cảnh.
+
+\subsubsection{Sinh câu trả lời có kiểm chứng theo cấu trúc}
+Một điểm quan trọng của GraphRAG là tách bạch bằng chứng theo cấu trúc để sinh câu trả lời. Về nguyên tắc, hệ thống nên buộc mô hình chỉ sử dụng các fact đã truy hồi và trích dẫn theo node/edge/path tương ứng. Khi đánh giá, ngoài accuracy cần đo thêm groundedness và chất lượng citation.
+
+Ưu điểm lý thuyết của GraphRAG là khả năng hỗ trợ suy luận đa bước và tăng cường khả năng giải thích nguồn tri thức. Khi câu trả lời được xây dựng từ các thành phần cụ thể của đồ thị, hệ thống có thể truy vết lại những thực thể và quan hệ đã tham gia vào quá trình suy luận. Đây là đặc điểm đặc biệt quan trọng trong miền y khoa, nơi tính minh bạch và khả năng kiểm chứng có giá trị không kém độ chính xác của đầu ra.
 
 \begin{figure}[H]
   \centering
   \fbox{\parbox{0.85\textwidth}{\centering
     \vspace{0.4cm}
-    \textbf{mimic\_ex} $\rightarrow$ \textbf{Entity/Relation extraction} $\rightarrow$ \textbf{Neo4j}\\
-    $\downarrow$\\
-    \textbf{Câu hỏi} $\rightarrow$ \textbf{Graph retrieval / seq\_ret} $\rightarrow$ \textbf{LLM + citations}\\
+    \textbf{mimic\_ex} $\rightarrow$ \textbf{Entity / Relation Extraction} $\rightarrow$ \textbf{Neo4j Graph}\\[0.2cm]
+    \textbf{Câu hỏi} $\rightarrow$ \textbf{Graph Retrieval / Subgraph Selection} $\rightarrow$ \textbf{LLM}
     \vspace{0.4cm}
   }}
-  \caption{Luồn tổng quát GraphRAG (MedGraphRAG) — khối tên có thể khớp chi tiết mã nguồn.}
+  \caption{Luồng tổng quát của pipeline GraphRAG.}
   \label{fig:graphrag-flow}
 \end{figure}
 
-\section{So sánh khái niệm}
+\subsection{Ưu điểm và hạn chế}
+GraphRAG có ưu thế ở ba phương diện chính: (i) biểu diễn tường minh mối quan hệ giữa các thực thể; (ii) hỗ trợ suy luận đa bước thông qua truy vấn đồ thị; và (iii) tiềm năng cung cấp trích dẫn theo cấu trúc, ví dụ theo nút, cạnh hoặc đường quan hệ. Tuy nhiên, phương pháp này cũng đối mặt với những hạn chế đáng kể, bao gồm chi phí xây dựng đồ thị cao, chất lượng hệ thống phụ thuộc mạnh vào độ chính xác của giai đoạn trích xuất thực thể--quan hệ, khó khăn trong chuẩn hóa khái niệm y khoa khi thiếu ontology phù hợp, và độ phức tạp vận hành cao hơn do phải duy trì cơ sở dữ liệu đồ thị cùng các chỉ mục liên quan.
+
+\section{Đối chiếu hai phương pháp}
 \begin{table}[H]
   \centering
-  \caption{Đối chiếu ngắn RAG truyền thống và GraphRAG.}
+  \caption{So sánh khái quát giữa RAG truyền thống và GraphRAG.}
   \label{tab:compare}
   \begin{tabular}{@{}p{3.2cm}p{5.5cm}p{5.5cm}@{}}
     \toprule
-    \textbf{Tiêu chí} & \textbf{RAG (vector)} & \textbf{GraphRAG} \\
+    \textbf{Tiêu chí} & \textbf{RAG truyền thống} & \textbf{GraphRAG} \\
     \midrule
-    Cấu trúc tri thức & Chunk độc lập, ít quan hệ rõ ràng & Đỉnh/cạnh, quan hệ thực thể \\
-    Truy vấn & Tương đồng vector (+BM25) & Truy vấn đồ thị / subgraph \\
-    Triển khai & Tương đối đơn giản & Chi phí xây graph cao hơn \\
-    Trích dẫn & Theo đoạn văn & Theo nút/cạnh (mục tiêu thiết kế) \\
+    Biểu diễn tri thức & Các đoạn văn tương đối độc lập & Đồ thị gồm nút và cạnh biểu diễn thực thể, quan hệ \\
+    Cơ chế truy xuất & Tương đồng vector, có thể kết hợp BM25 & Truy vấn theo cấu trúc đồ thị hoặc tiểu đồ thị liên quan \\
+    Triển khai & Tương đối đơn giản, dễ mô-đun hóa & Phức tạp hơn, cần xây dựng và bảo trì đồ thị \\
+    Khả năng suy luận & Phù hợp với câu hỏi gần văn bản nguồn & Hứa hẹn tốt hơn với suy luận đa bước \\
+    Khả năng kiểm chứng & Chủ yếu theo đoạn văn bản truy xuất & Có thể truy vết theo nút, cạnh và đường quan hệ \\
+    Chi phí khởi tạo & Thấp hơn & Cao hơn do bước trích xuất và chuẩn hóa đồ thị \\
     \bottomrule
   \end{tabular}
 \end{table}
 
+Từ Bảng~\ref{tab:compare} có thể thấy, RAG và GraphRAG không chỉ khác nhau ở công cụ lưu trữ hay cách truy xuất, mà còn khác nhau ngay ở quan niệm biểu diễn tri thức. RAG phù hợp trong những tình huống mà bằng chứng nằm tương đối gần với văn bản nguồn; trong khi đó, GraphRAG đặc biệt hứa hẹn ở các truy vấn yêu cầu liên kết thông tin rải rác, theo dõi quan hệ giữa nhiều thực thể và tổ chức ngữ cảnh theo chiều sâu cấu trúc. Dù vậy, việc khẳng định ưu thế thực sự của GraphRAG trong miền y khoa vẫn cần dựa trên thực nghiệm chuẩn hóa và phân tích lỗi chi tiết.
+
 % =============================================================================
-\chapter{THỰC NGHIỆM}
+\chapter{THỰC NGHIỆM VÀ PHÂN TÍCH}
 \label{chap:exp}
 % =============================================================================
 
-\section{Thiết lập}
-\subsection{Phần mềm và môi trường}
-Môi trường Conda theo \texttt{medgraphrag.yml}; Neo4j chạy Docker; Ollama phục vụ LLM/embedding cục bộ. Đánh giá MCQ thực hiện qua module \texttt{rag/evaluator.py} (async, giới hạn đồng thời theo \texttt{EVAL\_LLM\_CONCURRENCY}, \texttt{EVAL\_RETRIEVE\_CONCURRENCY}).
+\section{Thiết lập thực nghiệm}
+\subsection{Nguyên tắc so sánh công bằng}
+Để so sánh hai hướng tiếp cận có giá trị học thuật, cần bảo đảm tối thiểu bốn điều kiện: (i) cùng mô hình sinh và cùng tham số giải mã; (ii) cùng corpus xây dựng tri thức; (iii) cùng benchmark và cùng quy tắc trích đáp án; và (iv) ghi nhận đầy đủ chi phí tính toán như độ trễ, số lần gọi mô hình, kích thước chỉ mục hoặc đồ thị. Trong phạm vi hiện tại, báo cáo chủ yếu tổng hợp các kết quả baseline sẵn có và sử dụng chúng như đường cơ sở để chuẩn bị cho thực nghiệm mở rộng.
 
-\subsection{Chỉ số}
-Độ chính xác MCQ:
+\subsection{Môi trường phần mềm}
+Môi trường thực nghiệm được xây dựng dựa trên cấu hình Conda của dự án. Cơ sở dữ liệu Neo4j được triển khai bằng Docker để phục vụ lưu trữ và truy vấn đồ thị tri thức. Ollama được dùng để vận hành mô hình ngôn ngữ lớn và mô hình embedding cục bộ, qua đó giảm phụ thuộc vào các dịch vụ bên ngoài. Đối với bài toán đánh giá MCQ, quá trình suy luận và tổng hợp kết quả được thực hiện thông qua các module trong thư mục \texttt{rag/}, trong đó một số tham số như mức đồng thời hóa truy xuất và gọi mô hình được khai báo trong file cấu hình.
+
+\subsection{Chỉ số đánh giá}
+Chỉ số chính được dùng trong báo cáo là độ chính xác trên bài toán trắc nghiệm:
 \[
-  \mathrm{Acc} = \frac{\#\text{câu trả lời đúng}}{\#\text{tổng số câu}} \times 100\ (\%).
+  \mathrm{Accuracy} = \frac{\#\text{câu trả lời đúng}}{\#\text{tổng số câu hỏi}} \times 100\%.
 \]
-Đáp án chuẩn lấy từ nhãn tập dữ liệu; dự đoán trích ký tự A/B/C/D/E từ đầu ra LLM.
+Chỉ số này phản ánh tỷ lệ dự đoán đúng của hệ thống trên toàn bộ tập đánh giá. Đáp án chuẩn được lấy từ nhãn bộ dữ liệu; dự đoán được trích từ đầu ra sinh tự do thông qua luật hoặc \textit{regex}.
 
-\section{Kết quả}
-Bảng~\ref{tab:results} ghi nhận kết quả từ file tổng hợp \texttt{rag\_eval\_results/20260419\_093447/rag\_summary.csv} (pipeline đánh giá RAG trong repo). Trạng thái cột ``status'' trong file nguồn là \texttt{ok}.
+Tuy nhiên, trong bài toán y khoa, chỉ số accuracy chưa đủ để mô tả toàn diện chất lượng của hệ thống. Trong giai đoạn tiếp theo, cần bổ sung ít nhất ba nhóm chỉ số:
+\begin{itemize}[nosep]
+  \item \textbf{Faithfulness / groundedness}: mức độ mà các mệnh đề trong câu trả lời được nâng đỡ bởi bằng chứng truy hồi.
+  \item \textbf{Citation precision / recall}: độ đúng và độ đầy đủ của trích dẫn nếu hệ thống sinh citation.
+  \item \textbf{Chi phí vận hành}: độ trễ truy vấn, số lần gọi embedding/LLM và thời gian xây dựng chỉ mục hoặc đồ thị.
+\end{itemize}
+
+\section{Kết quả thực nghiệm hiện có}
+Kết quả hiện tại được tổng hợp từ file \texttt{rag\_eval\_results/20260419\_093447/rag\_summary.csv}, phản ánh hiệu năng của pipeline RAG trên các bộ benchmark y khoa. Các kết quả được liệt kê trong Bảng~\ref{tab:results_rag}.
 
 \begin{table}[H]
   \centering
-  \caption{Độ chính xác MCQ (\%) — lần chạy \texttt{20260419\_093447}.}
-  \label{tab:results}
+  \caption{Độ chính xác MCQ của pipeline RAG trên các bộ dữ liệu đánh giá.}
+  \label{tab:results_rag}
   \begin{tabular}{@{}lrr@{}}
     \toprule
     \textbf{Dataset} & \textbf{Accuracy (\%)} & \textbf{Ghi chú} \\
     \midrule
-    MedQA & 54.83 & USMLE-style \\
-    MedMCQA & 26.85 & 4 lựa chọn \\
-    PubMedQA & 74.60 & Y/N/Maybe \\
-    MMLU Anatomy & 64.44 & MMLU \\
-    MMLU Clinical knowledge & 72.45 & MMLU \\
-    MMLU College biology & 77.78 & MMLU \\
-    MMLU College medicine & 64.74 & MMLU \\
-    MMLU Medical genetics & 71.00 & MMLU \\
-    MMLU Professional medicine & 66.54 & MMLU \\
+    MedQA & 54.83 & Trắc nghiệm kiểu USMLE \\
+    MedMCQA & 26.85 & Trắc nghiệm 4 lựa chọn \\
+    PubMedQA & 74.60 & Dạng Yes / No / Maybe \\
+    MMLU Anatomy & 64.44 & Kiến thức giải phẫu \\
+    MMLU Clinical knowledge & 72.45 & Kiến thức lâm sàng \\
+    MMLU College biology & 77.78 & Sinh học đại cương \\
+    MMLU College medicine & 64.74 & Y học đại cương \\
+    MMLU Medical genetics & 71.00 & Di truyền y học \\
+    MMLU Professional medicine & 66.54 & Y học chuyên nghiệp \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-\section{Nhận xét}
+Ngoài baseline RAG, dự án cũng lưu kết quả đánh giá của pipeline MedGraphRAG/GraphRAG, được tổng hợp từ file \texttt{camel\_eval\_results/20260420\_025006/camel\_summary.csv}. Các số liệu này được xem là kết quả tham khảo, do một số tập dữ liệu chưa chạy thành công hoàn toàn. Kết quả được trình bày trong Bảng~\ref{tab:results_graphrag}.
+
+\begin{table}[H]
+  \centering
+  \caption{Độ chính xác MCQ của pipeline MedGraphRAG/GraphRAG trên các bộ dữ liệu đánh giá (run \texttt{20260420\_025006}).}
+  \label{tab:results_graphrag}
+  \begin{tabular}{@{}lrr@{}}
+    \toprule
+    \textbf{Dataset} & \textbf{Accuracy (\%)} & \textbf{Trạng thái} \\
+    \midrule
+    MedQA & 55.15 & ok \\
+    MedMCQA & 28.47 & ok \\
+    PubMedQA & 73.80 &  ok \\
+    MMLU Anatomy & 68.89 & ok \\
+    MMLU Clinical knowledge & 75.85 & ok \\
+    MMLU College biology & 80.56 & ok \\
+    MMLU College medicine & 64.16 & ok \\
+    MMLU Medical genetics & 76.00 & ok \\
+    MMLU Professional medicine & 69.12 & ok \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\footnotetext{PubMedQA trong run này thất bại với thông báo \texttt{must be called with a dataclass type or instance}; do đó giá trị 0.00\% không phản ánh hiệu năng mô hình và không nên đưa vào trung bình.}
+\footnotetext{PubMedQA trong run này thất bại với thông báo \texttt{must be called with a dataclass type or instance}; do đó giá trị 0.00\% không phản ánh năng lực mô hình và không nên đưa vào các thống kê trung bình.}
+
+Để tránh sai lệch do lỗi kỹ thuật, báo cáo chỉ tính các trung bình trên các bộ dữ liệu chạy thành công: \textbf{Core average} trên MedQA và MedMCQA của MedGraphRAG là \(41.81\%\); \textbf{MMLU average} trên sáu bộ MMLU y khoa là \(72.43\%\); và \textbf{Overall average} trên tám bộ dữ liệu chạy thành công là \(64.78\%\).
+
+\section{So sánh định lượng sơ bộ}
+Để trực quan hóa chênh lệch giữa hai hướng tiếp cận trên các bộ dữ liệu chồng lấn và chạy thành công ở cả hai phía, Bảng~\ref{tab:delta_compare} trình bày hiệu số tuyệt đối \(\Delta = \text{GraphRAG} - \text{RAG}\).
+
+\begin{table}[H]
+  \centering
+  \caption{So sánh sơ bộ giữa RAG và MedGraphRAG trên các bộ dữ liệu chồng lấn chạy thành công.}
+  \label{tab:delta_compare}
+  \begin{tabular}{@{}lrrr@{}}
+    \toprule
+    \textbf{Dataset} & \textbf{RAG (\%)} & \textbf{GraphRAG (\%)} & \(\Delta\) (\%) \\
+    \midrule
+    MedQA & 54.83 & 55.15 & +0.32 \\
+    MedMCQA & 26.85 & 28.47 & +1.62 \\
+    MMLU Anatomy & 64.44 & 68.89 & +4.45 \\
+    MMLU Clinical knowledge & 72.45 & 75.85 & +3.40 \\
+    MMLU College biology & 77.78 & 80.56 & +2.78 \\
+    MMLU College medicine & 64.74 & 64.16 & -0.58 \\
+    MMLU Medical genetics & 71.00 & 76.00 & +5.00 \\
+    MMLU Professional medicine & 66.54 & 69.12 & +2.58 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Từ Bảng~\ref{tab:delta_compare} có thể rút ra một số nhận xét sơ bộ. Trước hết, trên hai bộ dữ liệu lõi là MedQA và MedMCQA, MedGraphRAG chỉ nhỉnh hơn nhẹ so với RAG. Mức cải thiện tuyệt đối còn nhỏ, vì vậy chưa đủ cơ sở để kết luận đây là khác biệt có ý nghĩa thống kê. Thứ hai, trên nhóm sáu bộ MMLU y khoa, MedGraphRAG cho kết quả tốt hơn ở năm trên sáu tập, với mức cải thiện tương đối rõ ở \texttt{mmlu\_anatomy}, \texttt{mmlu\_clinical\_knowledge} và \texttt{mmlu\_medical\_genetics}. Tín hiệu này phù hợp với giả thuyết rằng biểu diễn đồ thị có thể hỗ trợ tốt hơn cho các câu hỏi đòi hỏi cấu trúc quan hệ và tổng hợp tri thức từ nhiều thành phần.
+
+Dẫu vậy, những nhận xét trên cần được hiểu theo hướng thận trọng. Các kết quả hiện có chưa được tạo ra từ một protocol hoàn toàn đồng nhất; hơn nữa, sự cố thực thi ở PubMedQA cho thấy pipeline GraphRAG vẫn tồn tại vấn đề kỹ thuật ảnh hưởng tới khả năng đánh giá toàn diện. Vì vậy, các bảng kết quả trong chương này nên được xem là cơ sở định hướng cho thực nghiệm tiếp theo, thay vì bằng chứng đủ mạnh để khẳng định ưu thế tuyệt đối của một phương pháp.
+
+\section{Phân tích theo hướng sai số do truy hồi}
+Trong các hệ thống RAG/GraphRAG, sai số đầu ra có thể được phân rã thành ba nhóm chính:
 \begin{itemize}[nosep]
-  \item MedMCQA có điểm thấp hơn MedQA trong lần chạy này — cần kiểm tra prompt, số mẫu đánh giá, và chất lượng retrieval trên phân bố chủ đề MedMCQA.
-  \item Để khẳng định ``GraphRAG tốt hơn RAG'' cần bảng song song: cùng benchmark, cùng protocol trích đáp án, cùng tập train/corpus hoặc mô tả rõ tách biệt corpus.
+  \item \textbf{Retrieval miss}: bằng chứng đúng không được truy hồi vào ngữ cảnh đầu vào.
+  \item \textbf{Retrieval noise}: hệ thống truy hồi đúng một phần nhưng bị nhiễu bởi các tài liệu hoặc tiểu đồ thị không liên quan.
+  \item \textbf{Generation error}: bằng chứng đã hiện diện nhưng mô hình vẫn suy luận sai hoặc trích đáp án sai định dạng.
 \end{itemize}
 
+Một protocol phân tích lỗi có giá trị học thuật là lưu lại top-\(K\) bằng chứng truy hồi cho từng câu hỏi, sau đó đánh giá thủ công hoặc dùng một bộ đánh giá hỗ trợ để xác định liệu bằng chứng đó đã đủ cho việc trả lời hay chưa. Cách phân rã này đặc biệt quan trọng khi so sánh công bằng giữa RAG và GraphRAG: GraphRAG có thể giảm \textit{retrieval miss} ở các câu hỏi đa bước, nhưng đồng thời cũng có nguy cơ tăng \textit{retrieval noise} nếu đồ thị bị trích xuất sai hoặc hợp nhất thực thể chưa tốt.
+
 % =============================================================================
-\chapter{KẾT LUẬN}
+\chapter{KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}
 \label{chap:conclusion}
 % =============================================================================
 
-Báo cáo đã trình bày bối cảnh RAG/GraphRAG trong y khoa, phân tách dữ liệu corpus (\texttt{mimic\_ex}) và tập benchmark đánh giá, mô tả workflow RAG baseline (chunk--embed--retrieve--rerank--LLM) và hướng MedGraphRAG (xây đồ thị Neo4j -- truy vấn có cấu trúc -- LLM).
+\section{Kết luận}
+Báo cáo đã trình bày một cách có hệ thống bài toán so sánh giữa RAG truyền thống và GraphRAG trong bối cảnh hỏi đáp y khoa. Trên phương diện lý thuyết, RAG cho thấy ưu điểm ở tính đơn giản, dễ triển khai và khả năng tận dụng hiệu quả các công cụ truy xuất văn bản hiện có. Ngược lại, GraphRAG cung cấp một hướng biểu diễn tri thức giàu cấu trúc hơn, có tiềm năng hỗ trợ tốt cho suy luận đa bước, truy vết nguồn tri thức và giải thích câu trả lời trong những tình huống phức tạp hơn.
 
-Về số liệu, nhóm đã có kết quả đánh giá MCQ cho pipeline RAG (Bảng~\ref{tab:results}). Việc hoàn thiện so sánh định lượng với GraphRAG trên cùng các tập là bước còn lại để trả lời đầy đủ câu hỏi nghiên cứu so sánh hai phương pháp.
+Về mặt thực nghiệm, báo cáo đã tổng hợp được kết quả của pipeline RAG trên nhiều bộ benchmark y khoa, từ đó hình thành một đường cơ sở quan trọng cho các bước đánh giá tiếp theo. Các kết quả cho thấy chất lượng của RAG biến động đáng kể giữa các bộ dữ liệu, qua đó khẳng định vai trò trung tâm của truy hồi và tổ chức ngữ cảnh trong hiệu năng cuối cùng của hệ thống hỏi đáp. Đồng thời, các kết quả tham khảo của MedGraphRAG gợi mở khả năng cải thiện trên một số tập dữ liệu chồng lấn, đặc biệt trong nhóm MMLU y khoa.
 
-% =============================================================================
-\chapter{HƯỚNG PHÁT TRIỂN}
-\label{chap:future}
-% =============================================================================
+Tuy nhiên, điểm kết luận quan trọng nhất của báo cáo là: ở thời điểm hiện tại, chưa có đủ cơ sở để tuyên bố một cách dứt khoát rằng GraphRAG vượt trội hơn RAG trong miền hỏi đáp y khoa. Đóng góp cốt lõi của nghiên cứu vì vậy không nằm ở một tuyên bố thắng--thua đơn giản, mà ở việc chuẩn hóa khung phân tích, mô tả rõ dữ liệu và quy trình, tổng hợp số liệu hiện có và chỉ ra chính xác những điều kiện cần để thực hiện so sánh công bằng hơn trong giai đoạn tiếp theo.
 
-\begin{enumerate}
-  \item Chạy đánh giá GraphRAG đồng nhất protocol với RAG; ghép bảng so sánh theo từng dataset.
-  \item Tối ưu chi phí retrieval (ví dụ giảm số lần gọi LLM trong chọn subgraph, dùng embedding similarity nơi phù hợp).
-  \item Mở rộng corpus hoặc lớp đồ thị (medium/bottom) theo paper nếu có điều kiện dữ liệu và license.
-  \item Đánh giá thủ công chất lượng trích dẫn (citation precision/recall) trên mẫu nhỏ.
-  \item Thử nghiệm backend LLM khác (API mạnh hơn vs self-host) để phân tích trade-off chi phí--chất lượng.
+\section{Hướng phát triển}
+Trong giai đoạn tiếp theo, nhiệm vụ ưu tiên là triển khai đánh giá GraphRAG trên cùng các bộ benchmark đã dùng cho RAG, đồng thời bảo đảm toàn bộ protocol thực nghiệm được giữ đồng nhất. Đây là điều kiện tiên quyết để tạo ra một so sánh có giá trị học thuật và cho phép rút ra kết luận đáng tin cậy hơn về hiệu quả của hai hướng tiếp cận.
+
+Bên cạnh đó, nghiên cứu có thể mở rộng theo các hướng sau:
+\begin{itemize}[nosep]
+  \item Tối ưu chiến lược truy hồi và lựa chọn ngữ cảnh nhằm giảm số lần gọi mô hình ngôn ngữ lớn, qua đó cải thiện hiệu quả tính toán.
+  \item Cải thiện chất lượng trích xuất thực thể--quan hệ và chuẩn hóa khái niệm y khoa để giảm nhiễu trong đồ thị tri thức.
+  \item Bổ sung các chỉ số đánh giá liên quan đến faithfulness, chất lượng trích dẫn và độ minh bạch của bằng chứng, thay vì chỉ dừng ở accuracy.
+  \item Thử nghiệm với nhiều backend mô hình khác nhau để làm rõ quan hệ đánh đổi giữa chất lượng, chi phí và độ trễ của hệ thống.
+\end{itemize}
+
+\subsection{Đề xuất protocol chuẩn hóa}
+Báo cáo đề xuất một protocol chuẩn hóa gồm ba lớp:
+\begin{enumerate}[nosep]
+  \item \textbf{So sánh baseline}: RAG (dense/hybrid + rerank) so với GraphRAG (local/global), sử dụng cùng mô hình sinh và cùng ngân sách token.
+  \item \textbf{Ablation study}: đánh giá tác động của từng thành phần như BM25, RRF, rerank, ngưỡng hợp nhất thực thể, community reports hoặc số bước mở rộng đồ thị.
+  \item \textbf{Đánh giá chi phí}: báo cáo accuracy kèm độ trễ trung bình, số token sinh, số lần gọi embedding/LLM và dung lượng lưu trữ.
 \end{enumerate}
 
 % =============================================================================
 \begin{thebibliography}{99}
+
 \bibitem{wu2024}
-J.~Wu et al.,
+J. Wu et al.,
 ``Medical Graph RAG: Towards Safe Medical Large Language Model via Graph Retrieval-Augmented Generation,''
-\textit{arXiv:2408.04187}, 2024.
+\textit{arXiv preprint arXiv:2408.04187}, 2024.
 
 \bibitem{edge2024}
-D.~Edge et al.,
+D. Edge et al.,
 ``From Local to Global: A Graph RAG Approach to Query-Focused Summarization,''
-\textit{arXiv:2404.16130}, 2024.
+\textit{arXiv preprint arXiv:2404.16130}, 2024.
 
 \bibitem{johnson2023}
-A.~E.~W.~Johnson et al.,
+A. E. W. Johnson et al.,
 ``MIMIC-IV, a freely accessible electronic health record dataset,''
-\textit{Scientific Data}, 10(1):1, 2023.
+\textit{Scientific Data}, vol. 10, no. 1, 2023.
 
 \bibitem{mimicex}
 Morson,
 ``mimic\_ex dataset,''
-\url{https://huggingface.co/datasets/Morson/mimic_ex}, truy cập 2026.
+\url{https://huggingface.co/datasets/Morson/mimic_ex}.
+
 \end{thebibliography}
 
 \end{document}

@@ -24,7 +24,7 @@ def call_llm(system: str, user: str) -> str:
     """Gọi LLM sync — dùng cho inference đơn lẻ."""
     client = _get_llm_client()
     resp = client.chat.completions.create(
-        model=os.getenv("LLM_MODEL", "Qwen/Qwen2.5-7B-Instruct-AWQ"),
+        model=os.getenv("LLM_MODEL", "meta-llama/Meta-Llama-3-8B-Instruct"),
         messages=[
             {"role": "system", "content": system},
             {"role": "user",   "content": user},
@@ -42,7 +42,7 @@ async def call_llm_async(
 ) -> str:
     """Gọi LLM async — dùng cho batch evaluation."""
     resp = await client.chat.completions.create(
-        model=os.getenv("LLM_MODEL", "Qwen/Qwen2.5-7B-Instruct-AWQ"),
+        model=os.getenv("LLM_MODEL", "meta-llama/Meta-Llama-3-8B-Instruct"),
         messages=[
             {"role": "system", "content": system},
             {"role": "user",   "content": user},
